@@ -121,6 +121,49 @@ body {
     padding: 8px;
 }
 
+.distro {
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+
+.distro .row2 {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.distro .column2 {
+    flex: 50%;
+    padding: 8px;
+}
+
+.distro img {
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+.distro h2 {
+    margin-top: 1em;
+    font-weight: lighter;
+    color: #8D7BE4;
+}
+
+.distro h1 {
+    font-weight: bold;
+    margin-top: .5em;
+    margin-bottom: .5em
+}
+
+.distro .btn1 {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.mob-show {
+    display: none;
+}
+
 
 @media only screen and (max-width: 1026px) {
 
@@ -138,6 +181,30 @@ body {
 
     .foss {
         width: 95%;
+    }
+
+    .distro {
+        width: 95%;
+    }
+
+    .distro img {
+        display: none;
+    }
+
+    .distro .mob-hide {
+        display: none;
+    }
+
+    .mob-show {
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+
+    .mob-show img {
+        border-radius: 8px;
     }
 
 }
