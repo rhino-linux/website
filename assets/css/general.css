@@ -1,0 +1,52 @@
+/* import general css scripts */
+@import "./general/navbar.css";
+@import "./general/footer.css";
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+
+    min-width: 1000px;
+}
+
+/* just some general global classes */
+
+.spacer {
+    height: 1em;
+}
+
+.highlighted {
+    color: #9235ff;
+}
+
+/* css prefab for hightlighted purple buttons */
+.highlighted-button {
+    color: #ffffff;
+    background: #9235ff;
+
+    text-decoration: none;
+
+    padding: 1em;
+
+    border-radius: 5px;
+
+    animation: highlighted-button-hover-off 0.2s;
+}
+.highlighted-button:hover {
+    animation: highlighted-button-hover-on 0.2s;
+
+    background: #8d7be4;
+
+    text-decoration: underline;
+}
+
+/* keyframes */
+
+@keyframes highlighted-button-hover-on {
+    from {background: #9235ff;}
+    to {background: #8d7be4;}
+}
+@keyframes highlighted-button-hover-off {
+    from {background: #8d7be4;}
+    to {background: #9235ff;}
+}
