@@ -1,104 +1,233 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhino Linux</title>
-    <!-- CSS & JS-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <!-- SEO -->
-</head>
-<body>
+    <head>
+        <!-- title -->
+        <title>Rhino Linux</title>
 
-    <div id="menu">
-        <div id="menu-items">
-            <a href="#" class="menu-item" onclick="ddhide()">Home</a>
-            <a href="https://rhinolinux.org/download" class="menu-item" onclick="ddhide()">Download</a>
-            <a href="https://rhinolinux.org/news" class="menu-item" onclick="ddhide()">News</a>
-            <a href="https://wiki.rhinolinux.org" class="menu-item" onclick="ddhide()">Wiki</a>
-            <a href="https://rur.rhinolinux.org" class="menu-item" onclick="ddhide()">Packages</a>
-        </div>
-        <div id="menu-background-pattern"></div>
-      </div>
+        <!-- charset -->
+        <meta charset="utf-8">
 
-      <div id="site">
+        <!-- meta presets -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="nav">
-            <ul>
-                <img src="assets/images/logo.svg" alt="Rhino Linux Logo" height="100%">
-                <li style="float:right !important"><a onclick="ddshow()"><span><b>☰</b></span> </a></li>
-              </ul>
-        </div>
+        <!-- css-->
+        <link rel="stylesheet" href="assets/css/home.css">
+        <link rel="stylesheet" href="assets/css/general.css">
 
-        <div class="mob-show">
-            <img src="assets/images/placeholder.webp" alt="" width="100%">
-        </div>
+        <!-- js -->
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/menu.js"></script>
+    </head>
+    <body>
+        <!-- section 1 -->
+        <div id="section1">
+            <!-- spacer -->
+            <div class="spacer"></div>
 
-        <div class="splash">
+            <!-- first header -->
             <h1>An Ubuntu-based rolling release distribution with sane defaults</h1>
-            <h2>Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.</h2>
-            <a href="https://rhinolinux.org/download" class="btn1">Download</a> <a href="https://wiki.rhinolinux.org" target="_blank" class="btn2">Wiki</a>
-            <br>
-        </div>
+            
+            <!-- subheading -->
+            <h3>Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.</h3>
 
-        <div class="foss">
-            <h1>Open soure at our core</h1>
-        <center>
-            <div class="row">
-                <div class="column">
-                  <img src="assets/images/ubuntu.svg" alt="Snow" style="width:50%">
-                </div>
-                <div class="column">
-                  <img src="assets/images/xfce.png" alt="Forest" style="width:50%">
-                </div>
-                <div class="column">
-                  <img src="assets/images/pacstall.svg" alt="Mountains" style="width:50%">
-                </div>
-              </div>
-        </center>
+            <!-- spacer -->
+            <div class="spacer"></div>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel euismod dui. In at quam lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis non felis non dignissim. Phasellus nec nulla dolor. Pellentesque blandit, neque ultricies malesuada porttitor, nisi orci fermentum ipsum, ut molestie arcu metus nec diam. Suspendisse elementum posuere augue at molestie. Morbi viverra nibh non tempor faucibus. Sed quis lobortis odio.
-        </p>
-        </div>
-
-        <div class="distro">
-
-            <div class="row2">
-                <div class="column2">
-                    <h2>Lightweight</h2>
-                    <h1>Based on Ubuntu</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel euismod dui. In at quam lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis non felis non dignissim. Phasellus nec nulla dolor. Pellentesque blandit, neque ultricies malesuada porttitor, nisi orci fermentum ipsum, ut molestie arcu metus nec diam. Suspendisse elementum posuere augue at molestie. Morbi viverra nibh non tempor faucibus. Sed quis lobortis odio.
-                    </p>
-                </div>
-                <div class="column2 mob-hide">
-                    <img src="assets/images/placeholder.webp" alt="" width="100%">
-                </div>
+            <!-- buttons container -->
+            <div id="section1-buttons-container">
+                <a class="highlighted-button" href="https://rhinolinux.org/download" target="_blank">Download</a>
+            
+                <a id="section1-wiki-button" href="https://wiki.rhinolinux.org" target="_blank">Wiki</a>
             </div>
 
-            <div class="row2">
-                <div class="column2 mob-hide">
-                    <img src="assets/images/placeholder.webp" alt="" width="100%">
-                </div>
-                <div class="column2">
-                    <h2>Extensible</h2>
-                    <h1>Many built-in features</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel euismod dui. In at quam lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis non felis non dignissim. Phasellus nec nulla dolor. Pellentesque blandit, neque ultricies malesuada porttitor, nisi orci fermentum ipsum, ut molestie arcu metus nec diam. Suspendisse elementum posuere augue at molestie. Morbi viverra nibh non tempor faucibus. Sed quis lobortis odio.
-                    </p>
-                    <br>
-                    <a href="" class="btn1">Wiki</a>
-                </div>
-            </div>
-
+            <!-- spacer -->
+            <div class="spacer"></div>
         </div>
 
-      </div>
+        <!-- section2 -->
+        <div id="section2">
+            <!-- spacer -->
+            <div class="spacer"></div>
+
+            <!-- header -->
+            <h1><span class="highlighted">Open source</span> at our core</h1>
+
+            <!-- spacer -->
+            <div class="spacer"></div>
+
+            <!-- container of images -->
+            <div id="section2-images-container">
+                <!-- ubuntu -->
+                <a href="https://ubuntu.com" target="_blank" style="margin-right: 2em;">
+                    <img src="assets/images/ubuntu.svg" alt="Ubuntu Logo">
+                </a>
+
+                <!-- xfce -->
+                <a href="https://xfce.org" target="_blank" style="margin-right: 2em;">
+                    <img src="assets/images/xfce.png" alt="XFCE Logo">
+                </a>
+
+                <!-- pacstall -->
+                <a href="https://pacstall.dev" target="_blank">
+                    <img src="assets/images/pacstall.svg" alt="Pacstall Logo">
+                </a>
+            </div>
+
+            <!-- spacer -->
+            <div class="spacer"></div>
+
+            <!-- text paragraph -->
+            <p id="section2-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisque vel euismod dui. In at quam lorem. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Praesent
+                sagittis non felis non dignissim. Phasellus nec nulla dolor.
+                Pellentesque blandit, neque ultricies malesuada porttitor,
+                nisi orci fermentum ipsum, ut molestie arcu metus nec diam.
+                Suspendisse elementum posuere augue at molestie. Morbi
+                viverra nibh non tempor faucibus. Sed quis lobortis odio.
+            </p>
+
+            <!-- spacer -->
+            <div class="spacer"></div>
+        </div>
+
+        <!-- spacer -->
+        <div class="spacer"></div>
+
+        <!-- section3 -->
+        <div class="section-3-4">
+            <!-- put the text half of the section in a container -->
+            <div class="section-3-4-half">
+                <!-- subheading -->
+                <h2 class="highlighted">Lightweight</h2>
+
+                <!-- heading -->
+                <h1>Based on Ubuntu</h1>
+
+                <!-- paragraph -->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Quisque vel euismod dui. In at quam lorem.
+                    Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus. Praesent sagittis non felis non dignissim.
+                    Phasellus nec nulla dolor. Pellentesque blandit,
+                    neque ultricies malesuada porttitor, nisi orci
+                    fermentum ipsum, ut molestie arcu metus nec diam.
+                    Suspendisse elementum posuere augue at molestie.
+                    Morbi viverra nibh non tempor faucibus. Sed quis
+                    lobortis odio.
+                </p>
+            </div>
+
+            <!-- image -->
+            <img class="section-3-4-half" src="assets/images/placeholder.webp" alt="" width="100%">
+        </div>
+
+        <!-- spacer -->
+        <div class="spacer"></div>
+
+        <!-- section4 -->
+        <div class="section-3-4">
+            <!-- image -->
+            <img class="section-3-4-half" src="assets/images/placeholder.webp" alt="" width="100%">
+
+            <!-- another container for text half -->
+            <div class="section-3-4-half">
+                <!-- subheading -->
+                <h2 class="highlighted">Extensible</h2>
+
+                <!-- header -->
+                <h1>Many built-in features</h1>
     
-</body>
+                <!-- paragraph -->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Quisque vel euismod dui. In at quam lorem.
+                    Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus. Praesent sagittis non felis non dignissim.
+                    Phasellus nec nulla dolor. Pellentesque blandit,
+                    neque ultricies malesuada porttitor, nisi orci
+                    fermentum ipsum, ut molestie arcu metus nec diam.
+                    Suspendisse elementum posuere augue at molestie.
+                    Morbi viverra nibh non tempor faucibus. Sed quis
+                    lobortis odio.
+                </p>
+    
+                <!-- wiki link -->
+                <a class="highlighted-button" href="" target="_blank">Wiki</a>
+            </div>
+        </div>
+
+        <!-- spacer -->
+        <div class="spacer"></div>
+
+        <!-- footer -->
+        <Footer>
+            <!-- about section -->
+            <div id="footer-about" class="footer-section">
+                <h2>About</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorem sequi nulla saepe reiciendis vel ipsum ipsam temporibus id fugiat.</p>
+            </div>
+
+            <!-- community/social links -->
+            <div id="footer-community" class="footer-section">
+                <!-- title -->
+                <h2>Community</h2>
+
+                <!-- links to social media communities -->
+                <div id="footer-social-links">
+                    <!-- discord -->
+                    <a id="footer-discord-link" href="" target="_blank">
+                        <img src="assets/images/socials/discord.svg" alt="Discord Logo"/>
+                    </a>
+
+                    <!-- matrix -->
+                    <a id="footer-matrix-link" href="" target="_blank">
+                        <img src="assets/images/socials/matrix.svg" alt="Matrix Logo"/>
+                    </a>
+
+                    <!-- reddit -->
+                    <a id="footer-reddit-link" href="" target="_blank">
+                        <img src="assets/images/socials/reddit.svg" alt="Reddit Logo"/>
+                    </a>
+
+                    <!-- twitter -->
+                    <a id="footer-twitter-link" href="" target="_blank">
+                        <img src="assets/images/socials/twitter.svg" alt="Twitter Logo"/>
+                    </a>
+                </div>
+            </div>
+
+            <!-- other links section -->
+            <div id="footer-other" class="footer-section">
+                <!-- title -->
+                <h2>Other</h2>
+                
+                <!-- links to other web pages -->
+                <div id="footer-other-links">
+                    <!-- source code -->
+                    <a href="" target="_blank">
+                        Source Code
+                    </a>
+
+                    <!-- donate -->
+                    <a href="" target="_blank">
+                        <span>Donate</span>
+                    </a>
+
+                    <!-- branding -->
+                    <a href="" target="_blank">
+                        <span>Branding</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- spacer -->
+            <div class="spacer"></div>
+        </Footer>
+    </body>
 </html>
