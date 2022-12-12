@@ -63,6 +63,11 @@ body {
 
 .splash h2 {
     font-weight: lighter;
+    margin-bottom: .2em;
+}
+
+.splash p {
+    text-align: left;
     margin-bottom: 1em;
 }
 
@@ -208,6 +213,75 @@ body {
     text-decoration: none;
 }
 
+/* Brand page */
+.brand {
+    margin: auto;
+    width: 60vw;
+}
+
+.brand h2 {
+    font-weight: lighter;
+}
+
+.brand .grid {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.gitem > .gitem {
+    padding: 10px;
+}
+
+.purple1 {
+    background-color: #8D7BE4;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.purple2 {
+    background-color: #8b00e7;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.purple3 {
+    background-color: #9235ff;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.midnight {
+    background-color: #13093c;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.gtkgrey {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.fontwhite {
+    background-color: #fefefe;
+    color: black;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+}
 
 
 @media only screen and (max-width: 1026px) {
