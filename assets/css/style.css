@@ -283,6 +283,40 @@ body {
     border-radius: .5em;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  .logo .column {
+    float: left;
+    width: 50%;
+    padding: 1em;
+  }
+  
+  /* Clearfix (clear floats) */
+  .logo .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .logo .right {
+    margin-top: 10%;
+  }
+
+  .wallpaper .column {
+    float: left;
+    width: 33.3%;
+    padding: .5em;
+  }
+  
+  /* Clearfix (clear floats) */
+  .wallpaper .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
 @media only screen and (max-width: 1026px) {
 
@@ -325,5 +359,22 @@ body {
     .mob-show img {
         border-radius: 8px;
     }
+
+    .brand {
+        margin: auto;
+        width: 95%;
+    }
+
+    .logo .column {
+        float: left;
+        width: 95%;
+        padding: 1em;
+      }
+
+      .wallpaper .column {
+        float: left;
+        width: 95%;
+        padding: 1em;
+      }
 
 }
