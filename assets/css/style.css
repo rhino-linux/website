@@ -381,4 +381,38 @@ body {
         padding: 1em;
       }
 
+      #footer {
+        width: 95%;
+        border-top: solid;
+        border-top-width: 2px;
+        border-top-color: #333;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .footer-cont {
+        width: 95%;
+        height: auto;
+    }
+    
+    .footer-left {
+        width: 95%;
+        height: auto;
+        margin-right: 4%;
+    }
+    
+    .footer-mid {
+        width: 95%;
+        height:auto;
+    }
+    
+    .footer-right {
+        width: 95%;
+        height: auto;
+    }
+    
+    .footer-flex {
+        display: block;
+    }
+
 }
