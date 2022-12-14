@@ -223,6 +223,10 @@ body {
     font-weight: lighter;
 }
 
+.brand a {
+    color: black;
+}
+
 .brand .grid {
     display: grid;
     gap: 4px;
