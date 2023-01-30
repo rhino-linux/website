@@ -8,6 +8,7 @@ body {
     color: black;
     background-color: white;
     font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
 }
 
 #site {
@@ -90,6 +91,14 @@ body {
     padding: 6px;
     border-radius: 8px;
     text-decoration: none;
+}
+
+/* Code block */
+code {
+    border-radius: .5em;
+    border-style: solid;
+    border-color: #2d2d2d;
+    padding: 2px;
 }
 
 .foss {
@@ -211,6 +220,11 @@ body {
 #footer a {
     color: black;
     text-decoration: none;
+}
+
+/* Download page */
+#releaseinfo a {
+    color: #9235ff;
 }
 
 /* Brand page */
