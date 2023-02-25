@@ -12,11 +12,28 @@
     --accent-3: #9235ff;
     --accent-4: #13093c;
     --accent-5: #2d2d2d;
+    --urgent: #9d8aff;
 }
 
 body {
     background-color: var(--bg-color);
     font-family: 'Ubuntu', sans-serif;
+    color: var(--fg-color);
+}
+
+/* Urgent alert banner */
+.urgent {
+    background-color: var(--urgent);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: var(--fg-color);
+    height: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.urgent a {
     color: var(--fg-color);
 }
 
@@ -198,6 +215,43 @@ footer a {
     text-decoration: none;
 }
 
+/* Download page */
+
+.download-container {
+    display: flex;
+}
+
+ .box {
+    background-color: var(--accent-5);
+    border-radius: 1em;
+    flex: 1;
+    margin: 1em;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.box h1 {
+    margin-top: .5em;
+    font-weight: lighter;
+}
+
+.box p {
+    margin-left: .5em;
+}
+
+.box img {
+    text-align: center;
+    margin: 1.5em;
+}
+
+.box a {
+    color: var(--accent-1);
+}
+
+.color-a {
+    color: var(--accent-1);
+}
+
 /* Mobile optimisations */
 
 .mob-hide { /* Hide on mobile */
@@ -222,5 +276,32 @@ footer a {
         width: 95vw;
         margin: auto;
     }
+
+    /* Download page */
+
+.download-container {
+    display: block;
+}
+
+ .box {
+    background-color: var(--accent-5);
+    border-radius: 1em;
+    margin: 1em;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.box h1 {
+    margin-top: .5em;
+    font-weight: lighter;
+}
+
+.box p {
+    margin-left: .5em;
+}
+
+.box img {
+    margin: 1em;
+}
 
 }
