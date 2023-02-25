@@ -5,135 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhino Linux</title>
-    <!-- CSS & JS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.ico" />
     <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
-    <!-- SEO -->
-    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png" />
 </head>
 <body>
 
-    <div id="menu">
-        <div id="menu-items">
-            <a href="#" class="menu-item" onclick="ddhide()">Home</a>
-            <a href="https://rhinolinux.org/download" class="menu-item" onclick="ddhide()">Download</a>
-            <a href="https://rhinolinux.org/news" class="menu-item" onclick="ddhide()">News</a>
-            <a href="https://wiki.rhinolinux.org" class="menu-item" onclick="ddhide()">Wiki</a>
-            <a href="https://pacstall.dev/packages" target="_blank" class="menu-item" onclick="ddhide()">Packages</a>
+    <div id="dropdown">
+        <div class="container">
+            <div class="exit">
+                <a onclick="ddhide()">x</a>
+            </div>
+            <div class="content">
+                <p><a onclick="ddhide()" href="#" class="active">Home</a></p>
+                <p><a onclick="ddhide()" href="download">Download</a></p>
+                <p><a onclick="ddhide()" href="news">News</a></p>
+                <p><a onclick="ddhide()" href="#">Wiki</a></p>
+                <p><a onclick="ddhide()" target="_blank" href="https://pacstall.dev/packages">Packages</a></p>
+            </div>
         </div>
-        <div id="menu-background-pattern"></div>
-      </div>
+    </div>
 
-      <div id="site">
+    <header class="extended" id="header">
+        <li style="float:right !important" class="mob-show mobile-menu"><a onclick="ddshow()"><span><b>☰</b></span></a></li>
 
-        <div class="nav">
-            <ul>
-                <img src="assets/images/logo.png" alt="Rhino Linux Logo" height="100%">
-                <li style="float:right !important"><a onclick="ddshow()"><span><b>☰</b></span> </a></li>
+            <ul class="main-nav">
+
+            
+                <li><a href="#">Home</a></li>
+                <li><a href="download">Download</a></li>
+                <li><a href="news">News</a></li>
+                <li><a href="#">Wiki</a></li>
+                <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
               </ul>
-        </div>
+              <h1>An Ubuntu-based rolling release distribution with sane defaults</h1>
+              <h2>Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.</h2>
+              <a href="#info" class="btn">Learn more</a>
+              <a href="download" class="btn">Download</a>
+    </header>
 
-        <div class="mob-show">
-            <img src="assets/images/placeholder.webp" alt="" width="100%">
-        </div>
+    <div class="container" id="info">
+        <h1>Why Rhino Linux?</h1>
+        <p>Rhino Linux re-invents the Ubuntu experience as a rolling release distribution atop a stable Desktop Environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, Rhino Linux specific applications and theming.</p>
 
-        <div class="splash">
-            <h1>An Ubuntu-based rolling release distribution with sane defaults</h1>
-            <h2>Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.</h2>
-            <br>
-            <a href="https://rhinolinux.org/download" class="btn1">Download</a> <a href="https://wiki.rhinolinux.org" target="_blank" class="btn2">Wiki</a>
-            <br>
-        </div>
+        <p>We have sane defaults, making the traditional desktop beautiful. With XFCE your desktop is lightweight, fast and customisable. You have the power to make Rhino Linux what YOU want.</p>
 
-        <div class="foss">
-            <h1>Open source at our core</h1>
-        <center>
-            <div class="row">
-                <div class="column">
-                    <a href="https://ubuntu.com" target="_blank">
-                        <img src="assets/images/ubuntu.svg" alt="Ubuntu Logo" style="width:50%">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="https://xfce.org" target="_blank">
-                        <img src="assets/images/xfce.png" alt="XFCE Logo" style="width:50%">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="https://pacstall.dev" target="_blank">
-                        <img src="assets/images/pacstall.svg" alt="Pacstall Logo" style="width:50%">
-                    </a>
-                </div>
-              </div>
-        </center>
+        <h1>You're in control</h1>
+
+        <img src="assets/images/rhino-setup.png" alt="Rhino Setup" width="100%"/>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel euismod dui. In at quam lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis non felis non dignissim. Phasellus nec nulla dolor. Pellentesque blandit, neque ultricies malesuada porttitor, nisi orci fermentum ipsum, ut molestie arcu metus nec diam. Suspendisse elementum posuere augue at molestie. Morbi viverra nibh non tempor faucibus. Sed quis lobortis odio.
+            From the moment you boot up your system, YOU are in control. <code>rhino-setup</code> will greet you upon your first boot, giving you the ability to install additional package managers such as Flatpak, Snap and AppImage. Furthermore, you will be given the options to install additional software to improve your overall experience such as Nala.
         </p>
-        </div>
 
-        <div class="distro">
+        <p>
+            Finally, we don’t do any mandatory data collection. You can opt-in with rhino-setup to having apport installed on your system, to send crash and bug reports directly to developers.
+        </p>
 
-            <div class="row2">
-                <div class="column2">
-                    <h2>Lightweight</h2>
-                    <h1>Based on Ubuntu</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel euismod dui. In at quam lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis non felis non dignissim. Phasellus nec nulla dolor. Pellentesque blandit, neque ultricies malesuada porttitor, nisi orci fermentum ipsum, ut molestie arcu metus nec diam. Suspendisse elementum posuere augue at molestie. Morbi viverra nibh non tempor faucibus. Sed quis lobortis odio.
-                    </p>
-                </div>
-                <div class="column2 mob-hide">
-                    <img src="assets/images/placeholder.webp" alt="" width="100%">
-                </div>
-            </div>
+        <h1>Making life easier</h1>
 
-            <div class="row2">
-                <div class="column2 mob-hide">
-                    <img src="assets/images/placeholder.webp" alt="" width="100%">
-                </div>
-                <div class="column2">
-                    <h2>Extensible</h2>
-                    <h1>Many built-in features</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel euismod dui. In at quam lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sagittis non felis non dignissim. Phasellus nec nulla dolor. Pellentesque blandit, neque ultricies malesuada porttitor, nisi orci fermentum ipsum, ut molestie arcu metus nec diam. Suspendisse elementum posuere augue at molestie. Morbi viverra nibh non tempor faucibus. Sed quis lobortis odio.
-                    </p>
-                    <br>
-                    <a href="" class="btn1">Wiki</a>
-                </div>
-            </div>
+        <img src="assets/images/rhino-pkg.png" alt="rhino-pkg" width="100%">
 
-        </div>
+        <p>
+            Pacstall gives the user a full AUR-like experience, making searching for and installing packages easier. rhino-pkg was developed to bring a wrapper for Pacstall, APT, Flatpaks and Snaps. It provides features such as installing a package, as well as selecting which package manager you wish to install it on.
+        </p>
 
-        <div id="footer">
-            <div class="footer-flex">
-                <div class="footer-left">
-                    <h1>About</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum bibendum neque, at tempor ex egestas ut. Cras tristique congue nunc eget mattis. Quisque convallis felis ut dui cursus, eget pellentesque augue laoreet. Pellentesque non libero justo. </p>
-                </div>
-                <div class="footer-mid">
-                    <h1>Community</h1>
-                    <p>
-                        &bull; <a href="">Discord</a> <br />
-                        &bull; <a href="">Matrix</a> <br />
-                        &bull; <a href="">Reddit</a> <br />
-                        &bull; <a href="">Twitter</a> <br />
-                    </p>
-                </div>
-                <div class="footer-right">
-                    <h1>Other</h1>
-                    <p>
-                        <a href="">Source Code</a> <br />
-                        <a href="">Donate</a> <br />
-                        <a href="">Branding</a> <br />
-                    </p>
-                </div>
-            </div>
-        </div>
+        <p>
+            We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
+        </p>
 
-      </div>
-    
+        <hr>
+
+        <footer>
+            <p>
+                <a href="https://github.com/rhino-linux">Source Code</a> | <a href="contact">Contact & Social</a>  | <a href="https://liberapay.com/Rolling-Rhino-Remix/">Donate</a>  | <a href="brand">Branding</a> 
+            </p>
+        </footer>
+
+    </div>
+
 </body>
 </html>

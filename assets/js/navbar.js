@@ -1,8 +1,10 @@
-const menu = document.getElementById("menu");
+function ddshow() {
+    document.getElementById("dropdown").style.display = "block";
+    document.getElementById("header").style.display = "none";
+}
 
-Array.from(document.getElementsByClassName("menu-item"))
-  .forEach((item, index) => {
-    item.onmouseover = () => {
-      menu.dataset.activeIndex = index;
-    }
-  });
+// Hide dropdown menu
+function ddhide() {
+    document.getElementById("dropdown").style.display = "none";
+    document.getElementById("header").style.display = "block";
+}
