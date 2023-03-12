@@ -43,7 +43,24 @@
 
     <div class="container">
         <h1>Rhino Linux | rhino-pkg Wiki</h1>
-        <p>Text</p>
+        <p>
+            rhino-pkg is our custom package management wrapper written in Bash. It was designed with simplicity and ease of use in mind. It will allow for you to search for, and then install packages from any packagem management repository (apt, Pacstall, Snap and Flatpak). <br /><br> &bull; It is <b>strongly</b> recommended to utilise rhino-pkg, rather than each package manager individually. 
+        </p>
+
+        <p>
+            Our utility, rhino-pkg, will allow for you to also update all of your applications, across multiple different package managers, with easy-to-read terminal output to help improve your experience whilst using the distribution.
+        </p>
+
+        <h1>Commands</h1>
+        <p>
+            To get started with <code>rhino-pkg</code> you will want to ensure that all of your packages are currently up to date.
+            <br><br>
+            <code>rhino-pkg update</code> - This command will search through Apt, Pacstall, Flatpak and Snap and see if any packages require updating. <br><br>
+            <code>rhino-pkg search [package]</code> - This command will search all package managers for what you are looking for and display an output. <br><br>
+            <code>rhino-pkg install [package]</code> - This command will search all package managers for the selected package name, display an output. You can then select the corrosponding package. <br><br>
+            <code>rhino-pkg remove [package]</code> - This command will search all package managers for the selected package which is installed, you can then select the corrosponding package that you wish to remove. <br><br>
+            &bull; You can also call rhino-pkg by just typing <code>rpk</code> instead.
+        </p>
 
         <!-- Footer -->
         <hr>
