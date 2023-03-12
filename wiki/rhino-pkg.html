@@ -44,23 +44,23 @@
     <div class="container">
         <h1>Rhino Linux | rhino-pkg Wiki</h1>
         <p>
-            rhino-pkg is our custom package management wrapper written in Bash. It was designed with simplicity and ease of use in mind. It will allow for you to search for, and then install packages from any packagem management repository (apt, Pacstall, Snap and Flatpak). <br /><br> &bull; It is <b>strongly</b> recommended to utilise rhino-pkg, rather than each package manager individually. 
-        </p>
-
-        <p>
-            Our utility, rhino-pkg, will allow for you to also update all of your applications, across multiple different package managers, with easy-to-read terminal output to help improve your experience whilst using the distribution.
+            rhino-pkg is our custom package management wrapper written in Bash. It was designed with simplicity and ease of use in mind. It will allow for you to search, install, remove, and update packages from all of our supported package manager repositories (APT, Pacstall, Flatpak, and snap), all with easy-to-read terminal outputs to improve your experience whilst using the distribution. <br /><br> &bull; It is <b>strongly</b> recommended to utilise rhino-pkg, rather than each package manager individually. 
         </p>
 
         <h1>Commands</h1>
         <p>
-            To get started with <code>rhino-pkg</code> you will want to ensure that all of your packages are currently up to date.
-            <br><br>
-            <code>rhino-pkg update</code> - This command will search through Apt, Pacstall, Flatpak and Snap and see if any packages require updating. <br><br>
-            <code>rhino-pkg search [package]</code> - This command will search all package managers for what you are looking for and display an output. <br><br>
-            <code>rhino-pkg install [package]</code> - This command will search all package managers for the selected package name, display an output. You can then select the corrosponding package. <br><br>
-            <code>rhino-pkg remove [package]</code> - This command will search all package managers for the selected package which is installed, you can then select the corrosponding package that you wish to remove. <br><br>
-            &bull; You can also call rhino-pkg by just typing <code>rpk</code> instead.
-        </p>
+            <code>USAGE: rhino-pkg [function] {flag} (input) </code> <br><br>
+            To get started with <code>rhino-pkg</code>, you will want to ensure that all of your packages are currently up to date. Here's how:<br><br>
+            &bull; Functions: <br><br>
+            <code>rhino-pkg update</code> - This command will search through APT, Pacstall, Flatpak and snap, check for updates in all repositories, and install any updates found. <br><br>
+            <code>rhino-pkg install (input)</code> - This command will search the repositories and display a list of packages matching your input. You can then select the corresponding package(s). <br><br>
+            <code>rhino-pkg remove (input)</code> - This command will search the repositories and display a list of packages matching your input which are installed. You can then select the corresponding package(s) that you wish to remove. <br><br>
+            <code>rhino-pkg search (input)</code> - This command will only search the repositories and display a list of packages matching your input. <br><br>
+            &bull; Flags: <br><br>
+            <code>--help/-h</code> - Pass this flag to show the help page. This can also be done by calling the utility with no functions or inputs. <br><br>
+            <code>--description/-d</code> - By default, rhino-pkg will only display packages that contain the provided input within their name. Use this flag to increase the search range and display packages with the provided input in their description. <br><br>
+            &bull; NOTE: You can also call rhino-pkg by using <code>rpk</code> in place of <code>rhino-pkg</code> in any of the above commands.
+        </p>                                                          
 
         <!-- Footer -->
         <hr>
