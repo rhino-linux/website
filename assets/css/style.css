@@ -316,6 +316,10 @@ footer a {
     width: 90vw;
 }
 
+.brand a {
+    color: var(--accent-1);
+}
+
 .brand h1 {
     font-weight: 400;
 }
