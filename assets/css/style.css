@@ -338,6 +338,9 @@ footer a {
     text-align: center;
     padding: .5em;
     border-radius: .5em;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #2d2d2d44;
 }
 
 .purple2 {
@@ -346,6 +349,9 @@ footer a {
     text-align: center;
     padding: .5em;
     border-radius: .5em;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #2d2d2d44;
 }
 
 .purple3 {
@@ -354,6 +360,9 @@ footer a {
     text-align: center;
     padding: .5em;
     border-radius: .5em;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #2d2d2d44;
 }
 
 .midnight {
@@ -362,6 +371,9 @@ footer a {
     text-align: center;
     padding: .5em;
     border-radius: .5em;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #fefefe11;
 }
 
 .gtkgrey {
@@ -370,6 +382,9 @@ footer a {
     text-align: center;
     padding: .5em;
     border-radius: .5em;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #fefefe11;
 }
 
 .fontwhite {
@@ -378,6 +393,9 @@ footer a {
     text-align: center;
     padding: .5em;
     border-radius: .5em;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: #2d2d2d44;
 }
 
 * {
