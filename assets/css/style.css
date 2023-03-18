@@ -310,22 +310,8 @@ footer a {
 
 }
 
-/* Brand page */
-.brand {
-    margin: auto;
-    width: 90vw;
-}
-
 .brand a {
     color: var(--accent-1);
-}
-
-.brand h1 {
-    font-weight: 400;
-}
-
-.brand h2 {
-    font-weight: lighter;
 }
 
 .brand .grid {
