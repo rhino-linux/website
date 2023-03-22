@@ -305,7 +305,8 @@ footer a {
 }
 
 .box img {
-    margin: 1em;
+    text-align: center;
+    margin: .5em;
 }
 
 }
