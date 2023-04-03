@@ -232,6 +232,7 @@ footer a {
     margin: 1em;
     border-style: solid;
     border-width: 1px;
+    border-color: var(--accent-1);
 }
 
 .box h1 {
