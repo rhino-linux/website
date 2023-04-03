@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhino Linux | Open Beta, PinePhone (Pro), & more!</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo.ico" />
+    <script src="../assets/js/navbar.js"></script>
+</head>
+<body>
+
+    <div id="dropdown">
+        <div class="container">
+            <div class="exit">
+                <a onclick="ddhide()">x</a>
+            </div>
+            <div class="content">
+                <p><a onclick="ddhide()" href="../index.html" class="active">Home</a></p>
+                <p><a onclick="ddhide()" href="../download">Download</a></p>
+                <p><a onclick="ddhide()" href="../news">News</a></p>
+                <p><a onclick="ddhide()" href="../wiki">Wiki</a></p>
+                <p><a onclick="ddhide()" target="_blank" href="https://pacstall.dev/packages">Packages</a></p>
+            </div>
+        </div>
+    </div>
+
+    <header class="o-extended" id="header">
+        <li style="float:right !important" class="mob-show mobile-menu"><a onclick="ddshow()"><span><b>☰</b></span></a></li>
+
+            <ul class="main-nav">
+
+            
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../download">Download</a></li>
+                <li><a href="../news">News</a></li>
+                <li><a href="../wiki">Wiki</a></li>
+                <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
+              </ul>
+              <h1>Rhino Linux | Blog</h1>
+    </header>
+
+    <div class="container">
+        <h1>Open Beta, Pinephone (Pro), & more!</h1>
+        <p>
+            Rhino Linux is pleased to announce that it has entered open beta. This is the collective work of 5 months of active development from the Rhino Linux team and other contributors. During the open beta please feel free to report any bugs by <a href="../contact/" target="_blank">contacting us</a>. Any known bugs will appear on the <a href="../wiki/" target="_blank">Rhino Linux wiki</a>. For the next few weeks following this we will be following up with bug fixes and other beta disk images. 
+        </p>
+
+        <p>
+            You can download the Rhino Linux Beta disk images from <a href="../download/" target="_blank">our Download page</a>. Please do keep in mind that it is Beta software and so bugs and issues are to be expected. Please report them so that we can fix them before release.
+        </p>
+        
+        <h1>
+            Pinephone Port
+        </h1>
+
+        <p>
+            Hey all, oklopfer here! While we have been stabilizing the desktop version of Rhino Linux for beta release, I’ve also been working on a side project: Rhino Linux Mobile! 
+        </p>
+
+        <p>
+            One of my other recent linux projects has been porting the latest version of Ubuntu Touch (20.04) to the PinePhone and PinePhone Pro, and I’ve brought that experience over to the Rhino team! With Rhino Linux mobile, I have created the first XFCE-based mobile environment. Originally, we were going to utilise Phosh as a desktop environment, however when investigating we quickly found that the Ubuntu repositories utilised to create Rhino Linux currently ship a broken Phosh package, so we came up with an alternative. Turns out, almost all of the mobile environments aren’t working on Ubuntu right now, so we fell back to what we knew worked soundly: XFCE. To do this, the environment utilizes onboard as the system keyboard, a slightly modified version of the Rhino Linux XFCE dotfiles, and a special patch for XFCE to allow for auto-rotation. It currently uses X11, but we are looking into moving to Wayland when XFCE 4.20 comes around.
+        </p>
+
+        <p>
+            The port itself was quite a simple process - we build a tarball of the filesystem in the live-build runner, then deploy the filesystem to a partitioned image and add the kernel files for the specified device in debos, and it’s good to go! You can see a video demoing the full environment here:
+        </p>
+
+        <center>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/-qwja52J53s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </center>
+
+        <h1>Quality of life + UX</h1>
+        <p>
+            While our original aim was to create a distro for the advanced linux user + developers, we also felt we should target newcomers. Linux today still relies too heavily on the terminal, and we would like to change that. That is why we are going to be creating graphical applications for <code>rhino-pkg</code>, Proprietary WiFi driver installation & updating your system.
+        </p>
+
+        <center>
+            <img src="../assets/images/blog/images/rhino-system-mockup.png" alt="Rhino Linux default wallpaper" width="70%"/>
+        </center>
+
+        <p>
+            Above is a mockup image of one upcoming application, code-named <code>rhino-system</code>, It will display system information, perform package upgrades graphically and handle WiFi driver installation (not shown). By creating these applications we hope to provide people an easier method of operating with their computers. Terminal applications still can be utilised for those who want them, though.
+        </p>
+        <!-- Footer -->
+        <hr>
+        <footer>
+            <p>
+                <a href="https://github.com/rhino-linux">Source Code</a> | <a href="../contact">Contact & Social</a>  | <a href="https://ko-fi.com/rhinolinux">Donate</a>  | <a href="../brand">Branding</a> 
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
