@@ -16,10 +16,10 @@
             $(this).find("option:selected").each(function(){
                 var optionValue = $(this).attr("value");
                 if(optionValue){
-                    $(".box").not("." + optionValue).hide();
+                    $(".download-container").not("." + optionValue).hide();
                     $("." + optionValue).show();
                 } else{
-                    $(".box").hide();
+                    $(".download-container").hide();
                 }
             });
         }).change();
