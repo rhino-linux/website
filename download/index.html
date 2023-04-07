@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhino Linux | Download</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="icon" type="image/png" href="../assets/images/logo.ico" />
+    <link rel="icon" type="image/png" href="../assets/images/logo.ico">
     <script src="../assets/js/navbar.js"></script>
+    <style type="text/css"></style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("select").change(function(){
+            $(this).find("option:selected").each(function(){
+                var optionValue = $(this).attr("value");
+                if(optionValue){
+                    $(".box").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else{
+                    $(".box").hide();
+                }
+            });
+        }).change();
+    });
+    </script>
 </head>
 <body>
 
@@ -44,9 +61,14 @@
 
     <div class="container">
         <h1>Select your edition:</h1>
-        <div class="container" style="text-align:center">  
+        <div class="container" style="text-align:center">
+            <select>
+                <option value="generic">Generic ISO</option>
+                <option value="pinephone">PinePhone (Pro)</option>
+                <option value="rpi">Rasperry Pi (ARM64)</option>
+            </select>
         </div>
-        <div class="download-container">
+        <div class="generic download-container">
             <div class="box">
                 <h1 style="margin-bottom:.3em">x86_64:</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
@@ -73,7 +95,7 @@
                 </p>
             </div>
         </div>
-        <div class="download-container">
+        <div class="pinephone download-container">
             <div class="box">
                 <h1 style="margin-bottom:.3em">Pine64 PinePhone:</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
@@ -113,7 +135,7 @@
                 </p>
             </div>
         </div>
-        <div class="download-container">
+        <div class="rpi download-container">
             <div class="box">
                 <h1 style="margin-bottom:.3em">Raspberry Pi ARM64 (Desktop):</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
