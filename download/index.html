@@ -25,29 +25,20 @@
         }).change();
     });
     </script>
-    <script> function shaPP() {
-    var popup = document.getElementById("pHash");
-    popup.classList.toggle("show");
-    }
-    </script>
-    <script> function shaX64() {
-    var popup = document.getElementById("xHash");
-    popup.classList.toggle("show");
-    }
-    </script>
-    <script> function shaA64() {
-    var popup = document.getElementById("aHash");
-    popup.classList.toggle("show");
-    }
-    </script>
-    <script> function shaRS() {
-    var popup = document.getElementById("sHash");
-    popup.classList.toggle("show");
-    }
-    </script>
-    <script> function shaRD() {
-     var popup = document.getElementById("dHash");
-    popup.classList.toggle("show");
+   <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
     }
     </script>
 </head>
