@@ -458,7 +458,7 @@ select {
   color: var(--fg-color);
   cursor: pointer;
   padding: 6px;
-  width: 60%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -478,7 +478,8 @@ select {
   overflow-wrap: break-word;
   background-color: var(--bg-color);
   text-align: left;
-  width: 70%;
+  width: 100%;
+  max-width: 22em;
 }
 
 /* Popup container - can be anything you want */
