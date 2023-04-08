@@ -458,7 +458,7 @@ select {
   color: var(--fg-color);
   cursor: pointer;
   padding: 6px;
-  width: 100%;
+  width: 60%;
   border: none;
   text-align: left;
   outline: none;
