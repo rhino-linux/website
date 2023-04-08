@@ -470,7 +470,7 @@ select {
   background-color: #444;
 }
 
-.content {
+.collcont {
   color: var(--fg-color);
   border-radius: 16px;
   display: none;
