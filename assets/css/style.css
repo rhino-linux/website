@@ -478,6 +478,7 @@ select {
   overflow-wrap: break-word;
   background-color: var(--bg-color);
   text-align: left;
+  width: 70%;
 }
 
 /* Popup container - can be anything you want */
