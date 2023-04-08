@@ -438,6 +438,7 @@ select {
   border-radius: 4px;
   display: inline-block;
   font: inherit;
+  font-size: 1.5em;
   text-align: center;
   line-height: 1.5em;
   padding: 0.5em 1em 0.5em 1em;
