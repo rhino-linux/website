@@ -453,6 +453,32 @@ select {
   -moz-appearance: none;
 }
 
+.collapsible {
+  background-color: #1a1a1a;
+  color: var(--fg-color);
+  cursor: pointer;
+  padding: 6px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font: inherit;
+}
+
+.active, .collapsible:hover {
+  background-color: #444;
+}
+
+.content {
+  color: var(--fg-color);
+  padding: 0 6px;
+  display: none;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  background-color: var(--bg-color);
+}
+
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
