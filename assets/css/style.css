@@ -489,7 +489,6 @@ select {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 140px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -497,30 +496,21 @@ select {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
   opacity: 0;
   transition: opacity 0.3s;
   font: inherit;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
+  width: 120px;
   top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-  font: inherit;
+  left: 50%; 
+  margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
   font: inherit;
+  position: absolute;
+  margin-left: 30px;
 }
 
 
