@@ -31,7 +31,12 @@
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
-    alert("Copied hash " + copyText.value + " to clipboard.");
+    var tooltip = document.getElementById("xTip");
+    tooltip.innerHTML = "Copied hash to clipboard.";
+    }
+    function outX64() {
+    var tooltip = document.getElementById("xTip");
+    tooltip.innerHTML = "Copy to clipboard";
     }
     </script>
     <script>
@@ -40,7 +45,12 @@
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
-    alert("Copied hash " + copyText.value + " to clipboard.");
+    var tooltip = document.getElementById("aTip");
+    tooltip.innerHTML = "Copied hash to clipboard.";
+    }
+    function outA64() {
+    var tooltip = document.getElementById("aTip");
+    tooltip.innerHTML = "Copy to clipboard";
     }
     </script>
     <script>
@@ -49,7 +59,12 @@
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
-    alert("Copied hash " + copyText.value + " to clipboard.");
+    var tooltip = document.getElementById("pTip");
+    tooltip.innerHTML = "Copied hash to clipboard.";
+    }
+    function outPP() {
+    var tooltip = document.getElementById("pTip");
+    tooltip.innerHTML = "Copy to clipboard";
     }
     </script>
     <script>
@@ -58,16 +73,26 @@
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
-    alert("Copied hash " + copyText.value + " to clipboard.");
+    var tooltip = document.getElementById("dTip");
+    tooltip.innerHTML = "Copied hash to clipboard.";
+    }
+    function outRD() {
+    var tooltip = document.getElementById("dTip");
+    tooltip.innerHTML = "Copy to clipboard";
     }
     </script>
     <script>
     function shaRS() {
-    var copyText = document.getElementById("rHash");
+    var copyText = document.getElementById("sHash");
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
-    alert("Copied hash " + copyText.value + " to clipboard.");
+    var tooltip = document.getElementById("sTip");
+    tooltip.innerHTML = "Copied hash to clipboard.";
+    }
+    function outRS() {
+    var tooltip = document.getElementById("sTip");
+    tooltip.innerHTML = "Copy to clipboard";
     }
     </script>
 </head>
@@ -124,7 +149,12 @@
                    • <a href="https://github.com/rhino-linux/os/tree/main">Source</a> <br> 
                 </p>
                 <input type="text" value="51fa4b7b8b6c20e063e2e209843de09b3cf3240ff2f61c8168640e70107d363a" id="xHash" style="display:none">
-                <button onclick="shaX64()">sha256sum (click to copy)</button>
+                <div class="tooltip">
+                    <button onclick="shaX64()" onmouseout="outX64()">
+                    <span class="tooltiptext" id="xHash">Copy to clipboard</span>
+                    sha256sum (click to copy)
+                    </button>
+                </div>
             </div>
             <div class="box">
                 <h1 style="margin-bottom:.3em">ARM® aarch64</h1>
@@ -136,7 +166,12 @@
                    • <a href="https://github.com/rhino-linux/os/tree/main">Source</a> <br> 
                 </p>
                 <input type="text" value="1c41becce826bc3e6ef5c0880480ecaab3b229beb2e298490727798c6d154c2d" id="aHash" style="display:none">
-                <button onclick="shaA64()">sha256sum (click to copy)</button>
+                <div class="tooltip">
+                    <button onclick="shaA64()" onmouseout="outA64()">
+                    <span class="tooltiptext" id="aHash">Copy to clipboard</span>
+                    sha256sum (click to copy)
+                    </button>
+                </div>
             </div>
         </div>
         <div class="pinephone download-container">
@@ -157,7 +192,12 @@
                    • <a href="https://github.com/rhino-linux/os/tree/pinephone">Source</a> <br> 
                 </p>
                 <input type="text" value="ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37" id="pHash" style="display:none">
-                <button onclick="shaPP()">sha256sum (click to copy)</button>
+                <div class="tooltip">
+                    <button onclick="shaPP()" onmouseout="outPP()">
+                    <span class="tooltiptext" id="pHash">Copy to clipboard</span>
+                    sha256sum (click to copy)
+                    </button>
+                </div>
             </div>
             <div class="box">
                 <h1 style="margin-bottom:.3em">Pine64 PinePhone Pro</h1>
@@ -176,7 +216,12 @@
                    • <a href="https://github.com/rhino-linux/os/tree/pinephone">Source</a> <br> 
                 </p>
                 <input type="text" value="ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37" id="pHash" style="display:none">
-                <button onclick="shaPP()">sha256sum (click to copy)</button>
+                <div class="tooltip">
+                    <button onclick="shaPP()" onmouseout="outPP()">
+                    <span class="tooltiptext" id="pHash">Copy to clipboard</span>
+                    sha256sum (click to copy)
+                    </button>
+                </div>
             </div>
         </div>
         <div class="rpi download-container">
@@ -197,7 +242,12 @@
                    • <a href="https://github.com/rhino-linux/os/tree/rpi">Source</a> <br> 
                 </p>
                 <input type="text" value="6d2ce201cd7526c4ea74d25ddf69388d614b60fb5845077498cf7a36432f12d9" id="dHash" style="display:none">
-                <button onclick="shaRD()">sha256sum (click to copy)</button>
+                <div class="tooltip">
+                    <button onclick="shaRD()" onmouseout="outRD()">
+                    <span class="tooltiptext" id="dHash">Copy to clipboard</span>
+                    sha256sum (click to copy)
+                    </button>
+                </div>
             </div>
             <div class="box">
                 <h1 style="margin-bottom:.3em">Raspberry Pi ARM64 (Server)</h1>
@@ -215,8 +265,13 @@
                    • Download size: 1.10GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/rpi">Source</a> <br> 
                 </p>
-                <input type="text" value="0e035777e526eb5677772f911654de69b01198328cb55cd4d248afb3f29cd37a" id="rHash" style="display:none">
-                <button onclick="shaRS()">sha256sum (click to copy)</button>
+                <input type="text" value="0e035777e526eb5677772f911654de69b01198328cb55cd4d248afb3f29cd37a" id="sHash" style="display:none">
+                <div class="tooltip">
+                    <button onclick="shaRS()" onmouseout="outRS()">
+                    <span class="tooltiptext" id="sHash">Copy to clipboard</span>
+                    sha256sum (click to copy)
+                    </button>
+                </div>
             </div>
         </div>
         <br>
