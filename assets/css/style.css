@@ -141,6 +141,8 @@ body {
     height: 100vh;
     position: fixed;
     display: none;
+    z-index: 3;
+    line-height: 0.8;
 }
 
 #dropdown .container {
