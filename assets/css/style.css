@@ -500,8 +500,8 @@ select {
   transition: opacity 0.3s;
   font: inherit;
   width: 100%;
-  top: -5%;
-  left: 30%; 
+  top: 100%;
+  left: -72%; 
 }
 
 .tooltip:hover .tooltiptext {
@@ -509,7 +509,7 @@ select {
   opacity: 1;
   font: inherit;
   position: absolute;
-  margin-left: 33%;
+  margin-left: 80%;
   font-size: 13px;
 }
 
@@ -533,7 +533,7 @@ button {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-left: 180%;
+  margin-left: 10%;
 }
 
 .active, button:hover {
