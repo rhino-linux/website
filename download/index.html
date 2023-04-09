@@ -26,48 +26,61 @@
     });
     </script>
     <script>
+        
     function shaX64() {
     var copyText = document.getElementById("xHash");
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
+        
     var tooltip = document.getElementById("xTip");
     tooltip.innerHTML = "Copied hash to clipboard.";
     }
+        
     function outX64() {
     var tooltip = document.getElementById("xTip");
     tooltip.innerHTML = "Copy to clipboard";
     }
+        
     </script>
     <script>
+        
     function shaA64() {
     var copyText = document.getElementById("aHash");
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
+        
     var tooltip = document.getElementById("aTip");
     tooltip.innerHTML = "Copied hash to clipboard.";
     }
+        
     function outA64() {
     var tooltip = document.getElementById("aTip");
     tooltip.innerHTML = "Copy to clipboard";
     }
+        
     </script>
     <script>
+        
     function shaPP() {
     var copyText = document.getElementById("pHash");
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
+        
     var tooltip = document.getElementById("pTip");
     tooltip.innerHTML = "Copied hash to clipboard.";
     }
+        
     function outPP() {
     var tooltip = document.getElementById("pTip");
     tooltip.innerHTML = "Copy to clipboard";
     }
+        
     </script>
     <script>
+        
     function shaRD() {
     var copyText = document.getElementById("dHash");
     copyText.select();
@@ -76,24 +89,30 @@
     var tooltip = document.getElementById("dTip");
     tooltip.innerHTML = "Copied hash to clipboard.";
     }
+        
     function outRD() {
     var tooltip = document.getElementById("dTip");
     tooltip.innerHTML = "Copy to clipboard";
     }
+        
     </script>
     <script>
+        
     function shaRS() {
     var copyText = document.getElementById("sHash");
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(copyText.value);
+        
     var tooltip = document.getElementById("sTip");
     tooltip.innerHTML = "Copied hash to clipboard.";
     }
+        
     function outRS() {
     var tooltip = document.getElementById("sTip");
     tooltip.innerHTML = "Copy to clipboard";
     }
+        
     </script>
 </head>
 <body>
@@ -151,7 +170,7 @@
                 <input type="text" value="51fa4b7b8b6c20e063e2e209843de09b3cf3240ff2f61c8168640e70107d363a" id="xHash" style="display:none">
                 <div class="tooltip">
                     <button onclick="shaX64()" onmouseout="outX64()">
-                    <span class="tooltiptext" id="xHash">Copy to clipboard</span>
+                    <span class="tooltiptext" id="xTip">Copy to clipboard</span>
                     sha256sum (click to copy)
                     </button>
                 </div>
@@ -168,7 +187,7 @@
                 <input type="text" value="1c41becce826bc3e6ef5c0880480ecaab3b229beb2e298490727798c6d154c2d" id="aHash" style="display:none">
                 <div class="tooltip">
                     <button onclick="shaA64()" onmouseout="outA64()">
-                    <span class="tooltiptext" id="aHash">Copy to clipboard</span>
+                    <span class="tooltiptext" id="aTip">Copy to clipboard</span>
                     sha256sum (click to copy)
                     </button>
                 </div>
@@ -194,7 +213,7 @@
                 <input type="text" value="ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37" id="pHash" style="display:none">
                 <div class="tooltip">
                     <button onclick="shaPP()" onmouseout="outPP()">
-                    <span class="tooltiptext" id="pHash">Copy to clipboard</span>
+                    <span class="tooltiptext" id="pTip">Copy to clipboard</span>
                     sha256sum (click to copy)
                     </button>
                 </div>
@@ -218,7 +237,7 @@
                 <input type="text" value="ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37" id="pHash" style="display:none">
                 <div class="tooltip">
                     <button onclick="shaPP()" onmouseout="outPP()">
-                    <span class="tooltiptext" id="pHash">Copy to clipboard</span>
+                    <span class="tooltiptext" id="pTip">Copy to clipboard</span>
                     sha256sum (click to copy)
                     </button>
                 </div>
@@ -244,7 +263,7 @@
                 <input type="text" value="6d2ce201cd7526c4ea74d25ddf69388d614b60fb5845077498cf7a36432f12d9" id="dHash" style="display:none">
                 <div class="tooltip">
                     <button onclick="shaRD()" onmouseout="outRD()">
-                    <span class="tooltiptext" id="dHash">Copy to clipboard</span>
+                    <span class="tooltiptext" id="dTip">Copy to clipboard</span>
                     sha256sum (click to copy)
                     </button>
                 </div>
@@ -268,7 +287,7 @@
                 <input type="text" value="0e035777e526eb5677772f911654de69b01198328cb55cd4d248afb3f29cd37a" id="sHash" style="display:none">
                 <div class="tooltip">
                     <button onclick="shaRS()" onmouseout="outRS()">
-                    <span class="tooltiptext" id="sHash">Copy to clipboard</span>
+                    <span class="tooltiptext" id="sTip">Copy to clipboard</span>
                     sha256sum (click to copy)
                     </button>
                 </div>
