@@ -499,9 +499,9 @@ select {
   opacity: 0;
   transition: opacity 0.3s;
   font: inherit;
-  width: 100%;
-  top: 0%;
-  left: 40%; 
+  width: 90%;
+  top: -3%;
+  left: 35%; 
 }
 
 .tooltip .tooltiptext::after {
@@ -536,6 +536,7 @@ button {
   font: inherit;
   background-color: #1c1c1c;
   text-align: center;
+  font-size: 95%;
   padding: 0.2em 0.4em 0.2em 0.4em;
   /* reset */
   margin: 4px;      
