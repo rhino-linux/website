@@ -510,10 +510,35 @@ select {
   opacity: 1;
   font: inherit;
   position: absolute;
-  margin-left: 30px;
+  margin-left: 33%;
 }
 
+button {
+  /* styling */
+  color: white;
+  background-color: var(--bg-color);
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--accent-1);
+  border-radius: 12px;
+  display: inline-block;
+  font: inherit;
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 0.2em .2em 0.2em .2em;
+  /* reset */
+  margin: 6px;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-left: 100%;
+}
 
+.active, .button:hover {
+  background-color: #3a3a3a;
+}
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
