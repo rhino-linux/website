@@ -500,8 +500,19 @@ select {
   transition: opacity 0.3s;
   font: inherit;
   width: 100%;
-  top: 100%;
-  left: -72%; 
+  top: 0%;
+  left: 40%; 
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
