@@ -436,7 +436,7 @@ select {
 
 .custom-select {
   position: relative;
-  font-family: Arial;
+  font: inherit;
 }
 
 .custom-select select {
