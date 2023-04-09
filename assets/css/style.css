@@ -523,12 +523,11 @@ button {
   border-radius: 12px;
   display: inline-block;
   font: inherit;
-  font-size: 90%;
   background-color: #1c1c1c;
   text-align: center;
-  padding: 0.2em .2em 0.2em .2em;
+  padding: 0.4em 0.4em 0.4em 0.4em;
   /* reset */
-  margin: 6px;      
+  margin: 4px;      
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
