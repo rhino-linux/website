@@ -493,16 +493,15 @@ select {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px;
+  padding: 4px;
   position: absolute;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s;
   font: inherit;
-  width: 120px;
-  top: 100%;
-  left: 50%; 
-  margin-left: -60px;
+  width: 100%;
+  top: -5%;
+  left: 30%; 
 }
 
 .tooltip:hover .tooltiptext {
@@ -511,6 +510,7 @@ select {
   font: inherit;
   position: absolute;
   margin-left: 33%;
+  font-size: 13px;
 }
 
 button {
@@ -525,7 +525,7 @@ button {
   font: inherit;
   background-color: #1c1c1c;
   text-align: center;
-  padding: 0.4em 0.4em 0.4em 0.4em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
   /* reset */
   margin: 4px;      
   -webkit-box-sizing: border-box;
@@ -533,7 +533,7 @@ button {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-left: 100%;
+  margin-left: 180%;
 }
 
 .active, button:hover {
