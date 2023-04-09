@@ -25,6 +25,51 @@
         }).change();
     });
     </script>
+    <script>
+    function shaX64() {
+    var copyText = document.getElementById("xHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied hash " + copyText.value + " to clipboard.");
+    }
+    </script>
+    <script>
+    function shaA64() {
+    var copyText = document.getElementById("aHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied hash " + copyText.value + " to clipboard.");
+    }
+    </script>
+    <script>
+    function shaPP() {
+    var copyText = document.getElementById("pHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied hash " + copyText.value + " to clipboard.");
+    }
+    </script>
+    <script>
+    function shaRD() {
+    var copyText = document.getElementById("dHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied hash " + copyText.value + " to clipboard.");
+    }
+    </script>
+    <script>
+    function shaRS() {
+    var copyText = document.getElementById("rHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied hash " + copyText.value + " to clipboard.");
+    }
+    </script>
 </head>
 <body>
 
@@ -68,7 +113,7 @@
             </select>
         </div>
         <div class="generic download-container">
-            <div class="box" style="max-width:45%;margin-left:auto;margin-right:auto">
+            <div class="box">
                 <h1 style="margin-bottom:.3em">x86_64</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/INTEL.png" height="60">
@@ -78,11 +123,10 @@
                    • Download size: 1.73GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/main">Source</a> <br> 
                 </p>
-                <button type="button" class="collapsible"> • sha256sum (click to view)</button>
-                <div class="collcont">  <p> <br> 51fa4b7b8b6c20e063e2e209843de09b3cf3240ff2f61c8168640e70107d363a</p>
-                </div>
+                <input type="text" value="51fa4b7b8b6c20e063e2e209843de09b3cf3240ff2f61c8168640e70107d363a" id="xHash" style="display:none">
+                <button onclick="shaX64()">sha256sum (click to copy)</button>
             </div>
-            <div class="box" style="max-width:45%;margin-left:auto;margin-right:auto">
+            <div class="box">
                 <h1 style="margin-bottom:.3em">ARM® aarch64</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/ARM.png" height="60">
@@ -91,13 +135,12 @@
                    • Download size: 1.69GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/main">Source</a> <br> 
                 </p>
-                <button type="button" class="collapsible"> • sha256sum (click to view)</button>
-                <div class="collcont">  <p> <br> 1c41becce826bc3e6ef5c0880480ecaab3b229beb2e298490727798c6d154c2d</p>
-                </div>
+                <input type="text" value="1c41becce826bc3e6ef5c0880480ecaab3b229beb2e298490727798c6d154c2d" id="aHash" style="display:none">
+                <button onclick="shaA64()">sha256sum (click to copy)</button>
             </div>
         </div>
         <div class="pinephone download-container">
-            <div class="box" style="max-width:45%;margin-left:auto;margin-right:auto">
+            <div class="box">
                 <h1 style="margin-bottom:.3em">Pine64 PinePhone</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/PINE.png" height="60">
@@ -113,11 +156,10 @@
                    • Download size: 1.27GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/pinephone">Source</a> <br> 
                 </p>
-                <button type="button" class="collapsible"> • sha256sum (click to view)</button>
-                <div class="collcont">  <p> <br> ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37</p>
-                </div>
+                <input type="text" value="ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37" id="pHash" style="display:none">
+                <button onclick="shaPP()">sha256sum (click to copy)</button>
             </div>
-            <div class="box" style="max-width:45%;margin-left:auto;margin-right:auto">
+            <div class="box">
                 <h1 style="margin-bottom:.3em">Pine64 PinePhone Pro</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/PINE.png" height="60">
@@ -133,13 +175,12 @@
                    • Download size: 1.27GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/pinephone">Source</a> <br> 
                 </p>
-                <button type="button" class="collapsible"> • sha256sum (click to view)</button>
-                <div class="collcont">  <p> <br> ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37</p>
-                </div>
+                <input type="text" value="ed7efb840efe86aecc86ab191b065264493af1097a0cd3544602c305a4b13e37" id="pHash" style="display:none">
+                <button onclick="shaPP()">sha256sum (click to copy)</button>
             </div>
         </div>
         <div class="rpi download-container">
-            <div class="box" style="max-width:45%;margin-left:auto;margin-right:auto">
+            <div class="box">
                 <h1 style="margin-bottom:.3em">Raspberry Pi ARM64 (Desktop)</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/RPI.png" height="60">
@@ -155,11 +196,10 @@
                    • Download size: 1.51GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/rpi">Source</a> <br> 
                 </p>
-                <button type="button" class="collapsible"> • sha256sum (click to view)</button>
-                <div class="collcont">  <p> <br> 6d2ce201cd7526c4ea74d25ddf69388d614b60fb5845077498cf7a36432f12d9</p>
-                </div>
+                <input type="text" value="6d2ce201cd7526c4ea74d25ddf69388d614b60fb5845077498cf7a36432f12d9" id="dHash" style="display:none">
+                <button onclick="shaRD()">sha256sum (click to copy)</button>
             </div>
-            <div class="box" style="max-width:45%;margin-left:auto;margin-right:auto">
+            <div class="box">
                 <h1 style="margin-bottom:.3em">Raspberry Pi ARM64 (Server)</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/RPI.png" height="60">
@@ -175,9 +215,8 @@
                    • Download size: 1.10GB <br>
                    • <a href="https://github.com/rhino-linux/os/tree/rpi">Source</a> <br> 
                 </p>
-                <button type="button" class="collapsible"> • sha256sum (click to view)</button>
-                <div class="collcont">  <p> <br> 0e035777e526eb5677772f911654de69b01198328cb55cd4d248afb3f29cd37a</p>
-                </div>
+                <input type="text" value="0e035777e526eb5677772f911654de69b01198328cb55cd4d248afb3f29cd37a" id="rHash" style="display:none">
+                <button onclick="shaRS()">sha256sum (click to copy)</button>
             </div>
         </div>
         <br>
@@ -191,21 +230,5 @@
         </footer>
 
     </div>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var collcont = this.nextElementSibling;
-    if (collcont.style.display === "block") {
-      collcont.style.display = "none";
-    } else {
-      collcont.style.display = "block";
-    }
-  });
-}
-</script>
 </body>
 </html>
