@@ -461,7 +461,7 @@ select {
 }
 
 /* fixed select for mobile view */
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 450px) {
   select {
     background-position: calc(100% - 5px) 10px;
     font-size: 1em;
