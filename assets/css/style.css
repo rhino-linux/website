@@ -479,7 +479,6 @@ select {
   background-color: var(--bg-color);
   text-align: left;
   width: 100%;
-  max-width: 22em;
 }
 
 /* Popup container - can be anything you want */
