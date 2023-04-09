@@ -518,11 +518,12 @@ button {
   color: white;
   background-color: var(--bg-color);
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: var(--accent-1);
   border-radius: 12px;
   display: inline-block;
   font: inherit;
+  font-size: 90%;
   background-color: #1c1c1c;
   text-align: center;
   padding: 0.2em .2em 0.2em .2em;
@@ -536,9 +537,10 @@ button {
   margin-left: 100%;
 }
 
-.active, .button:hover {
+.active, button:hover {
   background-color: #3a3a3a;
 }
+
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
