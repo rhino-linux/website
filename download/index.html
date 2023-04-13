@@ -1,582 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rhino Linux | Download</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-        <!-- Dark MDB theme -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Dark MDB theme -->
     <link rel="stylesheet" href="../assets/css/mdb.dark.min.css" />
-    <link rel="icon" type="image/png" href="../assets/images/logo.ico">
+    <link rel="icon" type="image/png" href="../assets/images/logo.ico" />
     <script src="../assets/js/navbar.js"></script>
     <style type="text/css"></style>
 
-   
     <script>
-        function shaX64() {
-          var copyText = document.getElementById('xHash');
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); // For mobile devices
-          navigator.clipboard.writeText(copyText.value);
-  
-          var tooltip = document.getElementById('xTip');
-          tooltip.innerHTML = 'Copied to clipboard!';
+      function shaX64() {
+        var copyText = document.getElementById('xHash');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
+
+        var tooltip = document.getElementById('xTip');
+        tooltip.innerHTML = 'Copied to clipboard!';
+      }
+
+      function outX64() {
+        var tooltip = document.getElementById('xTip');
+        tooltip.innerHTML = 'sha256sum';
+      }
+    </script>
+    <script>
+      function shaA64() {
+        var copyText = document.getElementById('aHash');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
+
+        var tooltip = document.getElementById('aTip');
+        tooltip.innerHTML = 'Copied to clipboard!';
+      }
+
+      function outA64() {
+        var tooltip = document.getElementById('aTip');
+        tooltip.innerHTML = 'sha256sum';
+      }
+    </script>
+    <script>
+      function shaPP() {
+        var copyText = document.getElementById('pHash');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
+
+        var tooltip = document.getElementById('pTip');
+        tooltip.innerHTML = 'Copied to clipboard!';
+      }
+
+      function outPP() {
+        var tooltip = document.getElementById('pTip');
+        tooltip.innerHTML = 'sha256sum';
+      }
+    </script>
+    <script>
+      function shaRD() {
+        var copyText = document.getElementById('dHash');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
+        var tooltip = document.getElementById('dTip');
+        tooltip.innerHTML = 'Copied to clipboard!';
+      }
+
+      function outRD() {
+        var tooltip = document.getElementById('dTip');
+        tooltip.innerHTML = 'sha256sum';
+      }
+    </script>
+    <script>
+      function shaRS() {
+        var copyText = document.getElementById('sHash');
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
+
+        var tooltip = document.getElementById('sTip');
+        tooltip.innerHTML = 'Copied to clipboard!';
+      }
+
+      function outRS() {
+        var tooltip = document.getElementById('sTip');
+        tooltip.innerHTML = 'sha256sum';
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- Intro settings -->
+      <style>
+        /* Default height for small devices */
+        #intro-example {
+          height: 400px;
         }
-  
-        function outX64() {
-          var tooltip = document.getElementById('xTip');
-          tooltip.innerHTML = 'sha256sum';
-        }
-      </script>
-      <script>
-        function shaA64() {
-          var copyText = document.getElementById('aHash');
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); // For mobile devices
-          navigator.clipboard.writeText(copyText.value);
-  
-          var tooltip = document.getElementById('aTip');
-          tooltip.innerHTML = 'Copied to clipboard!';
-        }
-  
-        function outA64() {
-          var tooltip = document.getElementById('aTip');
-          tooltip.innerHTML = 'sha256sum';
-        }
-      </script>
-      <script>
-        function shaPP() {
-          var copyText = document.getElementById('pHash');
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); // For mobile devices
-          navigator.clipboard.writeText(copyText.value);
-  
-          var tooltip = document.getElementById('pTip');
-          tooltip.innerHTML = 'Copied to clipboard!';
-        }
-  
-        function outPP() {
-          var tooltip = document.getElementById('pTip');
-          tooltip.innerHTML = 'sha256sum';
-        }
-      </script>
-      <script>
-        function shaRD() {
-          var copyText = document.getElementById('dHash');
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); // For mobile devices
-          navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById('dTip');
-          tooltip.innerHTML = 'Copied to clipboard!';
-        }
-  
-        function outRD() {
-          var tooltip = document.getElementById('dTip');
-          tooltip.innerHTML = 'sha256sum';
-        }
-      </script>
-      <script>
-        function shaRS() {
-          var copyText = document.getElementById('sHash');
-          copyText.select();
-          copyText.setSelectionRange(0, 99999); // For mobile devices
-          navigator.clipboard.writeText(copyText.value);
-  
-          var tooltip = document.getElementById('sTip');
-          tooltip.innerHTML = 'Copied to clipboard!';
-        }
-  
-        function outRS() {
-          var tooltip = document.getElementById('sTip');
-          tooltip.innerHTML = 'sha256sum';
-        }
-      </script>
-    </head>
-    <body>
-      <header>
-        <!-- Intro settings -->
-        <style>
-          /* Default height for small devices */
+
+        /* Height for devices larger than 992px */
+        @media (min-width: 992px) {
           #intro-example {
-            height: 400px;
+            height: 600px;
           }
-  
-          /* Height for devices larger than 992px */
-          @media (min-width: 992px) {
-            #intro-example {
-              height: 600px;
-            }
-          }
-        </style>
-  
-        <!-- Background image -->
-        <div
-          id="intro-example"
-          class="p-5 text-center bg-image vh-100 h-100"
-          style="background-image: url('../assets/images/blog/images/simple.png')"
-        >
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.32)">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler text-white"
-                  type="button"
-                  data-mdb-toggle="collapse"
-                  data-mdb-target="#navbarExample01"
-                  aria-controls="navbarExample01"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i class="fas fa-bars"></i>
-                </button>
-                <div
-                  class="collapse navbar-collapse justify-content-center"
-                  id="navbarExample01"
-                >
-                  <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                      <a
-                        class="nav-link"
-                        aria-current="page"
-                        onclick="ddhide()"
-                        href="../index.html"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" onclick="ddhide()" href="../download"
-                        >Download</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" onclick="ddhide()" href="../news"
-                        >News</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" onclick="ddhide()" href="../wiki"
-                        >Wiki</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        target="_blank"
-                        href="https://pacstall.dev/packages"
-                        >Packages</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+        }
+      </style>
+
+      <!-- Background image -->
+      <div
+        id="intro-example"
+        class="p-5 text-center bg-image vh-100 h-100"
+        style="background-image: url('../assets/images/blog/images/simple.png')"
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.32)">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler text-white"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarExample01"
+              >
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item active">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      onclick="ddhide()"
+                      href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="ddhide()" href="../download"
+                      >Download</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="ddhide()" href="../news"
+                      >News</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="ddhide()" href="../wiki"
+                      >Wiki</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      target="_blank"
+                      href="https://pacstall.dev/packages"
+                      >Packages</a
+                    >
+                  </li>
+                </ul>
               </div>
-            </nav>
-            <!-- Navbar -->
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white jumbotron container">
-                <h1 class="mb-3 p-4 mx-4">Rhino Linux | Download</h1>
-                <h5 class="mb-4">
-                  Download Rhino Linux Version <b>2023.1-beta3</b>
-                </h5>
-                <div>
-                  <a
-                    class="btn text-white btn-secondary btn-rounded btn-lg m-2"
-                    href="#select"
-                    role="button"
-                  >
-                    Click here to select your edition
-                  </a>
-                  <div id="mouse-scroll">
-                    <div class="mouse">
-                      <div class="mouse-in"></div>
-                    </div>
-                    <div>
-                      <span class="down-arrow-1"></span>
-                      <span class="down-arrow-2"></span>
-                      <span class="down-arrow-3"></span>
-                    </div>
+            </div>
+          </nav>
+          <!-- Navbar -->
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white jumbotron container">
+              <h1 class="mb-3 p-4 mx-4">Rhino Linux | Download</h1>
+              <h5 class="mb-4">
+                Download Rhino Linux Version <b>2023.1-beta3</b>
+              </h5>
+              <div>
+                <a
+                  class="btn text-white btn-secondary btn-rounded btn-lg m-2"
+                  href="#select"
+                  role="button"
+                >
+                  Click here to select your edition
+                </a>
+                <div id="mouse-scroll">
+                  <div class="mouse">
+                    <div class="mouse-in"></div>
+                  </div>
+                  <div>
+                    <span class="down-arrow-1"></span>
+                    <span class="down-arrow-2"></span>
+                    <span class="down-arrow-3"></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Background image -->
-      </header>
-      <br />
-      <section id="select">
-        <!-- Pills navs -->
-        <ul
-          class="container m-auto nav nav-pills nav-justified mb-3"
-          id="ex-3"
-          role="tablist"
+      </div>
+      <!-- Background image -->
+    </header>
+    <br />
+    <section id="select">
+      <!-- Pills navs -->
+      <ul
+        class="container m-auto nav nav-pills nav-justified mb-3"
+        id="ex-3"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="ex-3-tab-1"
+            data-mdb-toggle="pill"
+            href="#ex-3-pills-1"
+            role="tab"
+            aria-controls="pills-1"
+            aria-selected="true"
+            >Generic ISO (x86_64/ARM64)</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="ex-3-tab-2"
+            data-mdb-toggle="pill"
+            href="#ex-3-pills-2"
+            role="tab"
+            aria-controls="pills-2"
+            aria-selected="false"
+            >PinePhone (OG/Pro)</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="ex-3-tab-3"
+            data-mdb-toggle="pill"
+            href="#ex-3-pills-3"
+            role="tab"
+            aria-controls="pills-3"
+            aria-selected="false"
+            >Raspberry Pi (ARM64)</a
+          >
+        </li>
+      </ul>
+      <!-- Pills navs -->
+
+      <!-- Pills content -->
+      <div class="tab-content" id="ex-3-content">
+        <div
+          class="tab-pane fade show active"
+          id="ex-3-pills-1"
+          role="tabpanel"
+          aria-labelledby="pills-1-tab"
         >
-          <li class="nav-item" role="presentation">
-            <a
-              class="nav-link active"
-              id="ex-3-tab-1"
-              data-mdb-toggle="pill"
-              href="#ex-3-pills-1"
-              role="tab"
-              aria-controls="pills-1"
-              aria-selected="true"
-              >Generic ISO (x86_64/ARM64)</a
-            >
-          </li>
-          <li class="nav-item" role="presentation">
-            <a
-              class="nav-link"
-              id="ex-3-tab-2"
-              data-mdb-toggle="pill"
-              href="#ex-3-pills-2"
-              role="tab"
-              aria-controls="pills-2"
-              aria-selected="false"
-              >PinePhone (OG/Pro)</a
-            >
-          </li>
-          <li class="nav-item" role="presentation">
-            <a
-              class="nav-link"
-              id="ex-3-tab-3"
-              data-mdb-toggle="pill"
-              href="#ex-3-pills-3"
-              role="tab"
-              aria-controls="pills-3"
-              aria-selected="false"
-              >Raspberry Pi (ARM64)</a
-            >
-          </li>
-        </ul>
-        <!-- Pills navs -->
-  
-        <!-- Pills content -->
-        <div class="tab-content" id="ex-3-content">
-          <div
-            class="tab-pane fade show active"
-            id="ex-3-pills-1"
-            role="tabpanel"
-            aria-labelledby="pills-1-tab"
-          >
-            <section class="w-responsive mx-auto container">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4">
-                  <div class="card border border-secondary h-100 shadow-0 mb-3">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center"
-                    >
-                      <h5 class="card-title text-center">x86_64</h5>
-                      <div class="text-center">
-                        <img
-                          style="border-radius: 5px"
-                          alt=""
-                          src="../assets/images/company-logos/INTEL.png"
-                          height="60"
-                        />
-                        <img
-                          style="border-radius: 5px"
-                          alt=""
-                          src="../assets/images/company-logos/AMD.png"
-                          height="60"
-                        />
-                      </div>
-                      <div class="text-center mt-4">
-                        <a
-                          class="btn btn-secondary"
-                          href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-amd64.iso"
-                          >Download <i class="fa fa-download"></i
-                        ></a>
-                        <br />
-                        <span
-                          style="cursor: pointer"
-                          onclick="shaX64()"
-                          onmouseout="outX64()"
-                          id="xTip"
-                          data-mdb-toggle="tooltip"
-                          data-mdb-placement="right"
-                          title=""
-                          data-mdb-original-title="Copy to clipboard"
-                          class="badge bg-secondary mt-3"
-                          >sha256sum</span
-                        >
-  
-                        <p class="mt-3">Download size: 1.73GB</p>
-                        <a href="https://github.com/rhino-linux/os/tree/main"
-                          >Source</a
-                        >
-                      </div>
-                    </div>
-                    <input
-                      type="text"
-                      value="ad7551755b51eb8a5a8daee15929c586e14e146c15a1806542f3d882f9ec0b3a"
-                      id="xHash"
-                      style="display: none"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4">
-                  <div class="card border border-secondary h-100 shadow-0 mb-3">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center"
-                    >
-                      <h5 class="card-title text-center">ARM® aarch64</h5>
-                      <div class="text-center">
-                        <img
-                          style="border-radius: 5px"
-                          alt=""
-                          src="../assets/images/company-logos/ARM.png"
-                          height="60"
-                        />
-                      </div>
-                      <div class="text-center mt-4">
-                        <a
-                          class="btn btn-secondary"
-                          href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-arm64.iso"
-                          >Download <i class="fa fa-download"></i
-                        ></a>
-                        <br />
-                        <span
-                          style="cursor: pointer"
-                          onclick="shaA64()"
-                          onmouseout="outA64()"
-                          id="aTip"
-                          data-mdb-toggle="tooltip"
-                          data-mdb-placement="right"
-                          title=""
-                          data-mdb-original-title="Copy to clipboard"
-                          class="badge bg-secondary mt-3"
-                          >sha256sum</span
-                        >
-                        <p class="mt-3">Download size: 1.69GB</p>
-                        <a href="https://github.com/rhino-linux/os/tree/main"
-                          >Source</a
-                        >
-                      </div>
-                      <input
-                        type="text"
-                        value="215bac86cafe973f5f9f5000cf32333ddf49c266c0fd5170f4f6b03015fc396a"
-                        id="aHash"
-                        style="display: none"
+          <section class="w-responsive mx-auto container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card border border-secondary h-100 shadow-0 mb-3">
+                  <div
+                    class="card-body d-flex flex-column justify-content-center"
+                  >
+                    <h5 class="card-title text-center">x86_64</h5>
+                    <div class="text-center">
+                      <img
+                        style="border-radius: 5px"
+                        alt=""
+                        src="../assets/images/company-logos/INTEL.png"
+                        height="60"
+                      />
+                      <img
+                        style="border-radius: 5px"
+                        alt=""
+                        src="../assets/images/company-logos/AMD.png"
+                        height="60"
                       />
                     </div>
+                    <div class="text-center mt-4">
+                      <a
+                        class="btn btn-secondary"
+                        href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-amd64.iso"
+                        >Download <i class="fa fa-download"></i
+                      ></a>
+                      <br />
+                      <span
+                        style="cursor: pointer"
+                        onclick="shaX64()"
+                        onmouseout="outX64()"
+                        id="xTip"
+                        data-mdb-toggle="tooltip"
+                        data-mdb-placement="right"
+                        title=""
+                        data-mdb-original-title="Copy to clipboard"
+                        class="badge bg-secondary mt-3"
+                        >sha256sum</span
+                      >
+
+                      <p class="mt-3">Download size: 1.73GB</p>
+                      <a href="https://github.com/rhino-linux/os/tree/main"
+                        >Source</a
+                      >
+                    </div>
                   </div>
+                  <input
+                    type="text"
+                    value="ad7551755b51eb8a5a8daee15929c586e14e146c15a1806542f3d882f9ec0b3a"
+                    id="xHash"
+                    style="display: none"
+                  />
                 </div>
               </div>
-            </section>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="ex-3-pills-2"
-            role="tabpanel"
-            aria-labelledby="pills-2-tab"
-          >
-            <section class="w-responsive mx-auto container">
-              <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-12 mb-4">
-                  <div class="card border border-secondary h-100 shadow-0 mb-3">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center"
-                    >
-                      <h5 class="card-title text-center">
-                        Pine64 PinePhone (OG/Pro)
-                      </h5>
-                      <div class="text-center">
-                        <img
-                          style="border-radius: 5px"
-                          alt=""
-                          src="../assets/images/company-logos/PINE.png"
-                          height="60"
-                        />
-                      </div>
-                      <div class="text-center mt-4">
-                        <a
-                          class="btn btn-secondary mb-3"
-                          href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-pinephone-unified.img.xz"
-                          >Download <i class="fa fa-download"></i
-                        ></a>
-                        <br />
-                        <kbd>Login: rhino</kbd>
-                        <br />
-                        <kbd>Password: 1234</kbd>
-  
-                        <br />
-                        <span
-                          style="cursor: pointer"
-                          onclick="shaPP()"
-                          onmouseout="outPP()"
-                          id="pTip"
-                          data-mdb-toggle="tooltip"
-                          data-mdb-placement="right"
-                          title=""
-                          data-mdb-original-title="Copy to clipboard"
-                          class="badge bg-secondary mt-3"
-                          >sha256sum</span
-                        >
-                        <p class="mt-3">Download size: 1.27GB</p>
-                        <a href="https://github.com/rhino-linux/os/tree/pinephone"
-                          >Source</a
-                        >
-                      </div>
-                      <input
-                        type="text"
-                        value="2edc7d2788821c8708ea4203e03b1b1d8daa80d178326c5652f353582dab7f0c"
-                        id="pHash"
-                        style="display: none"
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card border border-secondary h-100 shadow-0 mb-3">
+                  <div
+                    class="card-body d-flex flex-column justify-content-center"
+                  >
+                    <h5 class="card-title text-center">ARM® aarch64</h5>
+                    <div class="text-center">
+                      <img
+                        style="border-radius: 5px"
+                        alt=""
+                        src="../assets/images/company-logos/ARM.png"
+                        height="60"
                       />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a
+                        class="btn btn-secondary"
+                        href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-arm64.iso"
+                        >Download <i class="fa fa-download"></i
+                      ></a>
+                      <br />
+                      <span
+                        style="cursor: pointer"
+                        onclick="shaA64()"
+                        onmouseout="outA64()"
+                        id="aTip"
+                        data-mdb-toggle="tooltip"
+                        data-mdb-placement="right"
+                        title=""
+                        data-mdb-original-title="Copy to clipboard"
+                        class="badge bg-secondary mt-3"
+                        >sha256sum</span
+                      >
+                      <p class="mt-3">Download size: 1.69GB</p>
+                      <a href="https://github.com/rhino-linux/os/tree/main"
+                        >Source</a
+                      >
                     </div>
                     <input
                       type="text"
-                      value="51fa4b7b8b6c20e063e2e209843de09b3cf3240ff2f61c8168640e70107d363a"
-                      id="xHash"
+                      value="215bac86cafe973f5f9f5000cf32333ddf49c266c0fd5170f4f6b03015fc396a"
+                      id="aHash"
                       style="display: none"
                     />
                   </div>
                 </div>
               </div>
-            </section>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="ex-3-pills-3"
-            role="tabpanel"
-            aria-labelledby="pills-3-tab"
-          >
-            <section class="w-responsive mx-auto container">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4">
-                  <div class="card border border-secondary h-100 shadow-0 mb-3">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center"
-                    >
-                      <h5 class="card-title text-center">
-                        Raspberry Pi A64 (Desktop)
-                      </h5>
-                      <div class="text-center">
-                        <img
-                          style="border-radius: 5px"
-                          alt=""
-                          src="../assets/images/company-logos/RPI.png"
-                          height="60"
-                        />
-                      </div>
-                      <div class="text-center mt-4">
-                        <a
-                          class="btn btn-secondary mb-3"
-                          href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-rpi-desktop.img.xz"
-                          >Download <i class="fa fa-download"></i
-                        ></a>
-                        <br />
-                        <kbd>Login: rhino</kbd>
-                        <br />
-                        <kbd>Password: 1234</kbd>
-  
-                        <br />
-                        <span
-                          style="cursor: pointer"
-                          onclick="shaRD()"
-                          onmouseout="outRD()"
-                          id="dTip"
-                          data-mdb-toggle="tooltip"
-                          data-mdb-placement="right"
-                          title=""
-                          data-mdb-original-title="Copy to clipboard"
-                          class="badge bg-secondary mt-3"
-                          >sha256sum</span
-                        >
-                        <p class="mt-3">Download size: 1.51GB</p>
-                        <a href="https://github.com/rhino-linux/os/tree/rpi"
-                          >Source</a
-                        >
-                      </div>
-                    </div>
-                    <input
-                      type="text"
-                      value="84777e46265ff6769aedba1cb5abc3c754eacdadc11e39ceef019288459a11cf"
-                      id="dHash"
-                      style="display: none"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4">
-                  <div class="card border border-secondary h-100 shadow-0 mb-3">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center"
-                    >
-                      <h5 class="card-title text-center">
-                        Raspberry Pi A64 (Server)
-                      </h5>
-                      <div class="text-center">
-                        <img
-                          style="border-radius: 5px"
-                          alt=""
-                          src="../assets/images/company-logos/RPI.png"
-                          height="60"
-                        />
-                      </div>
-                      <div class="text-center mt-4">
-                        <a
-                          class="btn btn-secondary mb-3"
-                          href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-rpi-server.img.xz"
-                          >Download <i class="fa fa-download"></i
-                        ></a>
-                        <br />
-                        <kbd>Login: rhino</kbd>
-                        <br />
-                        <kbd>Password: 1234</kbd>
-  
-                        <br />
-                        <span
-                          style="cursor: pointer"
-                          onclick="shaRS()"
-                          onmouseout="outRS()"
-                          id="sTip"
-                          data-mdb-toggle="tooltip"
-                          data-mdb-placement="right"
-                          title=""
-                          data-mdb-original-title="Copy to clipboard"
-                          class="badge bg-secondary mt-3"
-                          >sha256sum</span
-                        >
-                        <p class="mt-3">Download size: 1.10GB</p>
-                        <a href="https://github.com/rhino-linux/os/tree/rpi"
-                          >Source</a
-                        >
-                      </div>
-                      <input
-                        type="text"
-                        value="21781b50f15726127fac24560526ee8a01fedfdaf2f43843b9f1363b2ecd1253"
-                        id="sHash"
-                        style="display: none"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
-        <!-- Pills content -->
-      </section>
-      <hr class="hr container text-secondary" style="height: 2px" />
-      <br />
-      <section class="container">
-        <footer class="text-center text-lg-start">
-          <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-          >
-            <a href="https://github.com/rhino-linux">Source Code</a> |
-            <a href="contact">Contact & Social</a> |
-            <a href="https://ko-fi.com/rhinolinux">Donate</a> |
-            <a href="brand">Branding</a>
-          </div>
-          <!-- Copyright -->
-        </footer>
-      </section>
-      <!-- MDB -->
-      <script type="text/javascript" src="../assets/js/mdb.min.js"></script>
-      <!-- Custom scripts -->
-      <script type="text/javascript"></script>
-    </body>
+        <div
+          class="tab-pane fade"
+          id="ex-3-pills-2"
+          role="tabpanel"
+          aria-labelledby="pills-2-tab"
+        >
+          <section class="w-responsive mx-auto container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card border border-secondary h-100 shadow-0 mb-3">
+                  <div
+                    class="card-body d-flex flex-column justify-content-center"
+                  >
+                    <h5 class="card-title text-center">
+                      Pine64 PinePhone (OG/Pro)
+                    </h5>
+                    <div class="text-center">
+                      <img
+                        style="border-radius: 5px"
+                        alt=""
+                        src="../assets/images/company-logos/PINE.png"
+                        height="60"
+                      />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a
+                        class="btn btn-secondary mb-3"
+                        href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-pinephone-unified.img.xz"
+                        >Download <i class="fa fa-download"></i
+                      ></a>
+                      <br />
+                      <kbd>Login: rhino</kbd>
+                      <br />
+                      <kbd>Password: 1234</kbd>
+
+                      <br />
+                      <span
+                        style="cursor: pointer"
+                        onclick="shaPP()"
+                        onmouseout="outPP()"
+                        id="pTip"
+                        data-mdb-toggle="tooltip"
+                        data-mdb-placement="right"
+                        title=""
+                        data-mdb-original-title="Copy to clipboard"
+                        class="badge bg-secondary mt-3"
+                        >sha256sum</span
+                      >
+                      <p class="mt-3">Download size: 1.27GB</p>
+                      <a href="https://github.com/rhino-linux/os/tree/pinephone"
+                        >Source</a
+                      >
+                    </div>
+                    <input
+                      type="text"
+                      value="2edc7d2788821c8708ea4203e03b1b1d8daa80d178326c5652f353582dab7f0c"
+                      id="pHash"
+                      style="display: none"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    value="51fa4b7b8b6c20e063e2e209843de09b3cf3240ff2f61c8168640e70107d363a"
+                    id="xHash"
+                    style="display: none"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="ex-3-pills-3"
+          role="tabpanel"
+          aria-labelledby="pills-3-tab"
+        >
+          <section class="w-responsive mx-auto container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card border border-secondary h-100 shadow-0 mb-3">
+                  <div
+                    class="card-body d-flex flex-column justify-content-center"
+                  >
+                    <h5 class="card-title text-center">
+                      Raspberry Pi A64 (Desktop)
+                    </h5>
+                    <div class="text-center">
+                      <img
+                        style="border-radius: 5px"
+                        alt=""
+                        src="../assets/images/company-logos/RPI.png"
+                        height="60"
+                      />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a
+                        class="btn btn-secondary mb-3"
+                        href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-rpi-desktop.img.xz"
+                        >Download <i class="fa fa-download"></i
+                      ></a>
+                      <br />
+                      <kbd>Login: rhino</kbd>
+                      <br />
+                      <kbd>Password: 1234</kbd>
+
+                      <br />
+                      <span
+                        style="cursor: pointer"
+                        onclick="shaRD()"
+                        onmouseout="outRD()"
+                        id="dTip"
+                        data-mdb-toggle="tooltip"
+                        data-mdb-placement="right"
+                        title=""
+                        data-mdb-original-title="Copy to clipboard"
+                        class="badge bg-secondary mt-3"
+                        >sha256sum</span
+                      >
+                      <p class="mt-3">Download size: 1.51GB</p>
+                      <a href="https://github.com/rhino-linux/os/tree/rpi"
+                        >Source</a
+                      >
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    value="84777e46265ff6769aedba1cb5abc3c754eacdadc11e39ceef019288459a11cf"
+                    id="dHash"
+                    style="display: none"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card border border-secondary h-100 shadow-0 mb-3">
+                  <div
+                    class="card-body d-flex flex-column justify-content-center"
+                  >
+                    <h5 class="card-title text-center">
+                      Raspberry Pi A64 (Server)
+                    </h5>
+                    <div class="text-center">
+                      <img
+                        style="border-radius: 5px"
+                        alt=""
+                        src="../assets/images/company-logos/RPI.png"
+                        height="60"
+                      />
+                    </div>
+                    <div class="text-center mt-4">
+                      <a
+                        class="btn btn-secondary mb-3"
+                        href="https://github.com/rhino-linux/os/releases/download/2023.1-beta3/Rhino-Linux-2023.1-beta3-rpi-server.img.xz"
+                        >Download <i class="fa fa-download"></i
+                      ></a>
+                      <br />
+                      <kbd>Login: rhino</kbd>
+                      <br />
+                      <kbd>Password: 1234</kbd>
+
+                      <br />
+                      <span
+                        style="cursor: pointer"
+                        onclick="shaRS()"
+                        onmouseout="outRS()"
+                        id="sTip"
+                        data-mdb-toggle="tooltip"
+                        data-mdb-placement="right"
+                        title=""
+                        data-mdb-original-title="Copy to clipboard"
+                        class="badge bg-secondary mt-3"
+                        >sha256sum</span
+                      >
+                      <p class="mt-3">Download size: 1.10GB</p>
+                      <a href="https://github.com/rhino-linux/os/tree/rpi"
+                        >Source</a
+                      >
+                    </div>
+                    <input
+                      type="text"
+                      value="21781b50f15726127fac24560526ee8a01fedfdaf2f43843b9f1363b2ecd1253"
+                      id="sHash"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Pills content -->
+    </section>
+    <hr class="hr container text-secondary" style="height: 2px" />
+    <br />
+    <section class="container">
+      <footer class="text-center text-lg-start">
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <a href="https://github.com/rhino-linux">Source Code</a> |
+          <a href="contact">Contact & Social</a> |
+          <a href="https://ko-fi.com/rhinolinux">Donate</a> |
+          <a href="brand">Branding</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </section>
+    <!-- MDB -->
+    <script type="text/javascript" src="../assets/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
 </html>
