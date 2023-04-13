@@ -6,87 +6,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhino Linux</title>
     <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Dark MDB theme -->
+    <link rel="stylesheet" href="assets/css/mdb.dark.min.css" />
     <link rel="icon" type="image/png" href="assets/images/logo.ico" />
     <script src="assets/js/navbar.js"></script>
 </head>
 <body>
+    <!-- Start your project here-->
+    <div class="bg-urget-color text-center text-white py-1">
+      <p class="mb-0">
+        Rhino Linux open beta released!
+        <a class="text-white text-decoration-underline" href="3/index.html"
+          >Announcement</a
+        >
+        |
+        <a class="text-white text-decoration-underline" href="download/"
+          >Download</a
+        >
+      </p>
+    </div>
+    <header>
+      <!-- Intro settings -->
+      <style>
+        /* Default height for small devices */
+        #intro-example {
+          height: 400px;
+        }
 
-    <div id="dropdown">
-        <div class="container">
-            <div class="exit">
-                <a onclick="ddhide()" style="color:#fefefe">x</a>
+        /* Height for devices larger than 992px */
+        @media (min-width: 992px) {
+          #intro-example {
+            height: 600px;
+          }
+        }
+      </style>
+
+      <!-- Background image -->
+      <div
+        id="intro-example"
+        class="p-5 text-center bg-image vh-100 h-100"
+        style="background-image: url('./assets/images/blog/images/simple.png')"
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.32)">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler text-white"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarExample01"
+              >
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="download">Download</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="news">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="wiki">Wiki</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      target="_blank"
+                      href="https://pacstall.dev/packages"
+                      >Packages</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="content">
-                <p><a onclick="ddhide()" href="#">Home</a></p>
-                <p><a onclick="ddhide()" href="download">Download</a></p>
-                <p><a onclick="ddhide()" href="news">News</a></p>
-                <p><a onclick="ddhide()" href="wiki">Wiki</a></p>
-                <p><a onclick="ddhide()" target="_blank" href="https://pacstall.dev/packages">Packages</a></p>
+          </nav>
+          <!-- Navbar -->
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white jumbotron container">
+              <h1 class="mb-3 p-4 mx-4">
+                An Ubuntu-based rolling release distribution with sane defaults
+              </h1>
+              <h5 class="mb-4">
+                Rhino Linux is a rolling release Ubuntu-based distribution with
+                Pacstall & XFCE at its core.
+              </h5>
+              <a
+                class="btn btn-outline-light btn-rounded btn-lg m-2"
+                href="#info"
+                role="button"
+                >Learn more</a
+              >
+              <a
+                class="btn text-white btn-secondary btn-rounded btn-lg m-2"
+                href="download"
+                role="button"
+                >Download</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-
-    <div class="urgent">
-        <p>Rhino Linux open beta released! <a href="3/index.html">Announcement</a> | <a href="download/">Download</a></p>
-    </div>
-
-    <header class="extended" id="header">
-        <li style="float:right !important" class="mob-show mobile-menu"><a onclick="ddshow()"><span><b>☰</b></span></a></li>
-
-            <ul class="main-nav">
-
-            
-                <li><a href="#">Home</a></li>
-                <li><a href="download">Download</a></li>
-                <li><a href="news">News</a></li>
-                <li><a href="wiki">Wiki</a></li>
-                <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
-              </ul>
-              <h1>An Ubuntu-based rolling release distribution with sane defaults</h1>
-              <h2>Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.</h2>
-              <a href="#info" class="btn">Learn more</a>
-              <a href="download" class="btn">Download</a>
+      </div>
+      <!-- Background image -->
     </header>
 
-    <div class="container" id="info">
-        <h1>Why Rhino Linux?</h1>
-        <p>Rhino Linux re-invents the Ubuntu experience as a rolling release distribution atop a stable Desktop Environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, Rhino Linux specific applications and theming.</p>
+    <section id="info" class="mt-5 mb-5 container">
+      <!-- Section heading -->
+      <h3
+        class="text-center dark-grey-text font-weight-bold mb-5 pt-3 wow fadeIn"
+        data-wow-delay="0.2s"
+        style="
+          visibility: visible;
+          animation-name: fadeIn;
+          animation-delay: 0.2s;
+        "
+      >
+        <strong>Why Rhino Linux?</strong>
+      </h3>
 
-        <p>We have sane defaults, making the traditional desktop beautiful. With XFCE your desktop is lightweight, fast and customisable. You have the power to make Rhino Linux what YOU want.</p>
-
-        <h1>You're in control</h1>
-
-        <img src="assets/images/rhino-setup.png" alt="Rhino Setup" width="100%"/>
-
-        <p>
-            From the moment you boot up your system, YOU are in control. <code>rhino-setup</code> will greet you upon your first boot, giving you the ability to install additional package managers such as Flatpak, Snap and AppImage. Furthermore, you will be given the options to install additional software to improve your overall experience such as Nala.
-        </p>
-
-        <p>
-            Finally, we don’t do any mandatory data collection. You can opt-in with rhino-setup to having apport installed on your system, to send crash and bug reports directly to developers.
-        </p>
-
-        <h1>Making life easier</h1>
-
-        <img src="assets/images/rhino-pkg.png" alt="rhino-pkg" width="100%">
-
-        <p>
-            Pacstall gives the user a full AUR-like experience, making searching for and installing packages easier. rhino-pkg was developed to bring a wrapper for Pacstall, APT, Flatpaks and Snaps. It provides features such as installing a package, as well as selecting which package manager you wish to install it on.
-        </p>
-
-        <p>
-            We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
-        </p>
-
-        <hr>
-
-        <footer>
-            <p>
-                <a href="https://github.com/rhino-linux">Source Code</a> | <a href="contact">Contact & Social</a>  | <a href="https://ko-fi.com/rhinolinux">Donate</a>  | <a href="brand">Branding</a> 
-            </p>
-        </footer>
-
-    </div>
-
-</body>
+      <!-- Section description -->
+      <p
+        class="text-center w-responsive mx-auto my-5 grey-text wow fadeIn"
+        data-wow-delay="0.2s"
+      >
+        Rhino Linux re-invents the Ubuntu experience as a rolling release
+        distribution atop a stable Desktop Environment. Pacstall is at the very
+        heart of the distribution, providing essential packages such as the
+        Linux kernel, Firefox, Rhino Linux specific applications and theming. We
+        have sane defaults, making the traditional desktop beautiful. With XFCE
+        your desktop is lightweight, fast and customisable. You have the power
+        to make Rhino Linux what YOU want.
+      </p>
+    </section>
+    <section class="w-responsive mx-auto container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card border border-secondary h-100 shadow-0 mb-3">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title text-center">You're in control</h5>
+              <p class="card-text text-center">
+                From the moment you boot up your system, YOU are in control. <br>
+                <code>rhino-setup</code> will greet you upon your first boot,
+                giving you the ability to install additional package managers
+                such as Flatpak, Snap and AppImage. Furthermore, you will be
+                given the options to install additional software to improve your
+                overall experience such as Nala.
+              </p>
+              <p class="text-center">
+                Finally, we don’t do any mandatory data collection. You can
+                opt-in with rhino-setup to having apport installed on your
+                system, to send crash and bug reports directly to developers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card border border-secondary h-100 shadow-0 mb-3">
+            <div class="card bg-dark h-100 text-white shadow-1-strong">
+              <img
+                src="./assets/images/rhino-setup.png"
+                class="card-img h-100"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr container text-secondary" style="height: 2px" />
+    <br />
+    <section class="w-responsive mx-auto container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card border border-secondary h-100 shadow-0 mb-3">
+            <div class="card bg-dark h-100 text-white shadow-1-strong">
+              <img
+                src=".//assets/images/rhino-pkg.png"
+                class="card-img h-100"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card border border-secondary h-100 shadow-0 mb-3">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <h5 class="card-title text-center">Making life easier</h5>
+              <p class="card-text text-center">
+                Pacstall gives the user a full AUR-like experience, making
+                searching for and installing packages easier. rhino-pkg was
+                developed to bring a wrapper for Pacstall, APT, Flatpaks and
+                Snaps. It provides features such as installing a package, as
+                well as selecting which package manager you wish to install it
+                on.
+              </p>
+              <p class="text-center">
+                We use sane defaults. The XFCE Desktop environment is used for
+                its stable and rock-solid base. Pacstall, our package manager of
+                choice will always provide the latest software, even software
+                that is not available in the Ubuntu repositories, and our custom
+                XFCE configuration provides a traditional desktop that just
+                works, so you can instantly begin using your computer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr container text-secondary" style="height: 2px" />
+    <br />
+    <section class="container">
+      <footer class="text-center text-lg-start">
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <a href="https://github.com/rhino-linux">Source Code</a> |
+          <a href="contact">Contact & Social</a> |
+          <a href="https://ko-fi.com/rhinolinux">Donate</a> |
+          <a href="brand">Branding</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </section>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
 </html>
