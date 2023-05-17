@@ -12,7 +12,7 @@
   --accent-3: #9235ff;
   --accent-4: #13093c;
   --accent-5: #2d2d2d;
-  --urgent: #6955cf;
+  --urgent: linear-gradient(90deg, rgba(193,0,128,1) 0%, rgba(212,4,255,1) 33%, rgba(139,0,231,1) 67%, rgb(79, 55, 144) 100%);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 /* Urgent alert banner */
 .urgent {
-  background-color: var(--urgent);
+  background: var(--urgent);
   width: 100%;
   height: auto;
   text-align: center;
