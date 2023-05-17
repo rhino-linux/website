@@ -569,6 +569,17 @@ button:hover {
   background-color: #3a3a3a;
 }
 
+.keyboard-shortcut {
+  background-color: rgba(100,100,100,0.4);
+  border-radius: 0.25rem;
+  box-shadow: #262626 0px -4px 0px inset, rgba(0, 0, 0, 0.4) 0px 1px 1px;
+  padding: 0.5em 0.5em;
+  width: 88px;
+  position: relative;
+  display: inline-block;
+  margin: 0.5em;
+}
+
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
