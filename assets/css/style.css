@@ -31,6 +31,7 @@ body {
   height: auto;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .urgent a {
@@ -39,17 +40,21 @@ body {
 
 /* Home Header */
 .extended {
-  background-color: var(--accent-1);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
-  text-align: center;
-  width: 100%;
+  background: url('../images/blog/images/wallpaper.png') center center no-repeat;
+  background-size: cover;
   height: 50vh;
-  overflow: auto !important;
+}
+
+.extended .overlay, .o-extended .overlay {
+  background:rgba(0, 0, 0, 0.4);
+  margin: auto;
+  text-align: center;
+  height: 100%;
 }
 
 .extended h1 {
   font-weight: normal;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .extended h2 {
@@ -65,7 +70,7 @@ body {
   margin: 1em;
   font-size: 1.3em;
   border-radius: 0.5em;
-  background-color: rgba(169, 152, 255, 0.7);
+  background-color: rgb(140, 122, 235);
   color: white;
   text-decoration: none;
 }
@@ -76,12 +81,10 @@ body {
 
 /* Other Header */
 .o-extended {
-  background-color: var(--accent-1);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
-  text-align: center;
-  width: 100%;
+  background: url('../images/blog/images/wallpaper.png') center center no-repeat;
+  background-size: cover;
   height: 35vh;
-  overflow: auto !important;
+  margin-bottom: 2em;
 }
 
 .o-extended h1 {
@@ -102,7 +105,7 @@ body {
   margin: 1em;
   font-size: 1.3em;
   border-radius: 0.5em;
-  background-color: rgba(169, 152, 255, 0.7);
+  background-color: rgb(140, 122, 235);
   color: white;
   text-decoration: none;
 }
