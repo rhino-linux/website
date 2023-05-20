@@ -636,7 +636,7 @@ select {
 }
 
 .container .btn {
-  display: inline-flex;
+  display: inline-block;
   width: auto;
   padding: 8px;
   font-size: 1.2em;
@@ -651,6 +651,7 @@ select {
   -webkit-user-select: none;
   touch-action: manipulation;
   cursor: pointer;
+  margin-top: 1em;
 }
 
 .container .btn:hover {
@@ -708,14 +709,14 @@ select {
   margin-top: 0.5em;
   margin-left: 1em;
   text-align: left;
-  max-width: 35%;
+  width: 65%;
 }
 
 .news p {
   margin-left: 1em;
   margin-top: 1em;
   margin-right: 0.5em;
-  max-width: 65%;
+  width: 65%;
 }
 
 .news img {
@@ -732,7 +733,7 @@ select {
 }
 
 .news .stamp {
-  display: inline-flex;
+  display: inline-block;
   width: auto;
   border-radius: 0.5em;
   color: white;
