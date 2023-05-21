@@ -742,6 +742,76 @@ select {
   font-weight: 500;
 }
 
+
+#info .box {
+    border-width: 0;
+    background: none;
+    margin-left: -0.2em;
+    margin-right: 0.5em;
+}
+
+#info .box p {
+    display: inline-block;
+    margin-left: 0;
+}
+
+#info .box h1 {
+    font-weight: 400;
+}
+
+#info code {
+    font-size: 80%;
+}
+
+
+@media only screen and (min-width: 956px) {
+  #info .text p {
+    display: inline-block;
+    position: relative;
+    width: 20vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.6vw;
+    vertical-align: middle;
+  }
+  #info img {
+    display: inline-block;
+    width: 65vw;
+    position: relative;
+    margin-left: 3.5vw;
+    margin-right: 0;
+    vertical-align: middle;
+    bottom: 3vw;
+  }
+    #info p {
+    display: inline-block;
+    margin-left: 0;
+    font-size: 120%;
+    text-align: left;
+    }
+    #info .box h1 {
+    text-align: left;
+    position: relative;
+    font-size: 175%;
+    top: 3vw;
+    }
+    #info .btn { 
+    font-size: 100%}
+}
+
+@media only screen and (max-width: 956px) {
+  #info p {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+#info img {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+}
+
 button {
   /* styling */
   color: white;
