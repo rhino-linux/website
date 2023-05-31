@@ -834,12 +834,12 @@ select {
 
 #info .box h1 {
     font-weight: 400;
+    text-align: left;
 }
 
 #info code {
     font-size: 90%;
 }
-
 
 @media only screen and (min-width: 956px) {
   #info .text p {
@@ -869,8 +869,9 @@ select {
     #info .box h1 {
     text-align: left;
     position: relative;
-    font-size: 175%;
-    top: 3vw;
+    font-size: 2.5vw;
+    top: 2vw;
+    vertical-align: middle;
     }
     #info .btn { 
     font-size: 100%}
@@ -880,7 +881,6 @@ select {
   #info p {
     display: inline-block;
     position: relative;
-    text-align: center;
   }
 #info img {
     display: inline-block;
@@ -901,13 +901,15 @@ select {
         margin-left: 5px;
         margin-right: 5px;
     }
+    #info .box img {
+    margin-left: 0.4em;
+}
 }
 
 @media only screen and (max-width: 956px) and (max-height: 450px) {
   #info p {
     display: inline-block;
     position: relative;
-    text-align: center;
   }
 #info img {
     display: inline-block;
@@ -931,13 +933,15 @@ select {
         margin-left: 5px;
         margin-right: 5px;
     }
+    #info .box img {
+    margin-left: 0.4em;
+}
 }
 
 @media only screen and (max-width: 700px) and (max-height: 450px) {
   #info p {
     display: inline-block;
     position: relative;
-    text-align: center;
   }
 #info img {
     display: inline-block;
@@ -961,6 +965,9 @@ select {
         margin-left: 5px;
         margin-right: 5px;
     }
+    #info .box img {
+    margin-left: 0.4em;
+}
 }
 
 button {
