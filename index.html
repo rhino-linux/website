@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
 </head>
 
 <body>
-
     <div id="dropdown">
         <div class="container">
             <div class="exit">
@@ -29,10 +27,7 @@
     <header class="extended" id="header">
         <div class="overlay">
             <li style="float:right !important" class="mob-show mobile-menu"><a onclick="ddshow()"><span><b>☰</b></span></a></li>
-
             <ul class="main-nav">
-
-            
                 <li><a href="#">Home</a></li>
                 <li><a href="download">Download</a></li>
                 <li><a href="news">News</a></li>
@@ -44,76 +39,55 @@
               <a href="#info" class="btn">Why Rhino?</a>
               <a href="download" class="btn">Download</a>
         </div>
-        
     </header>
 
     <div class="urgent">
         <p>Unicorn Desktop released! + Issues with Pacstall preventing upgrades: <a href="4/">Announcement</a> | <a href="wiki/bug-pac-dependency.html">Bug fix</a>!
     </p></div> 
 
-    <div class="container" id="info" style="width:90vw">
+<div class="container" id="info" style="width:90vw">
         <h1>Why Rhino Linux?</h1>
-        <p style="text-align:center">Rhino Linux re-invents the Ubuntu experience as a rolling release distribution atop a stable Desktop Environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, Rhino Linux specific applications and theming.</p>
-
-        
-
-        <p style="text-align:center">
-            We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
+        <p style="text-align:center">Rhino Linux re-invents the Ubuntu experience as a rolling release distribution atop a stable Desktop Environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, Rhino Linux specific applications and theming.
         </p>
-
-        
-<div class="box">
-<div class="text box">
-<h1>Unicorn built-in</h1><p>
-            Rhino Linux comes preinstalled with it's own in-house desktop experience, Unicorn, a custom built XFCE desktop experience combining the best of the traditional and modern takes on the desktop experience. Unicorn is both fast as well as elegant.
+        <p style="text-align:center">We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
+        </p>
+        <div class="box"> # for strange spacing reasons, need text box within box
+          <div class="text box">
+            <h1>Unicorn built-in</h1>
+            <p>Rhino Linux comes preinstalled with it's own in-house desktop experience, Unicorn, a custom built XFCE desktop experience combining the best of the traditional and modern takes on the desktop experience. Unicorn is both fast as well as elegant.
+              <br>
+              <a href="unicorn/" class="btn">Learn more</a>
+            </p>
+            <img src="assets/images/rhino-linux.png" alt="Unicorn Desktop Experience">
+          </div>
+      </div>
+      <div class="box">
+        <div class="text box">
+          <h1>You're in control</h1>
+          <p>From the moment you boot up your system, YOU are in control. <code>rhino-setup</code> will greet you upon your first boot, giving you the ability to install additional package managers such as Flatpak, Snap and AppImage. Furthermore, you will be given the options to install additional software to improve your overall experience such as Nala.
             <br>
-            
-        <a href="unicorn/" class="btn">Learn more</a></p>
-<img src="assets/images/rhino-linux.png" alt="Unicorn Desktop Experience"></div></div>
-
-        
-
-        
-
-        
-
-<div class="box">
-<div class="text box">
-
-        <h1>You're in control</h1><p>
-            From the moment you boot up your system, YOU are in control. <code>rhino-setup</code> will greet you upon your first boot, giving you the ability to install additional package managers such as Flatpak, Snap and AppImage. Furthermore, you will be given the options to install additional software to improve your overall experience such as Nala.
-        <br><a href="wiki/" class="btn">Official wiki</a></p>
-
-
-<img src="assets/images/rhino-setup.png" alt="Rhino Setup"></div></div>
-
-        
-
-        
-
-<div class="box">
-<div class="text box">
-
-        <h1>Making life easier</h1><p>
-            Pacstall gives the user a full AUR-like experience, making searching for and installing packages easier. rhino-pkg was developed to bring a wrapper for Pacstall, APT, Flatpaks and Snaps. It provides features such as installing a package, as well as selecting which package manager you wish to install it on. <br>
-        <a href="wiki/rhino-pkg.html" class="btn">RPK Guide</a></p>
-<img src="assets/images/rhino-pkg.png" alt="rhino-pkg"></div>
-</div>
-
-        
-
+            <a href="wiki/" class="btn">Official wiki</a>
+          </p>
+          <img src="assets/images/rhino-setup.png" alt="Rhino Setup">
+        </div>
+      </div>
+      <div class="box">
+        <div class="text box">
+          <h1>Making life easier</h1>
+          <p>Pacstall gives the user a full AUR-like experience, making searching for and installing packages easier. rhino-pkg was developed to bring a wrapper for Pacstall, APT, Flatpaks and Snaps. It provides features such as installing a package, as well as selecting which package manager you wish to install it on.
+            <br>
+            <a href="wiki/rhino-pkg.html" class="btn">RPK Guide</a>
+          </p>
+          <img src="assets/images/rhino-pkg.png" alt="rhino-pkg">
+        </div>
+      </div>
         <p style="text-align:center">
             Finally, we don’t do any mandatory data collection. You can opt-in with rhino-setup to having apport installed on your system, to send crash and bug reports directly to developers.
-        </p><hr>
-
-        
-
-    </div>
-
-
-
+        </p>
+      <hr>
+</div>
 <footer>
-            <p>
-                <a href="https://github.com/rhino-linux">Source Code</a> | <a href="contact">Contact &amp; Social</a>  | <a href="https://ko-fi.com/rhinolinux">Donate</a>  | <a href="brand">Branding</a> | <a href="unicorn">Unicorn</a>
-            </p>
-        </footer></body></html>
+  <p><a href="https://github.com/rhino-linux">Source Code</a> | <a href="contact">Contact &amp; Social</a>  | <a href="https://ko-fi.com/rhinolinux">Donate</a>  | <a href="brand">Branding</a> | <a href="unicorn">Unicorn</a></p>
+</footer>
+</body>
+</html>
