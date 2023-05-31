@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhino Linux | Wiki</title>
+    <title>Rhino Linux | Unicorn Desktop in beta5</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/png" href="../assets/images/logo.ico" />
     <script src="../assets/js/navbar.js"></script>
@@ -39,39 +39,28 @@
                 <li><a href="../wiki">Wiki</a></li>
                 <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
               </ul>
-              <h1>Rhino Linux | Wiki</h1>
-            </div> 
+              <h1>Rhino Linux | Blog</h1>
+            </div>
     </header>
 
     <div class="container">
-        <h1>Welcome to the official Rhino Linux wiki!</h1>
+        <h1>2023.1-beta5 releases with Unicorn Desktop! + Manual intervention required on a bug</h1>
         <p>
-            Welcome to the official Wiki for Rhino Linux. The Rhino Linux Wiki covers the official documentation on how to use Rhino Linux, as well as use the tools created and included by the Rhino Linux project. The Wiki also provides documentation for development and development resources.
-        </p>
+            Rhino Linux has had a fair amount of beta releases, mostly fixing smaller issues that have arisen since the first one. We are now happy to announce the release of Rhino Linux 2023.1-beta5. This beta release brings a lot of major changes to Rhino Linux, including the release of our Unicorn Desktop experience.
+            </p>
 
-        <h1>The distribution</h1>
-        
-        <div class="box" style="border-width:3px; border-style:solid; border-color:#8d7be4; padding: 1em; border-radius:10px; background-color:#2d2d2d">
-            The official documentation for the Rhino Linux distribution, including how to install and utilize the distribution correctly. 
-            <br><br>
-            <h3>Installation &amp; getting started:</h3>
-            <a href="install.html" class="btn">Installation guide</a>
-            <br><br>
-            <a href="quick-start.html" class="btn">Quick Start Guide (Post-install)</a>
-            <br><br><br>
-            <h3>Tools used in Rhino Linux:</h3>
-            <a href="rhino-pkg.html" class="btn">rhino-pkg</a>
-            <br><br>
-            <a href="https://pacstall.dev/" class="btn">Pacstall</a>
-            <br><br> 
-        </div>
+        <p>The Unicorn Desktop is our in-house custom XFCE experience that combines the best of the traditional and modern takes on the desktop experience. Ready to serve both powerusers and beginners alike, the Unicorn Desktop is a force to be reckoned with. Based on XFCE, this desktop experience is lightweight and fast, but 100% powerful.</p>
 
+        <p>Built with user experience in mind, we have hand selected the best components to provide a lightweight system that works in perfect harmony. Plank dock and the XFCE panel have been chosen. With sensible defaults and a new take on the desktop, you will be able to work efficiently with ease.</p>
 
-        <h1>Development</h1>
+        <img src="../assets/images/unicorn/ulauncher.png" alt="Unicorn" width="100%">
+
+        <p>The Unicorn desktop experience comes with built-in free software solutions such as uLauncher, a drop-in replacement for spotlight search. Other features among that also include lightpad, our application grid and Xfdashboard, a gnome-shell style èxpose and virtual desktops dashboard. You can read more about the Unicorn desktop <a href="../unicorn/index.html">here</a>.</p>
+
+        <h1>Issue preventing upgrades</h1>
 
         <p>
-            The official documentation and portal for the development of Rhino Linux. It is recommended if you are contributing to Rhino Linux to join our Discord Server or Matrix Space: <a href="https://rhinolinux.org/contact">https://rhinolinux.org/contact</a>. <br /><br />
-            &bull; <a href="https://github.com/rhino-linux/os">Disk image generation</a>
+            Users can upgrade from previous beta releases to Rhino Linux 2023.1-beta5, however an issue is currently preventing a direct upgrade with <code>rhino-pkg update</code>. Please follow this <a href="../wiki/bug-pac-dependency.html">guide</a> on our wiki to fix the issue.
         </p>
 
         <!-- Footer -->
