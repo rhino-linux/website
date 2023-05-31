@@ -630,6 +630,15 @@ select {
     background-position: calc(100% - 5px) 10px;
     font-size: 1em;
   }
+    .overlay {
+        font-size: 80%;
+    }
+    .overlay h1 {
+        margin-top: 1.6em;
+    }
+    .overlay .btn {
+        top: -2.2em;
+    }
 }
 
 .collapsible {
@@ -878,6 +887,9 @@ select {
     width: 100%;
     position: relative;
   }
+    #info .text {
+        margin-left: 0.5em;
+    }
 }
 
 button {
