@@ -827,6 +827,10 @@ select {
     margin-right: 0.5em;
 }
 
+#info .box h1 {
+    top: 2vw;
+}
+
 #info .box p {
     display: inline-block;
     margin-left: 0;
@@ -895,7 +899,6 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 2vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -908,7 +911,6 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 2vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -919,7 +921,6 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 6vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -930,7 +931,6 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 8vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -941,7 +941,6 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 10vw;
     vertical-align: middle;
     width: 25vw;
     }
