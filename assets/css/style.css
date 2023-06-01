@@ -872,9 +872,54 @@ select {
     font-size: 2.5vw;
     top: 2vw;
     vertical-align: middle;
+    width: 25vw;
     }
     #info .btn { 
     font-size: 100%}
+}
+
+@media only screen and (min-width: 1256px) {
+    #info .box h1 {
+    text-align: left;
+    position: relative;
+    font-size: 2.5vw;
+    top: 4vw;
+    vertical-align: middle;
+    width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 1728px) {
+    #info .box h1 {
+    text-align: left;
+    position: relative;
+    font-size: 2.5vw;
+    top: 8vw;
+    vertical-align: middle;
+    width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 1856px) {
+    #info .box h1 {
+    text-align: left;
+    position: relative;
+    font-size: 2.5vw;
+    top: 10vw;
+    vertical-align: middle;
+    width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 2056px) {
+    #info .box h1 {
+    text-align: left;
+    position: relative;
+    font-size: 2.5vw;
+    top: 14vw;
+    vertical-align: middle;
+    width: 25vw;
+    }
 }
 
 @media only screen and (max-width: 956px) {
