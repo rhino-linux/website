@@ -841,6 +841,31 @@ select {
     font-size: 90%;
 }
 
+
+@media only screen and (min-width: 956px) {
+#frontpage.box {
+    display: inline-flex;
+    margin-bottom: 0;
+}
+
+#frontpage.box p {
+    width: 50%;
+    padding: 1em
+}
+    h1#frontpage {
+    text-align:center;
+    margin-top:1em;
+    margin-bottom:0;
+    }
+}
+  
+@media only screen and (max-width: 956px) {
+    h1#frontpage {
+    margin-top:1em;
+    margin-bottom:0;
+    }
+}
+
 @media only screen and (min-width: 956px) {
   #info .text p {
     display: inline-block;
@@ -883,7 +908,7 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 3vw;
+    top: 2vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -916,18 +941,7 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 6vw;
-    vertical-align: middle;
-    width: 25vw;
-    }
-}
-
-@media only screen and (min-width: 2056px) {
-    #info .box h1 {
-    text-align: left;
-    position: relative;
-    font-size: 2.5vw;
-    top: 4vw;
+    top: 10vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -1027,7 +1041,7 @@ select {
 }
 @media only screen and (max-width: 956px) {
     .overlay {
-        font-size: 80%
+        font-size: 80%;
     }
 }
 
@@ -1039,7 +1053,7 @@ select {
 
 @media only screen and (max-width: 756px) {
     .overlay {
-        font-size: 60%
+        font-size: 70%
     }
 }
 
