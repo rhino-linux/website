@@ -883,7 +883,7 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 2vw;
+    top: 3vw;
     vertical-align: middle;
     width: 25vw;
     }
@@ -916,7 +916,18 @@ select {
     text-align: left;
     position: relative;
     font-size: 2.5vw;
-    top: 10vw;
+    top: 6vw;
+    vertical-align: middle;
+    width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 2056px) {
+    #info .box h1 {
+    text-align: left;
+    position: relative;
+    font-size: 2.5vw;
+    top: 4vw;
     vertical-align: middle;
     width: 25vw;
     }
