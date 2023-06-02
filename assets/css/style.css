@@ -951,8 +951,14 @@ select {
   #info p {
     display: inline-block;
     position: relative;
-    text-align: center;
   }
+    #frontpage.btn {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 0.2em;
+        text-align-last: center;
+    }
 #info img {
     display: inline-block;
     width: 100%;
@@ -986,6 +992,13 @@ select {
     position: relative;
     text-align: center;
   }
+  #frontpage.btn {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 0.2em;
+        text-align-last: center;
+    }
 #info img {
     display: inline-block;
     width: 100%;
@@ -1019,6 +1032,13 @@ select {
     position: relative;
     text-align: center;
   }
+  #frontpage.btn {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 0.2em;
+        text-align-last: center;
+    }
 #info img {
     display: inline-block;
     width: 100%;
