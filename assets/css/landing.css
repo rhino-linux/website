@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+}
+
+:root {
+  --bg-color: #1a1a1a;
+  --fg-color: #fefefe;
+  --accent-1: #8d7be4;
+  --accent-2: #8b00e7;
+  --accent-3: #9235ff;
+  --accent-4: #13093c;
+  --accent-5: #2d2d2d;
+  --urgent: linear-gradient(90deg, rgba(193,0,128,1) 0%, rgba(212,4,255,1) 33%, rgba(139,0,231,1) 67%, rgb(79, 55, 144) 100%);
+}
+
+body {
+    background: url('../images/blog/images/blobs.png') center center no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+  color: var(--fg-color);
+}
+
+h1 {
+    font-weight: lighter;
+    margin-bottom: .5em;
+}
+
+/* Header */
+.header {
+    width: 60vw;
+    margin: auto;
+    height: 100vh;
+}
+
+.header .child {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .child h1 {
+    text-align: center;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: .5em;
+    border-radius: .5em;
+    text-decoration: none;
+}
