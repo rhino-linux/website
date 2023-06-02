@@ -867,6 +867,7 @@ select {
     h1#frontpage {
     margin-top:1em;
     margin-bottom:0;
+    text-align: center;
     }
 }
 
@@ -950,12 +951,16 @@ select {
   #info p {
     display: inline-block;
     position: relative;
+    text-align: center;
   }
 #info img {
     display: inline-block;
     width: 100%;
     position: relative;
   }
+        #info .box h1 {
+    text-align: center;
+    }
     #info .text {
         margin-left: 0.5em;
     }
@@ -979,6 +984,7 @@ select {
   #info p {
     display: inline-block;
     position: relative;
+    text-align: center;
   }
 #info img {
     display: inline-block;
@@ -1011,6 +1017,7 @@ select {
   #info p {
     display: inline-block;
     position: relative;
+    text-align: center;
   }
 #info img {
     display: inline-block;
