@@ -53,3 +53,7 @@ h1 {
     border-radius: .5em;
     text-decoration: none;
 }
+
+.btn:hover {
+  opacity: 0.7;
+}
