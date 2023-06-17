@@ -484,6 +484,31 @@ footer a {
 }
 
 @media only screen and (max-width: 1026px) {
+
+  .ecosystem-text {
+    width: 95%;
+    margin: auto;
+  }
+
+  /* Ecosystem banners */
+#ecosystem-main {
+  background: url('../images/ecosystem/banner.png') center center no-repeat;
+  background-size: cover;
+  height: 32vh;
+  margin-bottom: 2em;
+  display: block;
+}
+
+#ecosystem-wizard, #ecosystem-system, #ecosystem-rpk {
+  background: url('../images/ecosystem/banner.png') center center no-repeat;
+  background-size: cover;
+  height: 32vh;
+  margin-bottom: 2em;
+  display: none;
+}
+
+
+
   .mob-show {
     display: block !important;
   }
