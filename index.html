@@ -67,22 +67,22 @@
             <div class="eco-column">
               <div class="eco-clickable" onclick="wizardshow()">
                 <img src="assets/images/ecosystem/setup-wizard.png" alt="" width="50%">
-                <h2>Setup Wizard</h2>
+                <h2>Setup Wizard →</h2>
               </div>
               
             </div>
 
             <div class="eco-column">
-              <div class="eco-clickable">
+              <div class="eco-clickable" onclick="systemshow()">
                 <img src="assets/images/ecosystem/your-os.png" alt="" width="50%">
-                <h2>Your OS</h2>
+                <h2>Your OS →</h2>
               </div>
             </div>
 
             <div class="eco-column">
-              <div class="eco-clickable">
+              <div class="eco-clickable" onclick="rpkshow()">
                 <img src="assets/images/ecosystem/placeholder-rpk.png" alt="" width="50%">
-              <h2>rhino-pkg</h2>
+              <h2>rhino-pkg →</h2>
               </div>
             </div>
 
@@ -101,6 +101,42 @@
             </div>
             <div class="eco-column">
               <p>When you first boot your system you will be greeted by our elegant setup wizard, giving you the ability to select your theme, install additional package managers and install additional software to optimise your experience.</p>
+              <br>
+              <p class="back" onclick="appshide()">⟵ Go back</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ecosystem-system">
+      <div class="overlay">
+        <div class="ecosystem-text">
+          <h1>Your OS</h1>
+          <div class="eco-row">
+            <div class="eco-column">
+              <img src="assets/images/ecosystem/apps/your-os.png" alt="" width="70%">
+            </div>
+            <div class="eco-column">
+              <p>Your OS is a handy graphical application that allows for you to view system information at a glance. Furthermore it provides a graphical method for you to update all of your software packages.</p>
+              <br>
+              <p class="back" onclick="appshide()">⟵ Go back</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ecosystem-rpk">
+      <div class="overlay">
+        <div class="ecosystem-text">
+          <h1>rhino-pkg</h1>
+          <div class="eco-row">
+            <div class="eco-column">
+              <img src="assets/images/ecosystem/apps/rhino-pkg.png" alt="" width="95%">
+            </div>
+            <div class="eco-column">
+              <p>Our flagship package management wrapper, rhino-pkg, makes life easy by allows for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and our handy <a href="wiki/rhino-pkg.html" style="color: white;">guide</a>, you will have all of your favourite apps in seconds.</p>
               <br>
               <p class="back" onclick="appshide()">⟵ Go back</p>
             </div>
