@@ -45,7 +45,14 @@ body {
   height: 50vh;
 }
 
-.extended .overlay, .o-extended .overlay, #ecosystem-main .overlay, #ecosystem-wizard .overlay, #ecosystem-system .overlay, #ecosystem-rpk .overlay {
+.extended .overlay, .o-extended .overlay {
+  background:rgba(15, 0, 20, 0.4);
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+#ecosystem-main .overlay, #ecosystem-wizard .overlay, #ecosystem-system .overlay, #ecosystem-rpk .overlay {
   background:rgba(15, 0, 20, 0.4);
   margin: auto;
   text-align: center;
