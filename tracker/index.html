@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhino Linux</title>
+    <title>Rhino Linux | Tracker</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/png" href="../assets/images/logo.ico" />
     <script src="../assets/js/navbar.js"></script>
 </head>
+
+<style>
+    .container h2 {
+        font-weight: lighter;
+    }
+</style>
 <body>
 
     <div id="dropdown">
@@ -41,14 +47,40 @@
                 <li><a href="../wiki">Wiki</a></li>
                 <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
               </ul>
-              <h1>Rhino Linux | Page</h1>
-              <h2>Information about page</h2>
+              <h1>Rhino Linux | Bug Tracker</h1>
+              <h2>Keep track of bugs and issues affecting Rhino Linux</h2>
             </div>
     </header>
 
     <div class="container">
-        <h1>Text</h1>
-        <p>Text</p>
+        <h1>Bug tracker</h1>
+        <br />
+
+        <div class="news box">
+            <h1>
+                <b>BUG: Snapd not installed after rhino-setup</b>
+                <br>
+            </h1>
+            <p>A minor issue with the setup wizard currently is that the setup wizard does not install snapd. This can be manually corrected, however. 
+                <br>
+                <br>
+                <a class="stamp"> May 17th, 2023 </a>
+                <a href="../tracker/bug-2.html" class="btn">Read more</a>
+            </p>
+        </div>
+
+        <div class="news box">
+            <h1>
+                <b>BUG: Certain updates require manual intervention</b>
+                <br>
+            </h1>
+            <p>While all of our Pacscripts have been updated to beta5, there is an issue with Pacstall that breaks certain Pacscript updates.
+                <br>
+                <br>
+                <a class="stamp"> May 17th, 2023 </a>
+                <a href="../tracker/bug-1.html" class="btn">Read more</a>
+            </p>
+        </div>
 
         <!-- Footer -->
         <hr>

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/images/logo.ico">
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/ecosystem.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
                 <p><a onclick="ddhide()" href="#">Home</a></p>
                 <p><a onclick="ddhide()" href="download">Download</a></p>
                 <p><a onclick="ddhide()" href="news">News</a></p>
+                <p><a onclick="ddhide()" href="tracker">Tracker</a></p>
                 <p><a onclick="ddhide()" href="wiki">Wiki</a></p>
                 <p><a onclick="ddhide()" target="_blank" href="https://pacstall.dev/packages">Packages</a></p>
             </div>
@@ -31,10 +33,11 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="download">Download</a></li>
                 <li><a href="news">News</a></li>
+                <li><a href="tracker">Tracker</a></li>
                 <li><a href="wiki">Wiki</a></li>
                 <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
               </ul>
-              <h1>An Ubuntu-based rolling release distribution with sane defaults</h1>
+              <h1>Ubuntu Based. Rolling Release. Community Maintained. Open Source.</h1>
               <h2>Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall &amp; XFCE at its core.</h2>
               <a href="#info" class="btn">Why Rhino?</a>
               <a href="download" class="btn">Download</a>
@@ -53,10 +56,102 @@
         <p>We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
         </p>
     </div>
+    </div>
+
+    <!-- Ecosystem banners -->
+    <div id="ecosystem-main">
+      <div class="overlay">
+        <div class="ecosystem-text">
+          <h1>Your experience matters.</h1>
+          <p>Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications, and command-line utilities, to be able to cater to your everyday needs.</p>
+          <div class="eco-row">
+
+            <div class="eco-column">
+              <div class="eco-clickable" onclick="wizardshow()">
+                <img src="assets/images/ecosystem/setup-wizard.png" alt="" width="50%">
+                <h2>Setup Wizard →</h2>
+              </div>
+              
+            </div>
+
+            <div class="eco-column">
+              <div class="eco-clickable" onclick="systemshow()">
+                <img src="assets/images/ecosystem/your-os.png" alt="" width="50%">
+                <h2>Your OS →</h2>
+              </div>
+            </div>
+
+            <div class="eco-column">
+              <div class="eco-clickable" onclick="rpkshow()">
+                <img src="assets/images/ecosystem/rpk-logo.png" alt="" width="50%">
+              <h2>rhino-pkg →</h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ecosystem-wizard">
+      <div class="overlay">
+        <div class="ecosystem-text" id="wizard">
+          <h1>Setup Wizard</h1>
+          <div class="eco-row">
+            <div class="eco-column">
+              <img src="assets/images/ecosystem/apps/setup-wizard.png" alt="" width="75%">
+            </div>
+            <div class="eco-column">
+              <p>When you first boot your system you will be greeted by our elegant setup wizard, giving you the ability to select your theme, install additional package managers and install additional software to optimise your experience.</p>
+              <br>
+              <p class="back" onclick="appshide()">⟵ Go back</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ecosystem-system">
+      <div class="overlay">
+        <div class="ecosystem-text" id="system">
+          <h1>Your OS</h1>
+          <div class="eco-row">
+            <div class="eco-column">
+              <img src="assets/images/ecosystem/apps/your-os.png" alt="" width="70%">
+            </div>
+            <div class="eco-column">
+              <p>Your OS is a handy graphical application that allows for you to view system information at a glance. Furthermore it provides a graphical method for you to update all of your software packages. <br><br> &bull; <code>rhino-system</code>, the Your OS app, is still currently in development and is not yet shipped to Rhino Linux.</p>
+              <br>
+              <p class="back" onclick="appshide()">⟵ Go back</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ecosystem-rpk">
+      <div class="overlay">
+        <div class="ecosystem-text" id="rpk">
+          <h1>rhino-pkg</h1>
+          <div class="eco-row">
+            <div class="eco-column">
+              <img src="assets/images/ecosystem/apps/rhino-pkg.png" alt="" width="95%">
+            </div>
+            <div class="eco-column">
+              <p>Our flagship package management wrapper, rhino-pkg, makes life easy by allows for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and our handy <a href="wiki/rhino-pkg.html" style="color: white;">guide</a>, you will have all of your favourite apps in seconds.</p>
+              <br>
+              <p class="back" onclick="appshide()">⟵ Go back</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="info" style="width:90vw">
     <!-- for strange spacing reasons, need text box within box -->
         <div class="box">
           <div class="text box">
-            <h1>Unicorn built-in</h1>
+            <h1>A sane desktop</h1>
             <p>Rhino Linux comes preinstalled with it's own in-house desktop experience, Unicorn, a custom built XFCE desktop experience combining the best of the traditional and modern takes on the desktop experience. Unicorn is both fast as well as elegant.
               <br>
               <a href="unicorn/" class="btn" id="frontpage">Learn more</a>
@@ -66,27 +161,23 @@
       </div>
       <div class="box">
         <div class="text box">
-          <h1>You're in control</h1>
-          <p>From the moment you boot up your system, YOU are in control. <code>rhino-setup</code> will greet you upon your first boot, giving you the ability to install additional package managers such as Flatpak, Snap and AppImage. Furthermore, you will be given the options to install additional software to improve your overall experience such as Nala.
-            <br>
-            <a href="wiki/" class="btn" id="frontpage">Official wiki</a>
-          </p>
-          <img src="assets/images/rhino-setup.png" alt="Rhino Setup">
+          <h1>Perfect for developers</h1>
+
+          <p>Developers will fall in love with our vast software repositories which are always up-to-date. User-repositories such as Pacstall can help provide development libraries that are critical for your project. With codium preinstalled on your system you can begin doing what you do best, instantly.</p>
+
+          <img src="assets/images/developers.png" alt="Rhino Setup">
         </div>
       </div>
       <div class="box">
         <div class="text box">
-          <h1>Making life easier</h1>
-          <p>Pacstall gives the user a full AUR-like experience, making searching for and installing packages easier. <code>rhino-pkg</code> was developed to bring a wrapper for Pacstall, APT, Flatpaks and Snaps. It provides features such as installing a package, as well as selecting which package manager you wish to install it on.
-            <br>
-            <a href="wiki/rhino-pkg.html" class="btn" id="frontpage">RPK Guide</a>
+          <h1>Perfect for you.</h1>
+          <p>
+            Rhino Linux strives to be the distribution for you. We provide many utilities and graphical applications to help make the Linux experience easy-to-use. Whether you are a Gamer, Developer, Web Surfer, or anywhere in-between, rest assured that Rhino Linux will support your needs.
           </p>
-          <img src="assets/images/rhino-pkg.png" alt="rhino-pkg">
+          <img src="assets/images/everyone.png" alt="rhino-pkg">
         </div>
       </div>
-        <p style="text-align:center;justify-content:center">
-            Finally, we don’t do any mandatory data collection. You can opt-in with <code>rhino-setup</code> to having apport installed on your system, to send crash and bug reports directly to developers.
-        </p>
+
       <hr>
     <footer>
         <p><a href="https://github.com/rhino-linux">Source Code</a> | <a href="contact">Contact &amp; Social</a>  | <a href="https://ko-fi.com/rhinolinux">Donate</a>  | <a href="brand">Branding</a> | <a href="unicorn">Unicorn</a></p>
