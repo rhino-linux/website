@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhino Linux | Tracker</title>
+    <title>Rhino Linux</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/png" href="../assets/images/logo.ico" />
     <script src="../assets/js/navbar.js"></script>
 </head>
-
-<style>
-    .container h2 {
-        font-weight: lighter;
-    }
-</style>
 <body>
 
     <div id="dropdown">
@@ -48,52 +42,15 @@
                 <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
               </ul>
               <h1>Rhino Linux | Bug Tracker</h1>
-              <h2>Keep track of bugs and issues affecting Rhino Linux</h2>
             </div>
     </header>
 
     <div class="container">
-        <h1>Bug tracker</h1>
-        <br />
+        <h1>Rhino Linux | Pacscripts breakage on beta4 and below</h1>
 
-        <div class="news box">
-            <h1>
-                <b>BUG: Users tracking pacstall:develop on beta4 and below</b>
-                <br>
-            </h1>
-            <p>Due to us utilising the Pacstall development branches for Rhino Linux 2023.1-beta4 and below, there are some breakage when it comes to upgrading your pacscripts with <code>rhino-pkg</code>. 
-                <br>
-                <br>
-                <a class="stamp">June 20th, 2023 </a>
-                <a href="../tracker/bug-3.html" class="btn">Read more</a>
-            </p>
-        </div>
-
-        <div class="news box">
-            <h1>
-                <b>BUG: Snapd not installed after rhino-setup</b>
-                <br>
-            </h1>
-            <p>A minor issue with the setup wizard currently is that the setup wizard does not install snapd. This can be manually corrected, however. 
-                <br>
-                <br>
-                <a class="stamp"> May 17th, 2023 </a>
-                <a href="../tracker/bug-2.html" class="btn">Read more</a>
-            </p>
-        </div>
-
-        <div class="news box">
-            <h1>
-                <b>BUG: Certain updates require manual intervention</b>
-                <br>
-            </h1>
-            <p>While all of our Pacscripts have been updated to beta5, there is an issue with Pacstall that breaks certain Pacscript updates.
-                <br>
-                <br>
-                <a class="stamp"> May 17th, 2023 </a>
-                <a href="../tracker/bug-1.html" class="btn">Read more</a>
-            </p>
-        </div>
+        <p>
+            Due to us utilising the Pacstall development branches for Rhino Linux 2023.1-beta4 and below, there are some breakage when it comes to upgrading your pacscripts with <code>rhino-pkg</code> while Pacstall 4.0.0, however thankfully there is an easy fix to this. You can switch from the <code>pacstall:develop</code> branch to <code>pacstall:master</code> with <code>pacstall -U pacstall:master</code>, and then after that you will be able to update your system as normal with <code>rpk update -y</code>.
+        </p>                                                     
 
         <!-- Footer -->
         <hr>
