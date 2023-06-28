@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url('../images/blog/images/blobs.png') center center no-repeat;
+    background: url('../images/landing.svg') center center no-repeat;
     font-family: 'Ubuntu', sans-serif;
   color: var(--fg-color);
 }
@@ -24,6 +24,15 @@ body {
 h1 {
     font-weight: lighter;
     margin-bottom: .5em;
+}
+
+a {
+  color: var(--fg-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Header */
