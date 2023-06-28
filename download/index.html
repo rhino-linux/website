@@ -196,6 +196,24 @@ document.addEventListener("click", closeAllSelect);
     }
         
     </script>
+    <script>
+        
+        function shaPT() {
+        var copyText = document.getElementById("tHash");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText.value);
+            
+        var tooltip = document.getElementById("tTip");
+        tooltip.innerHTML = "Copied to clipboard!";
+        }
+            
+        function outPT() {
+        var tooltip = document.getElementById("tTip");
+        tooltip.innerHTML = "Copy to clipboard";
+        }
+            
+        </script>
 </head>
 <body>
 
@@ -242,7 +260,7 @@ document.addEventListener("click", closeAllSelect);
             <select>
                 <option>Select your edition:</option>
                 <option value="generic">Generic ISO (x86_64/ARM64)</option>
-                <option value="pinephone">PinePhone (OG/Pro)</option>
+                <option value="pine">Pine64 (ARM64)</option>
                 <option value="rpi">Raspberry Pi (ARM64)</option>
             </select>
         </div>
@@ -285,7 +303,7 @@ document.addEventListener("click", closeAllSelect);
                 <input type="text" value="bb99eaea191cc70df6c5e13657e7949fb0c6fbd059f6025efcbd81a7941aac40" id="aHash" style="display:none">
             </div>
         </div>
-        <div class="pinephone download-container" style="max-width: 450px; margin-left: auto; margin-right: auto;">
+        <div class="pine download-container" style="max-width: 450px; margin-left: auto; margin-right: auto;">
             <div class="box">
                 <h1 style="margin-bottom:.3em">Pine64 PinePhone (OG/Pro)</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
@@ -310,6 +328,31 @@ document.addEventListener("click", closeAllSelect);
                    &bull; Kernel: <code>6.3.0-okpine</code> <br>
                 <br></div>
                 <input type="text" value="1e9a4ae6c6e50c813a80a045cefdea36571cf70b09e1a45fcb51af1dd1a0eb9a" id="pHash" style="display:none">
+            </div>
+            <div class="box">
+                <h1 style="margin-bottom:.3em">Pine64 PineTab2</h1>
+                <div class="box" style="text-align:center;border-width:0;margin:0">
+                    <img alt="" src="../assets/images/company-logos/PINE.png" height="60">
+                    <br>
+                    <code>Login: rhino</code>
+                    <br>
+                    <br>
+                    <code>Password: 1234</code>
+                    <br>
+                </div>
+                <br>
+                <div class="box" style="border-width:0;margin:0.5em">
+                    &bull; Download: <a href="https://github.com/rhino-linux/os/releases/download/2023.1-beta5/Rhino-Linux-2023.1-beta5-pinetab2.img.xz">link</a><div class="tooltip">
+                    <button onclick="shaPT()" onmouseout="outPT()">
+                    <span class="tooltiptext" id="tTip">Copy to clipboard</span>
+                    sha256sum
+                    </button>
+                    </div><br>
+                   &bull; Download size: 1.26GB <br>
+                   &bull; <a href="https://github.com/rhino-linux/os/tree/pinetab">Source</a> <br> <br>
+                   &bull; Kernel: <code>6.3.0-okpine</code> <br>
+                <br></div>
+                <input type="text" value="1e9a4ae6c6e50c813a80a045cefdea36571cf70b09e1a45fcb51af1dd1a0eb9a" id="tHash" style="display:none">
             </div>
         </div>
         <div class="rpi download-container">
