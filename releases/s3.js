@@ -21,7 +21,7 @@ function getParentPath() {
 }
 
 function createDownloadLink(key) {
-  var url = `https://${bucketName}.s3.wasabisys.com/`;
+  var url = `https://${bucketName}/`;
   if (key == "..") {
     url += getParentPath();
   } else {
