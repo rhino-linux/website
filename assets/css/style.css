@@ -52,7 +52,7 @@ body {
   height: 100%;
 }
 
-#ecosystem-main .overlay, #ecosystem-wizard .overlay, #ecosystem-system .overlay, #ecosystem-rpk .overlay {
+#ecosystem-main .overlay, #ecosystem-wizard .overlay, #ecosystem-system .overlay, #ecosystem-rpk .overlay, #ecosystem-rhinodrop .overlay {
   background:rgba(15, 0, 20, 0.4);
   margin: auto;
   text-align: center;
@@ -220,7 +220,7 @@ body {
   display: block;
 }
 
-#ecosystem-wizard, #ecosystem-system, #ecosystem-rpk {
+#ecosystem-wizard, #ecosystem-system, #ecosystem-rpk, #ecosystem-rhinodrop {
   background: url('../images/ecosystem/banner.png') center center no-repeat;
   background-size: cover;
   height: auto;
@@ -255,7 +255,7 @@ body {
   animation: slide-out 0.5s ease-in-out;
 }
 
-#wizard.ecosystem-text, #system.ecosystem-text, #rpk.ecosystem-text {
+#wizard.ecosystem-text, #system.ecosystem-text, #rpk.ecosystem-text #drop.ecosystem-text {
     animation: slide-in 0.5s ease-in-out;
 }
 
@@ -301,7 +301,7 @@ body {
 
 /* Create equal columns that sits next to each other */
 .eco-column {
-  flex: 33.33%; /* Maximum of 4 sbs colums, 100%, 50%, 33.33%, 25%*/
+  flex: 25%; /* Maximum of 4 sbs colums, 100%, 50%, 33.33%, 25%*/
   padding: 5px;
 }
 

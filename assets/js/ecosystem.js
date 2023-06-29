@@ -3,6 +3,7 @@ function appshide() {
     document.getElementById("ecosystem-wizard").style.display = "none";
     document.getElementById("ecosystem-system").style.display = "none";
     document.getElementById("ecosystem-rpk").style.display = "none";
+    document.getElementById("ecosystem-rhinodrop").style.display = "none";
 }
 
 function wizardshow() {
@@ -18,4 +19,9 @@ function systemshow() {
 function rpkshow() {
     document.getElementById("ecosystem-main").style.display = "none";
     document.getElementById("ecosystem-rpk").style.display = "block";
+}
+
+function dropshow() {
+    document.getElementById("ecosystem-main").style.display = "none";
+    document.getElementById("ecosystem-rhinodrop").style.display = "block";
 }
