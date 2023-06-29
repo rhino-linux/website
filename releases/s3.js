@@ -11,11 +11,23 @@ const itemsPerPage = 10;
 let currentPath = '';
 
 function isFolder(key) {
-  return key.endsWith('/');
+  return key == ".." || key.endsWith('/');
+}
+
+function getParentPath() {
+  const path = currentPath.slice(0, -1).split("/");
+  path.pop();
+  return path.join("/");
 }
 
 function createDownloadLink(key) {
-  const url = `https://${bucketName}.s3.wasabisys.com/${key}`;
+  var url = `https://${bucketName}.s3.wasabisys.com/`;
+  if (key == "..") {
+    url += getParentPath();
+  } else {
+    url += key;
+  }
+
   const link = document.createElement('a');
   link.href = url;
 
@@ -26,7 +38,7 @@ function createDownloadLink(key) {
   // Create the span element to hold the text
   const textSpan = document.createElement('span');
 
-  if (isFolder(key)) {
+  if (key != ".." && isFolder(key)) {
     textSpan.textContent = key.slice(0, -1).split('/').pop();
   } else {
     textSpan.textContent = key.split('/').pop();
@@ -104,20 +116,32 @@ function listObjects(path) {
     .then((text) => {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(text, 'text/xml');
-      const keys = xmlDoc.getElementsByTagName('Key');
-      const prefixes = xmlDoc.getElementsByTagName('Prefix');
+      const keys = Array.from(xmlDoc.getElementsByTagName('Key'));
+      const prefixes = Array.from(xmlDoc.getElementsByTagName('Prefix')).map(prefix => prefix.textContent);
+      prefixes.unshift("..");
 
       objectList.innerHTML = '';
 
-      Array.from(prefixes).forEach((prefix) => {
-        const key = prefix.textContent;
+      prefixes.forEach((prefix) => {
         const row = document.createElement('tr');
         const nameCell = document.createElement('td');
-        const link = createDownloadLink(key);
+	
+	if (prefix == ".." && currentPath == "") {
+          return;
+        } else if (prefix == path) {
+          return
+        }
+
+        var link = createDownloadLink(prefix);
 
         link.onclick = (e) => {
           e.preventDefault();
-          navigateTo(key);
+
+          if (prefix == "..") {
+            navigateTo(getParentPath());
+          } else {
+            navigateTo(prefix);
+          }
         };
 
         nameCell.appendChild(link);
@@ -127,7 +151,7 @@ function listObjects(path) {
         objectList.appendChild(row);
       });
 
-      Array.from(keys).forEach((keyElement) => {
+      keys.forEach((keyElement) => {
         const key = keyElement.textContent;
         if (key === 'index.html' || key === 's3.js' || key === 'dark-mode.css' || key === path) {
           return;
@@ -183,3 +207,5 @@ breadcrumb.onclick = (e) => {
 };
 
 navigateTo('');
+
+// vim: set sw=2 expandtab:
