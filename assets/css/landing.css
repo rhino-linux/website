@@ -103,6 +103,7 @@ img:not(:disabled):active {
     font-size: 18px;
     margin-left: 0.3em;
     margin-right: 0.3em;
+    margin-top: 0.5em;
     transform: translateZ(0) scale(1);
     transition: transform .2s;
 }
