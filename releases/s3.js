@@ -17,7 +17,12 @@ function isFolder(key) {
 function getParentPath() {
   const path = currentPath.slice(0, -1).split("/");
   path.pop();
-  return path.join("/");
+
+  if (path.length == 0) {
+    return ""
+  } else {
+    return path.join("/") + "/";
+  }
 }
 
 function createDownloadLink(key) {
@@ -76,7 +81,6 @@ function updateBreadcrumb(path) {
       const link = document.createElement('a');
       link.href = '#';
       link.textContent = part;
-      link.onclick = () => navigateTo(currentPath);
       listItem.appendChild(link);
     }
 
@@ -202,7 +206,15 @@ searchInput.addEventListener('input', (e) => {
 breadcrumb.onclick = (e) => {
   e.preventDefault();
   if (e.target.tagName === 'A') {
-    navigateTo('');
+    const items = Array.from(breadcrumb.children).map(node => node.innerText).slice(1);
+    const itemIndex = items.indexOf(e.target.innerText);
+    const targetPath = items.splice(0, itemIndex + 1).join("/");
+
+    if (targetPath == "") {
+      navigateTo("");
+    } else {
+      navigateTo(`${targetPath}/`);
+    }
   }
 };
 
