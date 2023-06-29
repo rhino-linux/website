@@ -11,7 +11,7 @@ const itemsPerPage = 10;
 let currentPath = '';
 
 function isFolder(key) {
-  return key.endsWith('/');
+  return key == ".." || key.endsWith('/');
 }
 
 function getParentPath() {
@@ -38,7 +38,7 @@ function createDownloadLink(key) {
   // Create the span element to hold the text
   const textSpan = document.createElement('span');
 
-  if (isFolder(key)) {
+  if (key != ".." && isFolder(key)) {
     textSpan.textContent = key.slice(0, -1).split('/').pop();
   } else {
     textSpan.textContent = key.split('/').pop();
