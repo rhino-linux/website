@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhino Linux</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="assets/images/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo.ico">
+    <script src="../assets/js/navbar.js"></script>
+</head>
+<body>
+
+    <div id="dropdown">
+        <div class="container">
+            <div class="exit">
+                <a onclick="ddhide()" style="color:#fefefe">x</a>
+            </div>
+            <div class="content">
+                <p><a onclick="ddhide()" href="../index.html">Home</a></p>
+                <p><a onclick="ddhide()" href="../download">Download</a></p>
+                <p><a onclick="ddhide()" href="../news">News</a></p>
+                <p><a onclick="ddhide()" href="../tracker">Tracker</a></p>
+                <p><a onclick="ddhide()" href="../wiki">Wiki</a></p>
+                <p><a onclick="ddhide()" target="_blank" href="https://pacstall.dev/packages">Packages</a></p>
+            </div>
+        </div>
+    </div>
+
+    <header class="o-extended" id="header">
+        <div class="overlay">
+        <li style="float:right !important" class="mob-show mobile-menu"><a onclick="ddshow()"><span><b>☰</b></span></a></li>
+
+            <ul class="main-nav">
+
+            
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../download">Download</a></li>
+                <li><a href="../news">News</a></li>
+                <li><a href="../tracker">Tracker</a></li>
+                <li><a href="../wiki">Wiki</a></li>
+                <li><a target="_blank" href="https://pacstall.dev/packages">Packages</a></li>
+              </ul>
+              <h1>Rhino Linux | Bug Tracker</h1>
+            </div>
+    </header>
+
+    <div class="container">
+        <h1>Rhino Linux | Firefox not displaying landing page on AMD64 devices.</h1>
+
+        <p>
+            Due to us utilising a different package for Firefox on AMD64 devices, the Firefox landing page was not set on AMD64 devices, which coincidentally is our most popular platform at the moment.
+
+            To fix this issue we have updated our Firefox binary pacscript place firefox files in <code>/etc/firefox</code> instead of <code>/opt/firefox</code>, which should mitigate this issue.
+
+            To have our firefox landing page correctly load on AMD64 platforms please run: <br><br>
+             <code>rpk update -y</code> and then <br><br>
+             <code> sudo rm -r /etc/firefox/syspref.js </code><br><br>
+<code style="position:absolute">echo 'pref("browser.startup.homepage", "https://rhinolinux.org/landing/");' | sudo tee -a /etc/firefox/syspref.js</code><br><br><br><br>
+        </p>                                                     
+
+        <!-- Footer -->
+        <hr>
+        <footer>
+            <p>
+                <a href="https://github.com/rhino-linux">Source Code</a> | <a href="../contact">Contact & Social</a>  | <a href="https://ko-fi.com/rhinolinux">Donate</a>  | <a href="../brand">Branding</a> | <a href="../unicorn">Unicorn</a>  
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
