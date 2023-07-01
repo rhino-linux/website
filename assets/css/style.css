@@ -346,6 +346,7 @@ body {
   display: none;
   z-index: 3;
   line-height: 1;
+  top: 1;
 }
 
 #dropdown .container {
