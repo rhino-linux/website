@@ -387,6 +387,16 @@ body {
   margin-bottom: 1em;
 }
 
+.container h2 {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.container h3 {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
 .container p {
   margin-bottom: 1em;
 }
