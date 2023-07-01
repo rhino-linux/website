@@ -68,7 +68,7 @@
 <p>• When you open up Firefox, you will now be greeted with <a href="https://rhinolinux.org/landing">https://rhinolinux.org/landing</a>, which will give you quick-links to our Wiki, News, Contact and RhinoDrop. Users on 2023.1-beta5 and below will not recieve this change, and will need to run this command to recieve the change:</p>
 
 <code> sudo rm -r /etc/firefox/syspref.js </code><br><br>
-<code style="position:absolute">sudo echo 'pref("browser.startup.homepage", "https://rhinolinux.org/landing/");' | sudo tee -a /etc/firefox/syspref.js</code><br><br><br><br>
+<code style="position:absolute">echo 'pref("browser.startup.homepage", "https://rhinolinux.org/landing/");' | sudo tee -a /etc/firefox/syspref.js</code><br><br><br><br>
 
 If you are on a previous release, you can update your system to install the rest of the latest changes with:
 
