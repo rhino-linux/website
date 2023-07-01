@@ -101,7 +101,7 @@ function formatSize(size) {
 
 function listObjects(path) {
   const prefix = path ? `prefix=${path}&` : '';
-  const url = `https://${bucketName}.s3.wasabisys.com/?list-type=2&${prefix}delimiter=%2F`;
+  const url = `https://${bucketName}/?list-type=2&${prefix}delimiter=%2F`;
 
   loading.classList.remove('d-none');
   errorAlert.classList.add('d-none');
