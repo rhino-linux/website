@@ -255,7 +255,7 @@ body {
   animation: slide-out 0.5s ease-in-out;
 }
 
-#wizard.ecosystem-text, #system.ecosystem-text, #rpk.ecosystem-text #drop.ecosystem-text {
+#wizard.ecosystem-text, #system.ecosystem-text, #rpk.ecosystem-text, #drop.ecosystem-text {
     animation: slide-in 0.5s ease-in-out;
 }
 
