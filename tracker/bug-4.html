@@ -56,8 +56,7 @@
 
             To have our firefox landing page correctly load on AMD64 platforms please run: <br><br>
              <code>rpk update -y</code> and then <br><br>
-             <code> sudo rm -r /etc/firefox/syspref.js </code><br><br>
-<code style="position:absolute">echo 'pref("browser.startup.homepage", "https://rhinolinux.org/landing/");' | sudo tee -a /etc/firefox/syspref.js</code><br><br><br><br>
+<code style="position:absolute">echo 'pref("browser.startup.homepage", "https://rhinolinux.org/landing/");' | sudo tee -a /lib/firefox/defaults/pref/syspref.js</code><br><br><br><br>
         </p>                                                     
 
         <!-- Footer -->
