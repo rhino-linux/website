@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="bg-slate-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <script src="ecosystem.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  
+    <div class="extended h-[50vh] bg-[url('../img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[30vh]">
+        <div class="overlay h-full bg-overlay text-center">
+            <h1 class="text-off-white pt-[3em] text-3xl">
+                Ubuntu Based. Rolling Release. Community Maintained. Open Source.
+            </h1>
+            <h2 class="text-off-white text-2xl font-thin mt-2">
+                Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.
+            </h2>
+            <button class="rounded-[0.65em] bg-rhino-purple text-off-white p-2 mt-2 text-2xl hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-2xl" onclick="location.href='https://rhinolinux.org#why'">Why Rhino?</button>
+            <button class="rounded-[0.65em] bg-rhino-purple text-off-white p-2 mt-2 text-2xl hover:bg-[rgba(141,123,228,0.5)] ml-4 shadow-2xl" onclick="location.href='https://rhinolinux.org#download'">Download</button>
+        </div>
+    </div>
+
+    <div class="container mt-4 w-[95vw] lg:w-[60vw] m-auto" id="why">
+        <h1 class="text-center text-off-white text-3xl">Why Rhino Linux?</h1>
+        <div class="lg:flex lg:flex-row">
+            <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 mt-4 shadow-2xl lg:mr-4">
+                <p>
+                    Rhino Linux re-invents the Ubuntu experience as a rolling release distribution atop a stable Desktop Environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, Rhino Linux specific applications and theming.
+                </p>
+            </div>
+            <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 mt-4 shadow-2xl lg:ml-4">
+                <p>
+                    We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- App banners -->
+
+    <div class="extended h-[40vh] bg-[url('../img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[30vh] mt-4" id="ecosystem-main">
+        <div class="overlay h-full bg-overlay">
+            <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center">
+                <h1 class="text-3xl pt-[0.5em]">Your experience matters</h1>
+                <p class="pt-[0.5em]">Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications, and command-line utilities, to be able to cater to your everyday needs.</p>
+                <div class="grid grid-cols-4 text-center mt-4 underline">
+                    <div class="one">
+                        <img src="../img/setup-wizard.png" alt="" class="w-[50%] mx-auto">
+                        <a onclick="wizardshow()" class="hover:cursor-pointer">Setup Wizard →</a>
+                    </div>
+                    <div class="two">
+                        <img src="../img/your-os.png" alt="" class="w-[50%] mx-auto">
+                        <a onclick="systemshow()" class="hover:cursor-pointer">Your System →</a>
+                    </div>
+                    <div class="three">
+                        <img src="../img/rpk-logo.png" alt="" class="w-[50%] mx-auto">
+                        <a onclick="rpkshow()" class="hover:cursor-pointer">rhino-pkg →</a>
+                    </div>
+                    <div class="four">
+                        <img src="../img/rhinodrop.png" alt="" class="w-[50%] mx-auto">
+                        <a onclick="dropshow()" class="hover:cursor-pointer">RhinoDrop →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extended h-[40vh] bg-[url('../img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-wizard">
+        <div class="overlay h-full bg-overlay">
+            <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center">
+                    <h1 class="text-3xl pt-[0.5em]">Setup Wizard</h1>
+                    <div class="grid grid-cols-2 m-auto text-center mt-4">
+                        <div class="one">
+                            <img src="../img/apps/setup-wizard.png" alt="" class="w-[75%]">
+                        </div>
+                        <div class="two" class="">
+                            <p class="text-left">When you first boot your system you will be greeted by our elegant setup wizard, giving you the ability to select your theme, install additional package managers and install additional software to optimise your experience.</p>
+                            <p class="underline hover:cursor-pointer text-left" onclick="appshide()">⟵ Go back</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="extended h-[40vh] bg-[url('../img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-system">
+            <div class="overlay h-full bg-overlay">
+                <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center">
+                        <h1 class="text-3xl pt-[0.5em]">Your System</h1>
+                        <div class="grid grid-cols-2 m-auto text-center mt-4">
+                            <div class="one">
+                                <img src="../img/apps/your-os.png" alt="" class="w-[60%]">
+                            </div>
+                            <div class="two" class="">
+                                <p class="text-left">Your System is a handy graphical application that allows for you to view system information at a glance. Furthermore it provides a graphical method for you to update all of your software packages.</p>
+                                <p class="underline hover:cursor-pointer text-left" onclick="appshide()">⟵ Go back</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extended h-[40vh] bg-[url('../img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-rpk">
+                <div class="overlay h-full bg-overlay">
+                    <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center">
+                            <h1 class="text-3xl pt-[0.5em]">rhino-pkg</h1>
+                            <div class="grid grid-cols-2 m-auto text-center mt-4">
+                                <div class="one">
+                                    <img src="../img/apps/rhino-pkg.png" alt="" class="w-[85%]">
+                                </div>
+                                <div class="two" class="">
+                                    <p class="text-left">Our flagship package management wrapper, rhino-pkg, makes life easy by allows for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and <a href="wiki-rpk.html">our handy guide</a>, you will have all of your favourite apps in seconds.</p>
+                                    <p class="underline hover:cursor-pointer text-left" onclick="appshide()">⟵ Go back</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="extended h-[40vh] bg-[url('../img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-rhinodrop">
+                    <div class="overlay h-full bg-overlay">
+                        <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center">
+                                <h1 class="text-3xl pt-[0.5em]">RhinoDrop</h1>
+                                <div class="grid grid-cols-2 m-auto text-center mt-4">
+                                    <div class="one">
+                                        <img src="../img/apps/rhinodrop.png" alt="" class="w-[85%]">
+                                    </div>
+                                    <div class="two" class="">
+                                        <p class="text-left">Enhance your productivity with RhinoDrop. RhinoDrop allows for you to effortlessly send files across devices connected to your local network. RhinoDrop stores no images sent through its platform, and operates on a peer-to-peer connection with encrypted transit so you can rest assured your data is safe.</p>
+                                        <p class="underline text-left">&bull; <a href="https://drop.rhinolinux.org">Go to RhinoDrop</a></p>
+                                        <p class="underline hover:cursor-pointer text-left" onclick="appshide()">⟵ Go back</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    
+
+            <div class="mt-4 w-[95vw] container m-auto lg:w-[60vw] lg:grid lg:grid-cols-2">
+                <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-4">
+                    <h1 class="text-3xl text-center">A sane desktop</h1>
+                    <p class="mt-2">
+                        Rhino Linux comes preinstalled with it's own in-house desktop experience, Unicorn, a custom built XFCE desktop experience combining the best of the traditional and modern takes on the desktop experience. Unicorn is both fast as well as elegant.
+
+                        <button class="rounded-[0.65em] bg-rhino-purple text-off-white p-2 mt-4 text-2xl hover:bg-[rgba(141,123,228,0.5)] shadow-2xl" onclick="location.href='https://rhinolinux.org/unicorn'">Learn More</button>
+                    </p>
+                </div>
+                <img src="../img/desktop/unicorn.png" alt="" class="w-auto mt-4 lg:mt-0 shadow-2xl rounded-[0.65em]">
+            </div>
+
+            <div class="mt-4 w-[95vw] container m-auto lg:w-[60vw] lg:grid lg:grid-cols-2">
+                <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-4">
+                    <h1 class="text-3xl text-center">Perfect for developers</h1>
+                    <p class="mt-2">
+                        Developers will fall in love with our vast software repositories which are always up-to-date. User-repositories such as Pacstall can help provide development libraries that are critical for your project. With codium preinstalled on your system you can begin doing what you do best, instantly.
+                    </p>
+                </div>
+                <img src="../img/desktop/developers.png" alt="" class="w-auto mt-4 lg:mt-0 shadow-2xl rounded-[0.65em]">
+            </div>
+
+            <div class="container mt-4 m-auto w-[95vw] lg:w-[60vw] bg-slate-800 rounded-[0.65em] text-off-white p-4 shadow-2xl" id="download">
+                <h1 class="text-center text-3xl">Download</h1>
+                <select id="edition" class="bg-slate-700 w-full p-2 rounded-[0.65em] mt-4">
+                    <option selected>Select your edition</option>
+                    <option value="generic">Generic ISO (x86_64/ARM64)</option>
+                    <option value="pine">Pine64 (ARM64)</option>
+                    <option value="rpi">Raspberry Pi (ARM64)</option>
+                </select>
+
+                <!-- Generic download container-->
+                <div class="generic download-container lg:grid lg:grid-cols-2">
+                    
+                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl mr-2">
+                        <h1 class="text-3xl text-center">x86_64</h1>
+                        <div class="grid grid-cols-2 mt-4">
+                            <img alt="" src="../img/company/intel.png" class="w-20 rounded-[0.65em]">
+                            <img alt="" src="../img/company/amd.png" class="w-20 rounded-[0.65em]">
+                        </div>
+                        <div class="mt-4">
+                            &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-amd64.iso">link</a>
+                            <button onclick="shaX64()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                                sha256sum
+                            </button>
+                            <p>&bull; Download size: 1.75GB</p>
+                            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
+                            <p>&bull; Kernel: <code>6.4.0-generic</code></p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl ml-2">
+                        <h1 class="text-3xl text-center">ARM® aarch64</h1>
+                        <div class="grid grid-cols-1 mt-4">
+                            <img alt="" src="../img/company/arm.png" class="w-20 rounded-[0.65em]">
+                        </div>
+                        <div class="mt-4">
+                            &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-arm64.iso">link</a>
+                            <button onclick="shaA64()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                                sha256sum
+                            </button>
+                            <p>&bull; Download size: 1.68GB</p>
+                            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
+                            <p>&bull; Kernel: <code>6.4.0-generic</code></p>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!-- Pine download container-->
+            <div class="pine download-container lg:grid lg:grid-cols-2">
+                    
+                <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl mr-2">
+                    <h1 class="text-3xl text-center">Pine64 PinePhone (OG/Pro)</h1>
+                    <div class="grid grid-cols-1 mt-4">
+                        <img alt="" src="../img/company/pine.png" class="w-20 rounded-[0.65em]">
+                    </div>
+                    <p class="mt-2">
+                        <code>Login: rhino</code>
+                    </p>
+                    <p>
+                        <code>Password: 1234</code>
+                    </p>
+                    <div class="mt-4">
+                        &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone-unified.img.xz">link</a>
+                        <button onclick="shaPP()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                            sha256sum
+                        </button>
+                        <p>&bull; Download size: 1.31GB</p>
+                        <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
+                        <p>&bull; Kernel: <code>6.4.0-okpine</code></p>
+                    </div>
+                </div>
+                
+
+                <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl ml-2">
+                    <h1 class="text-3xl text-center">Pine64 PineTab2</h1>
+                    <div class="grid grid-cols-1 mt-4">
+                        <img alt="" src="../img/company/pine.png" class="w-20 rounded-[0.65em]">
+                    </div>
+                    <p class="mt-2">
+                        <code>Login: rhino</code>
+                    </p>
+                    <p>
+                        <code>Password: 1234</code>
+                    </p>
+                    <div class="mt-4">
+                        &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab2.img.xz">link</a>
+                        <button onclick="shaPT()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                            sha256sum
+                        </button>
+                        <p>&bull; Download size: 1.34GB</p>
+                        <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
+                        <p>&bull; Kernel: <code>6.3.11-rockchip</code></p>
+                    </div>
+                </div>
+
+                <!-- Raspberry Pi download-->
+                <div class="rpi download-container lg:grid lg:grid-cols-2">
+
+                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl mr-2">
+                        <h1 class="text-3xl text-center">Raspberry Pi A64 (Desktop)</h1>
+                        <div class="grid grid-cols-1 mt-4">
+                            <img alt="" src="../img/company/pine.png" class="w-20 rounded-[0.65em]">
+                        </div>
+                        <p class="mt-2">
+                            <code>Login: rhino</code>
+                        </p>
+                        <p>
+                            <code>Password: 1234</code>
+                        </p>
+                        <div class="mt-4">
+                            &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-desktop.img.xz">link</a>
+                            <button onclick="shaRD()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                                sha256sum
+                            </button>
+                            <p>&bull; 1.53GB</p>
+                            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
+                            <p>&bull; Kernel: <code>6.2.0-raspi</code></p>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl ml-2">
+                        <h1 class="text-3xl text-center">Raspberry Pi A64 (Server)</h1>
+                        <div class="grid grid-cols-1 mt-4">
+                            <img alt="" src="../img/company/pine.png" class="w-20 rounded-[0.65em]">
+                        </div>
+                        <p class="mt-2">
+                            <code>Login: rhino</code>
+                        </p>
+                        <p>
+                            <code>Password: 1234</code>
+                        </p>
+                        <div class="mt-4">
+                            &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-server.img.xz">link</a>
+                            <button onclick="shaRS()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                                sha256sum
+                            </button>
+                            <p>&bull; Download size: 1.34GB</p>
+                            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
+                            <p>&bull; Kernel: <code>6.2.0-raspi</code></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                </div>
+            </div>
+
+            
+
+
+
+            <!-- Footer -->
+            <hr class="w-[60vw] h-1 mx-auto my-4 bg-slate-800 border-0 rounded">
+
+            <p class="mb-4 text-center text-off-white text-1xl">
+                <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn" class="text-rhino-purple">Unicorn</a>
+            </p>
+
+            <!-- Chonky script for download dropdown -->
+            <script>
+                $(document).ready(function(){
+                    $("select").change(function(){
+                        $(this).find("option:selected").each(function(){
+                            var optionValue = $(this).attr("value");
+                            if(optionValue){
+                                $(".download-container").not("." + optionValue).hide();
+                                $("." + optionValue).show();
+                            } else{
+                                $(".download-container").hide();
+                            }
+                        });
+                    }).change();
+                });
+                </script>
+                <script>
+            var x, i, j, l, ll, selElmnt, a, b, c;
+            /*look for any elements with the class "custom-select":*/
+            x = document.getElementsByClassName("custom-select");
+            l = x.length;
+            for (i = 0; i < l; i++) {
+              selElmnt = x[i].getElementsByTagName("select")[0];
+              ll = selElmnt.length;
+              /*for each element, create a new DIV that will act as the selected item:*/
+              a = document.createElement("DIV");
+              a.setAttribute("class", "select-selected");
+              a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+              x[i].appendChild(a);
+              /*for each element, create a new DIV that will contain the option list:*/
+              b = document.createElement("DIV");
+              b.setAttribute("class", "select-items select-hide");
+              for (j = 1; j < ll; j++) {
+                /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                      if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                          y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                      }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+              }
+              x[i].appendChild(b);
+              a.addEventListener("click", function(e) {
+                  /*when the select box is clicked, close any other select boxes,
+                  and open/close the current select box:*/
+                  e.stopPropagation();
+                  closeAllSelect(this);
+                  this.nextSibling.classList.toggle("select-hide");
+                  this.classList.toggle("select-arrow-active");
+                });
+            }
+            function closeAllSelect(elmnt) {
+              /*a function that will close all select boxes in the document,
+              except the current select box:*/
+              var x, y, i, xl, yl, arrNo = [];
+              x = document.getElementsByClassName("select-items");
+              y = document.getElementsByClassName("select-selected");
+              xl = x.length;
+              yl = y.length;
+              for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                  arrNo.push(i)
+                } else {
+                  y[i].classList.remove("select-arrow-active");
+                }
+              }
+              for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                  x[i].classList.add("select-hide");
+                }
+              }
+            }
+            /*if the user clicks anywhere outside the select box,
+            then close all select boxes:*/
+            document.addEventListener("click", closeAllSelect);
+            </script>
+            
+                <script>
+                    
+                function shaX64() {
+                var copyText = document.getElementById("xHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                    
+                var tooltip = document.getElementById("xTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
+                    
+                function outX64() {
+                var tooltip = document.getElementById("xTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
+                    
+                </script>
+                <script>
+                    
+                function shaA64() {
+                var copyText = document.getElementById("aHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                    
+                var tooltip = document.getElementById("aTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
+                    
+                function outA64() {
+                var tooltip = document.getElementById("aTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
+                    
+                </script>
+                <script>
+                    
+                function shaPP() {
+                var copyText = document.getElementById("pHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                    
+                var tooltip = document.getElementById("pTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
+                    
+                function outPP() {
+                var tooltip = document.getElementById("pTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
+                    
+                </script>
+                <script>
+                    
+                function shaRD() {
+                var copyText = document.getElementById("dHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                var tooltip = document.getElementById("dTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
+                    
+                function outRD() {
+                var tooltip = document.getElementById("dTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
+                    
+                </script>
+                <script>
+                    
+                function shaRS() {
+                var copyText = document.getElementById("sHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                    
+                var tooltip = document.getElementById("sTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
+                    
+                function outRS() {
+                var tooltip = document.getElementById("sTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
+                    
+                </script>
+                <script>
+                    
+                    function shaPT() {
+                    var copyText = document.getElementById("tHash");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
+                    navigator.clipboard.writeText(copyText.value);
+                        
+                    var tooltip = document.getElementById("tTip");
+                    tooltip.innerHTML = "Copied to clipboard!";
+                    }
+                        
+                    function outPT() {
+                    var tooltip = document.getElementById("tTip");
+                    tooltip.innerHTML = "Copy to clipboard";
+                    }
+                        
+                    </script>
+
+</body>
+</html> 
