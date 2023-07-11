@@ -707,6 +707,26 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.bg-site-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
+}
+
+.bg-site-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 75 105 / var(--tw-bg-opacity));
+}
+
+.bg-site-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 50 80 / var(--tw-bg-opacity));
+}
+
+.bg-site-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 30 55 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
   background-image: url('img/blobs.png');
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-slate-900">
+<html class="bg-site-400">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +25,12 @@
     <div class="container mt-4 w-[95vw] lg:w-[60vw] m-auto" id="why">
         <h1 class="text-center text-off-white text-3xl">Why Rhino Linux?</h1>
         <div class="lg:flex lg:flex-row">
-            <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 mt-4 shadow-2xl lg:mr-4">
+            <div class="bg-site-300 rounded-[0.65em] text-off-white p-4 mt-4 shadow-2xl lg:mr-4">
                 <p>
                     Rhino Linux re-invents the Ubuntu experience as a rolling release distribution atop a stable Desktop Environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, Rhino Linux specific applications and theming.
                 </p>
             </div>
-            <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 mt-4 shadow-2xl lg:ml-4">
+            <div class="bg-site-300 rounded-[0.65em] text-off-white p-4 mt-4 shadow-2xl lg:ml-4">
                 <p>
                     We use sane defaults. The XFCE Desktop environment is used for its stable and rock-solid base. Pacstall, our package manager of choice will always provide the latest software, even software that is not available in the Ubuntu repositories, and our custom XFCE configuration provides a traditional desktop that just works, so you can instantly begin using your computer.
                 </p>
@@ -139,7 +139,7 @@
     
 
             <div class="mt-4 w-[95vw] container m-auto lg:w-[60vw] lg:grid lg:grid-cols-2">
-                <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-4">
+                <div class="bg-site-300 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-4">
                     <h1 class="text-3xl text-center">A sane desktop</h1>
                     <p class="mt-2">
                         Rhino Linux comes preinstalled with it's own in-house desktop experience, Unicorn, a custom built XFCE desktop experience combining the best of the traditional and modern takes on the desktop experience. Unicorn is both fast as well as elegant.
@@ -151,7 +151,7 @@
             </div>
 
             <div class="mt-4 w-[95vw] container m-auto lg:w-[60vw] lg:grid lg:grid-cols-2">
-                <div class="bg-slate-800 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-4">
+                <div class="bg-site-300 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-4">
                     <h1 class="text-3xl text-center">Perfect for developers</h1>
                     <p class="mt-2">
                         Developers will fall in love with our vast software repositories which are always up-to-date. User-repositories such as Pacstall can help provide development libraries that are critical for your project. With codium preinstalled on your system you can begin doing what you do best, instantly.
@@ -160,9 +160,9 @@
                 <img src="img/desktop/developers.png" alt="" class="w-auto mt-4 lg:mt-0 shadow-2xl rounded-[0.65em]">
             </div>
 
-            <div class="container mt-4 m-auto w-[95vw] lg:w-[60vw] bg-slate-800 rounded-[0.65em] text-off-white p-4 shadow-2xl" id="download">
+            <div class="container mt-4 m-auto w-[95vw] lg:w-[60vw] bg-site-300 rounded-[0.65em] text-off-white p-4 shadow-2xl" id="download">
                 <h1 class="text-center text-3xl">Download</h1>
-                <select id="edition" class="bg-slate-700 w-full p-2 rounded-[0.65em] mt-4">
+                <select id="edition" class="bg-site-200 w-full p-2 rounded-[0.65em] mt-4">
                     <option selected>Select your edition</option>
                     <option value="generic">Generic ISO (x86_64/ARM64)</option>
                     <option value="pine">Pine64 (ARM64)</option>
@@ -172,7 +172,7 @@
                 <!-- Generic download container-->
                 <div class="generic download-container lg:grid lg:grid-cols-2">
                     
-                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
+                    <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
                         <h1 class="text-3xl text-center">x86_64</h1>
                         <div class="grid grid-cols-2 mt-4">
                             <img alt="" src="img/company/intel.png" class="w-20 rounded-[0.65em]">
@@ -180,7 +180,7 @@
                         </div>
                         <div class="mt-4">
                             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-amd64.iso">link</a>
-                            <button onclick="shaX64()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                            <button onclick="shaX64()" class="bg-site-100 p-1 rounded-[0.65em]">
                                 sha256sum
                             </button>
                             <p>&bull; Download size: 1.75GB</p>
@@ -190,14 +190,14 @@
                     </div>
                     
 
-                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
+                    <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
                         <h1 class="text-3xl text-center">ARM® aarch64</h1>
                         <div class="grid grid-cols-1 mt-4">
                             <img alt="" src="img/company/arm.png" class="w-20 rounded-[0.65em]">
                         </div>
                         <div class="mt-4">
                             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-arm64.iso">link</a>
-                            <button onclick="shaA64()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                            <button onclick="shaA64()" class="bg-site-100 p-1 rounded-[0.65em]">
                                 sha256sum
                             </button>
                             <p>&bull; Download size: 1.68GB</p>
@@ -211,7 +211,7 @@
             <!-- Pine download container-->
             <div class="pine download-container lg:grid lg:grid-cols-2">
                     
-                <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
+                <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
                     <h1 class="text-3xl text-center">Pine64 PinePhone (OG/Pro)</h1>
                     <div class="grid grid-cols-1 mt-4">
                         <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.65em]">
@@ -224,7 +224,7 @@
                     </p>
                     <div class="mt-4">
                         &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone-unified.img.xz">link</a>
-                        <button onclick="shaPP()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                        <button onclick="shaPP()" class="bg-site-100 p-1 rounded-[0.65em]">
                             sha256sum
                         </button>
                         <p>&bull; Download size: 1.31GB</p>
@@ -234,7 +234,7 @@
                 </div>
                 
 
-                <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
+                <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
                     <h1 class="text-3xl text-center">Pine64 PineTab2</h1>
                     <div class="grid grid-cols-1 mt-4">
                         <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.65em]">
@@ -247,7 +247,7 @@
                     </p>
                     <div class="mt-4">
                         &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab2.img.xz">link</a>
-                        <button onclick="shaPT()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                        <button onclick="shaPT()" class="bg-site-100 p-1 rounded-[0.65em]">
                             sha256sum
                         </button>
                         <p>&bull; Download size: 1.34GB</p>
@@ -261,7 +261,7 @@
                 <!-- Raspberry Pi download-->
                 <div class="rpi download-container lg:grid lg:grid-cols-2">
 
-                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
+                    <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
                         <h1 class="text-3xl text-center">Raspberry Pi A64 (Desktop)</h1>
                         <div class="grid grid-cols-1 mt-4">
                             <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.65em]">
@@ -274,7 +274,7 @@
                         </p>
                         <div class="mt-4">
                             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-desktop.img.xz">link</a>
-                            <button onclick="shaRD()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                            <button onclick="shaRD()" class="bg-site-100 p-1 rounded-[0.65em]">
                                 sha256sum
                             </button>
                             <p>&bull; 1.53GB</p>
@@ -284,7 +284,7 @@
                     </div>
                     
     
-                    <div class="bg-slate-700 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
+                    <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
                         <h1 class="text-3xl text-center">Raspberry Pi A64 (Server)</h1>
                         <div class="grid grid-cols-1 mt-4">
                             <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.65em]">
@@ -297,7 +297,7 @@
                         </p>
                         <div class="mt-4">
                             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-server.img.xz">link</a>
-                            <button onclick="shaRS()" class="bg-slate-600 p-1 rounded-[0.65em]">
+                            <button onclick="shaRS()" class="bg-site-100 p-1 rounded-[0.65em]">
                                 sha256sum
                             </button>
                             <p>&bull; Download size: 1.34GB</p>
@@ -315,7 +315,7 @@
 
 
             <!-- Footer -->
-            <hr class="w-[60vw] h-1 mx-auto my-4 bg-slate-800 border-0 rounded">
+            <hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
 
             <p class="mb-4 text-center text-off-white text-1xl">
                 <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn" class="text-rhino-purple">Unicorn</a>

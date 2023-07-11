@@ -11,7 +11,10 @@ module.exports = {
         'adwaita-dark': '#2d2d2d',
         'off-white': '#fefefe',
         'overlay': 'rgba(15, 0, 20, 0.4);',
-        'site-400': '#05001d',
+        'site-400': '#19142d',
+        'site-300': '#231e37',
+        'site-200': '#373250',
+        'site-100': '#554b69',
       },
       backgroundImage: {
         'blobs': "url('/img/blobs.png')",
