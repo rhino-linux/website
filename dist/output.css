@@ -715,12 +715,20 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/img\/blobs\.png\'\)\] {
-  background-image: url('../img/blobs.png');
+.bg-\[url\(\'\/img\/blobs\.png\'\)\] {
+  background-image: url('/img/blobs.png');
 }
 
-.bg-\[url\(\'\.\.\/img\/ecosystem\.png\'\)\] {
-  background-image: url('../img/ecosystem.png');
+.bg-\[url\(\'\/img\/ecosystem\.png\'\)\] {
+  background-image: url('/img/ecosystem.png');
+}
+
+.bg-\[url\(\'img\/blobs\.png\'\)\] {
+  background-image: url('img/blobs.png');
+}
+
+.bg-\[url\(\'img\/ecosystem\.png\'\)\] {
+  background-image: url('img/ecosystem.png');
 }
 
 .bg-cover {
