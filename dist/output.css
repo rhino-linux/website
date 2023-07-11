@@ -574,16 +574,8 @@ video {
   margin-bottom: 1rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .ml-4 {
   margin-left: 1rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .mr-4 {
@@ -715,14 +707,6 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/blobs\.png\'\)\] {
-  background-image: url('/img/blobs.png');
-}
-
-.bg-\[url\(\'\/img\/ecosystem\.png\'\)\] {
-  background-image: url('/img/ecosystem.png');
-}
-
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
   background-image: url('img/blobs.png');
 }
@@ -810,8 +794,16 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .lg\:ml-4 {
     margin-left: 1rem;
+  }
+
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .lg\:mr-4 {
