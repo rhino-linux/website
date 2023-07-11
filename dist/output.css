@@ -687,31 +687,6 @@ video {
   background-color: rgb(141 123 228 / var(--tw-bg-opacity));
 }
 
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-site-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
-}
-
 .bg-site-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(85 75 105 / var(--tw-bg-opacity));
@@ -725,6 +700,11 @@ video {
 .bg-site-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(35 30 55 / var(--tw-bg-opacity));
+}
+
+.bg-site-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
