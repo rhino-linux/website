@@ -198,22 +198,41 @@ document.addEventListener("click", closeAllSelect);
     </script>
     <script>
         
-        function shaPT() {
-        var copyText = document.getElementById("tHash");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); // For mobile devices
-        navigator.clipboard.writeText(copyText.value);
+    function shaPT() {
+    var copyText = document.getElementById("tHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
             
-        var tooltip = document.getElementById("tTip");
-        tooltip.innerHTML = "Copied to clipboard!";
-        }
+    var tooltip = document.getElementById("tTip");
+    tooltip.innerHTML = "Copied to clipboard!";
+    }
             
-        function outPT() {
-        var tooltip = document.getElementById("tTip");
-        tooltip.innerHTML = "Copy to clipboard";
-        }
+    function outPT() {
+    var tooltip = document.getElementById("tTip");
+    tooltip.innerHTML = "Copy to clipboard";
+    }
             
-        </script>
+    </script>
+    <script>
+        
+    function shaPO() {
+    var copyText = document.getElementById("oHash");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(copyText.value);
+            
+    var tooltip = document.getElementById("oTip");
+    tooltip.innerHTML = "Copied to clipboard!";
+    }
+            
+    function outPO() {
+    var tooltip = document.getElementById("oTip");
+    tooltip.innerHTML = "Copy to clipboard";
+    }
+            
+    </script>
+
 </head>
 <body>
 
@@ -305,7 +324,7 @@ document.addEventListener("click", closeAllSelect);
         </div>
         <div class="pine download-container">
             <div class="box">
-                <h1 style="margin-bottom:.3em">Pine64 PinePhone (OG/Pro)</h1>
+                <h1 style="margin-bottom:.3em">Pine64 PinePhone</h1>
                 <div class="box" style="text-align:center;border-width:0;margin:0">
                     <img alt="" src="../assets/images/company-logos/PINE.png" height="60">
                     <br>
@@ -317,7 +336,31 @@ document.addEventListener("click", closeAllSelect);
                 </div>
                 <br>
                 <div class="box" style="border-width:0;margin:0.5em">
-                    &bull; Download: <a href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone-unified.img.xz">link</a><div class="tooltip">
+                    &bull; Download: <a href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone.img.xz">link</a><div class="tooltip">
+                    <button onclick="shaPO()" onmouseout="outPO()">
+                    <span class="tooltiptext" id="pTip">Copy to clipboard</span>
+                    sha256sum
+                    </button>
+                    </div><br>
+                   &bull; Download size: 1.31GB <br>
+                   &bull; <a href="https://github.com/rhino-linux/os/tree/pinephone">Source</a> <br> <br>
+                   &bull; Kernel: <code>6.5.0-rc1-okpine</code> <br>
+                <br></div>
+                <input type="text" value="8af5c8266a3433c47a66288a3e87c9a3166b1b32f8d9289a56f1b72b1172bec2" id="oHash" style="display:none">
+            </div><div class="box">
+                <h1 style="margin-bottom:.3em">Pine64 PinePhone Pro</h1>
+                <div class="box" style="text-align:center;border-width:0;margin:0">
+                    <img alt="" src="../assets/images/company-logos/PINE.png" height="60">
+                    <br>
+                    <code>Login: rhino</code>
+                    <br>
+                    <br>
+                    <code>Password: 1234</code>
+                    <br>
+                </div>
+                <br>
+                <div class="box" style="border-width:0;margin:0.5em">
+                    &bull; Download: <a href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone-pro.img.xz">link</a><div class="tooltip">
                     <button onclick="shaPP()" onmouseout="outPP()">
                     <span class="tooltiptext" id="pTip">Copy to clipboard</span>
                     sha256sum
@@ -325,7 +368,7 @@ document.addEventListener("click", closeAllSelect);
                     </div><br>
                    &bull; Download size: 1.31GB <br>
                    &bull; <a href="https://github.com/rhino-linux/os/tree/pinephone">Source</a> <br> <br>
-                   &bull; Kernel: <code>6.4.0-okpine</code> <br>
+                   &bull; Kernel: <code>6.3.11-rockchip</code> <br>
                 <br></div>
                 <input type="text" value="8af5c8266a3433c47a66288a3e87c9a3166b1b32f8d9289a56f1b72b1172bec2" id="pHash" style="display:none">
             </div>
@@ -342,15 +385,15 @@ document.addEventListener("click", closeAllSelect);
                 </div>
                 <br>
                 <div class="box" style="border-width:0;margin:0.5em">
-                    &bull; Download: <a href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab2.img.xz">link</a><div class="tooltip">
+                    • Download: <a href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab2.img.xz">link</a><div class="tooltip">
                     <button onclick="shaPT()" onmouseout="outPT()">
                     <span class="tooltiptext" id="tTip">Copy to clipboard</span>
                     sha256sum
                     </button>
                     </div><br>
-                   &bull; Download size: 1.34GB <br>
-                   &bull; <a href="https://github.com/rhino-linux/os/tree/pinetab">Source</a> <br> <br>
-                   &bull; Kernel: <code>6.3.11-rockchip</code> <br>
+                   • Download size: 1.34GB <br>
+                   • <a href="https://github.com/rhino-linux/os/tree/pinetab">Source</a> <br> <br>
+                   • Kernel: <code>6.3.11-rockchip</code> <br>
                 <br></div>
                 <input type="text" value="0316bb91bc9f2090a922401b51938a6e8e26786c34811d4fffab026eb58f6230" id="tHash" style="display:none">
             </div>
