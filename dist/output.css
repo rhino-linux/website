@@ -808,6 +808,24 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.ecosystem-text {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+    translation: transform;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+    translation: transform;
+  }
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
