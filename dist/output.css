@@ -556,6 +556,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -684,6 +688,15 @@ video {
   border-width: 0px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-rhino-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(141 123 228 / var(--tw-border-opacity));
+}
+
 .bg-overlay {
   background-color: rgba(15, 0, 20, 0.4);;
 }
@@ -783,6 +796,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }
 
 .shadow-2xl {

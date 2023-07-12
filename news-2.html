@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+</head>
+<body>
+
+  <div class="extended h-[50vh] bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[30vh]">
+    <div class="overlay h-full bg-overlay text-center">
+        <h1 class="text-off-white pt-[3em] text-3xl">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-thin mt-2">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <button class="rounded-[0.65em] bg-rhino-purple text-off-white p-2 mt-2 text-2xl hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-2xl" onclick="location.href='https://rhinolinux.org'">Go home</button>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    The state of Rhino Linux - Development update #1
+  </h1>
+  <p class="text-off-white mt-4">
+    Rhino Linux has now been in active development since October 2022. The core vision for the distribution has remained the same throughout the development cycle. Many things have changed since our original announcement detailing the development of the distribution, though.
+  </p>
+  <p class="text-off-white mt-4 line-through">
+    Unfortunately, the original goal of releasing the distribution in March 2023 is not attainable. We underestimated the scale of development, and have since scaled up by adding new contributors to our development team. Our new aim is to try to release in Summer 2023, however we cannot guarantee that this will be successful. Rhino Linux is due to officially enter open beta within the next two weeks.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Upon reviewing the development of Rhino Linux, we are set to enter open beta shortly. A release date for March is achievable providing that no major issues are reported during our testing phase. The release date will be set after careful consideration before we enter open beta.
+  </p>
+  <h1 class="text-center text-off-white text-3xl mt-4">
+    Branding
+  </h1>
+  <p class="text-off-white mt-4">
+    We have changed our logo and proposed default wallpaper in the development cycle. u/oklopfer has joined the team as a designer, and more recently a developer of the distribution. They have redesigned the logo and designed 6 default wallpapers for Rhino Linux users to utilise, including our brand new default wallpaper.
+  </p>
+  <h1 class="text-center text-off-white text-3xl mt-4">
+    Pacstall
+  </h1>
+  <p class="text-off-white mt-4">
+    Pacstall is the core feature of the distribution, handling everything from kernel installs, web browser, dotfiles and our plymouth theme. The decision has been taken to remove XFCE from being utilised as a pacscript due to the sheer amount of maintenance it will require for our limited development team size.
+  </p>
+  <p class="text-off-white mt-4">
+    All Rhino Linux related packages are packaged as a pacscript. When system updates that relate to Rhino Linux need to be applied, they will be done so through Pacstall.
+  </p>
+  <p class="text-off-white mt-4">
+    We have also taken the decision to work with upstream Pacstall more closely. Rather than maintaining our own version of Pacstall’s package repository, we will be contributing straight to Pacstall’s package repo, and our pacscripts will be hosted there as a result of this.
+  </p>
+  <h1 class="text-center text-off-white text-3xl mt-4">
+    User interface and experience
+  </h1>
+  <p class="text-off-white mt-4">
+    The default user interface utilises a conventional desktop layout, with a taskbar at the bottom and desktop icons enabled. With XFCE being our desktop environment the system utilises little resources on idle.
+  </p>
+  <p class="text-off-white mt-4">
+    User Experience is something we take pride in. We have created <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-setup</code>, a graphical application that will appear upon booting your OS for the first time. It will give users an option to install useful software or additional package managers.
+  </p>
+  <p class="text-off-white mt-4">
+    We have created <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg</code>, a wrapper for APT, Pacstall, Flatpak and Snap so that you can install the software you want, easily. It will also update all of your packages in a single command.
+  </p>
+  <h1 class="text-center text-off-white mt-4">
+    Installer
+  </h1>
+  <p class="text-off-white mt-4">
+    The installer has gone through a lot of hard work. We utilise Calamares as our default installer. We have created a custom image slideshow, showing the best features of Rhino Linux.
+  </p>
+  <h1 class="text-center text-off-white mt-4">
+    Release cycle
+  </h1>
+  <p class="text-off-white mt-4">
+    Originally with Rolling Rhino Remix, the predecessor of Rhino Linux, we released a new disk image monthly. The original idea for Rhino Linux was to do it quarterly, with 4 total disk image releases per year. This is not maintainable for a rolling release distribution as it will need more consistent patches. Rather we will not have a fixed schedule for when we package and distribute a new disk image, this will come as and when critical changes or updates are made to the system and when the time and resources are available.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Disk image releases will be identified with YEAR.PATCH, an example of this will be 2023.19.
+  </p>
+  <h1 class="text-center text-off-white mt-4">
+    Thank you
+  </h1>
+  <p class="text-off-white mt-4">
+    Thanks to all of our developers and supporters. Your contributions and support make Rhino Linux possible. If you would like to help improve Rhino Linux please don't hesitate to contact us and get involved.
+  </p>
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
