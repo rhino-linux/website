@@ -618,6 +618,10 @@ video {
   height: 50vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -752,6 +756,14 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-\[0\.5em\] {

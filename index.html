@@ -44,37 +44,34 @@
 
     <!-- App banners -->
 
-    <div class="extended h-[40vh] bg-[url('img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[30vh] mt-4" id="ecosystem-main">
-        <div class="overlay h-full bg-overlay">
-            <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center ecosystem-text">
-                <h1 class="text-3xl pt-[0.5em]">Your experience matters</h1>
-                <p class="pt-[0.5em]">Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications, and command-line utilities, to be able to cater to your everyday needs.</p>
-                <div class="grid grid-cols-4 text-center mt-4 underline">
-                    <div class="one">
-                        <img src="img/setup-wizard.png" alt="" class="w-[50%] mx-auto">
-                        <a onclick="wizardshow()" class="hover:cursor-pointer">Setup Wizard →</a>
-                    </div>
-                    <div class="two">
-                        <img src="img/your-os.png" alt="" class="w-[50%] mx-auto">
-                        <a onclick="systemshow()" class="hover:cursor-pointer">Your System →</a>
-                    </div>
-                    <div class="three">
-                        <img src="img/rpk-logo.png" alt="" class="w-[50%] mx-auto">
-                        <a onclick="rpkshow()" class="hover:cursor-pointer">rhino-pkg →</a>
-                    </div>
-                    <div class="four">
-                        <img src="img/rhinodrop.png" alt="" class="w-[50%] mx-auto">
-                        <a onclick="dropshow()" class="hover:cursor-pointer">RhinoDrop →</a>
-                    </div>
+    <div class="extended h-auto w-[95vw] lg:w-[60vw] mt-4 m-auto rounded-[0.65em] bg-site-300 shadow-2xl" id="ecosystem-main">
+        <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center ecosystem-text pt-4 pb-4">
+            <h1 class="text-3xl">Your experience matters</h1>
+            <p class="pt-[0.5em]">Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications, and command-line utilities, to be able to cater to your everyday needs.</p>
+            <div class="grid grid-cols-4 text-center mt-4 underline">
+                <div class="one">
+                    <img src="img/setup-wizard.png" alt="" class="w-[50%] mx-auto">
+                    <a onclick="wizardshow()" class="hover:cursor-pointer">Setup Wizard →</a>
+                </div>
+                <div class="two">
+                    <img src="img/your-os.png" alt="" class="w-[50%] mx-auto">
+                    <a onclick="systemshow()" class="hover:cursor-pointer">Your System →</a>
+                </div>
+                <div class="three">
+                    <img src="img/rpk-logo.png" alt="" class="w-[50%] mx-auto">
+                    <a onclick="rpkshow()" class="hover:cursor-pointer">rhino-pkg →</a>
+                </div>
+                <div class="four">
+                    <img src="img/rhinodrop.png" alt="" class="w-[50%] mx-auto">
+                    <a onclick="dropshow()" class="hover:cursor-pointer">RhinoDrop →</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="extended h-[40vh] bg-[url('img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-wizard">
-        <div class="overlay h-full bg-overlay">
-            <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text">
-                    <h1 class="text-3xl pt-[0.5em]">Setup Wizard</h1>
+    <div class="extended h-auto w-[95vw] lg:w-[60vw] mt-4 m-auto rounded-[0.65em] bg-site-300 shadow-2xl hidden" id="ecosystem-wizard">
+            <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text pt-4 pb-4">
+                    <h1 class="text-3xl ">Setup Wizard</h1>
                     <div class="grid grid-cols-2 m-auto text-center mt-4">
                         <div class="one">
                             <img src="img/apps/setup-wizard.png" alt="" class="w-[75%]">
@@ -86,12 +83,10 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="extended h-[40vh] bg-[url('img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-system">
-            <div class="overlay h-full bg-overlay">
-                <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text">
-                        <h1 class="text-3xl pt-[0.5em]">Your System</h1>
+        <div class="extended h-auto w-[95vw] lg:w-[60vw] mt-4 m-auto rounded-[0.65em] bg-site-300 shadow-2xl hidden" id="ecosystem-system">
+                <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text pt-4 pb-4">
+                        <h1 class="text-3xl">Your System</h1>
                         <div class="grid grid-cols-2 m-auto text-center mt-4">
                             <div class="one">
                                 <img src="img/apps/your-os.png" alt="" class="w-[60%]">
@@ -103,12 +98,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="extended h-[40vh] bg-[url('img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-rpk">
-                <div class="overlay h-full bg-overlay">
-                    <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text">
-                            <h1 class="text-3xl pt-[0.5em]">rhino-pkg</h1>
+            <div class="extended h-auto w-[95vw] lg:w-[60vw] mt-4 m-auto rounded-[0.65em] bg-site-300 shadow-2xl hidden" id="ecosystem-rpk">
+                    <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text pt-4 pb-4">
+                            <h1 class="text-3xl">rhino-pkg</h1>
                             <div class="grid grid-cols-2 m-auto text-center mt-4">
                                 <div class="one">
                                     <img src="img/apps/rhino-pkg.png" alt="" class="w-[85%]">
@@ -120,12 +113,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="extended h-[40vh] bg-[url('img/ecosystem.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[35vh] mt-4 hidden" id="ecosystem-rhinodrop">
-                    <div class="overlay h-full bg-overlay">
-                        <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text">
-                                <h1 class="text-3xl pt-[0.5em]">RhinoDrop</h1>
+                <div class="extended h-auto w-[95vw] lg:w-[60vw] mt-4 m-auto rounded-[0.65em] bg-site-300 shadow-2xl hidden" id="ecosystem-rhinodrop">
+                        <div class="w-[95vw] lg:w-[40vw] text-off-white m-auto text-center a-ecosystem-text pt-4 pb-4">
+                                <h1 class="text-3xl">RhinoDrop</h1>
                                 <div class="grid grid-cols-2 m-auto text-center mt-4">
                                     <div class="one">
                                         <img src="img/apps/rhinodrop.png" alt="" class="w-[85%]">
@@ -138,7 +129,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
     
 
