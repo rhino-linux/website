@@ -15,6 +15,10 @@ module.exports = {
         'site-300': '#231e37',
         'site-200': '#373250',
         'site-100': '#554b69',
+        'unicorn-magenta': '#c10080',
+        'unicorn-pink': '#d404ff',
+        'unicorn-purple': '#8b00e7',
+        'unicorn-dark': '#26184c',
       },
       backgroundImage: {
         'blobs': "url('/img/blobs.png')",

@@ -684,8 +684,16 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded {
@@ -707,6 +715,31 @@ video {
 .border-rhino-purple {
   --tw-border-opacity: 1;
   border-color: rgb(141 123 228 / var(--tw-border-opacity));
+}
+
+.bg-adwaita-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
+}
+
+.bg-dark-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 9 60 / var(--tw-bg-opacity));
+}
+
+.bg-highlighter-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 53 255 / var(--tw-bg-opacity));
+}
+
+.bg-neon-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 0 231 / var(--tw-bg-opacity));
+}
+
+.bg-off-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
 }
 
 .bg-overlay {
@@ -736,6 +769,26 @@ video {
 .bg-site-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(25 20 45 / var(--tw-bg-opacity));
+}
+
+.bg-unicorn-magenta {
+  --tw-bg-opacity: 1;
+  background-color: rgb(193 0 128 / var(--tw-bg-opacity));
+}
+
+.bg-unicorn-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 4 255 / var(--tw-bg-opacity));
+}
+
+.bg-unicorn-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 0 231 / var(--tw-bg-opacity));
+}
+
+.bg-unicorn-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 24 76 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
@@ -800,6 +853,11 @@ video {
   font-weight: 100;
 }
 
+.text-adwaita-dark {
+  --tw-text-opacity: 1;
+  color: rgb(45 45 45 / var(--tw-text-opacity));
+}
+
 .text-off-white {
   --tw-text-opacity: 1;
   color: rgb(254 254 254 / var(--tw-text-opacity));
@@ -808,11 +866,6 @@ video {
 .text-rhino-purple {
   --tw-text-opacity: 1;
   color: rgb(141 123 228 / var(--tw-text-opacity));
-}
-
-.text-site-400 {
-  --tw-text-opacity: 1;
-  color: rgb(25 20 45 / var(--tw-text-opacity));
 }
 
 .underline {
