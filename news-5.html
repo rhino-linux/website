@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+</head>
+<body>
+
+  <div class="extended h-[50vh] bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[30vh]">
+    <div class="overlay h-full bg-overlay text-center">
+        <h1 class="text-off-white pt-[3em] text-3xl">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-thin mt-2">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <button class="rounded-[0.65em] bg-rhino-purple text-off-white p-2 mt-2 text-2xl hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-2xl" onclick="location.href='https://rhinolinux.org'">Go home</button>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    2023.1-beta6: New App, PineTab2, and more!
+  </h1>
+  <p class="text-off-white mt-4">
+    This beta release brings a flurry of desktop improvements, bug fixes, and under-the-hood improvements to the distribution, as well as a new platform to run Rhino Linux on! Our biggest changes are:
+  </p>
+  <h1 class="text-2xl mt-4 text-off-white">
+    Your System
+  </h1>
+  <p class="text-off-white mt-4">
+    &bull; The inclusion of our new Your System app, a handy graphical application that allows for you to view system information at a glance. Furthermore, it provides a graphical method for you to update all of your software packages.
+  </p>
+  <h1 class="text-2xl mt-4 text-off-white">
+    PineTab2
+  </h1>
+  <p class="text-off-white mt-4">
+    • Joining Rhino Linux's mobile & Pine64 ecosystem is the newly released PineTab2! Our images comes with the bootloader pre-installed, so you can flash it directly to your preferred storage volume and get going. The port uses kernel 6.3.9-rockchip from the Mobian team, and has auto-rotation, audio, USB networking, and more working out-of-the-box. Combining this with our minimally-patched Unicorn Desktop environment unicorn-mobile-git, Rhino Linux provides a perfect and stable experience for you to get started experimenting with your new Linux tablet. (NOTE: the WiFi driver for the PineTab2 has not been ported yet. See https://wiki.pine64.org/wiki/PineTab2#How-to for current solutions.)
+  </p>
+  <h1 class="text-2xl mt-4 text-off-white">
+    RhinoDrop
+  </h1>
+  <p class="text-off-white mt-4">
+    • Enhance your productivity with RhinoDrop. RhinoDrop allows for you to effortlessly send files across devices connected to your local network. RhinoDrop stores no images sent through its platform, and operates on a peer-to-peer connection with encrypted transit so you can rest assured your data is safe. Visit https://drop.rhinolinux.org to use now.
+  </p>
+  <h1 class="text-off-white mt-4 text-2xl">
+    As well as...
+  </h1>
+  <p class="text-off-white mt-4">
+    • Pacstall 3.15.0 has released, featuring a vital component that will assist Rhino users: a dependency tree! This assists the upgrade process with ordering, so that your package's dependencies are installed in the correct order. For packages like linux-kernel and linux-kernel-stable this is especially important, so be sure to upgrade to the latest version! See below for how.
+  </p>
+  <p class="text-off-white mt-4">
+    • Unicorn has seen some improvements and changes, such as the disabling of animations on xfdashboard and rearranging our panel. This is now pre-packaged in the latest ISO file and core pacscripts.
+  </p>
+  <p class="text-off-white mt-4">
+    • When you open up Firefox, you will now be greeted with https://rhinolinux.org/landing, which will give you quick-links to our Wiki, News, Contact and RhinoDrop. Users on 2023.1-beta5 and below will not recieve this change, and will need to run this command to recieve the change:
+  </p>
+  <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">sudo rm -r /etc/firefox/syspref.js</code>. <br><br>
+  <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">echo 'pref("browser.startup.homepage", "https://rhinolinux.org/landing/");' | sudo tee -a /etc/firefox/syspref.js</code>.
+
+  <p class="text-off-white mt-4">
+    If you are on a previous release, you can update your system to install the rest of the latest changes with:
+  </p>
+  <code class="mt-4 text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pacstall -U pacstall:master</code>. <br><br>
+  <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk update -y</code>.
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>

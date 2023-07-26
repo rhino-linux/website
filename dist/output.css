@@ -810,6 +810,11 @@ video {
   color: rgb(141 123 228 / var(--tw-text-opacity));
 }
 
+.text-site-400 {
+  --tw-text-opacity: 1;
+  color: rgb(25 20 45 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }

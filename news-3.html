@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+</head>
+<body>
+
+  <div class="extended h-[50vh] bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover lg:h-[30vh]">
+    <div class="overlay h-full bg-overlay text-center">
+        <h1 class="text-off-white pt-[3em] text-3xl">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-thin mt-2">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <button class="rounded-[0.65em] bg-rhino-purple text-off-white p-2 mt-2 text-2xl hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-2xl" onclick="location.href='https://rhinolinux.org'">Go home</button>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    Open Beta, Pinephone (Pro), & more!
+  </h1>
+  <p class="text-off-white mt-4">
+    Rhino Linux is pleased to announce that it has entered open beta. This is the collective work of 5 months of active development from the Rhino Linux team and other contributors. During the open beta please feel free to report any bugs by contacting us. Any known bugs will appear on the Rhino Linux wiki. For the next few weeks following this we will be following up with bug fixes and other beta disk images.
+  </p>
+  <p class="text-off-white mt-4">
+    You can download the Rhino Linux Beta disk images from our Download page. Please do keep in mind that it is Beta software and so bugs and issues are to be expected. Please report them so that we can fix them before release.
+  </p>
+  <h1 class="text-center text-off-white text-3xl mt-4">
+    Pinephone Port
+  </h1>
+  <p class="text-off-white mt-4">
+    Hey all, oklopfer here! While we have been stabilizing the desktop version of Rhino Linux for beta release, I’ve also been working on a side project: Rhino Linux Mobile!
+  </p>
+  <p class="text-off-white mt-4">
+    One of my other recent linux projects has been porting the latest version of Ubuntu Touch (20.04) to the PinePhone and PinePhone Pro, and I’ve brought that experience over to the Rhino team! With Rhino Linux mobile, I have created the first XFCE-based mobile environment. Originally, we were going to utilise Phosh as a desktop environment, however when investigating we quickly found that the Ubuntu repositories utilised to create Rhino Linux currently ship a broken Phosh package, so we came up with an alternative. Turns out, almost all of the mobile environments aren’t working on Ubuntu right now, so we fell back to what we knew worked soundly: XFCE. To do this, the environment utilizes onboard as the system keyboard, a slightly modified version of the Rhino Linux XFCE dotfiles, and a special patch for XFCE to allow for auto-rotation. It currently uses X11, but we are looking into moving to Wayland when XFCE 4.20 comes around.
+  </p>
+  <p class="text-off-white mt-4">
+    The port itself was quite a simple process - we build a tarball of the filesystem in the live-build runner, then deploy the filesystem to a partitioned image and add the kernel files for the specified device in debos, and it’s good to go! You can see a video demoing the full environment here:
+  </p>
+  <center class="mt-4">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/-qwja52J53s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+  <h1 class="text-center text-off-white text-3xl mt-4">
+    Quality of life + UX
+  </h1>
+  <p class="text-off-white mt-4">
+    While our original aim was to create a distro for the advanced linux user + developers, we also felt we should target newcomers. Linux today still relies too heavily on the terminal, and we would like to change that. That is why we are going to be creating graphical applications for rhino-pkg, Proprietary WiFi driver installation & updating your system.
+  </p>
+  <center class="mt-4">
+    <img src="img/blog/rhino-system-mockup.png" alt="Rhino Linux default wallpaper" width="70%" class="rounded-[0.65em]"/>
+  </center>
+  <p class="text-off-white mt-4">
+    Above is a mockup image of one upcoming application, code-named rhino-system, It will display system information, perform package upgrades graphically and handle WiFi driver installation (not shown). By creating these applications we hope to provide people an easier method of operating with their computers. Terminal applications still can be utilised for those who want them, though.
+  </p>
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
