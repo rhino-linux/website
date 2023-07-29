@@ -23,6 +23,12 @@ module.exports = {
       backgroundImage: {
         'blobs': "url('/img/blobs.png')",
         'banner': "url('/img/ecosystem.png')"
+      },
+      boxShadow: {
+        'header-box': '2px 4px 10px rgba(40, 30, 45, 1)',
+      },
+      dropShadow: {
+        'header-drop': '2px 4px 10px rgba(40, 30, 45, 1)',
       }
     },
   },

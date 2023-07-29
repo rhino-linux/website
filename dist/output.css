@@ -708,12 +708,12 @@ video {
   border-radius: 0.25em;
 }
 
-.rounded-\[0\.65em\] {
-  border-radius: 0.65em;
-}
-
 .rounded-\[0\.5em\] {
   border-radius: 0.5em;
+}
+
+.rounded-\[0\.65em\] {
+  border-radius: 0.65em;
 }
 
 .border-0 {
@@ -870,12 +870,12 @@ video {
   line-height: 2.25rem;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .font-light {
   font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .text-adwaita-dark {
@@ -907,8 +907,14 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.drop-shadow-2xl {
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+.shadow-header-box {
+  --tw-shadow: 2px 4px 10px rgba(40, 30, 45, 1);
+  --tw-shadow-colored: 2px 4px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.drop-shadow-header-drop {
+  --tw-drop-shadow: drop-shadow(2px 4px 10px rgba(40, 30, 45, 1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
