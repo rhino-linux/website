@@ -704,12 +704,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[0\.25em\] {
+  border-radius: 0.25em;
+}
+
 .rounded-\[0\.65em\] {
   border-radius: 0.65em;
 }
 
-.rounded-\[0\.25em\] {
-  border-radius: 0.25em;
+.rounded-\[0\.5em\] {
+  border-radius: 0.5em;
 }
 
 .border-0 {
@@ -840,6 +844,10 @@ video {
   padding-top: 0.5em;
 }
 
+.pt-\[2em\] {
+  padding-top: 2em;
+}
+
 .pt-\[3em\] {
   padding-top: 3em;
 }
@@ -864,6 +872,10 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .text-adwaita-dark {
@@ -893,6 +905,20 @@ video {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .ecosystem-text {
