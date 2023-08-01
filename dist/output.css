@@ -614,10 +614,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -638,16 +634,8 @@ video {
   height: 0.25rem;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
 .h-auto {
   height: auto;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .w-20 {
@@ -860,10 +848,6 @@ video {
   padding-top: 2em;
 }
 
-.pt-\[3em\] {
-  padding-top: 3em;
-}
-
 .text-left {
   text-align: left;
 }
@@ -884,10 +868,6 @@ video {
 
 .font-light {
   font-weight: 300;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .text-adwaita-dark {
@@ -997,10 +977,6 @@ video {
 
   .lg\:grid {
     display: grid;
-  }
-
-  .lg\:h-\[30vh\] {
-    height: 30vh;
   }
 
   .lg\:w-\[40vw\] {

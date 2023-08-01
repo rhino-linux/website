@@ -46,7 +46,55 @@
     Commands
   </h1>
 
-  
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg update -y</code>
+  </p>
+
+  <p class="text-off-white mt-4">
+    To get started with rhino-pkg, you will want to ensure that all of your packages are currently up to date. Here's how:
+  </p>
+
+  <h2 class="text-off-white text-2xl mt-4">
+    Functions
+  </h2>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg update</code> - This command will search through APT, Pacstall, Flatpak and snap, check for updates in all repositories, and install any updates found.
+  </p>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg install [input]</code> - This command will search the repositories and display a list of packages matching your input. You can then select the corresponding package(s).
+  </p>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg remove [input]</code> - This command will search the repositories and display a list of packages matching your input which are installed. You can then select the corresponding package(s) that you wish to remove.
+  </p>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg search [input]</code> - This command will only search the repositories and display a list of packages matching your input.
+  </p>
+
+  <h2 class="text-off-white text-2xl mt-4">
+    Flags
+  </h2>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">--help/-h</code> - Pass this flag to show the help page. This can also be done by calling the utility with no functions or inputs.
+  </p>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">--description/-d</code> - By default, rhino-pkg will only display packages that contain the provided input within their name. Use this flag to increase the search range and display packages with the provided input in their description.
+  </p>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">-y</code> - Pass this flag to skip through confirmation prompts. Only works with rhino-pkg update.
+  </p>
+
+  <p class="text-off-white mt-4">
+    &bull; NOTE: You can also call rhino-pkg by using <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rpk</code> in place of <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg</code> in any of the above commands.
+  </p>
+
+
 </div>
 
 <!-- Footer -->
