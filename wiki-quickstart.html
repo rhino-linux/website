@@ -7,24 +7,48 @@
   <title>Rhino Linux | Wiki</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
 </head>
 <body>
 
-  <div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
     <div class="overlay h-auto bg-overlay text-center">
-        <p class="text-center text-off-white pt-4">
-            <a href="index.html" class="text-off-white px-4">Home</a>
-            <a href="index.html#download" class="text-off-white px-4">Download</a>
-            <a href="index.html#news" class="text-off-white px-4">News</a>
-            <a href="tracker.html" class="text-off-white px-4">Tracker</a>
-            <a href="wiki.html" class="text-off-white px-4">Wiki</a>
-            <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
-          </p>
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
         <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
             Rhino Linux Wiki
         </h1>
         <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
-          Documentation and guides
+          Documentation and Guides
         </h2>
         <br>
     </div>
