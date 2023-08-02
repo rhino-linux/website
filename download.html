@@ -107,7 +107,7 @@
 </div>
 
 <!-- Pine download container-->
-<div class="pine download-container lg:grid lg:grid-cols-2">
+<div class="pine download-container lg:grid lg:grid-cols-3">
         
     <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:mr-2">
         <h1 class="text-3xl text-center">Pine64 PinePhone (OG/Pro)</h1>
@@ -132,6 +132,28 @@
         <input type="text" value="b6ea04b48c6d186d10e8efe95265a4c7b006122130e9f98078aca901c5f94bc2" id="pHash" style="display:none">
     </div>
     
+    <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:ml-2">
+        <h1 class="text-3xl text-center">Pine64 PineTab</h1>
+        <div class="grid grid-cols-1 mt-4">
+            <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.5em]">
+        </div>
+        <p class="mt-2">
+            <code>Login: rhino</code>
+        </p>
+        <p>
+            <code>Password: 1234</code>
+        </p>
+        <div class="mt-4">
+            &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab.img.xz">link</a>
+            <button onclick="shaPB()" onmouseout="outPB()" class="bg-site-100 p-1 rounded-[0.5em]">
+                sha256sum
+            </button>
+            <p>&bull; Download size: 1.34GB</p>
+            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinetab">Source Code</a></p>
+            <p>&bull; Kernel: <code>6.3.11-rockchip</code></p>
+        </div>
+        <input type="text" value="0316bb91bc9f2090a922401b51938a6e8e26786c34811d4fffab026eb58f6230" id="bHash" style="display:none">
+    </div>
 
     <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:ml-2">
         <h1 class="text-3xl text-center">Pine64 PineTab2</h1>
@@ -150,7 +172,7 @@
                 sha256sum
             </button>
             <p>&bull; Download size: 1.34GB</p>
-            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
+            <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinetab">Source Code</a></p>
             <p>&bull; Kernel: <code>6.3.11-rockchip</code></p>
         </div>
         <input type="text" value="0316bb91bc9f2090a922401b51938a6e8e26786c34811d4fffab026eb58f6230" id="tHash" style="display:none">
@@ -407,23 +429,40 @@
                 </script>
                 <script>
                     
-                    function shaPT() {
-                    var copyText = document.getElementById("tHash");
-                    copyText.select();
-                    copyText.setSelectionRange(0, 99999); // For mobile devices
-                    navigator.clipboard.writeText(copyText.value);
+                function shaPT() {
+                var copyText = document.getElementById("tHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
                         
-                    var tooltip = document.getElementById("tTip");
-                    tooltip.innerHTML = "Copied to clipboard!";
-                    }
+                var tooltip = document.getElementById("tTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
                         
-                    function outPT() {
-                    var tooltip = document.getElementById("tTip");
-                    tooltip.innerHTML = "Copy to clipboard";
-                    }
+                function outPT() {
+                var tooltip = document.getElementById("tTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
                         
-                    </script>
-
+                </script>
+                <script>
+                    
+                function shaPB() {
+                var copyText = document.getElementById("bHash");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value);
+                            
+                var tooltip = document.getElementById("bTip");
+                tooltip.innerHTML = "Copied to clipboard!";
+                }
+                            
+                function outPB() {
+                var tooltip = document.getElementById("bTip");
+                tooltip.innerHTML = "Copy to clipboard";
+                }
+                            
+                </script>
 
 </body>
 </html>
