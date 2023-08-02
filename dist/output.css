@@ -836,6 +836,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -854,6 +858,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -950,6 +958,39 @@ video {
   }
 }
 
+#dropdown {
+  background-color: #13093c;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  z-index: 3;
+  line-height: 1;
+  top: 1;
+}
+
+#dropdown .container {
+  width: 99vw;
+  margin: auto;
+  text-align: center;
+  font-size: 3.75em;
+  padding: 8px;
+}
+
+#dropdown .container .exit {
+  float: right;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+#dropdown .container .content {
+  margin-top: 1em;
+}
+
+#dropdown .container .content p {
+  margin-top: 6vh;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -975,8 +1016,16 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-\[40vw\] {
@@ -995,3 +1044,4 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+  

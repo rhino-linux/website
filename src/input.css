@@ -41,3 +41,37 @@
       translation: transform;
     }
   }
+
+  #dropdown {
+    background-color: #13093c;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 3;
+    line-height: 1;
+    top: 1;
+  }
+  
+  #dropdown .container {
+    width: 99vw;
+    margin: auto;
+    text-align: center;
+    font-size: 3.75em;
+    padding: 8px;
+  }
+  
+  #dropdown .container .exit {
+    float: right;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+  
+  #dropdown .container .content {
+    margin-top: 1em;
+  }
+  
+  #dropdown .container .content p {
+    margin-top: 6vh;
+  }
+  
