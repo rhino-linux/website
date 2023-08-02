@@ -56,9 +56,9 @@
 </div>
 
 
-<div class="container mt-4 m-auto w-[95vw] lg:w-[60vw] bg-site-300 rounded-[0.65em] text-off-white p-4 shadow-2xl" id="download">
+<div class="container mt-4 m-auto w-[95vw] lg:w-[60vw] bg-site-300 rounded-[0.5em] text-off-white p-4 shadow-2xl" id="download">
     <h1 class="text-center text-3xl">Download</h1>
-    <select id="edition" class="bg-site-200 w-full p-2 rounded-[0.65em] mt-4 appearance-none">
+    <select id="edition" class="bg-site-200 w-full p-2 rounded-[0.5em] mt-4 appearance-none">
         <option selected>Select your edition</option>
         <option value="generic">Generic ISO (x86_64/ARM64)</option>
         <option value="pine">Pine64 (ARM64)</option>
@@ -68,38 +68,42 @@
     <!-- Generic download container-->
     <div class="generic download-container lg:grid lg:grid-cols-2">
         
-        <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
+        <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:mr-2">
             <h1 class="text-3xl text-center">x86_64</h1>
             <div class="grid grid-cols-2 mt-4">
-                <img alt="" src="img/company/intel.png" class="w-20 rounded-[0.65em]">
-                <img alt="" src="img/company/amd.png" class="w-20 rounded-[0.65em]">
+                <img alt="" src="img/company/intel.png" class="w-20 rounded-[0.5em]">
+                <img alt="" src="img/company/amd.png" class="w-20 rounded-[0.5em]">
             </div>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-amd64.iso">link</a>
-                <button onclick="shaX64()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <button onclick="shaX64()" onmouseout="shaX64()" class="bg-site-100 p-1 rounded-[0.5em]">
+                    <span class="tooltiptext" id="xTip">Copy to clipboard</span>
                     sha256sum
                 </button>
                 <p>&bull; Download size: 1.75GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.4.0-generic</code></p>
             </div>
+            <input type="text" value="9549e233d4247885d2487b03b9489eae1e85f7971ea43c955f9ced38a149ee32" id="xHash" style="display:none">
         </div>
         
 
-        <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
+        <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:ml-2">
             <h1 class="text-3xl text-center">ARM® aarch64</h1>
             <div class="grid grid-cols-1 mt-4">
-                <img alt="" src="img/company/arm.png" class="w-20 rounded-[0.65em]">
+                <img alt="" src="img/company/arm.png" class="w-20 rounded-[0.5em]">
             </div>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-arm64.iso">link</a>
-                <button onclick="shaA64()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <button onclick="shaA64()" onmouseout="shaA64()" class="bg-site-100 p-1 rounded-[0.5em]">
+                    <span class="tooltiptext" id="aTip">Copy to clipboard</span>
                     sha256sum
                 </button>
                 <p>&bull; Download size: 1.68GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.4.0-generic</code></p>
             </div>
+            <input type="text" value="4e5e70f2db73287dd962c1e3a94fe17b26690fcfa688dba4bbc2c5cc5517bbd5" id="aHash" style="display:none">
         </div>
 
 </div>
@@ -107,10 +111,10 @@
 <!-- Pine download container-->
 <div class="pine download-container lg:grid lg:grid-cols-2">
         
-    <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
+    <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:mr-2">
         <h1 class="text-3xl text-center">Pine64 PinePhone (OG/Pro)</h1>
         <div class="grid grid-cols-1 mt-4">
-            <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.65em]">
+            <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.5em]">
         </div>
         <p class="mt-2">
             <code>Login: rhino</code>
@@ -120,20 +124,22 @@
         </p>
         <div class="mt-4">
             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone-unified.img.xz">link</a>
-            <button onclick="shaPP()" class="bg-site-100 p-1 rounded-[0.65em]">
+            <button onclick="shaPP()" onmouseout="shaPP()" class="bg-site-100 p-1 rounded-[0.5em]">
+                <span class="tooltiptext" id="pTip">Copy to clipboard</span>
                 sha256sum
             </button>
             <p>&bull; Download size: 1.31GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
             <p>&bull; Kernel: <code>6.4.0-okpine</code></p>
         </div>
+        <input type="text" value="b6ea04b48c6d186d10e8efe95265a4c7b006122130e9f98078aca901c5f94bc2" id="pHash" style="display:none">
     </div>
     
 
-    <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
+    <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:ml-2">
         <h1 class="text-3xl text-center">Pine64 PineTab2</h1>
         <div class="grid grid-cols-1 mt-4">
-            <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.65em]">
+            <img alt="" src="img/company/pine.png" class="w-20 rounded-[0.5em]">
         </div>
         <p class="mt-2">
             <code>Login: rhino</code>
@@ -143,13 +149,15 @@
         </p>
         <div class="mt-4">
             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab2.img.xz">link</a>
-            <button onclick="shaPT()" class="bg-site-100 p-1 rounded-[0.65em]">
+            <button onclick="shaPT()" onmouseout="shaPT()" class="bg-site-100 p-1 rounded-[0.5em]">
+                <span class="tooltiptext" id="tTip">Copy to clipboard</span>
                 sha256sum
             </button>
             <p>&bull; Download size: 1.34GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
             <p>&bull; Kernel: <code>6.3.11-rockchip</code></p>
         </div>
+        <input type="text" value="0316bb91bc9f2090a922401b51938a6e8e26786c34811d4fffab026eb58f6230" id="tHash" style="display:none">
     </div>
 
     </div>
@@ -157,10 +165,10 @@
     <!-- Raspberry Pi download-->
     <div class="rpi download-container lg:grid lg:grid-cols-2">
 
-        <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mr-2">
+        <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:mr-2">
             <h1 class="text-3xl text-center">Raspberry Pi A64 (Desktop)</h1>
             <div class="grid grid-cols-1 mt-4">
-                <img alt="" src="img/company/rpi.png" class="w-20 rounded-[0.65em]">
+                <img alt="" src="img/company/rpi.png" class="w-20 rounded-[0.5em]">
             </div>
             <p class="mt-2">
                 <code>Login: rhino</code>
@@ -170,20 +178,22 @@
             </p>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-desktop.img.xz">link</a>
-                <button onclick="shaRD()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <button onclick="shaRD()" onmouseout="shaRD()" class="bg-site-100 p-1 rounded-[0.5em]">
+                    <span class="tooltiptext" id="dTip">Copy to clipboard</span>
                     sha256sum
                 </button>
                 <p>&bull; 1.53GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.2.0-raspi</code></p>
             </div>
+            <input type="text" value="d934a2f483722aaa9957cc9a2222c8bf11a153840a1c8b5bb7cafa9bddc109a3" id="dHash" style="display:none">
         </div>
         
 
-        <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
+        <div class="bg-site-200 mt-4 rounded-[0.5em] text-off-white p-4 shadow-2xl lg:ml-2">
             <h1 class="text-3xl text-center">Raspberry Pi A64 (Server)</h1>
             <div class="grid grid-cols-1 mt-4">
-                <img alt="" src="img/company/rpi.png" class="w-20 rounded-[0.65em]">
+                <img alt="" src="img/company/rpi.png" class="w-20 rounded-[0.5em]">
             </div>
             <p class="mt-2">
                 <code>Login: rhino</code>
@@ -193,13 +203,15 @@
             </p>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-server.img.xz">link</a>
-                <button onclick="shaRS()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <button onclick="shaRS()" onmouseout="shaRS()" class="bg-site-100 p-1 rounded-[0.5em]">
+                    <span class="tooltiptext" id="sTip">Copy to clipboard</span>
                     sha256sum
                 </button>
                 <p>&bull; Download size: 1.34GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.2.0-raspi</code></p>
             </div>
+            <input type="text" value="21195518c4fe8364514a7fb57746371d2131c87fdca6563bb5c4d345e0263fee" id="sHash" style="display:none">
         </div>
 
     </div>
