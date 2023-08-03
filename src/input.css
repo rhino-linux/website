@@ -118,3 +118,46 @@
      margin-left: 80%;
      font-size: 13px;
    }
+
+  button {
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+
+  button:not(:disabled):hover {
+    transform: scale(1.1);
+  }
+
+  button:not(:disabled):hover:active {
+    transform: scale(1.1) translateY(.125rem);
+  }
+
+  button:focus {
+    outline: 0 solid transparent;
+  }
+
+  button:focus:before {
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+  }
+
+  button:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+  }
+
+  button:focus:not(:focus-visible):before {
+    border-width: 0;
+  }
+
+  button:not(:disabled):active {
+    transform: translateY(.125rem);
+  }
