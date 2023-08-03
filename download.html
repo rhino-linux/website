@@ -76,9 +76,11 @@
             </div>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-amd64.iso">link</a>
-                <button onclick="shaX64()" onmouseout="outX64()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <div class="tooltip"><button onclick="shaX64()" onmouseout="outX64()" class="bg-site-100 p-1 rounded-[0.65em]">
+		    <span class="tooltiptext" id="xTip">Copy to clipboard</span>
                     sha256sum
                 </button>
+		</div>
                 <p>&bull; Download size: 1.75GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.4.0-generic</code></p>
@@ -94,9 +96,11 @@
             </div>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-arm64.iso">link</a>
-                <button onclick="shaA64()" onmouseout="outA64()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <div class="tooltip"><button onclick="shaA64()" onmouseout="outA64()" class="bg-site-100 p-1 rounded-[0.65em]">
+		    <span class="tooltiptext" id="aTip">Copy to clipboard</span>
                     sha256sum
                 </button>
+		</div>
                 <p>&bull; Download size: 1.68GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.4.0-generic</code></p>
@@ -122,9 +126,12 @@
         </p>
         <div class="mt-4">
             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinephone-unified.img.xz">link</a>
+        <div class="tooltip">
             <button onclick="shaPP()" onmouseout="outPP()" class="bg-site-100 p-1 rounded-[0.65em]">
+		<span class="tooltiptext" id="pTip">Copy to clipboard</span>
                 sha256sum
             </button>
+            </div>
             <p>&bull; Download size: 1.31GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
             <p>&bull; Kernel: <code>6.4.0-okpine</code></p>
@@ -145,9 +152,12 @@
         </p>
         <div class="mt-4">
             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab.img.xz">link</a>
+        <div class="tooltip">
             <button onclick="shaPB()" onmouseout="outPB()" class="bg-site-100 p-1 rounded-[0.65em]">
+		<span class="tooltiptext" id="bTip">Copy to clipboard</span>
                 sha256sum
             </button>
+            </div>
             <p>&bull; Download size: 1.34GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinetab">Source Code</a></p>
             <p>&bull; Kernel: <code>6.3.11-rockchip</code></p>
@@ -168,9 +178,12 @@
         </p>
         <div class="mt-4">
             &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-pinetab2.img.xz">link</a>
+        <div class="tooltip">
             <button onclick="shaPT()" onmouseout="outPT()" class="bg-site-100 p-1 rounded-[0.65em]">
+		<span class="tooltiptext" id="tTip">Copy to clipboard</span>
                 sha256sum
             </button>
+            </div>
             <p>&bull; Download size: 1.34GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinetab">Source Code</a></p>
             <p>&bull; Kernel: <code>6.3.11-rockchip</code></p>
@@ -196,9 +209,11 @@
             </p>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-desktop.img.xz">link</a>
-                <button onclick="shaRD()" onmouseout="outRD()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <div class="tooltip"><button onclick="shaRD()" onmouseout="outRD()" class="bg-site-100 p-1 rounded-[0.65em]">
+		    <span class="tooltiptext" id="dTip">Copy to clipboard</span>
                     sha256sum
                 </button>
+		</div>
                 <p>&bull; 1.53GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.2.0-raspi</code></p>
@@ -220,9 +235,11 @@
             </p>
             <div class="mt-4">
                 &bull; Download: <a class="text-rhino-purple" href="https://dl.rhinolinux.org/releases/2023.1-beta7/Rhino-Linux-2023.1-beta7-rpi-server.img.xz">link</a>
-                <button onclick="shaRS()" onmouseout="outRS()" class="bg-site-100 p-1 rounded-[0.65em]">
+                <div class="tooltip"><button onclick="shaRS()" onmouseout="outRS()" class="bg-site-100 p-1 rounded-[0.65em]">
+		    <span class="tooltiptext" id="sTip">Copy to clipboard</span>
                     sha256sum
                 </button>
+		</div>
                 <p>&bull; Download size: 1.34GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.2.0-raspi</code></p>
