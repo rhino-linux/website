@@ -724,6 +724,18 @@ video {
   border-width: 2px;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
+.border-brand-dark {
+  border-color: #2d2d2d44;
+}
+
+.border-brand-light {
+  border-color: #fefefe11;
+}
+
 .border-rhino-purple {
   --tw-border-opacity: 1;
   border-color: rgb(141 123 228 / var(--tw-border-opacity));
@@ -827,14 +839,14 @@ video {
   padding: 1rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-4 {
@@ -857,10 +869,6 @@ video {
   padding-top: 2em;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -881,6 +889,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-btn {
+  font-size: 1.15rem;
+  line-height: 1.6rem;
 }
 
 .font-light {
@@ -925,6 +938,12 @@ video {
 .drop-shadow-header-drop {
   --tw-drop-shadow: drop-shadow(2px 4px 10px rgba(40, 30, 45, 1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@font-face {
+  font-family: "Ubuntu";
+
+  src: url("Ubuntu-Regular.ttf");
 }
 
 * {
@@ -1000,6 +1019,96 @@ video {
   margin-top: 6vh;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font: inherit;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(85 75 105 / var(--tw-bg-opacity));
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font: inherit;
+  width: 90%;
+  top: -3%;
+  left: 35%;
+}
+
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgb(85 75 105 / var(--tw-bg-opacity)) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  font: inherit;
+  position: absolute;
+  margin-left: 80%;
+  font-size: 13px;
+}
+
+button {
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+button:not(:disabled):hover {
+  transform: scale(1.1);
+}
+
+button:not(:disabled):hover:active {
+  transform: scale(1.1) translateY(.125rem);
+}
+
+button:focus {
+  outline: 0 solid transparent;
+}
+
+button:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+button:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+button:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1057,4 +1166,3 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-  
