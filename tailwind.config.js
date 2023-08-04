@@ -32,6 +32,9 @@ module.exports = {
       dropShadow: {
         'header-drop': '2px 4px 10px rgba(40, 30, 45, 1)',
       },
+      fontFamily: {
+        'ubuntu': ['Ubuntu', 'sans-serif'],
+      },
     },
     fontSize: {
       xs: ['0.75rem', {lineHeight: '1rem',}],
