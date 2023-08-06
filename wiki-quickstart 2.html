@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | Wiki</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            Rhino Linux Wiki
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+          Documentation and Guides
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+
+  <h1 class="text-center text-off-white text-3xl">
+    Quick Start Guide
+  </h1>
+
+  <p class="text-off-white mt-4">
+    Welcome to the Quick Start Guide for Rhino Linux! Thank you for installing our Linux distribution. Rhino Linux is the collective work of our wonderful development team and contributors.
+  </p>
+
+  <p class="text-off-white mt-4">
+    • This guide assumes you have already installed Rhino Linux, if you have not then please follow our Installation guide. <br>
+    • An internet connection is required to complete these steps. If you do not have your WiFi drivers installed (Broadcom and Realtek drivers will not be preinstalled due to their licensing) then please connect to the internet via Mobile phone USB tethering.
+  </p>
+
+  <p class="text-off-white mt-4">
+    Firstly, congratulations on installing Rhino Linux. Our disk images are built with an Ubuntu daily build and run on the devel repos, so you will be getting the latest software as it hits the Ubuntu repositories. This distribution is a rolling release, and so will have steady stream of package updates. We also utilise Pacstall as an additional, AUR-like package manager.
+  </p>
+
+  <p class="text-off-white mt-4">
+    Upon logging into your Rhino Linux desktop you will be greeted with Rhino Setup, a utility which will allow for you to setup your device to your liking immediately. You will first be asked whether you prefer a light or a dark theme for your operating system. Afterwards you will be asked which additional package managers you would prefer to utilise. If you are unsure or impartial, then utilise all of them for a bigger selection of applications. After this you can then select additional applications such as Apport and Nala to have installed on your system:
+  </p>
+
+  <p class="text-off-white mt-4">
+    • We recommend you have Nala installed to have faster downloads and better terminal output when installing from the Apt repositories. <br>
+    • Apport is a crash detection debugging program. It is disabled by default (but you can decide to enable it yourself during the setup wizard) because Apport collects potentially sensitive data, such as core dumps, stack traces, and log files. They can contain passwords, credit card numbers, serial numbers, and other private material. <b>Do not enable Apport unless you are doing critical testing in a safe environment</b>.
+  </p>
+
+  <p class="text-off-white mt-4">
+    Once this is completed you will be prompted to reboot your system; please reboot so that the changes can be made.
+  </p>
+
+  <p class="text-off-white mt-4">
+    Finally, once you log in you will need to perform any updates to the packages installed on your system. You can do this with <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg update -y</code>, which will update all packages from any package managers you have installed. After this is done you may reboot and then install your applications.
+  </p>
+
+  <p class="text-off-white mt-4">
+    • It is recommended to install applications by utilising <a href="wiki-rpk.html" class="text-rhino-purple">rhino-pkg</a>.
+  </p>
+  
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
