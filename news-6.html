@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+            Find news relating to Rhino Linux & its development
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    Rhino Linux 2023.1, how we made the distro.
+  </h1>
+  <p class="text-off-white mt-4">
+    Rhino Linux has now officially moved out of Beta! We have released Rhino Linux 2023.1 on x86_64, ARM, Pine64 and Raspberry Pi devices.
+  </p>
+  <p class="text-off-white mt-4">
+    Quite a lot has changed since our first beta release back in April 2023, and so instead of a generic changelog, I want to do something a little different and discuss what actually went into the making of the operating system.
+  </p>
+  <p class="text-off-white mt-4">
+    You can download Rhino Linux 2023.1 <a class="text-rhino-purple" href="download.html">here</a>. <br>
+    Contact us <a class="text-rhino-purple" href="contact.html">here</a>. <br>
+    Or maybe donate to us <a class="text-rhino-purple" href="https://ko-fi.com/rhinolinux">here</a>.
+  </p>
+  <h1 class="text-center text-off-white mt-4 text-3xl">The concept</h1>
+  <p class="text-off-white mt-4">
+    The concept of the Operating System came from my (AJ) previous project. Rolling Rhino Remix was a quick little hobby project I slapped together with little to no care for a bit of fun, however people started using it. This became unmaintainable in the long run and so in October 2022 I came up with a new vision for how I wanted my desktop operating system to go. 
+  </p>
+  <p class="text-off-white mt-4">
+    The first little idea came from when I saw VanillaOS' setup utility, and wanted to include that into Rolling Rhino Remix. From there the idea expanded into making a distribution based entirely on Pacstall. 
+  </p>
+  <p class="text-off-white mt-4">
+    Still we had one issue, GNOME was far too large to package into pacstall with our smaller team, and I wanted this operating system to have a more stable, and customisable GTK desktop environment. So we went with XFCE instead. 
+  </p>
+  <p class="text-off-white mt-4">
+    The plan at this stage was to still use the name "Rolling Rhino Remix", but scrap older ISOs and force users to upgrade to the new one after 3 months. This was not a good strategy and later we decided that changing it to a successor distribution would be a better fit.
+  </p>
+  <p class="text-off-white mt-4">
+    After that I began work on branding, and we eventually settled on the name "Rhino Linux"
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    The builder
+  </h1>
+  <p class="text-off-white mt-4">
+    To be honest, I had little-to-no involvement with the builder, and so I'll hand over to cat-master21, the original creator for the Rhino Linux ISO builder, and Oklopfer our system's lead to discuss more about this.
+  </p>
+  <p class="text-off-white mt-4">
+    Cat-master21: Rhino Linux's image building system uses a tool called LiveBuild created by Debian with some shell scripts for automation which we utilise from VanillaOS, which had forked it from elsewhere.
+  </p>
+  <p class="text-off-white mt-4">
+    With the creation of Rhino Linux it would be best to switch from our old system in Rolling Rhino Remix that essentially unmounted and remounted an ISO with changes, this had it's various disadvantages and was dependent on Ubuntu's ISO structure.
+  </p>
+  <p class="text-off-white mt-4">
+    Now the image building system creates everything from the ground-up so it is not dependent on that also removing the need to download Ubuntu's image speeding things up.
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    The installer
+  </h1>
+  <p class="text-off-white mt-4">
+    [Oren talk about installer pls]
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    Package management
+  </h1>
+  <p class="text-off-white mt-4">
+    Hey! It's AJ again, One of the fundamental ideas of the distribution was to unify all methods of Package management, so users aren't running 5 commands to update their system, or find an app they want. This is where the idea for <code>rhino-pkg</code> came from. It's a bash script wrapper around Pacstall, Apt, Snap and Flatpak that allow for you to easily search and install applications as well as update your system.
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    The XFCE Desktop
+  </h1>
+  <p class="text-off-white mt-4">
+    Originally the plan was to utilise an XFCE Desktop with a similar layout to KDE Plasma or Microsoft Windows. Overall the user experience of this worked well, however we later decided to go a different route as we will discuss later on in this post.
+  </p>
+  <h1 class="text-off-white mt-4 text-center text-3xl">
+    Our first beta release
+  </h1>
+  <p class="text-off-white text-center">
+    "Rhino Linux is pleased to announce that it has entered open beta. This is the collective work of 5 months of active development from the Rhino Linux team and other contributors." - This was the first line in the blog post where I announced the open beta of Rhino Linux, and suddenly we had a handful of downloads, and our first bug reports. 
+  </p>
+  <h1 class="text-off-white mt-4 text-center text-3xl">
+    Greater user experience
+  </h1>
+  <p class="text-off-white mt-4">
+    I was at my girlfriend's for a while, with no laptop and no way to update my website, so I asked my girlfriend if I could borrow her M1 Macbook Pro. I also realised that it was out of date, by one major release and so updated it for her. I was impressed by how simple and painless the upgrades were. Nothing compared to my experience on Linux, and so I gained the idea to create rhino-system, I just needed to find a developer skilled enough to execute it.
+  </p>
+  <p class="text-off-white mt-4">
+    The idea of macOS' user experience became stuck in my head, and also led to the development of the Unicorn Desktop and other features that some may see was inspired by Apple, such as RhinoDrop.
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    The Unicorn Desktop
+  </h1>
+  <p class="text-off-white mt-4">
+    Inspired by designs such as macOS, Pop!_OS COSMIC and GNOME we crafted Unicorn. Originally supposed to be an independent desktop environment based on xfwm4-wayland it would've utilised a collection of free software components modified to fit our evolving design language.
+  </p>
+  <p class="text-off-white mt-4">
+    In time we refined the concept of Unicorn to be a desktop experience based on XFCE, bringing XFCE into a more modern age.
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    Your System
+  </h1>
+  <p class="text-off-white mt-4">
+    We ended up finding a talented gtk4-libadwaita developer, Axtloss. She began work on rhino-system, Also known as the "Your System" app. It was inspired by "About this mac" found on macOS. It is a GTK graphical application that displays system information and allows for you to update your system graphically. It was planned to be included in our fifth beta release, however there was an issue...
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    Big trouble in little Pacstall
+  </h1>
+  <p class="text-off-white mt-4">
+    Hey, Elsie, developer of Pacstall, here. An issue we had during this entire process was with pacstall packages depending on other pacstall packages. When users went to upgrade, they would be upgraded in alphabetical order, even if the main package was installing before its dependencies. This would cause issues with apt, and was not workable long-term. So I created a system that would essentially drop packages into "buckets" based on its traits as a package, such as if it had dependencies, pacstall dependencies, etc. What this would allow me to do is sort packages into a corrected order, so that dependants would be installed before the main package. Now rhino packages can be installed in the correct order, along with other programs that may need this.
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">
+    Cleaning up
+  </h1>
+  <p class="text-off-white mt-4">
+    After beta6 and beta7, we had a few small issues to clean up, and from there we have been able to release Rhino Linux 2023.1.
+  </p>
+  <p class="text-off-white mt-4">
+    We also had to work closely with Elsie to time the release with Pacstall 4.0.0, ensuring that there are little-to-no issues for users upgrading from previous versions of Rhino Linux to the full release.
+  </p>
+  <p class="text-off-white mt-4">
+    I want to thank everyone who has supported our distribution, either by joining our community, utilising it, spreading our message or donating to us on Kofi. Your support makes the distribution possible.
+  </p>
+  <p class="text-off-white mt-4">
+    Many thanks: <br>
+    &bull; The Rhino Linux team.
+  </p>
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
