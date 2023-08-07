@@ -69,100 +69,109 @@
     Contact us <a class="text-rhino-purple" href="contact.html">here</a>. <br>
     Or maybe donate to us <a class="text-rhino-purple" href="https://ko-fi.com/rhinolinux">here</a>.
   </p>
+  <p class="text-off-white mt-4">To update to Rhino Linux 2023.1 from a previous release run:     <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rpk update -y</code> as well as <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">pacstall -PI rhino-core</code>.
+   </p>
   <h1 class="text-center text-off-white mt-4 text-3xl">The concept</h1>
   <p class="text-off-white mt-4">
     The concept of the Operating System came from my (AJ) previous project. Rolling Rhino Remix was a quick little hobby project I slapped together with little to no care for a bit of fun, however people started using it. This became unmaintainable in the long run and so in October 2022 I came up with a new vision for how I wanted my desktop operating system to go. 
   </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">Branding</h1>
   <p class="text-off-white mt-4">
-    The first little idea came from when I saw VanillaOS' setup utility, and wanted to include that into Rolling Rhino Remix. From there the idea expanded into making a distribution based entirely on Pacstall. 
+    Hello all, Oren here, also known as oklopfer. My history with the Rhino Linux team
+actually starts with our logo. For a bit now, I had been using Ubuntu tracking the
+<code>devel</code> branch, when I had stumbled upon an article talking about Rhino
+Linux. Immediately intrigued, I joined the Discord server. My personal hobbies include
+graphic design and development projects, so I decided to take a shot at a logo that
+demonstrated Rhino Linux, the successor to Rolling Rhino Remix. Sure enough, I was
+able to produce the logo you now see across the website and distribution! I then
+ended up joining the team as a “designer.”
+  </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">Pacstall</h1>
+  <p class="text-off-white mt-4">
+    Hi, Elsie here. I'm in charge of Pacstall, which an AUR-like package manager for Ubuntu. Rhino Linux chose to use Pacstall because it's a rolling distro meaning it gets updates really quick, which pairs nicely with Pacstall's ability to also package and distribute fast and up to date updates for packages! Rhino Linux exclusively uses Pacstall for shipping most of it's customization's and default applications. 
   </p>
   <p class="text-off-white mt-4">
-    Still we had one issue, GNOME was far too large to package into pacstall with our smaller team, and I wanted this operating system to have a more stable, and customisable GTK desktop environment. So we went with XFCE instead. 
+    Our repository is based sort of like nixpkgs is: a community repo where anybody with a GitHub account can contribute to any package regardless of maintainer. This style of repository means that sneaking blatant malware into the repo is a lot harder because of the team of reviewers that makes sure every incoming PR is up to our standards.
   </p>
   <p class="text-off-white mt-4">
-    The plan at this stage was to still use the name "Rolling Rhino Remix", but scrap older ISOs and force users to upgrade to the new one after 3 months. This was not a good strategy and later we decided that changing it to a successor distribution would be a better fit.
-  </p>
-  <p class="text-off-white mt-4">
-    After that I began work on branding, and we eventually settled on the name "Rhino Linux"
+    Oren here, hello there. A fundamental piece of holding the distribution
+together and allowing us to address user issues as quickly as possible is how we ship
+all of our packages. Ideally, all of our packages are held on GitHub. One of Pacstall’s
+greatest features is the usage of git packages, which allow us to build
+installable .deb files based on our GitHub packages, allowing updates
+to operate not just by version/release, but by commit. Similarly, .deb
+files not in Ubuntu repositories can quickly be pulled in by Pacstall. Combining
+everything together, we have core packages, which serve as
+meta-packages that tell a system to install all of its dependencies, giving a sound way
+to provide rapid updates to systems.
   </p>
   <h1 class="text-off-white mt-4 text-3xl text-center">
     The builder
   </h1>
   <p class="text-off-white mt-4">
-    To be honest, I had little-to-no involvement with the builder, and so I'll hand over to cat-master21, the original creator for the Rhino Linux ISO builder, and Oklopfer our system's lead to discuss more about this.
+    Hey everyone, cat-master here. Rhino Linux's image building system uses a tool called LiveBuild created by Debian with some shell scripts for automation which we utilise from VanillaOS, which had forked it from elsewhere.
   </p>
   <p class="text-off-white mt-4">
-    Cat-master21: Rhino Linux's image building system uses a tool called LiveBuild created by Debian with some shell scripts for automation which we utilise from VanillaOS, which had forked it from elsewhere.
+    Oren here again, after being brought on as a designer, I noticed Cat-master was having issues generating alpha disk images. Another thing to know about me is that I am the current maintainer of Ubuntu Touch on Pine64, so I came into the conversation with similar background knowledge. I was
+    able to join cat-master21 in fixing the ISO, at which point I was brought on as a full
+    developer.
   </p>
   <p class="text-off-white mt-4">
-    With the creation of Rhino Linux it would be best to switch from our old system in Rolling Rhino Remix that essentially unmounted and remounted an ISO with changes, this had it's various disadvantages and was dependent on Ubuntu's ISO structure.
-  </p>
-  <p class="text-off-white mt-4">
-    Now the image building system creates everything from the ground-up so it is not dependent on that also removing the need to download Ubuntu's image speeding things up.
+    This is where the fun really starts. My next steps were to make the iso have
+both an AMD64/x86_64 variant + an ARM64 variant; I knew that if I were to make
+embedded images work, I would first have to start with getting base ARM64 images
+to work. Luckily, modern MacBooks and their new Apple Silicon chips provide a
+perfect place to test these images out. Once that was cracked, I moved onto the platform
+I am most familiar with, Pine64. This is where the builder gets quite complicated. As
+cat-master21 mentioned, the ISO builds using Debian’s live-build utility, but for our
+embedded systems, we have to deploy the images using another common Debian
+building utility, Debos. It was at this
+point that I split the process into two, using both utilities for embedded images:
+live-build creates a base tarball, and Debos then deploys that tarball to a properly
+configured image, tailored to each device specifically. This same process could then be
+used for Raspberry Pi images, with its own modifications to the filesystem it deploys.
   </p>
   <h1 class="text-off-white mt-4 text-3xl text-center">
     The installer
   </h1>
   <p class="text-off-white mt-4">
-    [Oren talk about installer pls]
+    Oren here again to talk about the installer. As discussed in the builder section,
+the embedded images are pre-deployed, so an installer is not needed for them. As for
+the ISOs, we currently use a multi-step installation process, with both a pre-install and
+post-install application. On an ISO file’s first boot, the user will be greeted right away
+to a live environment of Rhino Linux, so users can play around with the Unicorn
+environment and some of our utilities to see if this is the distro for them.
+  </p>
+  <p class="text-off-white mt-4">
+    To proceed with installation, users can select the “Install Rhino Linux” icon
+from the desktop, which takes users to a custom themed Calamares installer. After the
+user goes through the Calamares installation process, they are invited to reboot,
+where they will have a fully working and installed environment. On all images, both
+embedded and full desktop ones, when the user first logs in, they will be greeted to
+our Setup Wizard utility. This utility allows users to select light or dark theme, choose
+which package managers they would like on their system, and optionally install some
+other helpful utilities. After the wizard has complete, users are invited to reboot one more time, whereupon they will have their complete and ready-to-go Rhino Linux
+installation.
   </p>
   <h1 class="text-off-white mt-4 text-3xl text-center">
     Package management
   </h1>
   <p class="text-off-white mt-4">
-    Hey! It's AJ again, One of the fundamental ideas of the distribution was to unify all methods of Package management, so users aren't running 5 commands to update their system, or find an app they want. This is where the idea for <code>rhino-pkg</code> came from. It's a bash script wrapper around Pacstall, Apt, Snap and Flatpak that allow for you to easily search and install applications as well as update your system.
-  </p>
-  <h1 class="text-off-white mt-4 text-3xl text-center">
-    The XFCE Desktop
-  </h1>
-  <p class="text-off-white mt-4">
-    Originally the plan was to utilise an XFCE Desktop with a similar layout to KDE Plasma or Microsoft Windows. Overall the user experience of this worked well, however we later decided to go a different route as we will discuss later on in this post.
-  </p>
-  <h1 class="text-off-white mt-4 text-center text-3xl">
-    Our first beta release
-  </h1>
-  <p class="text-off-white text-center">
-    "Rhino Linux is pleased to announce that it has entered open beta. This is the collective work of 5 months of active development from the Rhino Linux team and other contributors." - This was the first line in the blog post where I announced the open beta of Rhino Linux, and suddenly we had a handful of downloads, and our first bug reports. 
-  </p>
-  <h1 class="text-off-white mt-4 text-center text-3xl">
-    Greater user experience
-  </h1>
-  <p class="text-off-white mt-4">
-    I was at my girlfriend's for a while, with no laptop and no way to update my website, so I asked my girlfriend if I could borrow her M1 Macbook Pro. I also realised that it was out of date, by one major release and so updated it for her. I was impressed by how simple and painless the upgrades were. Nothing compared to my experience on Linux, and so I gained the idea to create rhino-system, I just needed to find a developer skilled enough to execute it.
-  </p>
-  <p class="text-off-white mt-4">
-    The idea of macOS' user experience became stuck in my head, and also led to the development of the Unicorn Desktop and other features that some may see was inspired by Apple, such as RhinoDrop.
+    Elsie here, I'm also the developer for rhino-pkg (rpk), which is a meta-package manager that combines apt, pacstall, flatpak, and snap into a nice little UI that can be used to install, remove, search, and upgrade all package managers at once. This was also my first time dabbling with i18n, and since it's not a large program, we have translated it into (as of the 6th of August, 2023) 14 different languages along with English, so that hopefully every user can understand what it's doing in their native language.
   </p>
   <h1 class="text-off-white mt-4 text-3xl text-center">
     The Unicorn Desktop
   </h1>
   <p class="text-off-white mt-4">
-    Inspired by designs such as macOS, Pop!_OS COSMIC and GNOME we crafted Unicorn. Originally supposed to be an independent desktop environment based on xfwm4-wayland it would've utilised a collection of free software components modified to fit our evolving design language.
+    AJ here. I'm the founder of Rhino Linux, and the current Desktop Lead. The Unicorn Desktop experience that we have crafted came from other Linux desktop environments.
   </p>
   <p class="text-off-white mt-4">
-    In time we refined the concept of Unicorn to be a desktop experience based on XFCE, bringing XFCE into a more modern age.
-  </p>
-  <h1 class="text-off-white mt-4 text-3xl text-center">
-    Your System
-  </h1>
-  <p class="text-off-white mt-4">
-    We ended up finding a talented gtk4-libadwaita developer, Axtloss. She began work on rhino-system, Also known as the "Your System" app. It was inspired by "About this mac" found on macOS. It is a GTK graphical application that displays system information and allows for you to update your system graphically. It was planned to be included in our fifth beta release, however there was an issue...
-  </p>
-  <h1 class="text-off-white mt-4 text-3xl text-center">
-    Big trouble in little Pacstall
-  </h1>
-  <p class="text-off-white mt-4">
-    Hey, Elsie, developer of Pacstall, here. An issue we had during this entire process was with pacstall packages depending on other pacstall packages. When users went to upgrade, they would be upgraded in alphabetical order, even if the main package was installing before its dependencies. This would cause issues with apt, and was not workable long-term. So I created a system that would essentially drop packages into "buckets" based on its traits as a package, such as if it had dependencies, pacstall dependencies, etc. What this would allow me to do is sort packages into a corrected order, so that dependants would be installed before the main package. Now rhino packages can be installed in the correct order, along with other programs that may need this.
-  </p>
-  <h1 class="text-off-white mt-4 text-3xl text-center">
-    Cleaning up
-  </h1>
-  <p class="text-off-white mt-4">
-    After beta6 and beta7, we had a few small issues to clean up, and from there we have been able to release Rhino Linux 2023.1.
+    The Unicorn Desktop includes the customised desktop environment you are greeted with. It comprises of a handful of free software components which we have either created ourselves or have modified in some way. The look and feel of Unicorn was inspired namely by GNOME and, the now dormant Cutefish. We wanted to keep using XFCE as our base, due to it's lightweight and customisable nature, however we wanted to give it a fresh coat of paint and users a more modern way of interacting with their operating system.
   </p>
   <p class="text-off-white mt-4">
-    We also had to work closely with Elsie to time the release with Pacstall 4.0.0, ensuring that there are little-to-no issues for users upgrading from previous versions of Rhino Linux to the full release.
+    Another part of the Unicorn Desktop includes our graphical applications stack. Anything we've created to help aid the user experience of Rhino Linux falls onto the desktop team. Some of these applications are designed to make the user experience more usable in general, such at the "Setup Wizard" created by Wizard or the "Your System" application by Axtloss. RhinoDrop was created to be an open source alternative to airdrop, natively shipped on Rhino Linux. Currently it only has a web-user interface, however plans are in the works for a GTK4 port.
   </p>
+  <h1 class="text-off-white mt-4 text-3xl text-center">Thank you.</h1>
   <p class="text-off-white mt-4">
     I want to thank everyone who has supported our distribution, either by joining our community, utilising it, spreading our message or donating to us on Kofi. Your support makes the distribution possible.
   </p>
