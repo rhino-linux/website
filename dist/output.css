@@ -630,6 +630,10 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -1226,10 +1230,6 @@ select {
     display: block;
   }
 
-  .lg\:inline-flex {
-    display: inline-flex;
-  }
-
   .lg\:grid {
     display: grid;
   }
@@ -1252,10 +1252,6 @@ select {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:rounded-full {
-    border-radius: 9999px;
   }
 
   .lg\:px-4 {
