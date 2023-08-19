@@ -56,34 +56,19 @@
 
 <div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
   <h1 class="text-center text-off-white text-3xl">
-    Report a bug
+    Bug #5
   </h1>
   <p class="text-off-white mt-4">
-    To report a bug or issue with Rhino Linux, you can either join our <a href="https://rhinolinux.org/" class="text-rhino-purple">Discord</a> and send a message in the relevant channels, or use the form <a class="text-rhino-purple" href="https://cryptpad.fr/form/#/2/form/view/I-j6PozyZiivLkuQjTGCuVlKIgxwKS+hZpbRYdbax+g/" target="_blank">here</a>.
-  </p>
-  <h1 class="text-center text-off-white text-3xl mt-4">
-    Ongoing issues:
-  </h1>
-  <p class="text-off-white mt-4">
-    Bug #7 - <a href="tracker-7.html" class="text-rhino-purple">Lightdm crashing on Unicorn start.</a>
+    <b>Note: this issue only occurs if you are upgrading from a beta release to the full release of Rhino Linux. If you did a fresh installation of Rhino Linux 2023.1 or higher then this will not affect your system.</b>
   </p>
   <p class="text-off-white mt-4">
-    Bug #6 - <a href="tracker-6.html" class="text-rhino-purple">Disk encryption issues.</a>
+    With Pacstall upgrading to v4.0.0 some users on 2023.1-beta7 will not get updates to the Unicorn Desktop or rhino-pkg. This can be fixed really easily by running:
   </p>
-  <p class="text-off-white mt-4">
-    Bug #5 - <a href="tracker-5.html" class="text-rhino-purple">Issues upgrading Unicorn & rhino-pkg when updating from beta7 to full release.</a>
-  </p>
-
-  <h1 class="text-off-white text-center mt-4 text-3xl">
-    Past issues
-  </h1>
-  <p class="text-off-white mt-4">
-    Past issues can still affect your device if you have not upgraded in a while: <br>
-    Bug #4 - <a href="tracker-4.html" class="text-rhino-purple">Firefox landing page not set on AMD64</a> <br>
-    Bug #3 - <a href="tracker-3.html" class="text-rhino-purple">Users tracking pacstall:develop on beta4 and below</a> <br>
-    Bug #2 - <a href="tracker-2.html" class="text-rhino-purple">Snapd not installed after rhino-setup</a> <br>
-    Bug #1 - <a href="tracker-1.html" class="text-rhino-purple">Certain updates require manual intervention</a>
-  </p>
+  <br>
+  <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">pacstall -PI unicorn-desktop-git rhino-pkg-git</code>  
+  <p class="text-off-white mt-4">Or if you are using Pine64 devices:</p> 
+  <br>
+  <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">pacstall -PI unicorn-mobile-git rhino-pkg-git</code>
 
 </div>
 
