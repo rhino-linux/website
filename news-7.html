@@ -81,11 +81,29 @@
     &bull; The Unicorn dashboard has seen some major UI enhancements, as we have now written a custom theme which allows for a more cohesive and beautiful desktop experience.
   </p>
   <p class="text-off-white mt-4">
+    &bull; We tweaked the background colour for the application grid to match our dashboard theming.
+  </p>
+  <p class="text-off-white mt-4">
     &bull; One of our developers, Elsie, has created an updated bash prompt to spruce up your terminal. This is now shipped default in Rhino Linux. It adds colour coding, and git information making it perfect for developers.
   </p>
   <p class="text-off-white mt-4">
     &bull; Both of these changes require manual intervention on older installations. To install please upgrade your system and then run: <br><br>
     <code class="mt-4 text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">sudo cp /etc/xdg/xdg-unicorn/.bashrc ~/.bashrc && xfconf-query -c xfdashboard -p /theme -s unicorn-dashboard</code>
+  </p>
+  <h1 class="text-off-white text-2xl-mt-4">
+    As well as...
+  </h1>
+  <p class="text-off-white mt-4">
+    &bull; Pacstall 4.1.0 has been released, bringing vital fixes to the user experience of Rhino Linux by introducing a "mask" array. Certain packages within the rhino-core metapackage would be incompatible with other packages offered in our repositories. When one of these incompatible packages were installed, it would remove "rhino-core". The mask array prevents this by "masking" incompatible packages.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Linux kernel 6.5 has been packaged and shipped with this disk image release.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; We have solved a bug with LightDM having issues on certain devices starting the Unicorn Session. We have managed to fix this by including <code>xserver-xorg-video-vesa</code> and <code>xserver-xorg-video-fbdev</code> as Unicorn dependencies.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Thunar no longer shows hidden files by default.
   </p>
 
 <!-- 
