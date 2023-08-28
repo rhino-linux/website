@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
-  <title>Rhino Linux | News</title>
+  <title>Rhino Linux | Wiki</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
 <script src="js/navbar.js"></script>
@@ -45,71 +45,43 @@
             </h1>
         </div>
         <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
-            News Feed
+            Rhino Linux Wiki
         </h1>
         <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
-          Find news relating to Rhino Linux & its development
+          Documentation and Guides
         </h2>
         <br>
     </div>
 </div>
 
 <div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+
   <h1 class="text-center text-off-white text-3xl">
-    2023.2: Unicorn updates, bug fixes & more!
+    Install Nvidia Drivers
   </h1>
+
   <p class="text-off-white mt-4">
-    Rhino Linux 2023.2 is the second disk image release we have published. After ~3 weeks of development I am happy to say that it is ready to be shipped. Users already running Rhino Linux should already have the changes if they have upgraded their systems.
-  </p>
-  <p class="text-off-white mt-4">
-    To upgrade to 2023.2 please run: <br><br>
-    <code class="mt-4 text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk update -y</code>. 
-    <br><br>
-    &bull; Some changes to the Unicorn Desktop will require manual intervention, continue reading to learn more.
+    Nvidia driver installation on Rhino Linux is fairly straightforward. To install Nvidia drivers, just run the following command:
   </p>
 
-  <h1 class="text-2xl mt-4 text-off-white">
-    LUKS Disk Encryption
-  </h1>
   <p class="text-off-white mt-4">
-    &bull; One major issue we had with the launch of Rhino Linux was that LUKS Disk Encryption did not work properly due to an issue. We are happy to say that we have now successfully solved that issue, and in 2023.2 you can install your system with disk encryption if you choose.
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg install nvidia-dkms</code>
   </p>
-  <h1 class="text-2xl mt-4 text-off-white">
-    Unicorn Desktop improvements
-  </h1>
-  <p class="text-off-white mt-4">
-    &bull; The Unicorn dashboard has seen some major UI enhancements, as we have now written a custom theme which allows for a more cohesive and beautiful desktop experience.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; We tweaked the background colour for the application grid to match our dashboard theming.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; One of our developers, Elsie, has created an updated bash prompt to spruce up your terminal. This is now shipped default in Rhino Linux. It adds colour coding, and git information making it perfect for developers.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; Both of these changes require manual intervention on older installations. To install please upgrade your system and then run: <br><br>
-    <code class="mt-4 text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">sudo cp /etc/xdg/xdg-unicorn/.bashrc ~/.bashrc && xfconf-query -c xfdashboard -p /theme -s unicorn-dashboard</code>
-  </p>
-  <h1 class="text-off-white text-2xl mt-4">
-    As well as...
-  </h1>
-  <p class="text-off-white mt-4">
-    &bull; The Pacstall 4.1 series has been released, bringing vital fixes to the user experience of Rhino Linux by introducing a "mask" array. Certain packages within the rhino-core metapackage would be incompatible with other packages offered in our repositories. When one of these incompatible packages were installed, it would remove "rhino-core". The mask array prevents this by "masking" incompatible packages.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; Linux kernel 6.5 has been packaged and shipped with this disk image release.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; We have solved a bug with LightDM having issues on certain devices starting the Unicorn Session. We have managed to fix this by including <code>xserver-xorg-video-vesa</code> and <code>xserver-xorg-video-fbdev</code> as Unicorn dependencies.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; Thunar no longer shows hidden files by default.
-  </p>
-
-<!-- 
- 
-    -->
   
+  <p class="text-off-white mt-4">
+    This will list multiple version options to install. If you do not know which one will work best for you, check <a href="https://www.nvidia.com/download/index.aspx" target="_blank" class="text-rhino-purple">Nvidia's website</a>.
+  </p>
+
+  <p class="text-off-white mt-4">
+    On some older laptops, you may also need Primus libraries. 
+  </p>
+
+  <p class="text-off-white mt-4">
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-pkg install primus-nvidia</code>
+  </p>
+  
+
+
 </div>
 
 <!-- Footer -->
