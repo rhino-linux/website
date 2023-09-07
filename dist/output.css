@@ -803,11 +803,6 @@ video {
   background-color: rgb(141 123 228 / var(--tw-bg-opacity));
 }
 
-.bg-site-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(85 75 105 / var(--tw-bg-opacity));
-}
-
 .bg-site-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 50 80 / var(--tw-bg-opacity));
