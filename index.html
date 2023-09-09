@@ -28,7 +28,7 @@
         </div>
     </div>
   
-    <div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="extended h-auto bg-[url('img/blobs-350px.png')] sm:bg-[url('img/blobs-499px.png')] md:bg-[url('img/blobs-768px.png')] lg:bg-[url('img/blobs-968px.png')] xl:bg-[url('img/blobs-1200px.png')] 2xl:bg-[url('img/blobs-1920px.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
         <div class="overlay h-auto bg-overlay text-center">
             <div class="hidden lg:block">
                 <p class="text-center text-off-white pt-4">
@@ -41,7 +41,7 @@
                   </p>
             </div>
             <div class="block lg:hidden">
-                <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                <h1 class="text-right text-off-white text-3xl pr-2 cursor-pointer hover:text-rhino-purple transition-colors" onclick="ddshow()">
                     ☰
                 </h1>
             </div>
@@ -51,8 +51,11 @@
             <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
                 Rhino Linux is a rolling release Ubuntu-based distribution with Pacstall & XFCE at its core.
             </h2>
-            <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-6 text-2xl hover:bg-[rgba(141,123,228,0.5)] mr-8 mb-4 shadow-header-box" onclick="location.href='https://rhinolinux.org#why'">Why Rhino?</button>
-            <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-6 text-2xl hover:bg-[rgba(141,123,228,0.5)] ml-8 mb-4 shadow-header-box" onclick="location.href='download.html'">Download</button>
+            <div class="flex flex-col md:block">
+                <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-6 text-2xl hover:bg-[rgba(141,123,228,0.5)] mx-auto md:mr-8 mb-2 md:mb-4 shadow-header-box" onclick="location.href='https://rhinolinux.org#why'">Why Rhino?</button>
+            <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-6 text-2xl hover:bg-[rgba(141,123,228,0.5)] mx-auto md:ml-8 mb-2 md:mb-4 shadow-header-box" onclick="location.href='download.html'">Download</button>
+            </div>
+            
         </div>
     </div>
 

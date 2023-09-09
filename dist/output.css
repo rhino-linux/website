@@ -622,6 +622,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -694,6 +698,10 @@ video {
   flex: 1 1 auto;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -714,6 +722,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -842,6 +854,10 @@ video {
   background-image: url('img/blobs.png');
 }
 
+.bg-\[url\(\'img\/blobs-350px\.png\'\)\] {
+  background-image: url('img/blobs-350px.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -860,6 +876,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-2 {
@@ -992,6 +1012,20 @@ video {
 .drop-shadow-header-drop {
   --tw-drop-shadow: drop-shadow(2px 4px 10px rgba(40, 30, 45, 1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @font-face {
@@ -1204,6 +1238,43 @@ select {
   background-color: rgba(141,123,228,0.5);
 }
 
+.hover\:text-rhino-purple:hover {
+  --tw-text-opacity: 1;
+  color: rgb(141 123 228 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-\[url\(\'img\/blobs-499px\.png\'\)\] {
+    background-image: url('img/blobs-499px.png');
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
+  .md\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:bg-\[url\(\'img\/blobs-768px\.png\'\)\] {
+    background-image: url('img/blobs-768px.png');
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:ml-2 {
     margin-left: 0.5rem;
@@ -1249,8 +1320,28 @@ select {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:bg-\[url\(\'img\/blobs-968px\.png\'\)\] {
+    background-image: url('img/blobs-968px.png');
+  }
+
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:bg-\[url\(\'img\/blobs-1920px\.png\'\)\] {
+    background-image: url('img/blobs-1920px.png');
+  }
+
+  .xl\:bg-\[url\(\'img\/blobs-1200px\.png\'\)\] {
+    background-image: url('img/blobs-1200px.png');
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:bg-\[url\(\'img\/blobs-1920px\.png\'\)\] {
+    background-image: url('img/blobs-1920px.png');
   }
 }
