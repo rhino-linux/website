@@ -11,8 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
 </head>
 <body>
-
-    <div id="dropdown">
+    <div id="dropdown" aria-expanded="false">
         <div class="container">
             <div class="exit">
                 <a onclick="ddhide()" style="color:#fefefe">x</a>
@@ -40,10 +39,11 @@
                     <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
                   </p>
             </div>
-            <div class="block lg:hidden">
-                <h1 class="text-right text-off-white text-3xl pr-2 cursor-pointer hover:text-rhino-purple transition-colors" onclick="ddshow()">
-                    ☰
-                </h1>
+            <div class="flex items-center justify-end lg:hidden text-off-white hover:text-rhino-purple transition">
+                
+                <button id="hamburger" class="text-right text-3xl pr-2 mr-2 flex items-center justify-end" aria-label="main menu toggle" aria-controls="dropdown" onclick="ddshow()">
+                    <span class="uppercase text-sm mr-2">Menu</span><span aria-hidden="true">☰</span>
+                </button>
             </div>
             <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
                 Ubuntu Based. Rolling Release. Community Maintained. Open Source.

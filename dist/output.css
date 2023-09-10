@@ -586,12 +586,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mr-2 {
@@ -606,10 +606,6 @@ video {
   margin-right: 1rem;
 }
 
-.mr-8 {
-  margin-right: 2rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -622,8 +618,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-0 {
+  margin-right: 0px;
 }
 
 .block {
@@ -730,6 +730,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .gap-4 {
@@ -850,12 +854,12 @@ video {
   background-color: rgb(139 0 231 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'img\/blobs\.png\'\)\] {
-  background-image: url('img/blobs.png');
-}
-
 .bg-\[url\(\'img\/blobs-350px\.png\'\)\] {
   background-image: url('img/blobs-350px.png');
+}
+
+.bg-\[url\(\'img\/blobs\.png\'\)\] {
+  background-image: url('img/blobs.png');
 }
 
 .bg-cover {
@@ -876,10 +880,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-2 {
@@ -942,6 +942,11 @@ video {
 .text-btn {
   font-size: 1.15rem;
   line-height: 1.6rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -1014,16 +1019,16 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1243,6 +1248,11 @@ select {
   color: rgb(141 123 228 / var(--tw-text-opacity));
 }
 
+.hover\:text-neon-purple:hover {
+  --tw-text-opacity: 1;
+  color: rgb(139 0 231 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:bg-\[url\(\'img\/blobs-499px\.png\'\)\] {
     background-image: url('img/blobs-499px.png');
@@ -1250,20 +1260,16 @@ select {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:ml-8 {
     margin-left: 2rem;
   }
 
   .md\:mr-8 {
     margin-right: 2rem;
-  }
-
-  .md\:mb-3 {
-    margin-bottom: 0.75rem;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .md\:block {
@@ -1331,10 +1337,6 @@ select {
 }
 
 @media (min-width: 1280px) {
-  .xl\:bg-\[url\(\'img\/blobs-1920px\.png\'\)\] {
-    background-image: url('img/blobs-1920px.png');
-  }
-
   .xl\:bg-\[url\(\'img\/blobs-1200px\.png\'\)\] {
     background-image: url('img/blobs-1200px.png');
   }
