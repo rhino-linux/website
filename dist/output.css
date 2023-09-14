@@ -618,14 +618,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-0 {
-  margin-right: 0px;
-}
-
 .block {
   display: block;
 }
@@ -696,10 +688,6 @@ video {
 
 .flex-auto {
   flex: 1 1 auto;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 .appearance-none {
@@ -852,10 +840,6 @@ video {
 .bg-unicorn-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(139 0 231 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'img\/blobs-350px\.png\'\)\] {
-  background-image: url('img/blobs-350px.png');
 }
 
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
@@ -1017,12 +1001,6 @@ video {
 .drop-shadow-header-drop {
   --tw-drop-shadow: drop-shadow(2px 4px 10px rgba(40, 30, 45, 1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .transition {
@@ -1248,17 +1226,6 @@ select {
   color: rgb(141 123 228 / var(--tw-text-opacity));
 }
 
-.hover\:text-neon-purple:hover {
-  --tw-text-opacity: 1;
-  color: rgb(139 0 231 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:bg-\[url\(\'img\/blobs-499px\.png\'\)\] {
-    background-image: url('img/blobs-499px.png');
-  }
-}
-
 @media (min-width: 768px) {
   .md\:mb-4 {
     margin-bottom: 1rem;
@@ -1274,10 +1241,6 @@ select {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:bg-\[url\(\'img\/blobs-768px\.png\'\)\] {
-    background-image: url('img/blobs-768px.png');
   }
 }
 
@@ -1326,24 +1289,8 @@ select {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:bg-\[url\(\'img\/blobs-968px\.png\'\)\] {
-    background-image: url('img/blobs-968px.png');
-  }
-
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:bg-\[url\(\'img\/blobs-1200px\.png\'\)\] {
-    background-image: url('img/blobs-1200px.png');
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:bg-\[url\(\'img\/blobs-1920px\.png\'\)\] {
-    background-image: url('img/blobs-1920px.png');
   }
 }
