@@ -72,11 +72,28 @@
     The Unicorn Desktop
   </h1>
   <p class="text-off-white mt-4">
-    &bull; Global menus have now been implemented into The Unicorn Desktop. Say goodbye to ugly menu bars and hello to our unified global menu.
+    &bull; You can say goodbye to hideous menu bars and hello to our gorgeous unified menu. Global menus have now been implemented into The Unicorn Desktop to bring a truly modern experience to you. <br><br> To recieve this change you can run:
   </p>
+  <pre class="text-off-white mt-4 bg-site-200 rounded-[0.65em] p-2 border-rhino-purple border-2">
+    dir_path=".config/xfce4/xfconf/xfce-perchannel-xml"
+    for i in "xfce4-panel.xml" "xsettings.xml"; do
+      sudo cp /etc/skel/$dir_path/$i ~/$dir_path/$i
+    done</pre>
+    <p class="text-off-white mt-4">
+      in your terminal. WARNING: This will replace your current panel configuration, if you have made any modifications.
+    </p>
   <p class="text-off-white mt-4">
     &bull; We have fixed a bug within the Unicorn Desktop that the plank dock is not consistent. This has now been solved but due to the current state of Plank, does require manual intervention when the user wishes to modify the position of their dock. The guide can be found <a href="https://github.com/rhino-linux/unicorn/issues/37#issuecomment-1706315733" target="_blank" class="text-rhino-purple">here</a>.
   </p>
+  <p class="text-off-white mt-4">
+    &bull; uLauncher now starts faster.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; The Unicorn dock now has a subtle zoom when hovering over icons.
+  </p>
+  <h1 class="text-2xl mt-4 text-off-white">
+    Your System
+  </h1>
   
 </div>
 
