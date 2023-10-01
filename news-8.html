@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    2023.3: Quality of life improvements
+  </h1>
+  <p class="text-off-white mt-4">
+    We are proud to announce the disk image release of Rhino Linux 2023.3. This disk image packs the latest and greatest changes we have made to Rhino Linux over this past month of development. Users already running Rhino Linux will already have these changes providing that their systems are kept up to date.
+  </p>
+  <p class="text-off-white mt-4">
+    To upgrade to 2023.3 please run: <br><br>
+    <code class="mt-4 text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk update -y</code>. 
+    <br><br>
+    &bull; Some changes to the Unicorn Desktop will require manual intervention, continue reading to learn more.
+  </p>
+
+  <h1 class="text-2xl mt-4 text-off-white">
+    The Unicorn Desktop
+  </h1>
+  <p class="text-off-white mt-4">
+    &bull; You can say goodbye to hideous menu bars and hello to our gorgeous unified menu. Global menus have now been implemented into The Unicorn Desktop to bring a truly modern experience to you. <br><br> To recieve this change you can run:
+  </p>
+  <pre class="text-off-white mt-4 bg-site-200 rounded-[0.65em] p-2 border-rhino-purple border-2">
+    dir_path=".config/xfce4/xfconf/xfce-perchannel-xml"
+    for i in "xfce4-panel.xml" "xsettings.xml"; do
+      sudo cp /etc/skel/$dir_path/$i ~/$dir_path/$i
+    done</pre>
+    <p class="text-off-white mt-4">
+      in your terminal. WARNING: This will replace your current panel configuration, if you have made any modifications.
+    </p>
+  <p class="text-off-white mt-4">
+    &bull; We have fixed a bug within the Unicorn Desktop that the plank dock is not consistent. This has now been solved but due to the current state of Plank, does require manual intervention when the user wishes to modify the position of their dock. The guide can be found <a href="https://github.com/rhino-linux/unicorn/issues/37#issuecomment-1706315733" target="_blank" class="text-rhino-purple">here</a>.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; uLauncher now starts faster.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; The Unicorn dock now has a subtle zoom when hovering over icons.
+  </p>
+  <h1 class="text-2xl mt-4 text-off-white">
+    Setup Wizard
+  </h1>
+  <p class="text-off-white mt-4">
+    &bull; We now utilise Polkit for rebooting, which means you will not be prompted for your password when the Setup wizard asks you to reboot your system.
+  </p>
+  <h1 class="text-2xl text-off-white mt-4">
+    As well as...
+  </h1>
+  <p class="text-off-white mt-4">
+    &bull; Calamares now uses white text when things are selected.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Timeshift now comes preinstalled.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Linux kernel 6.5.5 ships default on Generic disk images. <br>
+    &bull; Kernel 6.6~rc2 ships by default on embedded images.
+  </p>
+  
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
