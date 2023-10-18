@@ -64,6 +64,7 @@
     Reference
   </h2>
  <p class="text-off-white mt-4">
+  Before proceeding, please make sure you have followed our <a href="wiki-ubxi-develop.html" class="text-rhino-purple">creation/development guide<a>.<br><br>
   While the details of the implementation of an UBXI DE are directly tied to it's base DE, the pacscript for <a href="https://github.com/pacstall/pacstall-programs/blob/master/packages/unicorn-desktop-git/unicorn-desktop-git.pacscript" class="text-rhino-purple">unicorn-desktop-git</a> should be used as a reference for UBXI packages. The full Pascript packaging guide can be found on <a href="https://github.com/pacstall/pacstall/wiki/Pacscript-101" class="text-rhino-purple">the Pacstall Wiki</a>.
 </p>
   <h2 class="text-off-white mt-4 text-2xl">
@@ -76,7 +77,13 @@
     Packaging standards
   </h2>
   <p class="text-off-white mt-4">
-    All UBXI packages must follow the UBXI naming convention. That is <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">ubxi-{environment}-{platform}-git</code>, where environment is the desktop environment/window manager base that it is built ontop of, and platform is either desktop or mobile.
+    All UBXI packages must follow the UBXI naming convention:<br>
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">ubxi-{environment}-{platform}-git</code>, where:<br><br> 
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">environment</code> is the DE/WM base, such as: <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">gnome</code>, <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">phosh</code>, <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">kde</code>, <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">awesomewm</code>, etc<br><br>  
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">platform</code> is either <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">desktop</code> or <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">mobile</code>
+  </p>
+  <p class="text-off-white mt-4"> 
+    Additionally, all UBXI packages <b>must</b> include <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-ubxi-core</code> as a pacdep.
   </p>
   <p class="text-off-white mt-4">
     All UBXI packages are to be submitted to <a href="https://github.com/pacstall/pacstall-programs" class="text-rhino-purple">The Pacstall Programs repository</a> for testing and review by both the Pacstall and Rhino Linux teams before approval.
