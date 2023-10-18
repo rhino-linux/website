@@ -60,7 +60,30 @@
     Packaging UBXI
   </h1>
 
- 
+  <h2 class="text-off-white mt-4 text-2xl">
+    Reference
+  </h2>
+ <p class="text-off-white mt-4">
+  While the details of the implementation of an UBXI DE are directly tied to it's base DE, the pacscript for <a href="https://github.com/pacstall/pacstall-programs/blob/master/packages/unicorn-desktop-git/unicorn-desktop-git.pacscript" class="text-rhino-purple">unicorn-desktop-git</a> should be used as a reference for UBXI packages. The full Pascript packaging guide can be found on <a href="https://github.com/pacstall/pacstall/wiki/Pacscript-101" class="text-rhino-purple">the Pacstall Wiki</a>.
+</p>
+  <h2 class="text-off-white mt-4 text-2xl">
+    Dotfiles
+  </h2>
+  <p class="text-off-white mt-4">
+    All of the dotfiles needed for the configuration of an UBXI DE must be placed in a git source repository, preferably on GitHub or GitLab, similar to how the <a href="https://github.com/rhino-linux/unicorn" class="text-rhino-purple">Unicorn repository</a> is structured.
+  </p>
+  <h2 class="text-off-white mt-4 text-2xl">
+    Packaging standards
+  </h2>
+  <p class="text-off-white mt-4">
+    All UBXI packages must follow the UBXI naming convention. That is <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">ubxi-{environment}-{platform}-git</code>, where environment is the desktop environment/window manager base that it is built ontop of, and platform is either desktop or mobile.
+  </p>
+  <p class="text-off-white mt-4">
+    All UBXI packages are to be submitted to <a href="https://github.com/pacstall/pacstall-programs" class="text-rhino-purple">The Pacstall Programs repository</a> for testing and review by both the Pacstall and Rhino Linux teams before approval.
+  </p>
+  
+
+
 
 
 </div>
