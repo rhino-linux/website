@@ -55,72 +55,44 @@
 </div>
 
 <div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+
   <h1 class="text-center text-off-white text-3xl">
-    Welcome to the official Rhino Linux wiki!
+    Packaging UBXI
   </h1>
+
+  <h2 class="text-off-white mt-4 text-2xl">
+    Reference
+  </h2>
+ <p class="text-off-white mt-4">
+  Before proceeding, please make sure you have followed our <a href="wiki-ubxi-develop.html" class="text-rhino-purple">creation/development guide<a>.<br><br>
+  While the details of the implementation of an UBXI DE are directly tied to it's base DE, the pacscript for <a href="https://github.com/pacstall/pacstall-programs/blob/master/packages/unicorn-desktop-git/unicorn-desktop-git.pacscript" class="text-rhino-purple">unicorn-desktop-git</a> should be used as a reference for UBXI packages. The full pacscript packaging guide can be found on <a href="https://github.com/pacstall/pacstall/wiki/Pacscript-101" class="text-rhino-purple">the Pacstall wiki</a>.
+</p>
+  <h2 class="text-off-white mt-4 text-2xl">
+    Dotfiles
+  </h2>
   <p class="text-off-white mt-4">
-    Welcome to the official Wiki for Rhino Linux. The Rhino Linux Wiki covers the official documentation on how to use Rhino Linux, as well as use the tools created and included by the Rhino Linux project. The Wiki also provides documentation for development and development resources.
+    All of the dotfiles needed for the configuration of an UBXI DE must be placed in a git source repository, preferably on GitHub or GitLab, similar to how the <a href="https://github.com/rhino-linux/unicorn" class="text-rhino-purple">Unicorn repository</a> is structured.
   </p>
-  <div class="bg-site-200 rounded-[0.65em] text-off-white p-4 shadow-2xl mt-4">
+  <h2 class="text-off-white mt-4 text-2xl">
+    Packaging Standards
+  </h2>
+  <p class="text-off-white mt-4">
+    All UBXI packages must follow the UBXI naming convention:<br>
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">ubxi-{environment}-{platform}-git</code>, where:<br><br> 
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">environment</code> is the DE/WM base, such as: <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">gnome</code>, <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">phosh</code>, <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">kde</code>, <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">awesomewm</code>, etc<br><br>  
+    <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">platform</code> is either <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">desktop</code> or <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">mobile</code>
+  </p>
+  <p class="text-off-white mt-4"> 
+    Additionally, all UBXI packages <b>must</b> include <code class="text-off-white bg-site-200 p-1 border-rhino-purple border-2 rounded-[0.65em]">rhino-ubxi-core</code> as a <code>pacdep</code>.
+  </p>
+  <p class="text-off-white mt-4">
+    All UBXI packages are to be submitted to <a href="https://github.com/pacstall/pacstall-programs" class="text-rhino-purple">the pacstall-programs repository</a> for testing and review by both the Pacstall and Rhino Linux teams before approval.
+  </p>
+  
 
-    <h1 class="text-off-white text-center text-3xl">
-      The distribution
-    </h1>
 
-    <p class="text-off-white mt-4">
-      The official documentation for the Rhino Linux distribution, including how to install and utilize the distribution correctly.
-    </p>
 
-    <p class="text-off-white mt-4">
-      <b>Installation & getting started:</b>
-    </p>
 
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-install.html'">
-      Installation guide
-    </button>
-    <br><br>
-
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-quickstart.html'">
-      Quick Start guide (Post install)
-    </button>
-
-    <p class="text-off-white mt-4">
-      <b>Unicorn Beyond XFCE Initiative</b> <a href="news-9.html" class="text-rhino-purple">(more info)</a><b>:</b>
-    </p>
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-ubxi.html'">
-      Switching to UBXI
-    </button>
-    <br><br>
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-ubxi-develop.html'">
-      Create new UBXI port
-    </button>
-    <br><br>
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-ubxi-packaging.html'">
-      UBXI Packaging guide
-    </button>
-
-    <p class="text-off-white mt-4">
-      <b>Tools used in Rhino Linux:</b>
-    </p>
-
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-rpk.html'">
-      rhino-pkg
-    </button>
-    <br><br>
-
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='https://pacstall.dev'">
-      Pacstall
-    </button>
-
-    <p class="text-off-white mt-4">
-      <b>Guides:</b>
-    </p>
-
-    <button class="rounded-[0.5em] bg-rhino-purple text-off-white p-2 mt-2 text-btn hover:bg-[rgba(141,123,228,0.5)] mr-4 shadow-header-box" onclick="location.href='wiki-nvidia.html'">
-      Nvidia drivers
-    </button>
-
-  </div>
 </div>
 
 <!-- Footer -->
