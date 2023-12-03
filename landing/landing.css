@@ -18,7 +18,8 @@
 body {
     background: url('landing.svg') center center no-repeat;
     font-family: 'Ubuntu', sans-serif;
-  color: var(--fg-color);
+    background-size: cover;
+    color: var(--fg-color);
 }
 
 h1 {
