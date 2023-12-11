@@ -59,7 +59,54 @@
     Ending the year - Rhino Linux 2023.4
   </h1>
   <p class="text-off-white mt-4">
-    <!-- Release notes go here -->
+    After a long development period we're ready to finish off the year with a stellar release, as well as inform you, the community, of what to expect in 2024.
+  </p>
+  <p class="text-off-white mt-4">
+    This development period was substantially longer than our previous releases, this can be attributed to the start of a new semester. If you wish to contribute to Rhino Linux and help us push out amazing upgrades faster, consider joining either our <a href="contact.html" class="text-rhino-purple">Matrix or Discord</a>.
+  </p>
+  <h1 class="text-off-white text-3xl text-center mt-4">
+    Release notes:
+  </h1>
+  <p class="text-off-white mt-4">To upgrade to 2023.4 please run: <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk update -y</code>.</p>
+  <h2 class="text-2xl text-off-white mt-4">The Unicorn Desktop</h2>
+  <p class="text-off-white mt-4">
+    &bull; <a href="https://github.com/rhino-linux/unicorn/issues/39" class="text-rhino-purple">Unicorn #39</a> has finally been merged, bringing optional auto-tiling to the Unicorn Desktop. Kick start your tiling window experience now, on start up you will notice an applet in your panel representing whether you are using our floating or tiling window mode.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; uLauncher now appears more rounded, and has a slightly different background colour.
+  </p>
+  <h2 class="text-off-white text-2xl mt-4">
+    rhino-pkg
+  </h2>
+  <p class="text-off-white mt-4">
+    &bull; Changes in Nala v0.14.0 have affected how upgrades are handled. As a result, rhino-pkg now passes <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">sudo nala upgrade --full --no-autoremove</code> as the default upgrade functionality, providing Nala is installed and enabled.
+  </p>
+  <h2 class="text-off-white mt-4 text-2xl">
+    Pine64
+  </h2>
+  <p class="text-off-white mt-4">
+    &bull; Modem stability fixes have been shipped to both the PinePhone and the PinePhone Pro, as well as GPS support enablement
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; The PineTab2 now features a more user-friendly experimental WiFi module enablement.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; All PinePhones and PineTabs now offer flashlight support.
+  </p>
+  <p class="text-off-white mt-4">
+    All of these changes were brought over directly from Oren Klopfer's Ubuntu Touch port.
+  </p>
+  <h2 class="text-off-white mt-4 text-2xl">
+    Other changes
+  </h2>
+  <p class="text-off-white mt-4">
+    &bull; We have managed to close an open issue, where bluetooth support would be hit-and-miss on certain devices, this has now been resolved.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; A bug with our auto-tiling implementation (utilising cortile) and conky has been resolved.
+  </p>
+  <p class="text-off-white mt-4">
+    The "Your System" application now displays the version number as a pill, and can be copied to the clipboard on click.
   </p>
   
 </div>
