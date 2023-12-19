@@ -62,7 +62,7 @@
     After a long development period we're ready to finish off the year with a stellar release, as well as inform you, the community, of what to expect in 2024.
   </p>
   <p class="text-off-white mt-4">
-    This development period was substantially longer than our previous releases, this can be attributed to the start of a new semester. If you wish to contribute to Rhino Linux and help us push out amazing upgrades faster, consider joining either our <a href="contact.html" class="text-rhino-purple">Matrix or Discord</a>.
+    This development period was substantially longer than our previous releases, which can be attributed to the start of a new semester. If you wish to contribute to Rhino Linux and help us push out amazing upgrades faster, consider joining either our <a href="contact.html" class="text-rhino-purple">Matrix or Discord</a>.
   </p>
   <h1 class="text-off-white text-3xl text-center mt-4">
     Release notes:
@@ -70,7 +70,7 @@
   <p class="text-off-white mt-4">To upgrade to 2023.4 please run: <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk update -y</code>.</p>
   <h2 class="text-2xl text-off-white mt-4">The Unicorn Desktop</h2>
   <p class="text-off-white mt-4">
-    &bull; <a href="https://github.com/rhino-linux/unicorn/issues/39" class="text-rhino-purple">Unicorn #39</a> has finally been merged, bringing optional auto-tiling to the Unicorn Desktop. Kick start your tiling window experience now, on start up you will notice an applet in your panel representing whether you are using our floating or tiling window mode.
+    &bull; <a href="https://github.com/rhino-linux/unicorn/issues/39" class="text-rhino-purple">Unicorn #39</a> has finally been merged, bringing optional auto-tiling to Unicorn. After updating and rebooting, a new applet will appear in the top right section of the panel. To kick start your tiling window experience, you can select the new applet, which will bring up a toggle to enable/disable tiling mode.
   </p>
   <p class="text-off-white mt-4">
     &bull; uLauncher now appears more rounded, and has a slightly different background colour.
@@ -79,13 +79,16 @@
     rhino-pkg
   </h2>
   <p class="text-off-white mt-4">
-    &bull; Changes in Nala v0.14.0 have affected how upgrades are handled. As a result, rhino-pkg now passes <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">sudo nala upgrade --full --no-autoremove</code> as the default upgrade functionality, providing Nala is installed and enabled.
+    &bull; If Nala is installed, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg update</code> update no longer auto-removes packages by default. <br> &bull; To clean up unneeded packages or broken dependencies on a system, users can run the new <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg cleanup</code> command.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Beginning with Pacstall 4.3.0, packages may now use Debian’s <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">priority</code> flag. As such, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-core</code> and variants are now tagged <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">essential</code>, marking them unremovable to the system. Additionally, Unicorn will no longer automatically be removed when switching between the <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino*-core</code> family. To remove <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">unicorn-desktop</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">unicorn-mobile</code>, users must first switch to <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-ubxi-core</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-server-core</code>; they will then be able to safely remove the package. This step is also needed if one is switching between <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-core</code> and <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pine-core</code>.
   </p>
   <h2 class="text-off-white mt-4 text-2xl">
     Pine64
   </h2>
   <p class="text-off-white mt-4">
-    &bull; Modem stability fixes have been shipped to both the PinePhone and the PinePhone Pro, as well as GPS support enablement
+    &bull; Modem stability fixes have been shipped to both the PinePhone and the PinePhone Pro, as well as GPS support enablement.
   </p>
   <p class="text-off-white mt-4">
     &bull; The PineTab2 now features a more user-friendly experimental WiFi module enablement.
@@ -97,20 +100,10 @@
     All of these changes were brought over directly from Oren Klopfer's Ubuntu Touch port.
   </p>
   <h2 class="text-off-white mt-4 text-2xl">
-    Other changes
+    Other new features
   </h2>
   <p class="text-off-white mt-4">
-    &bull; We have managed to close an open issue, where bluetooth support would be hit-and-miss on certain devices, this has now been resolved.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; A bug with our auto-tiling implementation (utilising cortile) and conky has been resolved.
-  </p>
-  <p class="text-off-white mt-4">
     &bull; The "Your System" application now displays the version number as a pill, and can be copied to the clipboard on click.
-  </p>
-  <p class="text-off-white mt-4">
-    &bull; Beginning with Pacstall 4.3.0, packages may now use Debian’s <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">priority</code> flag. As such, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-core</code> and variants are now tagged <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">essential</code>, marking them unremovable to the system. Additionally, Unicorn will no longer automatically be removed when switching between the <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino*-core</code> family. To remove <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">unicorn-desktop</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">unicorn-mobile</code>, users must first switch to <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-ubxi-core</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-server-core</code>; they will then be able to safely remove the package. This step is also needed if one is switching between <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-core</code> and <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pine-core</code>.
-    
   </p>
   <p class="text-off-white mt-4">
     &bull; pacstall-qa is now introduced as a new default package. pacstall-qa is a tool developed by Pacstall as a tool to test pascripts from PR's locally. You can read more about pacstall-qa <a href="https://github.com/pacstall/pacstall-qa" class="text-rhino-purple">here</a>.
@@ -119,8 +112,14 @@
     &bull; During the 2023.4 development cycle we announced the launch of the <a href="news-9.html" class="text-rhino-purple">The Unicorn Beyond XFCE initiative</a> as a way to create official ports of Unicorn to other desktop environments.
   </p>
   <p class="text-off-white mt-4">
-    &bull; The installed kernels for this release are 6.6.7-generic for desktop, 6.7.0-rc5-okpine on Pine64 devices and 6.5.0-raspi for Raspberry Pi. 
+    &bull; The installed kernels for this release are <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">6.6.7-generic</code> for desktop, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">6.7.0-rc5-okpine</code> on Pine64 devices and <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">6.5.0-raspi</code> for Raspberry Pi. 
   </p>
+  <h2 class="text-off-white mt-4 text-2xl">
+    Bug fixes
+  </h2>
+  <p class="text-off-white mt-4">
+    &bull; An issue regarding Bluetooth support has been resolved, with our full transition from pulseaudio to pipewire.
+  </p>``
   <p class="text-off-white mt-4">
     &bull; The "Your System" application only displaying in light mode bug has been fixed.
   </p>
@@ -137,16 +136,16 @@
     As we mentioned before about the Unicorn Beyond XFCE Initiative, in 2024 we will be aiding the development and creation of UBXI ports.
   </p>
   <p class="text-off-white mt-4">
-    Rhino-pkg will be getting a full overhaul in nushell.
+    <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg</code> is in the process of being rewritten in nushell. This change will be a complete overhaul of the program, aiming to make it faster, more accurate, more precise, and introducing several new functions, like the ability to sync repositories without upgrading, display descriptions in search results, and more.
   </p>
   <p class="text-off-white mt-4">
-    Pacstall 5.0.0 should release in 2024, which will bring significantly closer pacscript parity to PKGBUILDs.
+    Pacstall 5.0.0 will be releasing in 2024, which will bring significantly closer pacscript parity to PKGBUILDs.
   </p>
   <p class="text-off-white mt-4">
-    There are also prospects of Unicorn becoming available on Wayland in 2024.
+    We are still exploring the prospects of Unicorn switching to Wayland in the future. Progress on xfwm4-wayland has not moved for the majority of our development this year, and so we are considering alternative compositing options. UBXI projects may help largely with this process, so we encourage you to contribute!
   </p>
   <p class="text-off-white mt-4">
-    Some other things to expect in 2024 would be support for offline installations, as well as improved documentation on our <a href="wiki.html" class="text-rhino-purple">Rhino Linux wiki</a>.
+    Some other things to expect in 2024 are support for offline installations, as well as improved documentation on our <a href="wiki.html" class="text-rhino-purple">Rhino Linux wiki</a>.
   </p>
   <p class="text-off-white mt-4">
     &bull; Many thanks, and happy holidays, from the Rhino Linux team.
