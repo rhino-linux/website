@@ -79,7 +79,10 @@
     rhino-pkg
   </h2>
   <p class="text-off-white mt-4">
-    &bull; If Nala is installed, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg update</code> update no longer auto-removes packages by default. <br> &bull; To clean up unneeded packages or broken dependencies on a system, users can run the new <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg cleanup</code> command.
+    &bull; If Nala is installed, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg update</code> no longer auto-removes packages by default. 
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; To clean up unneeded packages or broken dependencies on a system, users can run the new <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg cleanup</code> command.
   </p>
   <p class="text-off-white mt-4">
     &bull; Beginning with Pacstall 4.3.0, packages may now use Debian’s <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">priority</code> flag. As such, <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-core</code> and variants are now tagged <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">essential</code>, marking them unremovable to the system. Additionally, Unicorn will no longer automatically be removed when switching between the <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino*-core</code> family. To remove <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">unicorn-desktop</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">unicorn-mobile</code>, users must first switch to <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-ubxi-core</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-server-core</code>; they will then be able to safely remove the package. This step is also needed if one is switching between <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-core</code> and <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pine-core</code>.
@@ -106,7 +109,7 @@
     &bull; The "Your System" application now displays the version number as a pill, and can be copied to the clipboard on click.
   </p>
   <p class="text-off-white mt-4">
-    &bull; pacstall-qa is now introduced as a new default package. pacstall-qa is a tool developed by Pacstall as a tool to test pascripts from PR's locally. You can read more about pacstall-qa <a href="https://github.com/pacstall/pacstall-qa" class="text-rhino-purple">here</a>.
+    &bull; <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pacstall -qa</code> is now introduced as a new default package. <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pacstall-qa</code> is a tool developed by Pacstall as a tool to test pascripts from PR's locally. You can read more about <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pacstall-qa</code> <a href="https://github.com/pacstall/pacstall-qa" class="text-rhino-purple">here</a>.
   </p>
   <p class="text-off-white mt-4">
     &bull; During the 2023.4 development cycle we announced the launch of the <a href="news-9.html" class="text-rhino-purple">The Unicorn Beyond XFCE initiative</a> as a way to create official ports of Unicorn to other desktop environments.
@@ -118,10 +121,10 @@
     Bug fixes
   </h2>
   <p class="text-off-white mt-4">
-    &bull; An issue regarding Bluetooth support has been resolved, with our full transition from pulseaudio to pipewire.
-  </p>``
+    &bull; An issue regarding Bluetooth support has been resolved, with our full transition from <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pulseaudio</code> to <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pipewire</code>.
+  </p>
   <p class="text-off-white mt-4">
-    &bull; The "Your System" application only displaying in light mode bug has been fixed.
+    &bull; The bug causing the "Your System" application to be stuck in light mode has finally been resolved.
   </p>
   <p class="text-off-white mt-4">
     &bull; Connecting to WiFi on embedded devices has also been fixed.
