@@ -56,7 +56,7 @@
 
 <div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
   <h1 class="text-center text-off-white text-3xl">
-    Ending the year - Rhino Linux 2023.4
+    Rhino Linux 2023.4 - Enhancing the Experience, and looking towards 2024
   </h1>
   <p class="text-off-white mt-4">
     After a long development period we're ready to finish off the year with a stellar release, as well as inform you, the community, of what to expect in 2024.
@@ -106,7 +106,25 @@
     &bull; A bug with our auto-tiling implementation (utilising cortile) and conky has been resolved.
   </p>
   <p class="text-off-white mt-4">
-    The "Your System" application now displays the version number as a pill, and can be copied to the clipboard on click.
+    &bull; The "Your System" application now displays the version number as a pill, and can be copied to the clipboard on click.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Pacstall 4.3.0 released, meaning that packages can now be tagged as "essential", and as such cannot be removed from the system. The rhino-core package, and its varients are now tagged as essential, meaning they’re assumed unremovable once installed. This will also mean unicorn is not automatically removed when switching between -cores, this must be a deliberate action. This makes Rhino Linux more stable in the long-term. If you wish to remove the Unicorn Desktop environment, you first must install rhino-server-core or rhino-ubxi-core, remove unicorn-desktop, and then install your preferred environment.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; pacstall-qa is now introduced as a new default package. pacstall-qa is a tool developed by Pacstall as a tool to test pascripts from PR's locally. You can read more about pacstall-qa <a href="https://github.com/pacstall/pacstall-qa" class="text-rhino-purple">here</a>.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; During the 2023.4 development cycle we announced the launch of the <a href="news-9.html" class="text-rhino-purple">The Unicorn Beyond XFCE initiative</a> as a way to create official ports of Unicorn to other desktop environments.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; The installed kernels for this release are 6.6.7-generic for desktop, 6.7.0-rc5-okpine on Pine64 devices and 6.5.0-raspi for Raspberry Pi. 
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; The "Your System" application only displaying in light mode bug has been fixed.
+  </p>
+  <p class="text-off-white mt-4">
+    &bull; Connecting to WiFi on embedded devices has also been fixed.
   </p>
   <h1 class="text-off-white text-center text-3xl mt-4">
     What to expect in 2024
@@ -115,10 +133,19 @@
     One of the larger things to expect in 2024, is the debut of our new icon pack! We've been hard at work designing an icon pack that is both visualy appealing whilst keeping the essence of the original artwork.
   </p>
   <p class="text-off-white mt-4">
-    We also plan to create a Linux kernel management application. This application will allow for you to change between different versions of the linux kernel, an example of this could be switching to the long-term support kernel for more stability.
+    As we mentioned before about the Unicorn Beyond XFCE Initiative, in 2024 we will be aiding the development and creation of UBXI ports.
   </p>
   <p class="text-off-white mt-4">
-    Some other things to expect in 2024 would be support for offline installations, as well as improved documentation.
+    Rhino-pkg will be getting a full overhaul in nushell.
+  </p>
+  <p class="text-off-white mt-4">
+    Pacstall 5.0.0 should release in 2024, which will bring significantly closer pacscript parity to PKGBUILDs.
+  </p>
+  <p class="text-off-white mt-4">
+    There are also prospects of Unicorn becoming available on Wayland in 2024.
+  </p>
+  <p class="text-off-white mt-4">
+    Some other things to expect in 2024 would be support for offline installations, as well as improved documentation on our <a href="wiki.html" class="text-rhino-purple">Rhino Linux wiki</a>.
   </p>
   <p class="text-off-white mt-4">
     &bull; Many thanks, and happy holidays, from the Rhino Linux team.
