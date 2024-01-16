@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -592,6 +596,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -614,6 +622,10 @@ video {
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-2 {
@@ -722,6 +734,10 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -762,6 +778,15 @@ video {
   border-width: 4px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-\[\#292540\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(41 37 64 / var(--tw-border-opacity));
+}
+
 .border-brand-dark {
   border-color: #2d2d2d44;
 }
@@ -773,6 +798,16 @@ video {
 .border-rhino-purple {
   --tw-border-opacity: 1;
   border-color: rgb(141 123 228 / var(--tw-border-opacity));
+}
+
+.border-zrhino-purple {
+  --tw-border-opacity: 1;
+  border-color: rgb(141 123 228 / var(--tw-border-opacity));
+}
+
+.bg-\[\#292540\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 64 / var(--tw-bg-opacity));
 }
 
 .bg-adwaita-dark {
@@ -883,12 +918,24 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .pt-4 {
@@ -1210,15 +1257,113 @@ select {
   background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' height='200px' width='200px' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z'%3E%3C/path%3E%3Cpath d='M347.582,198.248L256,289.83l-91.582-91.582c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17 l106.667,106.667c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17 C369.42,189.917,355.913,189.917,347.582,198.248z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-t-0 {
+  border-top-width: 0px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
+}
+
+.border-l-0 {
+  border-left-width: 0px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-r-0 {
+  border-right-width: 0px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-r-4 {
+  border-right-width: 4px;
+}
+
+.border-b-flat {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.border-t-flat {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.border-r-flat {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.border-l-flat {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.border-bl-flat {
+  border-bottom-left-radius: 0;
+}
+
+.border-tl-flat {
+  border-top-left-radius: 0;
+}
+
+.border-br-flat {
+  border-bottom-right-radius: 0;
+}
+
+.border-bl-flat {
+  border-bottom-left-radius: 0;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:border-zrhino-purple:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(141 123 228 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[rgba\(141\2c 123\2c 228\2c 0\.5\)\]:hover {
   background-color: rgba(141,123,228,0.5);
 }
 
+.hover\:bg-site-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px) {
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:ml-2 {
     margin-left: 0.5rem;
   }
