@@ -19,8 +19,9 @@ module.exports = {
         'unicorn-pink': '#d404ff',
         'unicorn-purple': '#8b00e7',
         'unicorn-dark': '#26184c',
-	'brand-dark': '#2d2d2d44',
-	'brand-light': '#fefefe11',
+        'brand-dark': '#2d2d2d44',
+        'brand-light': '#fefefe11',
+        'zrhino-purple': '#8d7be4',
       },
       backgroundImage: {
         'blobs': "url('/img/blobs.png')",
