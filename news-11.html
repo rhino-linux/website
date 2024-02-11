@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    ERROR: Evaluating, Rethinking, and Rebalancing Our Rhinos
+  </h1>
+  <p class="text-off-white mt-4">
+    In the Linux community, there is nothing short of 'quite a few tale, of how Linus does not scale' - as we have found out recently, our team struggles with this exact issue too. Given that all of us are in education, maintainer burnout has sometimes hit us hard, and caused some internal conflict when one or a few of us have had to take a step back. We recognise these issues, and realise that we all need to take a step back and look at our contribution policies, code of conduct, as well as put practices in place to avoid this issue occurring again.
+  </p>
+  <p class="text-off-white mt-4">
+    In light of these challenges, we have made the difficult decision to place a temporary pause on the development of Rhino Linux 2024.1 effective immediately. This is not a sign of defeat for the team, nor are we giving up; rather, this break is a commitment to ensure the sustainability of the Rhino Linux project and will give us the much needed time to strengthen our foundations. We believe it to be crucial to address the root causes of our recent difficulties, and not just the symptoms of it.
+  </p>
+  <p class="text-off-white mt-4">
+    Our first step is to develop sustainable contribution policies. We aim to create a more inclusive, and supportive, environment for our contributors and developers. This involves drafting a comprehensive code of conduct that outlines the expected behaviours and communication standards within our community and development team. We recognise that respect, empathy, compassion and constructive feedback are the pillars of a healthy collaboration environment, and we are committed to embedding these values into our daily interactions.
+  </p>
+  <p class="text-off-white mt-4">
+    Moreover, we recognise the importance of clear and accessible documentation for our maintainers. While we develop sufficient policies, we are also going to be dedicating resources to develop and improve maintainer documentation. This will include detailed guides on managing critical repositories, updating important files and enhancing existing materials such as Pacscript 101.
+  </p>
+  <p class="text-off-white mt-4">
+    Our goal is to empower our team members with the knowledge and tools that they need to effectively maintain the project, even in the face of challenges.
+  </p>
+  <p class="text-off-white mt-4">
+    We also need to address the elephant in the room. Communication and developer burnout. We are exploring ways to better support each other; recognising the pressures of balancing a large project such as this one, with education and a personal life. We will be implementing strategies to prevent maintainer burnout, such as: encouraging regular breaks, as well as fostering an environment where it is okay to ask for help.
+  </p>
+  <p class="text-off-white mt-4">
+    This period of reflection and improvement is an opportunity for us to come together as a team and a community. We are inviting feedback, ideas, and participation from all corners of the Rhino Linux community. Together, we can build a stronger, more resilient project.
+  </p>
+  <p class="text-off-white mt-4">In the coming weeks, we will share updates on our progress and the changes we will be going to implement. We're excited about the future of Rhino Linux and grateful for the patience and support of our community during this time.
+  </p>
+  <p class="text-off-white mt-4">
+    Even Rolling Rhinos Ought to Rest.
+  </p>
+
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
