@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    Important information regarding xz backdoor.
+  </h1>
+  <p class="text-off-white mt-4">
+    We know many of you are tired of hearing about the xz backdoor, but we must share important information regarding it. After doing some digging, we confirmed that from Feb 16 to Mar 28 (both of this year), the affected packages were in Ubuntu's noble/devel repositories, directly impacting Rhino Linux. This only affected x86_64/amd64 deployments, aarch64/arm64 was not impacted. (<a href="https://discourse.ubuntu.com/t/xz-liblzma-security-update/43714" class="text-rhino-purple">https://discourse.ubuntu.com/t/xz-liblzma-security-update/43714</a>)
+  </p>
+  <p class="text-off-white mt-4">
+    The package has been removed from their repos now, and it is imperative that you ensure you have updated your xz-utils. To do so, please run the following command (DO NOT use rpk update for this - more explained below):
+  </p>
+  <br>
+  <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">sudo apt update && sudo apt install --reinstall xz-utils -y</code>.
+  <p class="text-off-white mt-4">
+    Additionally, it is also a safe and recommended idea to update your ssh keys after updating the package.
+  </p>
+  <p class="text-off-white mt-4">
+    As mentioned above and in other important announcements, running rpk update/sudo apt upgrade is currently (for the next week or two) a risky move. Debian and Ubuntu are in the peak of transitioning to 64-bit time, which comes at the cost of them rebuilding virtually every package. (https://wiki.debian.org/ReleaseGoals/64bit-time)
+  </p>
+  <p class="text-off-white mt-4">
+    This is causing issues, as some t64 dependencies of other t64 packages are not ready before their parents, which could result in possible system breakage if it is just the wrong packages. This breakage extends all the way to debootstrap being stuck, meaning we cannot even generate test .ISO images for development. (https://wiki.debian.org/BrainDumpT64)
+  </p>
+  <p class="text-off-white mt-4">
+    We will be providing updates as the dependency issues are resolved. Thanks for sticking around and let us know if you need help or have any questions. Cheers and happy developing,
+  </p>
+  <p class="text-off-white mt-4">
+    The Rhino Linux Team
+  </p>
+ 
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
