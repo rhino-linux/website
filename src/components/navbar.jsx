@@ -29,7 +29,7 @@ function NavBar() {
                     className="p-2 border-solid rounded-[0.65em] border-white border-[2px] cursor-pointer"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
-                    <h1 className="text-3xl text-white">≡</h1>
+                    <h1 className="text-3xl px-2 text-white">≡</h1>
                 </div>
             </nav>
             <div className="bg-indigo-950 hidden transition-all w-[100%] p-2 p-8" id="mega-menu">
