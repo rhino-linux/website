@@ -33,6 +33,7 @@ function Desktop() {
             </div>
           ))}
         </div>
+        <h1 className="text-center text-xl text-rhino-purple underline py-4 pt-8"><a href="/unicorn/">Learn more about the Unicorn Desktop →</a></h1>
       </div>
     );
 }
