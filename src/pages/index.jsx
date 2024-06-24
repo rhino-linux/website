@@ -5,6 +5,7 @@ import Latest from "../components/latest";
 import Developers from "../components/developers";
 import Desktop from "../components/desktop";
 import Packages from "../components/packages";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Developers />
       <Desktop />
       <Packages />
+      <Footer />
     </main>
   );
 }

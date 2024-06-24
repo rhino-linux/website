@@ -9,6 +9,10 @@ const data = [
             "Our flagship package management wrapper, rhino-pkg, makes life easy by allows for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and our handy guide, you will have all of your favourite apps in seconds.", // Add paragraph about Pacstall here
         ],
         image: "/img/home/rhino-pkg.webp",
+        link: {
+            text: "Learn more about Pacstall →",
+            url: "https://pacstall.dev"
+        },
     }
 ]
 
@@ -26,10 +30,13 @@ function Packages() {
                         ))}
                     </div>
                     <div>
-                        <img src={post.image} alt="Image" className="w-full py-8" />
+                        <img src={post.image} alt="Image" className="w-full" />
                     </div>
                 </div>
             ))}
+            <h1 className="text-center text-xl text-rhino-purple underline py-4">
+                <a href={data[0].link.url}>{data[0].link.text}</a>
+            </h1>
         </div>
     );
 }
