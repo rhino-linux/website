@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="wiki.html">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="wiki.html" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-center text-off-white text-3xl">
+    An update on Rhino Linux's development goals and structure
+  </h1>
+  <p class="text-off-white mt-4">
+    After a lot of discussions with the Rhino Linux team, we are finally ready to announce changes to the way we develop. We have decided to focus on the following areas: <br>
+    &bull; Providing a strong contributor's code of conduct <br>
+    &bull; Focusing effort on strong development and user documentation <br>
+    &bull; Rewriting our website in React, which will provide us with better tools for Documentation. <br>
+    &bull; Streamlining development channels. <br>
+  </p>
+  <p class="text-off-white mt-4">
+    With our contributor's code of conduct, we aim to provide a safe and welcoming environment for all contributors. We want to ensure that everyone feels welcome and that their contributions are valued. We believe that this will help us to attract more contributors and improve the quality of our software. Our newly written contributor's code of conduct can be found <a href="https://cryptpad.fr/pad/#/2/pad/view/EeXXPAEywHh9hPe8+xfDOCPChQNvi5mqYerL+gAISyU/" class="text-rhino-purple" target="_blank">here</a>.
+  </p>
+  <p class="text-off-white mt-4">
+    Our decision to rewrite our website in React is going to provide us with significantly better tools when it comes to managing our documentation, publishing blog posts and ensuring long-term maintainability. We plan to write development documentation while we undertake this website redesign. This development documentation will be made publicly available to all users and contributors. By documenting our development process, we aim to provide a clear, transparent view to how Rhino Linux is maintained, and help new contributors get up to speed quickly.
+  </p>
+  <p class="text-off-white mt-4">
+    We currently do not have any plans to move development discussions away from Discord at the moment. Discord has been useful as a small team to collaborate on development and communicate effectively. We plan to now utilise a public-facing Discord forum to allow for users and contributors to discuss and organise development around specific feature requests and bug reports.
+  </p>
+  <p class="text-off-white mt-4">
+    We are excited about these changes, and believe that this will help us to build the foundations for a stronger, more vibrant Rhino Linux community, where any user feels empowered to contribute to the project.
+  </p>
+  <p class="text-off-white mt-4">
+    Many thanks, <br>
+    The Rhino Linux Team
+  </p>
+
+</div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>
