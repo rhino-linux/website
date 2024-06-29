@@ -726,10 +726,6 @@ video {
   flex: 1 1 auto;
 }
 
-.list-disc {
-  list-style-type: disc;
-}
-
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
