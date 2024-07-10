@@ -1,5 +1,5 @@
 import React from "react";
-import posts from "../items/posts";
+import posts from "../../items/posts";
 
 function Latest() {
     const latestPost = posts && posts.length > 0 ? posts[0] : null;

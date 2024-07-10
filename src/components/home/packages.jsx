@@ -18,7 +18,7 @@ const data = [
 
 function Packages() {
     return (
-        <div className="lg:w-[75%] w-[95%] pt-4 m-auto">
+        <div className="lg:w-[75%] w-[95%] pt-4 m-auto pb-4">
             {data.map((post, index) => (
                 <div key={index} className="lg:grid lg:grid-cols-2 m-auto gap-8">
                     <div>

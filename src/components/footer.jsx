@@ -1,5 +1,4 @@
 import React from "react";
-import footeritems from "../items/items"
 
 const data = [
     {

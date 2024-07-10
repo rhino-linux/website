@@ -23,7 +23,9 @@ function NavBar() {
         <div>
             <nav className="bg-indigo-950 w-[100%] flex items-center justify-between p-4">
                 <div className="px-2">
-                    <img src="/img/logo.png" alt="" className="lg:w-[4%] md:w-[10%] w-[20%] rounded-full" />
+                    <a href="../">
+                        <img src="/img/logo.png" alt="" className="lg:w-[4%] md:w-[10%] w-[20%] rounded-full" />
+                    </a>
                 </div>
                 <div
                     className="p-2 border-solid rounded-[0.65em] border-white border-[2px] cursor-pointer"
