@@ -4,7 +4,7 @@ const data = [
     {
         title: "Control your packages",
         paragraphs: [
-            "Our flagship package management wrapper, rhino-pkg, makes life easy by allows for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and our handy guide, you will have all of your favourite apps in seconds.",
+            "Our flagship package management wrapper, rhino-pkg, makes life easy by allowing for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and our handy guide, you will have all of your favourite apps in seconds.",
 
             "Our flagship package management wrapper, rhino-pkg, makes life easy by allows for you to install, remove and update applications across all package managers and repositories. With easy to understand syntax, and our handy guide, you will have all of your favourite apps in seconds.", // Add paragraph about Pacstall here
         ],

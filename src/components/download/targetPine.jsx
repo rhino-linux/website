@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { contents } from './downloads';
+import { pineContents } from './downloads';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function Target() {
+function TargetPine() {
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleOpen = (index) => {
@@ -11,7 +11,7 @@ function Target() {
 
     return (
         <div className="w-3/4 mx-auto py-8">
-            {contents.map((item, index) => (
+            {pineContents.map((item, index) => (
                 <div key={item.title} className="border border-rhino-purple text-white text-2xl rounded-md mb-2">
                     <div 
                         className="bg-rhino-purple p-4 cursor-pointer" 
@@ -50,4 +50,4 @@ function Target() {
     );
 }
 
-export default Target;
+export default TargetPine;

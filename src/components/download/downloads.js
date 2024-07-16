@@ -1,4 +1,4 @@
-const contents = [
+const genericContents = [
     {
         title: "Generic ISO (x86_64)",
         details: {
@@ -18,7 +18,10 @@ const contents = [
             sourceCode: "https://github.com/rhino-linux/os/tree/main",
             shasum: "040c2f8026215b1e1d24b41c98b5d1d42e4e07e0b57b81e2550f98efb41a4040"
         }
-    },
+    }
+];
+
+const pineContents = [
     {
         title: "Pine64 PinePhone (OG/Pro)",
         details: {
@@ -60,7 +63,10 @@ const contents = [
             sourceCode: "https://github.com/rhino-linux/os/tree/pinetab",
             shasum: "e50d9f1bdcb798682545c1d82c40ec222005942dfeca0f32d5fb23a7110ec132"
         }
-    },
+    }
+];
+
+const rpiContents = [
     {
         title: "Raspberry Pi Desktop (ARM64)",
         details: {
@@ -88,7 +94,7 @@ const contents = [
             sourceCode: "https://github.com/rhino-linux/os/tree/rpi",
             shasum: "d053f3b5002d11ffd999e93ae901eadb3c639275cdc696df7d598934ac7e0dd3"
         }
-    },
+    }
 ];
 
-export { contents };
+export { genericContents, pineContents, rpiContents };
