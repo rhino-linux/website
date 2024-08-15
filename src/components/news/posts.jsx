@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from '../../components/news/hero';
 import posts from '../../items/posts';
 
 function Posts() {
