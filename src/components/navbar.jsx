@@ -21,14 +21,14 @@ import baritems from "../items/items"
 function NavBar() {
     return (
         <div>
-            <nav className="bg-indigo-950 w-[100%] flex items-center justify-between p-4">
+            <nav className="bg-indigo-950 w-[100%] flex items-center justify-between p-1">
                 <div className="px-2">
                     <a href="../">
                         <img src="/img/logo.png" alt="" className="lg:w-[4%] md:w-[10%] w-[20%] rounded-full" />
                     </a>
                 </div>
                 <div
-                    className="p-2 border-solid rounded-[0.65em] border-white border-[2px] cursor-pointer"
+                    className="p-2 cursor-pointer"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
                     <h1 className="text-3xl px-2 text-white">≡</h1>
