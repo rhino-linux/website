@@ -1,3 +1,4 @@
+// OPTIONS: title, date, banner, content
 const posts = [
     {
         title: "Rhino Linux 2024.1 + more",
