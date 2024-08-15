@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "../components/navbar";
 import Hero from "../components/download/hero";
-import TargetSelector from "../components/download/targetSelector";
+import Selection from "../components/download/selection";
 import Footer from "../components/footer";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <Menu />
       <Hero />
-      <TargetSelector />
+      <Selection />
       <Footer />
     </main>
   );

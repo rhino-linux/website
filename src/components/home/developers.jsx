@@ -30,7 +30,7 @@ function Developers() {
                         ))}
                     </div>
                     <div>
-                        <img src={post.image} alt="Image" className="w-full" />
+                        <img src={post.image} alt="Image" className="w-full rounded-lg" />
                     </div>
                 </div>
             ))}

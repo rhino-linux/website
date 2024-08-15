@@ -10,8 +10,8 @@ const data = [
         ],
         image: "/img/home/rhino-pkg.webp",
         link: {
-            text: "Learn more about Pacstall →",
-            url: "https://pacstall.dev"
+            text: "Learn more about rhino-pkg →",
+            url: "#"
         },
     }
 ]

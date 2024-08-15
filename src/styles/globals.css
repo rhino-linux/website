@@ -6,5 +6,5 @@
 
 body {
   background-color: #13093c;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif !important;
 }
