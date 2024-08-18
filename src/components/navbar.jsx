@@ -28,13 +28,13 @@ function NavBar() {
                     </a>
                 </div>
                 <div
-                    className="p-2 cursor-pointer"
+                    className="p-4 cursor-pointer"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
                     <h1 className="text-3xl px-2 text-white">≡</h1>
                 </div>
             </nav>
-            <div className="bg-indigo-950 hidden transition-all w-[100%] p-2 p-8" id="mega-menu">
+            <div className="bg-indigo-950 hidden transition-all w-[100%] p-8" id="mega-menu">
                 <hr className="bg-off-white mb-4" />
                 <div className="w-[100%] m-auto">
                     <div className="text-2xl">
