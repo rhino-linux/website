@@ -11,6 +11,7 @@ module.exports = {
         "rhino-dark": "#13093c",
         "off-white": "#fefefe",
         "rhino-purple": "#8d7be4",
+        "site-300": "#231e37",
       },
       boxShadow: {
         'bxs': "0 0 10px #8d7be4",

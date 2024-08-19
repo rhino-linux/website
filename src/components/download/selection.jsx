@@ -18,7 +18,7 @@ const DownloadSelection = () => {
     }
 
     return contentArray.map((content, index) => (
-        <div key={index} className="p-4 my-4 bg-indigo-950 text-white rounded-lg shadow-md">
+        <div key={index} className="p-4 my-4 bg-site-300 text-white rounded-lg shadow-md">
             <h3 className="text-2xl">{content.title}</h3>
             <p className="mt-2"><strong>Kernel:</strong> {content.details.kernel}</p>
             <p><strong>Download Mirror:</strong> <a href={content.details.downloadMirror} target="_blank" rel="noopener noreferrer" className="text-rhino-purple underline">{content.details.downloadMirror}</a></p>
@@ -42,7 +42,7 @@ const DownloadSelection = () => {
         id="platform"
         value={selectedPlatform}
         onChange={(e) => setSelectedPlatform(e.target.value)}
-        className="block w-full mt-2 p-2 bg-indigo-950 text-white text-xl border-2 border-rhino-purple rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+        className="block w-full mt-2 p-2 bg-site-300 text-white text-xl border-2 border-rhino-purple rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
       >
         <option value="generic">Generic (x86_64/ARM64)</option>
         <option value="pine">Pine64 (ARM64)</option>

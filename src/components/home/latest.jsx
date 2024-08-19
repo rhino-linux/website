@@ -7,7 +7,7 @@ function Latest() {
     const latestPostContent = latestPost && latestPost.content.length > 0 ? latestPost.content[0] : "No content available";
 
     return (
-        <div className="w-full bg-indigo-950 text-center lg:p-8">
+        <div className="w-full bg-site-300 text-center lg:p-8">
             <div className="lg:w-[80%] w-[95%] mx-auto">
                 <h1 className="text-5xl text-white py-4">
                     Latest news

@@ -4,7 +4,7 @@ import posts from '../../items/posts';
 function Posts() {
     return (
         <div className="w-full p-4 m-auto">
-            <div className="p-4 md:w-[65%] m-auto bg-indigo-950 rounded-lg">
+            <div className="p-4 md:w-[65%] m-auto bg-site-300 rounded-lg">
             {posts.map((post, index) => {
                 return (
                     <div key={index} className="p-4" id={post.date}>

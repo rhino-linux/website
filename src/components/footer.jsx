@@ -26,7 +26,7 @@ function GetYear() {
 
 function Footer() {
     return (
-        <div className="w-full bg-indigo-950 lg:p-8 p-4">
+        <div className="w-full bg-site-300 lg:p-8 p-4">
             <div className="text-center flex flex-wrap justify-center">
                 <p className="text-white text-xl">&copy; {GetYear()} Rhino Linux</p>
             </div>

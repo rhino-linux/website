@@ -4,24 +4,24 @@ const data = [
     {
         title: "Title 1",
         description: "Description 1",
-        image: "https://via.placeholder.com/150.png"
+        image: "../img/home/unicorn/tiling.webp"
     },
     {
         title: "Title 2",
         description: "Description 2",
-        image: "https://via.placeholder.com/150.png"
+        image: "../img/home/unicorn/xfdashboard.webp"
     },
     {
         title: "Title 3",
         description: "Description 3",
-        image: "https://via.placeholder.com/150.png"
+        image: "../img/home/unicorn/appgrid.webp"
     }
 
 ]
 
 function Desktop() {
     return (
-      <div className="w-full bg-indigo-950 lg:p-8 p-4">
+      <div className="w-full bg-site-300 lg:p-8 p-4">
         <h1 className="text-white text-5xl text-center">Enjoy an adaptive desktop.</h1>
         <p className="lg:w-[70%] m-auto text-white text-xl pb-4 text-center pt-4">Rhino Linux comes preinstalled with its own in-house desktop experience, Unicorn, a custom built XFCE desktop experience combining the best of the traditional and modern takes on the Desktop.</p>
         <div className="lg:w-[75%] m-auto w-[95%] lg:grid lg:grid-cols-3 gap-8">
