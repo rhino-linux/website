@@ -30,8 +30,8 @@ const baritems = [
         goto: "News"
     },
     {
-        link: "https://docs.rhinolinux.org",
-        goto: "Documentation"
+        link: "https://wiki.rhinolinux.org",
+        goto: "Wiki"
     },
     {
         link: "/community/",
