@@ -7,5 +7,6 @@ export default function Home() {
         <main>
             <Menu />
             <Hero />
+        </main>
     );
 };
