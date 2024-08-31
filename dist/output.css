@@ -596,6 +596,10 @@ video {
   margin: auto;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -714,6 +718,10 @@ video {
   flex: 1 1 auto;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -772,46 +780,9 @@ video {
   border-width: 2px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
-.border-brand-dark {
-  border-color: #2d2d2d44;
-}
-
-.border-brand-light {
-  border-color: #fefefe11;
-}
-
 .border-rhino-purple {
   --tw-border-opacity: 1;
   border-color: rgb(141 123 228 / var(--tw-border-opacity));
-}
-
-.bg-adwaita-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
-}
-
-.bg-dark-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(19 9 60 / var(--tw-bg-opacity));
-}
-
-.bg-highlighter-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(146 53 255 / var(--tw-bg-opacity));
-}
-
-.bg-neon-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(139 0 231 / var(--tw-bg-opacity));
-}
-
-.bg-off-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
 }
 
 .bg-overlay {
@@ -841,26 +812,6 @@ video {
 .bg-site-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(25 20 45 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 24 76 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-magenta {
-  --tw-bg-opacity: 1;
-  background-color: rgb(193 0 128 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 4 255 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(139 0 231 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
@@ -900,6 +851,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-4 {
@@ -977,11 +933,6 @@ video {
 
 .leading-none {
   line-height: 1;
-}
-
-.text-adwaita-dark {
-  --tw-text-opacity: 1;
-  color: rgb(45 45 45 / var(--tw-text-opacity));
 }
 
 .text-indigo-100 {
