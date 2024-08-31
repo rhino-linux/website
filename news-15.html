@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="bg-site-400">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+  <title>Rhino Linux | News</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo.ico">
+<script src="js/navbar.js"></script>
+</head>
+<body>
+
+  <div id="dropdown">
+    <div class="container">
+        <div class="exit">
+            <a onclick="ddhide()" style="color:#fefefe">x</a>
+        </div>
+        <div class="content">
+            <p><a onclick="ddhide()" class="text-off-white" href="index.html">Home</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="download.html">Download</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="news.html">News</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="tracker.html">Tracker</a></p>
+            <p><a onclick="ddhide()" class="text-off-white" href="https://wiki.rhinolinux.org">Wiki</a></p>
+            <p><a onclick="ddhide()" target="_blank" class="text-off-white" href="https://pacstall.dev/packages">Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="extended h-auto bg-[url('img/blobs.png')] bg-no-repeat bg-center-x bg-center-y bg-cover">
+    <div class="overlay h-auto bg-overlay text-center">
+        <div class="hidden lg:block">
+            <p class="text-center text-off-white pt-4">
+                <a href="index.html" class="text-off-white px-4">Home</a>
+                <a href="download.html" class="text-off-white px-4">Download</a>
+                <a href="news.html" class="text-off-white px-4">News</a>
+                <a href="tracker.html" class="text-off-white px-4">Tracker</a>
+                <a href="https://wiki.rhinolinux.org" class="text-off-white px-4">Wiki</a>
+                <a href="https://pacstall.dev" target="_blank" class="text-off-white px-4">Packages</a>
+              </p>
+        </div>
+        <div class="block lg:hidden">
+            <h1 class="text-right text-off-white text-3xl pr-2" onclick="ddshow()">
+                ☰
+            </h1>
+        </div>
+        <h1 class="text-off-white pt-[2em] text-3xl drop-shadow-header-drop">
+            News Feed
+        </h1>
+        <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
+          Find news relating to Rhino Linux & its development
+        </h2>
+        <br>
+    </div>
+</div>
+
+<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300">
+  <h1 class="text-3xl text-center text-off-white p-4">Rhino Linux 2024.2: New Wiki, Theme, Containers, and so much more!</h1>
+
+  <p class="p-2 text-off-white">It's been a while since our last disk image release, and this one is packed full of some spectacular changes! Beyond just the distribution, we have also majorly revamped the Rhino Linux wiki. We are pleased to finally present 2024.2 to you!</p>
+
+  <p class="p-2 text-off-white">We are currently looking for people to contribute to our wiki, if you are interested please join our <a href="https://discord.gg/reSvc8Ztk37" class="text-rhino-purple underline">Discord</a>, or make a submission direction on <a href="https://github.com/rhino-site/rhino-linux-wiki" class="text-rhino-purple underline">GitHub</a>!</p>
+
+  <h1 class="p-2 text-3xl text-off-white text-center">Release Notes</h2>
+
+  <p class="text-off-white p-2">To upgrade to 2024.2 please run: <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk update -y</code>.</p>
+
+  <p class="text-off-white p-2">There are many great highlights of this release. Between both upgrading our distribution, as well as setting out our goals in our <a href="news-14.html" class="text-rhino-purple underline">last blog post</a>, we have managed to combine all the best changes over the past few months into a stellar release.</p>
+
+  <h2 class="text-2xl text-off-white p-2">New Unicorn Theme</h2>
+
+  <p class="text-off-white p-2">After a small period of stagnation, Unicorn has gotten a very nice upgrade. We now have a brand new GTK/XFWM4/Kvantum theme that Unicorn ships with, replacing our old Yaru-Purple scheme, giving the desktop an even more purple tint to it. Everything from the Rhino Linux installer, to the Rhino System application, to Thunar and XFCE4-Terminal will all be utilising this sparkly new theme. Applications now have much better visual integration and make your desktop much more vibrant!</p>
+
+  <p class="text-off-white p-2">We are also currently looking for additional contributors to help continue designing the Unicorn icon theme (Unicons). If you are interested please join our <a href="https://discord.gg/reSvc8Ztk3" class="text-rhino-purple underline">Discord</a>, and contribute to the <a href="https://github.com/rhino-linux/unicons" class="text-rhino-purple underline">repository</a> with any additional icons!</p>
+
+  <h2 class="text-off-white text-2xl p-2">Setup Wizard overhaul</h2>
+
+  <p class="text-off-white p-2">Our Setup Wizard has just gotten a whole lot better, and we offer something for both regular and power users. We have added a signifcant number of containerization options, a new package manager, and even the option to add night shift. You can now select these additional options in the <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-setup</code> wizard:</p>
+
+  <ul class="text-off-white p-2 ml-8 list-disc">
+      <li class="py-2">Nix, the package manager (note: <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rhino-pkg</code>/<code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">rpk</code> does not currently support Nix).</li>
+      <li class="py-2">Docker, for rapid containerization and development.</li>
+      <li class="py-2">Podman, a daemon-less, drop-in replacement for Docker.</li>
+      <li class="py-2">Flatseal, a GUI application for managing permissions on installed Flatpaks.</li>
+      <li class="py-2">Distrobox, a program that uses Docker or Podman to deploy containers for other distributions on top of Rhino.</li>
+      <li class="py-2">Apptainer, for developing smaller application containers.</li>
+      <li class="py-2">VirtualBox, a GUI virtual machine application.</li>
+      <li class="py-2">QEMU, a free and open source emulation backbone.</li>
+      <li class="py-2">Redshift, adjust the color temperature of your screen according to your surroundings.</li>
+  </ul>
+
+  <h2 class="text-off-white p-2 text-2xl">Pacstall Changes</h2>
+
+  <h2 class="text-off-white p-2">Pacstall has had two major versions release between Rhino Linux 2024.1 and 2024.2. With Pacstall being integral to Rhino Linux, as well as sharing developers between projects, we feel it's important to include information about their release as well.</h2>
+
+  <p class="text-off-white p-2">Pacstall's 5.3.x series introduced <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pkgbase</code> splitting, a key feature from Arch's <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">makepkg</code>, that allows for the building of multiple individual packages from a single pacscript. You can read more about the feature <a href="https://github.com/pacstall/pacstall/releases/tag/5.3.0" class="text-rhino-purple underline">here</a>.</p>
+
+  <p class="text-off-white p-2">Pacstall's 5.4.x series introduced two new useful commands: <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">-Sd</code>/<code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">--search-description</code>, which allows users to search for packages with their descriptions included in the output, and also searches through their descriptions for any keyword matches to the search entry; and <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">-Si</code>/<code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">--search-info</code>, which will print out the <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">SRCINFO</code> data for any matching <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pkgbase</code> or <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">pkgname</code>. This series also includes the addition of the <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">suggests</code> array as an alternative for <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">optdepends</code>. You can read more about the new features <a href="https://github.com/pacstall/pacstall/releases/tag/5.4.0" class="text-rhino-purple underline">here</a>.</p>
+
+  <p class="text-off-white p-2">In addition, as always, numerous bugs were squashed with these releases.</p>
+
+  <h2 class="text-off-white p-2 text-2xl">As well as...</h2>
+
+  <ul class="text-off-white p-2 ml-8 list-disc">
+      <li class="py-2">We have fixed the issue with GRUB bootloader displaying "Ubuntu" instead of "Rhino"</li>
+      <li class="py-2">Kernel verison <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">6.10.7</code> ships by default on Generic ISO disk images.</li>
+      <li class="py-2">Kernel version <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">6.9.0-okpine</code> ships by default on Pine64 images.</li>
+      <li class="py-2">Kernel version <code class="text-off-white bg-site-200 rounded-[0.65em] p-1 border-rhino-purple border-2">6.8.0-raspi</code> ships by default on Raspberry Pi images.</li>
+  </ul>
+
+  <h2 class="text-off-white text-2xl p-2">Known Issues</h2>
+
+  <p class="text-off-white p-2">Both issues that we mentioned in <a href="news-13.html" class="text-rhino-purple underline">2024.1</a> unfortunately persist, but remain having simple workarounds.</p>
+
+  <ul class="text-off-white p-2 ml-8 list-disc">
+    <li class="py-2">For help with the issue regarding the desktop installation icon, see <a href="https://wiki.rhinolinux.org/user/install/live" class="text-rhino-purple underline">here</a>.</li>
+
+    <li class="py-2">For help with the issue regarding Unicorn's panel oversizing, see <a href="https://wiki.rhinolinux.org/user/unicorn" class="text-rhino-purple underline">here</a>.</li>
+  </ul>
+
+  <h1 class="text-off-white p-4 text-3xl text-center">New Wiki + Additional Updates</h1>
+
+  <p class="text-off-white p-2">Built on <a href="https://nextra.site/" class="text-rhino-purple underline">Nextra</a>, we have ported our documentation over to our <a href="https://wiki.rhinolinux.org" class="text-rhino-purple underline">new community-oriented wiki</a>! All pages previously available on our website's old wiki are now available here, as well as the documentation from Pacstall's wiki, bringing together all of our docs to one single source. This move to the new Rhino Linux wiki is a large step in the direction we are aiming for. As we outlined in our <a href="news-14.html" class="text-rhino-purple underline">previous blog post</a>, we are making signifcant efforts in giving members of our community more power to contribute with ease. So long as you follow a markdown guide, you are able to contribute! All wiki pages have an option on the right side of the page to "Edit this page."</p>
+
+  <p class="text-off-white p-2">Efforts are also underway to port our news blog to <a href="https://nextra.site/" class="text-rhino-purple underline">Nextra</a> as well. Progress also continues on the React rewrite of our main website.</p>
+
+  <p class="text-off-white p-2">Finally, we are continuing working on further organisation of our development, creating a roadmap for the next few releases ahead, and expanding our team. Stay tuned for more announcements soon!</p>
+
+  <p class="text-off-white p-2">Many thanks and happy rolling,<br />The Rhino Linux Team.</p>
+
+
+  </div>
+
+<!-- Footer -->
+<hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
+
+<p class="mb-4 text-center text-off-white text-1xl">
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://wiki.rhinolinux.org/dev/brand" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+</p>
+
+
+</body>
+</html>

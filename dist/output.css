@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -596,6 +596,10 @@ video {
   margin: auto;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -604,10 +608,6 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .mb-4 {
@@ -632,10 +632,6 @@ video {
 
 .mr-8 {
   margin-right: 2rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .mt-2 {
@@ -668,10 +664,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.contents {
-  display: contents;
 }
 
 .hidden {
@@ -726,6 +718,10 @@ video {
   flex: 1 1 auto;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -746,10 +742,6 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-center {
@@ -788,65 +780,9 @@ video {
   border-width: 2px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
-.border-\[\#292540\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(41 37 64 / var(--tw-border-opacity));
-}
-
-.border-brand-dark {
-  border-color: #2d2d2d44;
-}
-
-.border-brand-light {
-  border-color: #fefefe11;
-}
-
 .border-rhino-purple {
   --tw-border-opacity: 1;
   border-color: rgb(141 123 228 / var(--tw-border-opacity));
-}
-
-.border-zrhino-purple {
-  --tw-border-opacity: 1;
-  border-color: rgb(141 123 228 / var(--tw-border-opacity));
-}
-
-.bg-\[\#292540\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(41 37 64 / var(--tw-bg-opacity));
-}
-
-.bg-adwaita-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
-}
-
-.bg-dark-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(19 9 60 / var(--tw-bg-opacity));
-}
-
-.bg-highlighter-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(146 53 255 / var(--tw-bg-opacity));
-}
-
-.bg-neon-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(139 0 231 / var(--tw-bg-opacity));
-}
-
-.bg-off-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 254 254 / var(--tw-bg-opacity));
 }
 
 .bg-overlay {
@@ -856,6 +792,11 @@ video {
 .bg-rhino-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(141 123 228 / var(--tw-bg-opacity));
+}
+
+.bg-site-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 75 105 / var(--tw-bg-opacity));
 }
 
 .bg-site-200 {
@@ -871,26 +812,6 @@ video {
 .bg-site-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(25 20 45 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 24 76 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-magenta {
-  --tw-bg-opacity: 1;
-  background-color: rgb(193 0 128 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 4 255 / var(--tw-bg-opacity));
-}
-
-.bg-unicorn-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(139 0 231 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'img\/blobs\.png\'\)\] {
@@ -932,24 +853,17 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pr-2 {
   padding-right: 0.5rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .pt-4 {
@@ -1019,11 +933,6 @@ video {
 
 .leading-none {
   line-height: 1;
-}
-
-.text-adwaita-dark {
-  --tw-text-opacity: 1;
-  color: rgb(45 45 45 / var(--tw-text-opacity));
 }
 
 .text-indigo-100 {
@@ -1364,25 +1273,11 @@ select {
   cursor: pointer;
 }
 
-.hover\:border-zrhino-purple:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(141 123 228 / var(--tw-border-opacity));
-}
-
 .hover\:bg-\[rgba\(141\2c 123\2c 228\2c 0\.5\)\]:hover {
   background-color: rgba(141,123,228,0.5);
 }
 
-.hover\:bg-site-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
-}
-
 @media (min-width: 1024px) {
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
   .lg\:ml-2 {
     margin-left: 0.5rem;
   }

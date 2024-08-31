@@ -49,7 +49,7 @@
             Download Rhino Linux
         </h1>
         <h2 class="text-off-white text-2xl font-light mt-2 drop-shadow-header-drop">
-            Version <b><b>2024.1</b></b>
+            Version <b><b>2024.2</b></b>
         </h2>
         <br>
     </div>
@@ -75,13 +75,17 @@
                 <img alt="" src="img/company/amd.png" class="w-20 rounded-[0.65em]">
             </div>
             <div class="mt-4">
-                <p>
-                    &bull; Download: <a href="mirrors/amd64.html" class="text-rhino-purple" target="_blank">mirrors</a>
-                </p>
-                <p>&bull; Download size: 2.08GB</p>
+                &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2/Rhino-Linux-2024.2-amd64.iso/download">link&nbsp;</a>
+                <div class="tooltip"><button onclick="shaX64()" onmouseout="outX64()" class="bg-site-100 p-1 rounded-[0.65em]">
+            <span class="tooltiptext" id="xTip">Copy to clipboard</span>
+                    sha256sum
+                </button>
+        </div>
+                <p>&bull; Download size: 2.19GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
-                <p>&bull; Kernel: <code>6.9.1-generic</code></p>
+                <p>&bull; Kernel: <code>6.10.7-generic</code></p>
             </div>
+            <input type="text" value="41887036a38b47bb6a391e24cf7200388fa4bbadca7f4ede6932cb0d0d93317b" id="xHash" style="display:none">
         </div>
         
 
@@ -91,13 +95,17 @@
                 <img alt="" src="img/company/arm.png" class="w-20 rounded-[0.65em]">
             </div>
             <div class="mt-4">
-                <p>
-                    &bull; Download: <a href="mirrors/arm64.html" class="text-rhino-purple" target="_blank">mirrors</a>
-                </p>
-                <p>&bull; Download size: 2.05GB</p>
+                &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2/Rhino-Linux-2024.2-arm64.iso/download">link&nbsp;</a>
+                <div class="tooltip"><button onclick="shaA64()" onmouseout="outA64()" class="bg-site-100 p-1 rounded-[0.65em]">
+            <span class="tooltiptext" id="aTip">Copy to clipboard</span>
+                    sha256sum
+                </button>
+        </div>
+                <p>&bull; Download size: 2.12GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/main">Source Code</a></p>
-                <p>&bull; Kernel: <code>6.9.1-generic</code></p>
+                <p>&bull; Kernel: <code>6.10.7-generic</code></p>
             </div>
+            <input type="text" value="c63643ee849e529349897f4dc8afe31e6d403e81dfee6cb80002ae85accbee3d" id="aHash" style="display:none">
         </div>
 
 </div>
@@ -117,13 +125,18 @@
             <code>Password: 1234</code>
         </p>
         <div class="mt-4">
-            <p>
-                &bull; Download: <a href="mirrors/pinephone.html" class="text-rhino-purple" target="_blank">mirrors</a>
-            </p>
-            <p>&bull; Download size: 1.61GB</p>
+            &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2-pinephone/Rhino-Linux-2024.2-pinephone-unified.img.xz/download">link&nbsp;</a>
+        <div class="tooltip">
+            <button onclick="shaPP()" onmouseout="outPP()" class="bg-site-100 p-1 rounded-[0.65em]">
+        <span class="tooltiptext" id="pTip">Copy to clipboard</span>
+                sha256sum
+            </button>
+            </div>
+            <p>&bull; Download size: 1.63GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinephone">Source Code</a></p>
             <p>&bull; Kernel: <code>6.9.0-okpine</code></p>
         </div>
+        <input type="text" value="86e1bb03e85a2c8e3b6e7f0998e699df01dd9edb74fb8c407aa9a0534c96675c" id="pHash" style="display:none">
     </div>
     
     <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:mm-2">
@@ -138,13 +151,18 @@
             <code>Password: 1234</code>
         </p>
         <div class="mt-4">
-            <p>
-                &bull; Download: <a href="mirrors/pinetab.html" class="text-rhino-purple" target="_blank">mirrors</a>
-            </p>
-            <p>&bull; Download size: 1.60GB</p>
+            &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2-pinetab/Rhino-Linux-2024.2-pinetab.img.xz/download">link&nbsp;</a>
+        <div class="tooltip">
+            <button onclick="shaPB()" onmouseout="outPB()" class="bg-site-100 p-1 rounded-[0.65em]">
+        <span class="tooltiptext" id="bTip">Copy to clipboard</span>
+                sha256sum
+            </button>
+            </div>
+            <p>&bull; Download size: 1.62GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinetab">Source Code</a></p>
             <p>&bull; Kernel: <code>6.9.0-okpine</code></p>
         </div>
+        <input type="text" value="a67809015ece9e50b725898da6752974fe977730fc939db4d5996e42a78424d4" id="bHash" style="display:none">
     </div>
 
     <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
@@ -159,13 +177,18 @@
             <code>Password: 1234</code>
         </p>
         <div class="mt-4">
-            <p>
-                &bull; Download: <a href="mirrors/pinetab2.html" class="text-rhino-purple" target="_blank">mirrors</a>
-            </p>
-            <p>&bull; Download size: 1.60GB</p>
+            &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2-pinetab/Rhino-Linux-2024.2-pinetab2.img.xz/download">link&nbsp;</a>
+        <div class="tooltip">
+            <button onclick="shaPT()" onmouseout="outPT()" class="bg-site-100 p-1 rounded-[0.65em]">
+        <span class="tooltiptext" id="tTip">Copy to clipboard</span>
+                sha256sum
+            </button>
+            </div>
+            <p>&bull; Download size: 1.62GB</p>
             <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/pinetab">Source Code</a></p>
             <p>&bull; Kernel: <code>6.9.0-okpine</code></p>
         </div>
+        <input type="text" value="ba92a72235ab2ae66316b28618cbdd5bbdf8f2d2e1d49eb1a2597882a576c24b" id="tHash" style="display:none">
     </div>
 
     </div>
@@ -185,13 +208,17 @@
                 <code>Password: 1234</code>
             </p>
             <div class="mt-4">
-                <p>
-                    &bull; Download: <a href="mirrors/rpi-desktop.html" class="text-rhino-purple" target="_blank">mirrors</a>
-                </p>
-                <p>&bull; 1.82GB</p>
+                &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2-rpi/Rhino-Linux-2024.2-rpi-desktop.img.xz/download">link&nbsp;</a>
+                <div class="tooltip"><button onclick="shaRD()" onmouseout="outRD()" class="bg-site-100 p-1 rounded-[0.65em]">
+            <span class="tooltiptext" id="dTip">Copy to clipboard</span>
+                    sha256sum
+                </button>
+        </div>
+                <p>&bull; Download size: 1.86GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.8.0-raspi</code></p>
             </div>
+            <input type="text" value="3b7766aa02f3bcde284c36f621736d6549b0e348960efbe486c987355adceb91" id="dHash" style="display:none">
         </div>
         
 
@@ -207,18 +234,22 @@
                 <code>Password: 1234</code>
             </p>
             <div class="mt-4">
-                <p>
-                    &bull; Download: <a href="mirrors/rpi-server.html" class="text-rhino-purple" target="_blank">mirrors</a>
-                </p>
-                <p>&bull; Download size: 1.31GB</p>
+                &bull; Download: <a class="text-rhino-purple" href="https://sourceforge.net/projects/rhino-linux-builder/files/2024.2-rpi/Rhino-Linux-2024.2-rpi-server.img.xz/download">link&nbsp;</a>
+                <div class="tooltip"><button onclick="shaRS()" onmouseout="outRS()" class="bg-site-100 p-1 rounded-[0.65em]">
+            <span class="tooltiptext" id="sTip">Copy to clipboard</span>
+                    sha256sum
+                </button>
+        </div>
+                <p>&bull; Download size: 1.34GB</p>
                 <p>&bull; <a class="text-rhino-purple" href="https://github.com/rhino-linux/os/tree/rpi">Source Code</a></p>
                 <p>&bull; Kernel: <code>6.8.0-raspi</code></p>
             </div>
+            <input type="text" value="6e11b3858a439ce5ef8d02629509e6aec84b1da27e0a52976b4cc1085710ce1a" id="sHash" style="display:none">
         </div>
     </div>
     <p class="text-center text-off-white text-btn mt-8">For an archive of previous releases, please visit <a class="text-rhino-purple underline" href="https://sourceforge.net/projects/rhino-linux-builder/files/" target="_blank">our SourceForge</a></p>
     <p class="text-center text-off-white text-sm mt-4">
-        <i>Looking for our Docker images? <a class="text-rhino-purple underline" href="wiki-docker.html">Click here</a></i>
+        <i>Looking for our Docker images? <a class="text-rhino-purple underline" href="https://wiki.rhinolinux.org/dev/docker/rhino-docker">Click here</a></i>
     </p>
 </div>
 
@@ -226,7 +257,7 @@
 <hr class="w-[60vw] h-1 mx-auto my-4 bg-site-300 border-0 rounded">
 
 <p class="mb-4 text-center text-off-white text-1xl">
-    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://rhinolinux.org/brand.html" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
+    <a href="https://github.com/rhino-linux" class="text-rhino-purple">Source Code</a> | <a href="https://rhinolinux.org/contact.html" class="text-rhino-purple">Contact & Social</a> |<a href="https://ko-fi.com/rhinolinux" class="text-rhino-purple"> Donate</a> | <a href="https://wiki.rhinolinux.org/dev/brand" class="text-rhino-purple"> Branding</a> | <a href="https://rhinolinux.org/unicorn.html" class="text-rhino-purple">Unicorn</a> | <a href="https://rhinolinux.org/tracker.html" class="text-rhino-purple">Bug tracker</a>
 </p>
 
             <!-- Chonky script for download dropdown -->
