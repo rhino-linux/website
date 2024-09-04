@@ -42,10 +42,10 @@ const baritems = [
 function NavBar() {
     return (
         <div>
-            <nav className="bg-site-300 w-[100%] flex items-center justify-between">
+            <nav className=" w-[100%] m-auto flex items-center justify-between">
                 <div className="px-2">
                     <a href="../">
-                        <img src="/img/logo.png" alt="" className="lg:w-[4%] md:w-[10%] w-[20%] rounded-full" />
+                        <img src="/img/logo.png" alt="" className="lg:w-[4%] md:w-[10%] w-[20%]" />
                     </a>
                 </div>
                 <div
@@ -55,10 +55,9 @@ function NavBar() {
                     <h1 className="text-3xl text-white">≡</h1>
                 </div>
             </nav>
-            <div className="bg-site-300 hidden transition-all w-[100%] p-2" id="mega-menu">
-                <hr className="bg-off-white mb-4" />
+            <div className=" hidden transition-all w-[100%] p-2" id="mega-menu">
                 <div className="w-[100%] m-auto">
-                    <div className="text-2xl">
+                    <div className="text-2xl bg-site-300 rounded-lg p-8">
                         {baritems.map((item) => (
                             <li className="list-none p-4" key={item.link}>
                                 <Link href={item.link}>
@@ -68,7 +67,7 @@ function NavBar() {
                         ))}
                     </div>
                 </div>
-                <hr className="bg-off-white mb-2" />
+
             </div>
         </div>
     );
