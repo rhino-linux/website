@@ -2,9 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  src: url("Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  src: url("Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  src: url("Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  src: url("Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+  font-weight: 400;
+  src: url("UbuntuMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuMono";
+  font-weight: 700;
+  src: url("UbuntuMono-Bold.ttf");
+}
+
+p, h1, h2, h3, h4, hr, td, tr, ul, ol, li, a, footer, article, main {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+code, kbd, samp, pre {
+  font-family: "UbuntuMono", monospace !important;
+  font-size: 102% !important;
+}
 
 body {
   background-color: #19142d;
-  font-family: "Ubuntu", sans-serif !important;
 }
