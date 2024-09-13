@@ -8,7 +8,7 @@ const contentData = [
       "Rhino Linux comes preinstalled with its own in-house desktop experience, Unicorn, a custom-built XFCE desktop combining the best of traditional and modern takes on the desktop. Unicorn is fast and elegant, perfectly adapted for your needs.",
     imgSrc: "img/home/image.png",
     buttonText: "Learn more",
-    buttonLink: "https://wiki.rhinolinux.org/user/unicorn",
+    buttonLink: "/unicorn/",
   },
   {
     title: "Perfect for developers",

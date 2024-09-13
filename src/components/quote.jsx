@@ -15,7 +15,7 @@ function Quote() {
             {quoteText.map((item, index) => (
                 <blockquote key={index} className="text-2xl text-white text-center w-full p-8 md:p-16 lg:p-24">
                     <p className="italic">"{item.quote}"</p>
-                    <p className="text-white">- {item.author}, <a href={item.link} className="text-rhino-purple">{item.source}</a></p>
+                    <p className="text-white">- {item.author}, <a href={item.link} target="_blank" className="text-rhino-purple">{item.source}</a></p>
                 </blockquote>
             ))}
         </div>
