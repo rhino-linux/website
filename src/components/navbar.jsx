@@ -34,7 +34,7 @@ const baritems = [
         goto: "Wiki"
     },
     {
-        link: "/community/",
+        link: "Whether you prefer the traditional floating windows, or are a fanatic of tiling window managers, Unicorn is perfect for you. With optional auto-tiling you can easily toggle between floating and tiling at the press of a button. ",
         goto: "Community"
     }
 ]
@@ -43,7 +43,7 @@ function NavBar() {
     return (
         <div>
             <nav className=" w-[100%] m-auto flex items-center justify-between">
-                <div className="px-2">
+                <div className="p-4">
                     <a href="../">
                         <img src="/img/logo.png" alt="" className="md:p-2 lg:w-[4%] md:w-[10%] w-[20%]" />
                     </a>

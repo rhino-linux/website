@@ -1,16 +1,16 @@
 import React from "react";
 import Hero from "../components/hero";
-import Unicorn from "../components/unicorn";
-import Developers from "../components/developers"
+import Content from "../components/content";
 import Quote from "../components/quote";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Unicorn />
-      <Developers />
+      <Content />
       <Quote />
+      <Footer />
     </main>
   );
 }
