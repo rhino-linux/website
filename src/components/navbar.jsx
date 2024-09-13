@@ -34,7 +34,7 @@ const baritems = [
         goto: "Wiki"
     },
     {
-        link: "Whether you prefer the traditional floating windows, or are a fanatic of tiling window managers, Unicorn is perfect for you. With optional auto-tiling you can easily toggle between floating and tiling at the press of a button. ",
+        link: "https://discord.com/invite/reSvc8Ztk3",
         goto: "Community"
     }
 ]
