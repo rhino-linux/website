@@ -50,3 +50,10 @@ code, kbd, samp, pre {
 body {
   background-color: #19142d;
 }
+
+.unicorn {
+  background: #fefefe;
+  background: linear-gradient(90deg, rgba(193,0,128,1) 0%, rgba(212,4,255,1) 33%, rgba(139,0,231,1) 67%, rgb(79, 55, 144) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

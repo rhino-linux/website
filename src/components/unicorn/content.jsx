@@ -3,20 +3,28 @@ import React from "react";
 // Array holding the data for each section
 const contentData = [
   {
-    title: "Unicorn built-in",
+    title: "Adaptive, to any workflow.",
     description:
-      "Rhino Linux comes preinstalled with its own in-house desktop experience, Unicorn, a custom-built XFCE desktop combining the best of traditional and modern takes on the desktop. Unicorn is fast and elegant, perfectly adapted for your needs.",
-    imgSrc: "img/home/image.png",
-    buttonText: "Learn more",
+      " Whether you prefer the traditional floating windows, or are a fanatic of tiling window managers, Unicorn is perfect for you. With optional auto-tiling you can easily toggle between floating and tiling at the press of a button.",
+    imgSrc: "img/unicorn/tiling.webp",
+    buttonText: "Learn the keybinds",
     buttonLink: "https://wiki.rhinolinux.org/user/unicorn",
   },
   {
-    title: "Perfect for developers",
+    title: "A beautiful app grid",
     description:
-      "Developers will fall in love with our vast software repositories which are always up-to-date. User-repositories such as Pacstall can help provide development libraries that are critical for your project. With codium preinstalled on your system you can begin doing what you do best, instantly. ",
-    imgSrc: "img/home/developers.webp",
-    buttonText: "Read our wiki",
-    buttonLink: "https://wiki.rhinolinux.org",
+      "Our application grid, Lightpad, is a simple and powerful application launcher that is Wayland compatible. We have made modifications to the theming of Lightpad to integrate perfectly into Unicorn and Rhino Linux.",
+    imgSrc: "img/unicorn/appgrid.webp",
+    buttonText: null,
+    buttonLink: null,
+  },
+  {
+    title: "Modern desktop management",
+    description:
+      "You can switch between virtual desktops with ease. We have loaded in Xfdashboard, with many minor tweaks and improvements. Xfdashboard brings a gnome-shell like virtual desktop and èxpose built right into XFCE. ",
+    imgSrc: "img/unicorn/xfdashboard.webp",
+    buttonText: null,
+    buttonLink: null,
   },
 ];
 
@@ -29,7 +37,7 @@ function Content() {
           className="md:w-[85%] m-auto md:grid py-12 md:grid-cols-2 md:gap-8"
         >
           <div>
-            <h1 className="text-6xl font-bold py-4 text-rhino-purple">
+            <h1 className="text-5xl unicorn font-bold py-4 text-rhino-purple">
               {item.title}
             </h1>
             <p className="text-white text-2xl py-4">{item.description}</p>

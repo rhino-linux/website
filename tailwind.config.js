@@ -19,6 +19,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/img/blobs.png')",
+        'orb-pattern': "url('/img/orb.png')",
       },
     },
   },

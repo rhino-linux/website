@@ -12,7 +12,7 @@ function Footer() {
     return(
         <footer className="p-8">
             <hr className="md:w-[85%] h-1 mx-auto my-4 bg-site-300 border-0 rounded" />
-            <p className="mb-4 text-center text-off-white text-3xl">
+            <p className="mb-4 text-center text-off-white text-2xl">
                 {footerItems.map((item, index) => (
                 <span key={index}>
                     <a href={item.href} className="text-rhino-purple">
