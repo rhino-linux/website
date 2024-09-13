@@ -45,11 +45,11 @@ function NavBar() {
             <nav className=" w-[100%] m-auto flex items-center justify-between">
                 <div className="px-2">
                     <a href="../">
-                        <img src="/img/logo.png" alt="" className="lg:w-[4%] md:w-[10%] w-[20%]" />
+                        <img src="/img/logo.png" alt="" className="md:p-2 lg:w-[4%] md:w-[10%] w-[20%]" />
                     </a>
                 </div>
                 <div
-                    className="p-4 cursor-pointer"
+                    className="p-2 px-4 cursor-pointer"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
                     <h1 className="text-3xl text-white">≡</h1>
