@@ -26,8 +26,8 @@ const baritems = [
         goto: "Download"
     },
     {
-        link: "/news/",
-        goto: "News"
+        link: "https://blog.rhinolinux.org",
+        goto: "Blog"
     },
     {
         link: "https://wiki.rhinolinux.org",
