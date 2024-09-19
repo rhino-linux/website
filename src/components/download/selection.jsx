@@ -36,7 +36,7 @@ const DownloadSelection = () => {
   };
 
   return (
-    <div className="md:w-[65%] w-full mx-auto md:p-0 p-4">
+    <div className="md:w-[85%] w-full mx-auto md:p-0 p-4">
       <label htmlFor="platform" className="block text-sm font-medium text-white">Select a platform:</label>
       <select
         id="platform"

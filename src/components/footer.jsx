@@ -8,6 +8,11 @@ const footerItems = [
     { name: 'Unicorn', href: 'https://wiki.rhinolinux.org/user/unicorn' },
 ];
 
+const organisationalItems = [
+    { name: 'Mission Statement', href: '/statement/' },
+    { name: 'Code of Conduct', href: '/code/'}
+]
+
 function Footer() {
     return(
         <footer className="p-8">
@@ -16,10 +21,20 @@ function Footer() {
                 {footerItems.map((item, index) => (
                 <span key={index}>
                     <a href={item.href} className="text-rhino-purple">
-                    {item.name}
+                        {item.name}
                     </a>
                     {index < footerItems.length - 1 && ' | '}
                 </span>
+                ))}
+            </p>
+            <p className="mb-4 text-center text-off-white text-2xl">
+                {organisationalItems.map((item, index) => (
+                    <span key={index}>
+                        <a href={item.href} className="text-rhino-purple">
+                            {item.name}
+                        </a>
+                        {index < organisationalItems.length - 1 && ' | '}
+                    </span>
                 ))}
             </p>
         </footer>

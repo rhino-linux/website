@@ -26,7 +26,7 @@ function Content() {
       {contentData.map((item, index) => (
         <div
           key={index}
-          className="md:w-[85%] m-auto md:grid py-12 md:grid-cols-2 md:gap-8"
+          className="md:w-[85%] m-auto lg:grid py-12 lg:grid-cols-2 lg:gap-8"
         >
           <div>
             <h1 className="text-6xl font-bold py-4 text-rhino-purple">
@@ -56,7 +56,7 @@ function Content() {
               </a>
             )}
           </div>
-          <div className="py-8 md:py-0">
+          <div className="py-8 lg:py-0">
             <img
               src={item.imgSrc}
               className="w-full rounded-lg"
