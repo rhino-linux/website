@@ -8,7 +8,6 @@ function Ecosystem() {
   const wizardshow = () => setActiveSection('wizard');
   const systemshow = () => setActiveSection('system');
   const rpkshow = () => setActiveSection('rpk');
-  const dropshow = () => setActiveSection('rhinodrop');
 
   return (
     <div className="w-full px-8 md:px-16 lg:px-24">
