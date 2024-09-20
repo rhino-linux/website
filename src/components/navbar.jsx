@@ -45,17 +45,22 @@ function NavBar() {
             <nav className=" w-[100%] m-auto flex items-center justify-between">
                 <div className="p-4">
                     <a href="../">
-                        <img src="/img/logo.png" alt="" className="md:p-2 lg:w-[4%] md:w-[10%] w-[20%]" />
+                        <img src="/img/logo.png" alt="" className="md:p-0 lg:w-[4%] md:w-[10%] w-[20%]" />
                     </a>
                 </div>
+                <div className="p-2 px-4 text-center m-4 bg-site-300 rounded-lg md:flex md:gap-4 hidden md:block">
+                        {baritems.map((item) => (
+                            <p><a href={item.link} key={item.link} className="text-xl text-white hover:text-rhino-purple">{item.goto}</a></p>
+                        ))}
+                </div>
                 <div
-                    className="p-2 px-4 cursor-pointer"
+                    className="p-2 px-4 cursor-pointer md:hidden"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
                     <h1 className="text-3xl text-white">≡</h1>
                 </div>
             </nav>
-            <div className=" hidden transition-all w-[100%] p-2" id="mega-menu">
+            <div className="hidden transition-all w-[100%] p-2" id="mega-menu">
                 <div className="w-[100%] m-auto">
                     <div className="text-2xl bg-site-300 rounded-lg p-8">
                         {baritems.map((item) => (
