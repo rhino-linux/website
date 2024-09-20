@@ -48,9 +48,9 @@ function NavBar() {
                         <img src="/img/logo.png" alt="" className="md:p-0 lg:w-[4%] md:w-[10%] w-[20%]" />
                     </a>
                 </div>
-                <div className="p-2 px-4 text-center m-4 bg-site-300 rounded-lg md:flex md:gap-4 hidden md:block">
+                <div className="p-2 px-4 text-center m-4 bg-site-300 rounded-lg md:flex lg:gap-8 md:gap-4 hidden md:block">
                         {baritems.map((item) => (
-                            <p><a href={item.link} key={item.link} className="text-xl text-white hover:text-rhino-purple">{item.goto}</a></p>
+                            <p><a href={item.link} key={item.link} className="text-xl text-white hover:text-rhino-purple transition-all">{item.goto}</a></p>
                         ))}
                 </div>
                 <div

@@ -21,6 +21,20 @@ module.exports = {
         'hero-pattern': "url('/img/blobs.png')",
         'orb-pattern': "url('/img/orb.png')",
       },
+      keyframes: {
+        'slide-in': {
+          '0%': { opacity: '0', transform: 'translateX(100%)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        'slide-out': {
+          '0%': { opacity: '0', transform: 'translateX(-100%)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        'slide-in': 'slide-in 0.5s ease-in-out',
+        'slide-out': 'slide-out 0.5s ease-in-out',
+      },
     },
   },
   plugins: [],
