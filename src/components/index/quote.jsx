@@ -11,11 +11,11 @@ const quoteText = [
 
 function Quote() {
     return (
-        <div className="md:w-[85%] m-auto md:grid md:grid-cols-1 md:gap-4">
+        <div className="md:w-[85%] m-auto grid grid-cols-1 gap-4">
             {quoteText.map((item, index) => (
-                <blockquote key={index} className="text-2xl text-white text-center w-full p-8 md:p-16 lg:p-24">
-                    <p className="italic">"{item.quote}"</p>
-                    <p className="text-white">- {item.author}, <a href={item.link} target="_blank" className="text-rhino-purple">{item.source}</a></p>
+                <blockquote key={index} className="text-xl text-white text-center m-auto px-8 py-4">
+                    <p className="italic">&quot;{item.quote}&quot;</p>
+                    <p className="text-white">- {item.author}, <a href={item.link} target="_blank" className="text-rhino-purple hover:brightness-50 transition-all">{item.source}</a></p>
                 </blockquote>
             ))}
         </div>
