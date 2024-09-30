@@ -17,7 +17,7 @@ const quoteText = [
 
 function Quote() {
     return (
-        <div className="md:w-[85%] m-auto grid grid-cols-1 gap-4 pb-8">
+        <div className="md:w-[85%] m-auto grid grid-cols-1 gap-4 pb-8 md:pt-4">
             {quoteText.map((item, index) => (
                 <blockquote key={index} className="text-xl text-white text-center m-auto px-8 py-4">
                     <p className="italic">&quot;{item.quote}&quot;</p>
