@@ -15,7 +15,7 @@ function Footer() {
     return(
         <footer className="p-8">
             <hr className="md:w-[85%] h-1 mx-auto my-4 bg-site-300 border-0 rounded" />
-            <div className="sm:w-[85%] m-auto sm:flex items-center sm:justify-center">
+            <div className="sm:w-[85%] m-auto sm:flex items-center justify-center">
                 <div className="flex items-center justify-center pt-2 footer-fix">
                     <Link href="https://github.com/rhino-linux" target="_blank" rel="noreferrer" className="my-auto fill-off-white/80 hover:fill-rhino-purple transition-all mx-4">
                         <svg width="30" height="30" viewBox="3 3 18 18">
@@ -49,6 +49,7 @@ function Footer() {
                         <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-2 sm:my-1">
                             {item.name}
                         </Link>
+                        <br className="hidden footer-fix-br" />
                     </span>
                     ))}
                 </p> 

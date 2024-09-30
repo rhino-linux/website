@@ -1534,9 +1534,15 @@ select {
   flex: 1;
 }
 
-@media (min-width: 418px) and (max-width: 639px) {
+@media (min-width: 419px) and (max-width: 639px) {
   .footer-fix {
     padding-left: 1rem;
+  }
+}
+
+@media (max-width: 417px) {
+  .footer-fix-br {
+    display: block;
   }
 }
 
@@ -1595,10 +1601,6 @@ select {
 
   .sm\:w-\[85\%\] {
     width: 85%;
-  }
-
-  .sm\:justify-center {
-    justify-content: center;
   }
 
   .sm\:px-16 {
@@ -1767,4 +1769,4 @@ select {
     padding-left: 12rem;
     padding-right: 12rem;
   }
-}
+}  
