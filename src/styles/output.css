@@ -979,6 +979,14 @@ video {
   padding-top: 2rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1064,20 +1072,12 @@ video {
   font-style: italic;
 }
 
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-none {
-  line-height: 1;
-}
-
 .leading-8 {
   line-height: 2rem;
 }
 
-.leading-9 {
-  line-height: 2.25rem;
+.leading-none {
+  line-height: 1;
 }
 
 .tracking-tight {
