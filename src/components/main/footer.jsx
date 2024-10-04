@@ -13,7 +13,7 @@ const footerItemsB = [
 
 function Footer() {
     return(
-        <footer className="p-8">
+        <footer className="p-6">
             <hr className="md:w-[85%] h-1 mx-auto my-4 bg-site-300 border-0 rounded" />
             <div className="sm:w-[85%] m-auto sm:flex items-center justify-center">
                 <div className="flex items-center justify-center pt-2 footer-fix">
@@ -34,19 +34,20 @@ function Footer() {
                         </svg>
                     </Link>
                 </div>
-                <p className="mt-2 sm:my-2 text-center sm:text-left text-off-white/80 text-lg">
+                <p className="mt-2 sm:my-2 text-center sm:text-left text-off-white/80 text-md sm:text-lg">
                     {footerItemsA.map((item, index) => (
                     <span key={index}>
                         <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-1">
                             {item.name}
                         </Link>
+                        <br className="hidden footer-fix-br" />
                     </span>
                     ))}
                 </p>
-                <p className="mb-2 sm:my-2 text-center sm:text-right text-off-white/80 text-lg">
+                <p className="mb-2 sm:my-2 text-center sm:text-right text-off-white/80 text-md sm:text-lg">
                     {footerItemsB.map((item, index) => (
                     <span key={index}>
-                        <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-2 sm:my-1">
+                        <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-1">
                             {item.name}
                         </Link>
                         <br className="hidden footer-fix-br" />

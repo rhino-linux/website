@@ -66,7 +66,7 @@ const DownloadSelection = () => {
         </select>
       </div>
 
-      <div className="content-display mt-6 flex-grid">
+      <div className="content-display flex-grid">
         {renderContent()}
       </div>
       <Banner />

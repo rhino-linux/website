@@ -365,13 +365,13 @@ body {
   flex: 1;
 }
 
-@media (min-width: 419px) and (max-width: 639px) {
+@media (min-width: 392px) and (max-width: 639px) {
     .footer-fix {
       @apply pl-4;
     }
   }
 
-@media (max-width: 417px) {
+@media (max-width: 391px) {
     .footer-fix-br {
       @apply block;
     }

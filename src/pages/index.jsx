@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <SiteData title="Homepage" description="An Ubuntu-based, rolling release distribution, with Pacstall & XFCE at its core." />
       <Hero />
-      <Announcement />
+      {/* <Announcement /> */}
       <Description />
       <Ecosystem />
       <Quote />
