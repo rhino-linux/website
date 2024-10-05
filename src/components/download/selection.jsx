@@ -18,38 +18,55 @@ const DownloadSelection = () => {
     }
 
     return contentArray.map((content, index) => (
-        <div key={index} className="p-4 my-4 bg-indigo-950 text-white rounded-lg shadow-md">
-            <h3 className="text-2xl">{content.title}</h3>
-            <p className="mt-2"><strong>Kernel:</strong> {content.details.kernel}</p>
-            <p><strong>Download Mirror:</strong> <a href={content.details.downloadMirror} target="_blank" rel="noopener noreferrer" className="text-rhino-purple underline">{content.details.downloadMirror}</a></p>
+        <div key={index} className="p-4 my-4 mx-2 bg-site-300 text-white rounded-lg shadow-md col">
+            <h3 className="text-2xl mb-2">{content.title}</h3>
             <p><strong>Download Size:</strong> {content.details.downloadSize}</p>
-            <p><strong>Source Code:</strong> <a href={content.details.sourceCode} target="_blank" rel="noopener noreferrer" className="text-rhino-purple underline">{content.details.sourceCode}</a></p>
-            <button onClick={() => {
-                navigator.clipboard.writeText(content.details.shasum);
-                alert('SHA256sum copied to clipboard!');
-            }} className="my-4 hover:scale-105 transition-all bg-rhino-purple text-white px-4 py-2 rounded-lg shadow-md">Copy SHA256sum</button>
+            <p className="mt-2"><strong>Kernel:</strong> <code>{content.details.kernel}</code></p>
+            <p className="mt-2"><a href={content.details.sourceCode} target="_blank" rel="noopener noreferrer" className="text-rhino-purple underline">Source Code</a></p>
             {content.details.login && (
-                <p><strong>Login:</strong> <br /> Username: {content.details.login.username} <br /> Password: {content.details.login.password}</p>
+                <div className="bg-site-200 rounded-[0.65em] p-2 my-2 w-40">
+                <code>Login: {content.details.login.username} <br /> Password: {content.details.login.password} <br /></code>
+                </div>
             )}
+            <button className="mt-4 hover:scale-105 transition-all bg-rhino-purple rounded-[0.65em] text-white text-xl px-4 py-2 shadow-md mr-2"><a href={content.details.downloadMirror} target="_blank" rel="noopener noreferrer">Download</a></button>
+            <div className="tooltip">
+              <span className="tooltiptext" id={content.title}>Copy to clipboard</span>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(content.details.shasum);
+                  document.getElementById(content.title).innerHTML = "Copied to clipboard!";
+                }}
+                onMouseOut={() => {
+                  document.getElementById(content.title).innerHTML = "Copy to clipboard";
+                }}
+             className="my-4 hover:scale-105 transition-all bg-site-100 p-1 rounded-[0.65em] text-white text-sm px-2 py-1 shadow-md">sha256sum</button>
+            </div>
         </div>
     ));
   };
 
   return (
-    <div className="md:w-[65%] w-full mx-auto md:p-0 p-4">
-      <label htmlFor="platform" className="block text-sm font-medium text-white">Select a platform:</label>
-      <select
-        id="platform"
-        value={selectedPlatform}
-        onChange={(e) => setSelectedPlatform(e.target.value)}
-        className="block w-full mt-2 p-2 bg-indigo-950 text-white text-xl border-2 border-rhino-purple rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-      >
-        <option value="generic">Generic (x86_64/ARM64)</option>
-        <option value="pine">Pine64 (ARM64)</option>
-        <option value="rpi">Raspberry Pi (ARM64)</option>
-      </select>
+    <div className="md:w-[85%] w-full mx-auto md:p-0 p-4">
+      <h1 className="text-off-white text-center pt-8 text-3xl drop-shadow-header-drop">
+        Download Rhino Linux
+      </h1>
+      <h2 className="text-off-white text-center text-2xl font-light mt-2 drop-shadow-header-drop">
+        Version <b><b>2024.2</b></b>
+      </h2>
+      <div className="mx-2">
+        <select
+          id="platform"
+          value={selectedPlatform}
+          onChange={(e) => setSelectedPlatform(e.target.value)}
+          className="p-2 px-4 bg-site-300 w-[100%] text-off-white select-fix md:text-2xl font-light rounded-[0.5em] mt-4 appearance-none"
+        >
+          <option value="generic">Generic (x86_64/ARM64)</option>
+          <option value="pine">Pine64 (ARM64)</option>
+          <option value="rpi">Raspberry Pi (ARM64)</option>
+        </select>
+      </div>
 
-      <div className="content-display mt-6">
+      <div className="content-display flex-grid">
         {renderContent()}
       </div>
       <Banner />

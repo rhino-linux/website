@@ -1,21 +1,24 @@
 import React from "react";
-import Menu from "../components/navbar";
-import Hero from "../components/home/hero";
-import Latest from "../components/home/latest";
-import Developers from "../components/home/developers";
-import Desktop from "../components/home/desktop";
-import Packages from "../components/home/packages";
-import Footer from "../components/footer";
+import Link from "next/link";
+import Hero from "../components/index/hero";
+import Description from "../components/index/description";
+import Content from "../components/index/content";
+import Ecosystem from "../components/index/ecosystem";
+import Quote from "../components/index/quote";
+import Announcement from "../components/index/announcement";
+import Footer from "../components/main/footer";
+import SiteData from "../components/main/sitedata";
 
 export default function Home() {
   return (
     <main>
-      <Menu />
+      <SiteData title="Homepage" description="An Ubuntu-based, rolling release distribution, with Pacstall & XFCE at its core." />
       <Hero />
-      <Latest />
-      <Developers />
-      <Desktop />
-      <Packages />
+      {/* <Announcement /> */}
+      <Description />
+      <Ecosystem />
+      <Quote />
+      <Content />
       <Footer />
     </main>
   );
