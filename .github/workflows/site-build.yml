@@ -1,0 +1,62 @@
+name: Rebuild and Push Site Changes
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "${{ secrets.SSH_IP }}" >> ~/.ssh/known_hosts
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Upload static files
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: out/
+
+      - name: Upload to server
+        run: |
+          SSH_LOCATION="${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}"
+          if [ -n "${{ secrets.SSH_DIR }}" ]; then
+              ssh -i ~/.ssh/id_ed25519 "${SSH_LOCATION}" "rm -rf ${{ secrets.SSH_DIR }}/*"
+              scp -i ~/.ssh/id_ed25519 -rp out/* "${SSH_LOCATION}:${{ secrets.SSH_DIR }}"
+          else
+              echo "Error: SSH_DIR not set"
+              exit 1
+          fi
