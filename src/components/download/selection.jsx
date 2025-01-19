@@ -51,7 +51,7 @@ const DownloadSelection = () => {
         Download Rhino Linux
       </h1>
       <h2 className="text-off-white text-center text-2xl font-light mt-2 drop-shadow-header-drop">
-        Version <b><b>2024.2</b></b>
+        Version <b><b>2025.1</b></b>
       </h2>
       <div className="mx-2">
         <select
