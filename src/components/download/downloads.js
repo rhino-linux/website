@@ -2,21 +2,21 @@ const genericContents = [
     {
         title: "Generic ISO (x86_64)",
         details: {
-            kernel: "6.12.3-generic",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1/Rhino-Linux-2025.1-amd64.iso/download",
-            downloadSize: "2.59 GB",
+            kernel: "6.12.12-generic",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2/Rhino-Linux-2025.2-amd64.iso/download",
+            downloadSize: "2.64 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/main",
-            shasum: "a2a3719490a12ae55c54e2b898f979c01c838f28d13969b15eb3971623ebadb0"
+            shasum: "833321b761ab99b548be86e8c93a50b6e049b0821952ddd943a96060154cbbad"
         }
     },
     {
         title: "Generic ISO (ARM64)",
         details: {
-            kernel: "6.12.3-generic",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1/Rhino-Linux-2025.1-arm64.iso/download",
-            downloadSize: "2.43 GB",
+            kernel: "6.12.12-generic",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2/Rhino-Linux-2025.2-arm64.iso/download",
+            downloadSize: "2.47 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/main",
-            shasum: "dba8ca8531429ae01e429d97793d17030c185d38710218bb0b9b2823ed8852e6"
+            shasum: "ca29ab457287236235123e218f2ddc1db1dc1302fcbd830ca106893ff0ed68a8"
         }
     }
 ];
@@ -30,10 +30,10 @@ const pineContents = [
                 password: "1234"
             },
             kernel: "6.9.0-okpine",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1-pinephone/Rhino-Linux-2025.1-pinephone-unified.img.xz/download",
-            downloadSize: "1.95 GB",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2-pinephone/Rhino-Linux-2025.2-pinephone-unified.img.xz/download",
+            downloadSize: "1.95 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/pinephone",
-            shasum: "a61429104a814822178d7f4930062243d97859b6bbf26b8b58c97a859ebda53b"
+            shasum: "4743bc4c97c1e10a45194df23b2f292aa881feae1c95eb807829119031c60815"
         }
     },
     {
@@ -44,10 +44,10 @@ const pineContents = [
                 password: "1234"
             },
             kernel: "6.9.0-okpine",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1-pinetab/Rhino-Linux-2025.1-pinetab.img.xz/download",
-            downloadSize: "1.94 GB",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2-pinetab/Rhino-Linux-2025.2-pinetab.img.xz/download",
+            downloadSize: "1.99 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/pinetab",
-            shasum: "dc4abf4d7fe97c893f092756b9692db732eee692dac2ed880ed4522f2fa0830d"
+            shasum: "d04784896914de656eb787bbba57402460a56e556d7d46e878da2d643b769378"
         }
     },
     {
@@ -58,10 +58,10 @@ const pineContents = [
                 password: "1234"
             },
             kernel: "6.9.0-okpine",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1-pinetab/Rhino-Linux-2025.1-pinetab2.img.xz/download",
-            downloadSize: "1.94 GB",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2-pinetab/Rhino-Linux-2025.2-pinetab2.img.xz/download",
+            downloadSize: "1.99 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/pinetab",
-            shasum: "0cf926e62f0c9073869b395a676bc786cd54cf10804cf803516e473270611d0d"
+            shasum: "22adec56bf7fb5c18610917b7ae17da7f71b7b409bbaf7d61f7ee573bf0c1075"
         }
     }
 ];
@@ -75,10 +75,10 @@ const rpiContents = [
                 password: "1234"
             },
             kernel: "6.11.0-raspi",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1-rpi/Rhino-Linux-2025.1-rpi-desktop.img.xz/download",
-            downloadSize: "2.19 GB",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2-rpi/Rhino-Linux-2025.2-rpi-desktop.img.xz/download",
+            downloadSize: "2.25 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/rpi",
-            shasum: "5cf9899da5e7d240a91f0b37be52d16a28d65998dfa142c02a57e5d4ceb46580"
+            shasum: "3bf52b16d980bb1bb24775adf72ea66cf670cd8d4fc7857ead10bb7264d0d6d3"
         }
     },
     {
@@ -89,10 +89,10 @@ const rpiContents = [
                 password: "1234"
             },
             kernel: "6.11.0-raspi",
-            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.1-rpi/Rhino-Linux-2025.1-rpi-server.img.xz/download",
-            downloadSize: "1.64 GB",
+            downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.2-rpi/Rhino-Linux-2025.2-rpi-server.img.xz/download",
+            downloadSize: "1.69 GiB",
             sourceCode: "https://github.com/rhino-linux/os/tree/rpi",
-            shasum: "10d2c32dd8d31e970b70250ce04878c0c4411fff47d6e0c1434915cbf963663d"
+            shasum: "d125060af7476498faea0fe8a11e8ee843f85706daf41e40c030440ecde13929"
         }
     }
 ];
