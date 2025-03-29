@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 const ThemeSwitcher = () => {
     const [mount, setMount] = useState(false);
-    const {theme, setTheme }= useTheme();
+    const {theme, setTheme } = useTheme("dark");
 
     useEffect(() =>{
         setMount(true);

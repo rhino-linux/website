@@ -44,7 +44,7 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -89,7 +89,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -790,8 +790,8 @@ video {
 
 .appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .grid-cols-1 {
@@ -884,7 +884,7 @@ video {
 }
 
 .bg-overlay {
-  background-color: rgba(15, 0, 20, 0.4);;
+  background-color: rgba(15, 0, 20, 0.4);
 }
 
 .bg-rhino-purple {
@@ -902,14 +902,19 @@ video {
   background-color: rgb(55 50 80 / var(--tw-bg-opacity));
 }
 
-.bg-site-300-light {
+.bg-site-300-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(234 230 252 / var(--tw-bg-opacity));
+  background-color: rgb(35 30 55 / var(--tw-bg-opacity));
 }
 
 .bg-site-400-light {
   --tw-bg-opacity: 1;
   background-color: rgb(224 217 252 / var(--tw-bg-opacity));
+}
+
+.bg-site-300-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 30 55 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-35 {
@@ -1175,7 +1180,7 @@ video {
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-all {
@@ -1251,14 +1256,19 @@ video {
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
-.dark\:bg-site-300-dark:is(.dark *) {
+.dark\:bg-site-300-light:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(35 30 55 / var(--tw-bg-opacity));
+  background-color: rgb(243 30 55 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-site-400-dark:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(25 20 45 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-site-300-dark:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 30 55 / var(--tw-bg-opacity));
 }
 
 .dark\:fill-off-white\/80:is(.dark *) {
