@@ -31,10 +31,10 @@ function Content() {
           className="md:w-[85%] m-auto lg:grid sm:py-8 lg:grid-cols-2 lg:gap-8"
         >
           <div>
-            <h1 className="text-3xl font-bold py-2 text-rhino-purple">
+            <h1 className="text-3xl  font-bold py-2 text-rhino-purple">
               {item.title}
             </h1>
-            <p className="text-white text-xl py-2">{item.description}</p>
+            <p className="text-black dark:text-white text-xl py-2">{item.description}</p>
 
             {/* Only display the button for the first two items */}
             {item.buttonText && item.buttonLink && index < 2 && (

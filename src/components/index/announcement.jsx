@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Announcement() {
   return (
-    <div className="flex bg-site-400 text-center justify-center text-md mt-8">
+    <div className="flex text-center justify-center text-md mt-8">
       <div className="w-[80vw] md:w-max bg-site-300 items-center justify-center text-indigo-100 leading-none rounded-[1.5em] pt-2 px-4" role="alert">
         <p className="inline-flex flex rounded-full bg-rhino-purple uppercase px-2 py-1 text-xs font-bold mx-2 mt-2">New</p>
         <p className="inline-flex font-semibold mr-2 mt-2 text-center p-2">Rhino Linux 2025.2 out now!</p>
