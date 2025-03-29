@@ -42,7 +42,7 @@ function Content() {
             <h1 className="text-3xl unicorn font-bold py-2 text-rhino-purple">
               {item.title}
             </h1>
-            <p className="text-white text-xl py-4">{item.description}</p>
+            <p className="text-black dark:text-white text-xl py-4">{item.description}</p>
 
             {/* Only display the button for the first two items */}
             {item.buttonText && item.buttonLink && index < 2 && (

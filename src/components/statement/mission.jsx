@@ -11,10 +11,10 @@ const MissionData = [
 function Mission() {
     return(
         <div className="md:w-[85%] w-full mx-auto md:p-0 p-4 mt-4">
-            <h1 className="text-3xl font-bold py-4 text-rhino-purple text-center">Our Mission</h1>
-            <h2 className="text-2xl py-4 text-white text-center">Creating the go-to, Debian-derived counterpart for Arch</h2>
+            <h1 className="text-3xl font-bold py-4 text-rhino-purple text-center text-black dark:text-white">Our Mission</h1>
+            <h2 className="text-2xl py-4 text-black dark:text-white text-center">Creating the go-to, Debian-derived counterpart for Arch</h2>
             {MissionData.map((item, index) => (
-                <p className="text-white text-xl py-4" key={index}>{item}</p>
+                <p className="text-black dark:text-white text-xl py-4" key={index}>{item}</p>
             ))}
         </div>
     )
