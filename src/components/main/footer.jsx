@@ -17,7 +17,7 @@ function Footer() {
             <hr className="md:w-[85%] h-1 mx-auto my-4 bg-site-300 border-0 rounded" />
             <div className="sm:w-[85%] m-auto sm:flex items-center justify-center">
                 <div className="flex items-center justify-center pt-2 footer-fix">
-                    <Link href="https://github.com/rhino-linux" target="_blank" rel="noreferrer" className="my-auto fill-off-white/80 hover:fill-rhino-purple transition-all mx-4">
+                    <Link href="https://github.com/rhino-linux" target="_blank" rel="noreferrer" className="my-auto fill-off-black/80 dark:fill-off-white/80 hover:fill-rhino-purple transition-all mx-4">
                         <svg width="30" height="30" viewBox="3 3 18 18">
                         <title>GitHub</title>
                             <path
@@ -25,7 +25,7 @@ function Footer() {
                             </path>
                         </svg>
                     </Link>
-                    <Link href="https://discord.gg/reSvc8Ztk3" target="_blank" rel="noreferrer" className="my-auto fill-off-white/80 hover:fill-rhino-purple transition-all mx-4">
+                    <Link href="https://discord.gg/reSvc8Ztk3" target="_blank" rel="noreferrer" className="my-auto fill-off-black/80 dark:fill-off-white/80 hover:fill-rhino-purple transition-all mx-4">
                         <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 5 30.67 23.25">
                         <title>Discord</title>
                             <path
@@ -34,7 +34,7 @@ function Footer() {
                         </svg>
                     </Link>
                 </div>
-                <p className="mt-2 sm:my-2 text-center sm:text-left text-off-white/80 text-md sm:text-lg">
+                <p className="mt-2 sm:my-2 text-center sm:text-left text-off-white/80 text-md sm:text-lg text-black dark:text-white">
                     {footerItemsA.map((item, index) => (
                     <span key={index}>
                         <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-1">
@@ -44,7 +44,7 @@ function Footer() {
                     </span>
                     ))}
                 </p>
-                <p className="mb-2 sm:my-2 text-center sm:text-right text-off-white/80 text-md sm:text-lg">
+                <p className="mb-2 sm:my-2 text-center sm:text-right text-off-white/80 text-md sm:text-lg text-black dark:text-white">
                     {footerItemsB.map((item, index) => (
                     <span key={index}>
                         <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-1">

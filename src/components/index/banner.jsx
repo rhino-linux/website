@@ -10,9 +10,9 @@ function Banner({ title, imageSrc, description, onBackClick }) {
           <Image src={imageSrc} alt={title} width="900" height="900" unoptimized quality={100} className="w-[90%] md:w-[80%] m-auto my-8 md:my-0" />
         </div>
         <div>
-          <p className="text-left text-lg text-white">{description}</p>
+          <p className="text-left text-lg text-black dark:text-white">{description}</p>
           {onBackClick && (
-            <p className="text-xl mt-4 hover:cursor-pointer hover:text-rhino-purple transition-all text-left" onClick={onBackClick}>
+            <p className="text-xl mt-4 hover:cursor-pointer hover:text-rhino-purple transition-all text-left text-black dark:text-white" onClick={onBackClick}>
               ⟵ Go back
             </p>
           )}

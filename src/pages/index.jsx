@@ -8,10 +8,11 @@ import Quote from "../components/index/quote";
 import Announcement from "../components/index/announcement";
 import Footer from "../components/main/footer";
 import SiteData from "../components/main/sitedata";
+import ThemeSwitcher from "@/components/theme/themeSwitcher";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-site-400-light dark:bg-site-400-dark">
       <SiteData title="Homepage" description="An Ubuntu-based, rolling release distribution, with Pacstall & XFCE at its core." />
       <Hero />
       <Announcement />
@@ -20,6 +21,7 @@ export default function Home() {
       <Quote />
       <Content />
       <Footer />
+      <ThemeSwitcher />
     </main>
   );
 }
