@@ -8,7 +8,7 @@ const footerItemsA = [
 
 const footerItemsB = [
     { name: 'Branding', href: 'https://wiki.rhinolinux.org/dev/brand' },
-    { name: 'Donate', href: 'https://ko-fi.com/rhinolinux' },
+    { name: 'Donate', href: 'https://opencollective.com/rhino-linux-and-pacstall' },
 ];
 
 function Footer() {
