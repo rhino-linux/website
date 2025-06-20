@@ -6,7 +6,7 @@ function Hero() {
         <section className="bg-hero-pattern bg-no-repeat bg-center-x bg-center-y bg-cover">
             <div className="bg-overlay w-full h-auto">
             <NavBar />
-            <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) text-center lg:py-16 lg:px-12">
                 <h1 className="mb-4 text-4xl font-medium tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Ubuntu Based, Rolling Release.</h1>
                 <p className="mb-8 text-2xl font-normal sm:px-16 xl:px-48 text-white">Rhino Linux is an Ubuntu-based, rolling release distribution, with Pacstall & XFCE at its core.
                 </p>

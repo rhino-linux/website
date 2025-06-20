@@ -51,7 +51,7 @@ function NavBar() {
                 <Link href="/" className="md:hidden m-4">
                     <Image src="/img/logo.png" alt="" width="50" height="50" className="m-2 mt-4 hover:brightness-50 hover:opacity-80 transition-all" />
                 </Link>
-                <div className="p-2 px-4 text-center m-4 bg-site-300/30 backdrop-blur shadow-black/40 shadow-lg text-xl bg-opacity-35 rounded-[0.65em] md:flex lg:gap-8 md:gap-8 hidden md:block">
+                <div className="p-2 px-4 text-center m-4 bg-site-300/30 backdrop-blur-sm shadow-black/40 shadow-lg text-xl bg-opacity-35 rounded-[0.65em] md:flex lg:gap-8 md:gap-8 hidden md:block">
                     <Link href="/" className="my-auto hover:scale-110 hover:brightness-50 hover:opacity-80 transition-all">
                         <Image src="/img/logo.png" alt="" width="50" height="50" />
                     </Link>
@@ -68,7 +68,7 @@ function NavBar() {
             </nav>
             <div className="hidden transition-all w-full p-2" id="mega-menu">
                 <div className="w-full m-auto">
-                    <div className="md:hidden bg-site-300/30 backdrop-blur shadow-black/40 shadow-lg text-2xl bg-opacity-35 rounded-[0.65em] p-2 m-4">
+                    <div className="md:hidden bg-site-300/30 backdrop-blur-sm shadow-black/40 shadow-lg text-2xl bg-opacity-35 rounded-[0.65em] p-2 m-4">
                         {baritems.map((item) => (
                             <li className="list-none p-4" key={item.link}>
                                 <Link href={item.link}>
