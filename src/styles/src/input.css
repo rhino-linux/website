@@ -1,6 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-btn: 1.15rem;
+  --text-btn--line-height: 1.6rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-burger: 3.2rem;
+  --text-burger--line-height: 2.5rem;
+
+  --color-rhino-purple: #8d7be4;
+  --color-neon-purple: #8b00e7;
+  --color-highlighter-purple: #9235ff;
+  --color-rhino-dark: #13093c;
+  --color-adwaita-dark: #2d2d2d;
+  --color-off-white: #fefefe;
+  --color-overlay: rgba(15, 0, 20, 0.4);
+  --color-site-400: #19142d;
+  --color-site-300: #231e37;
+  --color-site-200: #373250;
+  --color-site-100: #554b69;
+  --color-unicorn-magenta: #c10080;
+  --color-unicorn-pink: #d404ff;
+  --color-unicorn-purple: #8b00e7;
+  --color-unicorn-dark: #26184c;
+  --color-brand-dark: #2d2d2d44;
+  --color-brand-light: #fefefe11;
+  --color-zrhino-purple: #8d7be4;
+
+  --shadow-bxs: 0 0 10px #8d7be4;
+
+  --background-image-hero-pattern: url('/img/blobs.png');
+  --background-image-orb-pattern: url('/img/orb.png');
+
+  --drop-shadow-header-drop: 2px 4px 10px rgba(40, 30, 45, 1);
+
+  --font-serif: Ubuntu, sans-serif;
+  --font-mono: UbuntuMono, mono;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 @font-face {
   font-family: "Ubuntu";
@@ -251,7 +320,7 @@ body {
   .select-fix {
     background-size: 14px;
     background-position: calc(100% - 10px);
-    @apply text-sm !important;
+    @apply text-sm!;
   }
 }
 
@@ -259,7 +328,7 @@ body {
   .select-fix {
     background-size: 18px;
     background-position: calc(100% - 12px);
-    @apply text-lg !important;
+    @apply text-lg!;
   }
 }
 
@@ -267,7 +336,7 @@ body {
   .select-fix {
     background-size: 24px;
     background-position: calc(100% - 18px);
-    @apply text-2xl !important;
+    @apply text-2xl!;
   }
 }
 

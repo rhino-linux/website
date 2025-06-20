@@ -14,7 +14,7 @@ const footerItemsB = [
 function Footer() {
     return(
         <footer className="p-6">
-            <hr className="md:w-[85%] h-1 mx-auto my-4 bg-site-300 border-0 rounded" />
+            <hr className="md:w-[85%] h-1 mx-auto my-4 bg-site-300 border-0 rounded-sm" />
             <div className="sm:w-[85%] m-auto sm:flex items-center justify-center">
                 <div className="flex items-center justify-center pt-2 footer-fix">
                     <Link href="https://github.com/rhino-linux" target="_blank" rel="noreferrer" className="my-auto fill-off-white/80 hover:fill-rhino-purple transition-all mx-4">
