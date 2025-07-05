@@ -20,13 +20,3 @@ function Description() {
 
 export default Description;
 
-<div class="container w-[95vw] lg:w-[60vw] mt-4 rounded-[0.65em] p-4 m-auto shadow-2xl bg-site-300" id="why">
-        <h1 class="text-center text-3xl text-off-white">Why Rhino Linux?</h1>
-        <div class=" container m-auto lg:grid lg:grid-cols-2">
-            <div class="bg-site-200 mt-4 rounded-[0.65em] text-off-white p-4 shadow-2xl lg:ml-2">
-                <p>
-                    Rhino Linux re-invents the Ubuntu experience as a rolling-release distribution built on a stable desktop environment. Pacstall is at the very heart of the distribution, providing essential packages such as the Linux kernel, Firefox, and distinctive Rhino Linux applications and theming.
-                </p>
-            </div>
-        </div>
-    </div>
