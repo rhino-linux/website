@@ -554,40 +554,6 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -744,10 +710,6 @@ video {
   width: 90%;
 }
 
-.w-\[95vw\] {
-  width: 95vw;
-}
-
 .w-full {
   width: 100%;
 }
@@ -852,11 +814,6 @@ video {
 
 .border-0 {
   border-width: 0px;
-}
-
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
 .bg-overlay {
@@ -992,10 +949,6 @@ video {
   padding-top: 2rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1115,12 +1068,6 @@ video {
 
 .underline {
   text-decoration-line: underline;
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
@@ -1575,11 +1522,6 @@ select {
   cursor: pointer;
 }
 
-.hover\:bg-gray-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-opacity-50:hover {
   --tw-bg-opacity: 0.5;
 }
@@ -1687,10 +1629,6 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .md\:justify-center {
     justify-content: center;
   }
@@ -1712,6 +1650,10 @@ select {
     padding-right: 4rem;
   }
 
+  .md\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
   .md\:pt-4 {
     padding-top: 1rem;
   }
@@ -1727,16 +1669,8 @@ select {
 }
 
 @media (min-width: 1024px) {
-  .lg\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
   .lg\:grid {
     display: grid;
-  }
-
-  .lg\:w-\[60vw\] {
-    width: 60vw;
   }
 
   .lg\:w-\[85\%\] {
