@@ -39,6 +39,10 @@ const baritems = [
         goto: "Wiki"
     },
     {
+        link: "https://forum.rhinolinux.org",
+        goto: "Forums"
+    },
+    {
         link: "https://pacstall.dev/packages",
         goto: "Packages"
     }
