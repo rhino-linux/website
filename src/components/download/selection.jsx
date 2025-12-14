@@ -42,7 +42,7 @@ const DownloadSelection = () => {
           className="p-2 px-4 bg-site-300 w-full text-off-white md:text-2xl font-light rounded-[0.5em] mt-4 select-fix appearance-none"
         >
           <option value="generic">Generic (x86_64 / ARM64)</option>
-          <option value="pine">Pine64 (ARM64)</option>
+          <option value="pine">PINE64 (ARM64)</option>
           <option value="rpi">Raspberry Pi (ARM64)</option>
         </select>
       </div>
