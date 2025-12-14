@@ -167,7 +167,7 @@ const rpiContents = [
     {
         title: "Raspberry Pi Server (ARM64)",
         desktop_environments: {
-            "Unicorn": {
+            "N/A": {
                 version: "2025.4",
                 login: {
                     username: "rhino",
