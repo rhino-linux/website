@@ -62,7 +62,7 @@ const DownloadSelection = () => {
               className="p-4 my-4 mx-2 bg-site-300 text-white rounded-lg shadow-md col"
             >
               <h3 className="text-2xl mb-2">
-                {content.title} {details.version}
+                {content.title}
               </h3>
               {availableDEs.length > 1 && (
                 <select
@@ -79,6 +79,9 @@ const DownloadSelection = () => {
               )}
 
               <div className="space-y-2">
+                <p>
+                  <strong>Snapshot:</strong> {details.version}
+                </p>
                 <p>
                   <strong>Desktop:</strong> {selectedDE}
                 </p>
