@@ -148,7 +148,7 @@ const pineContents = [
 
 const rpiContents = [
     {
-        title: "Raspberry Pi Desktop (ARM64)",
+        title: "Raspberry Pi (ARM64)",
         desktop_environments: {
             "Unicorn": {
                 version: "2025.4",
@@ -161,13 +161,8 @@ const rpiContents = [
                 downloadSize: "2.35 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/rpi",
                 shasum: "57cd6b64614cc0b641ce6b74e0c4811f06f7b7b45564604c659c043174b5f21a"
-            }
-        }
-    },
-    {
-        title: "Raspberry Pi Server (ARM64)",
-        desktop_environments: {
-            "N/A": {
+            },
+            "Server": {
                 version: "2025.4",
                 login: {
                     username: "rhino",
