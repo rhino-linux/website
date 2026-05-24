@@ -3,12 +3,20 @@ const genericContents = [
         title: "Generic ISO (x86_64)",
         desktop_environments: {
             "Unicorn": {
-                version: "2025.4",
-                kernel: "6.18.1-generic",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4/Rhino-Linux-2025.4-amd64.iso/download",
-                downloadSize: "2.64 GiB",
+                version: "2026.1",
+                kernel: "7.0.9-generic",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-amd64.iso/download",
+                downloadSize: "2.70 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/main",
-                shasum: "1b105945669d8e8efd2ea47309ab5412f1e1a0746a0c530e3cd267d3c49f91c5"
+                shasum: "787e6db05b531c2a7027617918076630c8ed4c74ff2ab19c3cc2e919115e5279"
+            },
+            "Lomiri": {
+                version: "2026.1",
+                kernel: "7.0.9-generic",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-amd64.iso/download",
+                downloadSize: "2.59 GiB",
+                sourceCode: "https://github.com/rhino-linux/os/tree/main",
+                shasum: "9a11dce01fe5b47ca4b7fa14af9fdb1a673573515a94e20c3048e921c220d63c"
             }
         }
     },
@@ -16,12 +24,20 @@ const genericContents = [
         title: "Generic ISO (ARM64)",
         desktop_environments: {
             "Unicorn": {
-                version: "2025.4",
-                kernel: "6.18.1-generic",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4/Rhino-Linux-2025.4-arm64.iso/download",
-                downloadSize: "2.63 GiB",
+                version: "2026.1",
+                kernel: "7.0.9-generic",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-arm64.iso/download",
+                downloadSize: "2.69 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/main",
-                shasum: "36cb53b5e5a84edef66420322964ecaa695e44421384718fa8a1ff2a17401c08"
+                shasum: "bfd363b7557d2e33ecdcae3bf43cee364700eb4ffeec871dd74d6092c1fa391b"
+            },
+            "Lomiri": {
+                version: "2026.1",
+                kernel: "7.0.9-generic",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-arm64.iso/download",
+                downloadSize: "2.58 GiB",
+                sourceCode: "https://github.com/rhino-linux/os/tree/main",
+                shasum: "f49cc22ad9291c66d599cf91b333fb983f48dca713c0a591509adb431e3bc36e"
             }
         }
     }
@@ -32,28 +48,28 @@ const pineContents = [
         title: "PINE64 PinePhone",
         desktop_environments: {
             "Unicorn Mobile": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.12.62-sunxi",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinephone/Rhino-Linux-2025.4-pinephone.img.xz/download",
-                downloadSize: "2.06 GiB",
+                kernel: "6.18.32-sunxi",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinephone/Rhino-Linux-2026.1-pinephone.img.xz/download",
+                downloadSize: "2.15 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinephone",
-                shasum: "3bf9549442a27042b569bd417e679fce36ad76b48616facba0430de2faa49dd8"
+                shasum: "9774cb4ca7900b34caca74e1b6928ea7a8e31b5e8338d302abe015dbe05f2de0"
             },
             "Lomiri": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.12.62-sunxi",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinephone/Rhino-Linux-2025.4-pinephone-lomiri.img.xz/download",
-                downloadSize: "2.11 GiB",
+                kernel: "6.18.32-sunxi",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinephone/Rhino-Linux-2026.1-pinephone-lomiri.img.xz/download",
+                downloadSize: "2.13 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinephone-lomiri",
-                shasum: "a7c792f9b5106c9157183fc9e5fc6291ed6ce1d98351a37bbe61b9310bcc74de"
+                shasum: "cdcde9dd9395fb52d722d1316d6135fa150ef6f5f65e71ee37e6b89374e9e732"
             }
         }
     },
@@ -61,28 +77,28 @@ const pineContents = [
         title: "PINE64 PinePhone Pro",
         desktop_environments: {
             "Unicorn Mobile": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.18.1-rockchip",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinephone/Rhino-Linux-2025.4-pinephonepro.img.xz/download",
-                downloadSize: "2.07 GiB",
+                kernel: "6.18.32-rockchip",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinephone/Rhino-Linux-2026.1-pinephonepro.img.xz/download",
+                downloadSize: "2.08 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinephone",
-                shasum: "67cec987bc98c26272e95f4a9afb0073c6fb6edf8541e5d8995c7754f5f6da75"
+                shasum: "296e8627692225b0f00c6871f51a7e649c4413c8864ff0d56a56a83df82abb14"
             },
             "Lomiri": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.18.1-rockchip",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinephone/Rhino-Linux-2025.4-pinephonepro-lomiri.img.xz/download",
-                downloadSize: "2.12 GiB",
+                kernel: "6.18.32-rockchip",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinephone/Rhino-Linux-2026.1-pinephonepro-lomiri.img.xz/download",
+                downloadSize: "2.07 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinephone-lomiri",
-                shasum: "afbfe79e03eb540d6a7be2e391c9c844d1ee024236ad1ad63f8e0109e57ac8dc"
+                shasum: "2621c33d25d2826f3f49c2d1e809d774a739bd0e32fabfa67869c7f7ffb80778"
             }
         }
     },
@@ -90,28 +106,28 @@ const pineContents = [
         title: "PINE64 PineTab",
         desktop_environments: {
             "Unicorn Mobile": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.12.62-sunxi",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinetab/Rhino-Linux-2025.4-pinetab.img.xz/download",
-                downloadSize: "2.05 GiB",
+                kernel: "6.18.32-sunxi",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinetab/Rhino-Linux-2026.1-pinetab.img.xz/download",
+                downloadSize: "2.14 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinetab",
-                shasum: "c9ee6542cdc4db0412ec5cf1f94a02e87674299284b02b1441dc12c7aecc15a5"
+                shasum: "eb04138e9944fe9f88384bd904964ca0470e1cea3d8f0f44290d553e2823bc73"
             },
             "Lomiri": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.12.62-sunxi",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinetab/Rhino-Linux-2025.4-pinetab-lomiri.img.xz/download",
-                downloadSize: "2.08 GiB",
+                kernel: "6.18.32-sunxi",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinetab/Rhino-Linux-2026.1-pinetab-lomiri.img.xz/download",
+                downloadSize: "2.10 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinetab-lomiri",
-                shasum: "1555861e3fc90e81147eae7bf645eac80393b35809119003c2f511af2f8f0450"
+                shasum: "4dc8ef74259279fa5808db24d4f3392f683e64e19b5502823e236c8bc59bc509"
             }
         }
     },
@@ -119,28 +135,28 @@ const pineContents = [
         title: "PINE64 PineTab2",
         desktop_environments: {
             "Unicorn Mobile": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
                 kernel: "6.9.0-okpine",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinetab/Rhino-Linux-2025.4-pinetab2.img.xz/download",
-                downloadSize: "2.03 GiB",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinetab/Rhino-Linux-2026.1-pinetab2.img.xz/download",
+                downloadSize: "2.04 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinetab",
-                shasum: "96995e78732965e7500fe62c832b4300d4264340618120e1dbaccd1524ea5f17"
+                shasum: "b76236bc294d92d9838360633e91d2e769f954044eaf82a43297bef5c63078ee"
             },
             "Lomiri": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
                 kernel: "6.9.0-okpine",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-pinetab/Rhino-Linux-2025.4-pinetab2-lomiri.img.xz/download",
-                downloadSize: "2.06 GiB",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-pinetab/Rhino-Linux-2026.1-pinetab2-lomiri.img.xz/download",
+                downloadSize: "2.00 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/pinetab-lomiri",
-                shasum: "bc5660dec818dbd8d17c4285607f4b2abe0b7fcf215274a1f4031604e5e04341"
+                shasum: "e755a7821f563b47e06ef096b8e01fc4f75d8adbf2449ba948106bf4128e23ea"
             }
         }
     }
@@ -151,28 +167,28 @@ const rpiContents = [
         title: "Raspberry Pi (ARM64)",
         desktop_environments: {
             "Unicorn": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.17.0-raspi",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-rpi/Rhino-Linux-2025.4-rpi-desktop.img.xz/download",
-                downloadSize: "2.35 GiB",
+                kernel: "7.0.0-raspi",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-rpi/Rhino-Linux-2026.1-rpi-desktop.img.xz/download",
+                downloadSize: "2.40 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/rpi",
-                shasum: "57cd6b64614cc0b641ce6b74e0c4811f06f7b7b45564604c659c043174b5f21a"
+                shasum: "cf702d9266f02ba259b204e8ed6edade83920b8ba09ab898a4702dc25793241f"
             },
             "Server": {
-                version: "2025.4",
+                version: "2026.1",
                 login: {
                     username: "rhino",
                     password: "1234"
                 },
-                kernel: "6.17.0-raspi",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2025.4-rpi/Rhino-Linux-2025.4-rpi-server.img.xz/download",
-                downloadSize: "1.81 GiB",
+                kernel: "7.0.0-raspi",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1-rpi/Rhino-Linux-2026.1-rpi-server.img.xz/download",
+                downloadSize: "1.88 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/rpi",
-                shasum: "71f21b5df2036d3e667fdb38e5285a5ea7de6efe35fcd098aaee124a5a5684a1"
+                shasum: "c7f9e23959e61e693a66a296d045ff95f231bd3c1540d41922cfd10de2d206b7"
             }
         }
     }

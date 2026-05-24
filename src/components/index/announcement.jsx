@@ -12,7 +12,7 @@ export default function Announcement() {
           New
         </p>
         <p className="inline-flex font-semibold mr-2 mt-2 text-center p-2">
-          Rhino Linux 2025.4 out now!
+          Rhino Linux 2026.1 out now!
         </p>
         <div className="inline-flex my-2 md:mt-0">
           <p className="text-off-white">
@@ -23,7 +23,7 @@ export default function Announcement() {
               Download
             </Link>
             <Link
-              href="https://blog.rhinolinux.org/news-24"
+              href="https://blog.rhinolinux.org/news-26"
               className="inline-flex leading-8 py-2 mx-2 text-center text-white hover:scale-105 hover:text-rhino-purple transition-all text-md"
             >
               Announcement →
