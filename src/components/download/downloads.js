@@ -13,7 +13,7 @@ const genericContents = [
             "Lomiri": {
                 version: "2026.1",
                 kernel: "7.0.9-generic",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-amd64.iso/download",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-amd64-lomiri.iso/download",
                 downloadSize: "2.59 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/main",
                 shasum: "9a11dce01fe5b47ca4b7fa14af9fdb1a673573515a94e20c3048e921c220d63c"
@@ -34,7 +34,7 @@ const genericContents = [
             "Lomiri": {
                 version: "2026.1",
                 kernel: "7.0.9-generic",
-                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-arm64.iso/download",
+                downloadMirror: "https://sourceforge.net/projects/rhino-linux-builder/files/2026.1/Rhino-Linux-2026.1-arm64-lomiri.iso/download",
                 downloadSize: "2.58 GiB",
                 sourceCode: "https://github.com/rhino-linux/os/tree/main",
                 shasum: "f49cc22ad9291c66d599cf91b333fb983f48dca713c0a591509adb431e3bc36e"
